@@ -2,24 +2,24 @@
 
 * [В качестве вступления](README.md)
 
-## Анализ и Определение целей
+## Анализ и Определение целей <a href="#analysis" id="analysis"></a>
 
-* [Счастье как смысл жизни](analiz-i-opredelenie-celei/schaste-kak-smysl-zhizni.md)
-* [Следование призванию](analiz-i-opredelenie-celei/sledovanie-prizvaniyu.md)
-* [Особенности нашего времени](analiz-i-opredelenie-celei/osobennosti-nashego-vremeni.md)
-* [Стереотипы счастья](analiz-i-opredelenie-celei/stereotipy-schastya.md)
+* [Счастье как смысл жизни](analysis/schaste-kak-smysl-zhizni.md)
+* [Следование призванию](analysis/sledovanie-prizvaniyu.md)
+* [Особенности нашего времени](analysis/osobennosti-nashego-vremeni.md)
+* [Стереотипы счастья](analysis/stereotipy-schastya.md)
 
-## Практическая часть
+## Практическая часть <a href="#what-to-do" id="what-to-do"></a>
 
-* [Фундаментальная система ценностей](prakticheskaya-chast/fundamentalnaya-sistema-cennostei.md)
-* [Я Здесь Живу](prakticheskaya-chast/ya-zdes-zhivu.md)
-* [Управление на основе цифры](prakticheskaya-chast/upravlenie-na-osnove-cifry.md)
-* [Счастье как предмет средней школы](prakticheskaya-chast/schaste-kak-predmet-srednei-shkoly.md)
-* [Социальный капитал и Общие цели](prakticheskaya-chast/socialnyi-kapital-i-obshie-celi.md)
-* [Вкалывают роботы - счастлив человек](prakticheskaya-chast/vkalyvayut-roboty-schastliv-chelovek.md)
-* [Open Source - свобода в движении к Любви](prakticheskaya-chast/open-source-svoboda-v-dvizhenii-k-lyubvi.md)
-* [Memento Mori](prakticheskaya-chast/memento-mori.md)
+* [Фундаментальная система ценностей](what-to-do/fundamentalnaya-sistema-cennostei.md)
+* [Я Здесь Живу](what-to-do/ya-zdes-zhivu.md)
+* [Управление на основе цифры](what-to-do/upravlenie-na-osnove-cifry.md)
+* [Счастье как предмет средней школы](what-to-do/schaste-kak-predmet-srednei-shkoly.md)
+* [Социальный капитал и Общие цели](what-to-do/socialnyi-kapital-i-obshie-celi.md)
+* [Вкалывают роботы - счастлив человек](what-to-do/vkalyvayut-roboty-schastliv-chelovek.md)
+* [Open Source - свобода в движении к Любви](what-to-do/open-source-svoboda-v-dvizhenii-k-lyubvi.md)
+* [Memento Mori](what-to-do/memento-mori.md)
 
-## Дополнительные материалы
+## Дополнительные материалы <a href="#addons" id="addons"></a>
 
-* [Отсылки](dopolnitelnye-materialy/otsylki.md)
+* [Отсылки](addons/otsylki.md)
