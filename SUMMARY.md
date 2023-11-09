@@ -7,7 +7,7 @@
 * [Счастье как смысл жизни](analysis/schaste-kak-smysl-zhizni.md)
 * [Следование призванию](analysis/sledovanie-prizvaniyu.md)
 * [Особенности нашего времени](analysis/osobennosti-nashego-vremeni.md)
-* [Стереотипы счастья](analysis/stereotipy-schastya.md)
+* [Стереотипы счастья и причины несчастий](analysis/stereotipy-schastya.md)
 
 ## Практическая часть <a href="#what-to-do" id="what-to-do"></a>
 
