@@ -8,6 +8,7 @@
 * [Следование призванию](analysis/sledovanie-prizvaniyu.md)
 * [Особенности нашего времени](analysis/osobennosti-nashego-vremeni.md)
 * [Стереотипы счастья и причины несчастий](analysis/stereotipy-schastya.md)
+* [Страна и Страхи](analysis/strana.md)
 
 ## Практическая часть <a href="#what-to-do" id="what-to-do"></a>
 
