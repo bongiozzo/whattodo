@@ -12,7 +12,8 @@
 
 ## Практическая часть <a href="#what-to-do" id="what-to-do"></a>
 
-* [Фундаментальная система ценностей](what-to-do/fundamentalnaya-sistema-cennostei.md)
+* [Экватор](what-to-do/equator.md)
+* [Персональная система ценностей](what-to-do/personalnaya-sistema-cennostei.md)
 * [Я Здесь Живу](what-to-do/ya-zdes-zhivu.md)
 * [Управление на основе цифры](what-to-do/upravlenie-na-osnove-cifry.md)
 * [Счастье - ключевой KPI и предмет средней школы](what-to-do/schaste-kak-predmet-srednei-shkoly.md)
