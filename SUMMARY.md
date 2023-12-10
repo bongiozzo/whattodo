@@ -14,9 +14,9 @@
 
 * [Экватор](what-to-do/equator.md)
 * [Персональная система ценностей](what-to-do/personalnaya-sistema-cennostei.md)
+* [Счастье - ключевой KPI и предмет средней школы](what-to-do/schaste-kak-predmet-srednei-shkoly.md)
 * [Я Здесь Живу](what-to-do/ya-zdes-zhivu.md)
 * [Управление на основе цифры](what-to-do/upravlenie-na-osnove-cifry.md)
-* [Счастье - ключевой KPI и предмет средней школы](what-to-do/schaste-kak-predmet-srednei-shkoly.md)
 * [Социальный капитал и Общие цели](what-to-do/socialnyi-kapital-i-obshie-celi.md)
 * [Вкалывают роботы - счастлив человек](what-to-do/vkalyvayut-roboty-schastliv-chelovek.md)
 * [Open Source - свобода в движении к Любви](what-to-do/open-source-svoboda-v-dvizhenii-k-lyubvi.md)
