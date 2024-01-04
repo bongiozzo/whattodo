@@ -10,7 +10,9 @@
 - Художественно про центричность — Бог или Я: [Оправдание острова](https://www.livelib.ru/book/1005497029-opravdanie-ostrova-evgenij-vodolazkin), [Лавр](https://www.livelib.ru/book/1003814566-lavr-evgenij-vodolazkin)
 - Анализ чувства Любви: [Искусство любить](https://www.livelib.ru/review/2985526-iskusstvo-lyubit-erih-fromm)
 - Разные способы проявления Любви: [Пять языков любви](https://www.livelib.ru/review/3720607-pyat-yazykov-lyubvi-geri-chepmen)
-- Про следование своему Призванию: [Театр отчаяния. Отчаянный театр](https://www.livelib.ru/review/3730660-teatr-otchayaniya-otchayannyj-teatr-evgenij-grishkovets)
+- Про следование своему Призванию в жизнеописании: [Театр отчаяния. Отчаянный театр](https://www.livelib.ru/review/3730660-teatr-otchayaniya-otchayannyj-teatr-evgenij-grishkovets)
+- Про следование Призванию с точки зрения психолога: [Поток](
+https://www.livelib.ru/review/3879424-potok-psihologiya-optimalnogo-perezhivaniya-mihaj-chiksentmihaji)
 - Про экономику и Россию: [Русская модель управления](https://www.livelib.ru/review/3093508-russkaya-model-upravleniya-aleksandr-prohorov)
 - База целеполагания и личностного роста: [7 навыков](https://www.livelib.ru/review/3792199-sem-navykov-vysokoeffektivnyh-lyudej)
 - Фокусировка и цифра в управлении: [Цель. Процесс непрерывного улучшения](https://www.livelib.ru/book/1002805092-tsel-protsess-nepreryvnogo-uluchsheniya-dzheff-koks)
