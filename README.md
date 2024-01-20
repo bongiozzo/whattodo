@@ -7,7 +7,7 @@ description: >-
 
 <details>
 
-<summary href="#summary" id="summary">Краткие тезисы по главе</summary>
+<summary>Краткие тезисы по главе</summary>
 
 - [Вступительная глава, которую можно пропустить или прочитать эти тезисы.](#intro)
 - [Автор этого текста — дотошный и ленивый зануда.](#introduction)
