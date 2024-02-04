@@ -16,6 +16,7 @@ https://www.livelib.ru/review/3879424-potok-psihologiya-optimalnogo-perezhivaniy
 - Про экономику и Россию: [Русская модель управления](https://www.livelib.ru/review/3093508-russkaya-model-upravleniya-aleksandr-prohorov)
 - База целеполагания и личностного роста: [7 навыков](https://www.livelib.ru/review/3792199-sem-navykov-vysokoeffektivnyh-lyudej)
 - Фокусировка и цифра в управлении: [Цель. Процесс непрерывного улучшения](https://www.livelib.ru/review/3908812-tsel-protsess-nepreryvnogo-uluchsheniya)
+- Цифра в управлении в ИТ отрасли: [Измеряйте самое важное. Как Google, Intel и другие компании добиваются роста с помощью OKR](https://www.livelib.ru/review/3937348-izmeryajte-samoe-vazhnoe-kak-google-intel-i-drugie-kompanii-dobivayutsya-rosta-s-pomoschyu-okr-dzhon-dorr)
 - Важность и красота момента: [Сила настоящего](https://www.livelib.ru/book/1001530607-sila-nastoyaschego-rukovodstvo-k-duhovnomu-probuzhdeniyu-ekhart-tolle)
 - Про будущее технологий и образования: [Опыт обучающих центров РОББО](https://www.livelib.ru/review/3682591-sila-franchajzinga-kak-kompaniya-robbo-postroila-topovuyu-mezhdunarodnuyu-edtechfranshizu-frolov-p)
 - О нарко-зависимостях и их причинах: [Занимательная наркология](https://www.livelib.ru/review/3535819-zanimatelnaya-narkologiya-andrej-makarevich)
