@@ -6,6 +6,7 @@
 - Про счастье и цифру: [Модель количественной оценки уровня счастья](https://www.livelib.ru/work/1008288064-model-kolichestvennoj-otsenki-urovnya-schastya-vladimir-andreev)
 - Ликбез по антропологии: [Sapiens. Краткая история человечества](https://www.livelib.ru/book/1002920757-sapiens-kratkaya-istoriya-chelovechestva-yuval-noj-harari)
 - Ликбез по русской литературе и истории: [Уроки изящной словесности](https://www.livelib.ru/book/1001474484-rodnaya-rech-uroki-izyaschnoj-slovesnosti-sbornik-petr-vajl-aleksandr-genis)
+- Книга, запустившая размышления о Боге: [Мастер и Маргарита](https://www.livelib.ru/review/4002646-master-i-margarita-mihail-bulgakov)
 - Бытовые истории и мысли о православии: [Несвятые святые](https://www.livelib.ru/book/1003089869-nesvyatye-svyatye-i-drugie-rasskazy-sbornik-arhimandrit-tihon)
 - Художественно про центричность — Бог или Я: [Лавр](https://www.livelib.ru/review/3923053-lavr-evgenij-vodolazkin), [Оправдание острова](https://www.livelib.ru/book/1005497029-opravdanie-ostrova-evgenij-vodolazkin)
 - Анализ чувства Любви: [Искусство любить](https://www.livelib.ru/review/2985526-iskusstvo-lyubit-erih-fromm)
