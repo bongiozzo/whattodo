@@ -18,8 +18,8 @@
 10. [Я Здесь Живу](what-to-do/ya-zdes-zhivu.md)
 11. [Управление на основе цифры](what-to-do/upravlenie-na-osnove-cifry.md)
 12. ["Be happy or Die!"](what-to-do/be-happy-or-die.md)
-13. ["Вкалывают роботы — счастлив человек"](what-to-do/vkalyvayut-roboty-schastliv-chelovek.md)
-14. [Социальный капитал и Общие цели](what-to-do/socialnyi-kapital-i-obshie-celi.md)
+13. [Общие цели и Социальный капитал](what-to-do/socialnyi-kapital-i-obshie-celi.md)
+14. ["Вкалывают роботы — счастлив человек"](what-to-do/vkalyvayut-roboty-schastliv-chelovek.md)
 15. [Open Source — свобода в движении к Любви](what-to-do/open-source-svoboda-v-dvizhenii-k-lyubvi.md)
 16. [Memento Mori](what-to-do/memento-mori.md)
 
