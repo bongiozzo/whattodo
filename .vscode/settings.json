@@ -308,5 +308,6 @@
 
         "MD033": false,
         "MD051": false
-    }
+    },
+    "accessibility.voice.speechLanguage": "ru-RU"
 }
