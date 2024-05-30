@@ -7,6 +7,7 @@
 - Ликбез по антропологии: [Sapiens. Краткая история человечества](https://www.livelib.ru/book/1002920757-sapiens-kratkaya-istoriya-chelovechestva-yuval-noj-harari)
 - Ликбез по русской литературе и истории: [Уроки изящной словесности](https://www.livelib.ru/book/1001474484-rodnaya-rech-uroki-izyaschnoj-slovesnosti-sbornik-petr-vajl-aleksandr-genis)
 - Примеры рассуждений о важных вопросах вместе с детьми: [Понятная Философия](https://www.livelib.ru/review/4050400-ponyatnaya-filosofiya-s-peterom-ekbergom-i-svenom-nurdkvistom-peter-ekberg)
+- Практическое пособие рассуждений о важном вместе с детьми: [Что делать, если... 2](https://www.livelib.ru/review/4201003-chto-delat-esli-2-prodolzhenie-polyubivshejsya-i-ochen-poleznoj-knigi-lyudmila-petranovskaya)
 - Книга, запустившая размышления о Боге: [Мастер и Маргарита](https://www.livelib.ru/review/4002646-master-i-margarita-mihail-bulgakov)
 - Бытовые истории и мысли о православии: [Несвятые святые](https://www.livelib.ru/book/1003089869-nesvyatye-svyatye-i-drugie-rasskazy-sbornik-arhimandrit-tihon)
 - Художественно про центричность — Бог или Я: [Лавр](https://www.livelib.ru/review/3923053-lavr-evgenij-vodolazkin), [Оправдание острова](https://www.livelib.ru/book/1005497029-opravdanie-ostrova-evgenij-vodolazkin)
