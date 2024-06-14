@@ -21,6 +21,7 @@
 1. ["Вкалывают роботы — счастлив человек"](what-to-do/vkalyvayut-roboty-schastliv-chelovek.md)
 1. [Open Source — свобода в движении к Любви](what-to-do/open-source-svoboda-v-dvizhenii-k-lyubvi.md)
 1. [Общие цели и Социальный капитал](what-to-do/socialnyi-kapital-i-obshie-celi.md)
+1. [Формирование Социального капитала с использованием цифровых технологий](what-to-do/digital-social-capital.md)
 1. [Memento Mori](what-to-do/memento-mori.md)
 
 ## Дополнительные материалы <a href="#addons" id="addons"></a>

@@ -4,6 +4,7 @@
 
 - Много счастья без занудства: [Моменты счастья](https://www.livelib.ru/review/3575245-momenty-schastya-aleks-dubas), Мои моменты счастья (to be published)
 - Про счастье и цифру: [Модель количественной оценки уровня счастья](https://www.livelib.ru/work/1008288064-model-kolichestvennoj-otsenki-urovnya-schastya-vladimir-andreev)
+- Про человеческий капитал: [Стратегическая психология глобализации. Психология человеческого капитала](https://www.livelib.ru/review/4165063-strategicheskaya-psihologiya-globalizatsii-psihologiya-chelovecheskogo-kapitala)
 - Ликбез по антропологии: [Sapiens. Краткая история человечества](https://www.livelib.ru/book/1002920757-sapiens-kratkaya-istoriya-chelovechestva-yuval-noj-harari)
 - Ликбез по русской литературе и истории: [Уроки изящной словесности](https://www.livelib.ru/book/1001474484-rodnaya-rech-uroki-izyaschnoj-slovesnosti-sbornik-petr-vajl-aleksandr-genis)
 - Примеры рассуждений о важных вопросах вместе с детьми: [Понятная Философия](https://www.livelib.ru/review/4050400-ponyatnaya-filosofiya-s-peterom-ekbergom-i-svenom-nurdkvistom-peter-ekberg)
