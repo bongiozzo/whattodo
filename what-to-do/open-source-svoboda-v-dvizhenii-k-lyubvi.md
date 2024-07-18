@@ -112,7 +112,7 @@ description: >-
 
 Сергей Поляков:
 
-— Концепция [мини-аппа Я Здесь Живу](./ya-zdes-zhivu.md#mini_app_vkontakte) также строится на [открытых интерфейсах API.petersburg.ru](https://api.petersburg.ru). Хотелось бы по возможности вынести часть решения и данных в Open Source и интегрироваться с открытыми системами. Очень близкий для нас по своей сути ресурс [PastVu.com](https://pastvu.com) также написан [совершенно открыто](https://github.com/PastVu).
+— Концепция [приложения "Я Здесь Живу"](./ya-zdes-zhivu.md#mini_app_vkontakte) также строится на [открытых интерфейсах API.petersburg.ru](https://api.petersburg.ru). Хотелось бы по возможности вынести часть решения и данных в Open Source и интегрироваться с открытыми системами. Очень близкий для нас по своей сути ресурс [PastVu.com](https://pastvu.com) также написан [совершенно открыто](https://github.com/PastVu).
 
 Павел Фролов:
 
