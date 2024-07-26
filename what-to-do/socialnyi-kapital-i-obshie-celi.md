@@ -15,7 +15,7 @@ description: >-
 - [Сущность: Цель](#entity_goal)
 - [Сущность: Контракт](#entity_contract)
 - [Сущность: Исполнение](#entity_commit)
-- [Сущность: План действий](#entity_plans)
+- [Сущность: План действий](#entity_instruction)
 - [Аналоги систем целеполагания](#goal_setting_systems)
 - [Прототип Общие цели — Shared Goals](#shared_goals)
 - [Социальный капитал](#social_capital)
