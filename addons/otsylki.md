@@ -1,9 +1,14 @@
-# 16. Отсылки
+---
+description: >-
+    Наш Текст — прежде всего сборка смыслов, изначально взятых из прочитанных книг и успешно применённых на собственной практике.
+---
 
-Использованы упоминания и выдержки из книг:
+# Список литературы как фундамент
+
+В Тексте были использованы упоминания и выдержки из небольшой части книг, которые особенно запомнились или были прочитаны в последнее время:
 
 - Много счастья без занудства: [Моменты счастья](https://www.livelib.ru/review/3575245-momenty-schastya-aleks-dubas), Мои моменты счастья (to be published)
-- Про счастье и цифру: [Модель количественной оценки уровня счастья](https://www.livelib.ru/work/1008288064-model-kolichestvennoj-otsenki-urovnya-schastya-vladimir-andreev)
+- Про счастье и Цифру: [Модель количественной оценки уровня счастья](https://www.livelib.ru/work/1008288064-model-kolichestvennoj-otsenki-urovnya-schastya-vladimir-andreev)
 - Про человеческий капитал: [Стратегическая психология глобализации. Психология человеческого капитала](https://www.livelib.ru/review/4165063-strategicheskaya-psihologiya-globalizatsii-psihologiya-chelovecheskogo-kapitala)
 - Важность ответа на вопрос о Смысле Жизни: [Сказать жизни "Да"](https://www.livelib.ru/review/4226059-skazat-zhizni-da-psiholog-v-kontslagere-sbornik-viktor-frankl)
 - Ликбез по антропологии: [Sapiens. Краткая история человечества](https://www.livelib.ru/book/1002920757-sapiens-kratkaya-istoriya-chelovechestva-yuval-noj-harari)
