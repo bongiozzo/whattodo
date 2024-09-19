@@ -91,19 +91,4 @@ echo 's,[^(]*\.gitbook/assets/,../_images/,g;' >> replacement.sed
 # Massive replacements
 sed -i -E -f replacement.sed $dd_path_lang/*.md
 
-# Execute DiploDoc Builder to HTML
-
-rm -fr $output_path
-npx -- @diplodoc/cli@latest -i $dd_path -o $output_path --single-page
-
-# Build PDF 
-
-# npx -- @diplodoc/pdf-generator@latest -i $output_path
-
-# Build pandoc Epub and FB2
-
-pandoc -o $output_path/wtd.epub --resource-path=$dd_path_lang `ls $dd_path_lang/*.md`
-
-# YFM style INFO Formulas? Register
-
-# Dark theme
+diplodoc.sh

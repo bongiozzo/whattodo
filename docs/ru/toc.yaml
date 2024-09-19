@@ -1,6 +1,20 @@
 title: Что мне делать? :-)
 href: index.md
+navigation:
+  header:
+    leftItems:
+      - text: ":-)"
+        type: "link"
+        url: "./index.html"
+      - text: "Telegram"
+        type: "link"
+        url: "https://t.me/bongiozzo_public"
+      - text: "Github"
+        type: "link"
+        url: "https://github.com/bongiozzo/whattodo/"
 items:
+  - name: В качестве вступления
+    href: index.md  
   - name: Аналитическая часть — причины влияющие на Счастье
     expanded: true
     items: 
