@@ -3,31 +3,9 @@ description: >-
     Создание шедевров совместно с единомышленниками. Это ли не Счастье? Так устроена концепция Open Source.
 ---
 
-# Open Source — свобода в движении к Любви {#open_source_free_way}
-
-{#top}
+# Open Source — свобода в движении к Любви
 
 {% cut "Тезисы по главе" %}
-
-- [Open Source — свобода в движении к Любви](#open_source_free_way)
-- [Интервью — лёгкий способ написать текст](#interview_is_easy_text_writing)
-- [Ассоциации с явлением Open Source](#associations_with_open_source)
-- [Автономность](#autonomy)
-- [Мастерство](#mastery)
-- [Общая Цель](#shared_goal)
-- [Живое общение](#meetups)
-- [Быть полезным и востребованным](#be_useful)
-- [Минимум рутины](#no_routine)
-- [Контакт с пользователями](#live_contact)
-- [Свобода выбора](#freedom_of_choice)
-- [Гибкий график и любимая работа](#work_life_balance)
-- [Заработок](#earnings)
-- [Software as a Service](#saas)
-- [Hardware](#hardware)
-- [IT Consulting](#it_consulting)
-- [Оплачиваемая разработка открытого кода](#custom_development)
-- [Обучение](#education)
-- [Open Source и Счастье](#open_source_and_happiness)
 
 Краткое содержание построено YandexGPT (модель Краткий пересказ, Температура 0.1):
 
@@ -278,5 +256,3 @@ description: >-
 — Да, с удовольствием его прочитал и уже [упоминал о нём в нашем Тексте](p2-160-routine.md#love_manifest_robots).
 
 Спасибо тебе, Паша! :-)
-
-[Краткий пересказ главы](#top)
