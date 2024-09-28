@@ -15,7 +15,7 @@ navigation:
 items:
   - name: В качестве вступления
     href: index.md  
-  - name: Аналитическая часть — причины влияющие на Счастье
+  - name: Аналитическая часть
     expanded: true
     items: 
     - name: Счастье как смысл жизни
@@ -30,7 +30,7 @@ items:
       href: p1-050-country.md
   - name: Соавторы
     href: p2-100-authors.md
-  - name: Практическая часть — принципы и предложения
+  - name: Практическая часть
     expanded: true
     items: 
     - name: Персональная система ценностей
