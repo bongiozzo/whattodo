@@ -2,38 +2,36 @@ name: Release
 
 on:
   workflow_dispatch:
-  pull_request:
-    types: [closed]
-    branches:    
-      - main
 
 jobs:
-  check-env:
-    runs-on: ubuntu-latest
-    steps:
-      - name: "Check is DIPLODOC_STORAGE_BUCKET secret exists"
-        env:
-          storage-bucket: ${{ vars.DIPLODOC_STORAGE_BUCKET }}
-        if: ${{ env.storage-bucket == '' }}
-        run: 'echo "::error:: The variable \"DIPLODOC_STORAGE_BUCKET\" has not been made; please check that all necessary secrets and variables are installed or follow the link https://diplodoc.com/quickstart" && exit 1'
   build:
-    needs: check-env
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Build
-        uses: diplodoc-platform/docs-build-action@v2
+        uses: diplodoc-platform/docs-build-action@v3
         with:
           revision: "${{ github.sha }}"
           src-root: "./docs"
+  upload:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+      - name: Upload
+        uses: diplodoc-platform/docs-upload-action@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           storage-endpoint: ${{ vars.DIPLODOC_STORAGE_ENDPOINT }}
           storage-region: ${{ vars.DIPLODOC_STORAGE_REGION }}
           storage-bucket: ${{ vars.DIPLODOC_STORAGE_BUCKET }}
           storage-access-key-id: ${{ secrets.DIPLODOC_ACCESS_KEY_ID }}
           storage-secret-access-key: ${{ secrets.DIPLODOC_SECRET_ACCESS_KEY }}
+
   release:
-    needs: build
+    needs: upload
     runs-on: ubuntu-latest
     steps:
       - name: Release
