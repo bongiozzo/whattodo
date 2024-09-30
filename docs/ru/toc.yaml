@@ -3,12 +3,11 @@ href: index.md
 navigation:
   logo:
     url: './index.html'
+    urlTitle: 'Вернуться на главную'
     dark:
-      icon: 'https://storage.yandexcloud.net/diplodoc-www-assets/logo/ddos-logo-dark.svg'
-      text: 'Что мне делать? :-)'
+      icon: '/_images/smile.svg'
     light:
-      icon: 'https://storage.yandexcloud.net/diplodoc-www-assets/navigation/diplodoc-logo.svg'
-      text: 'Что мне делать? :-)'
+      icon: '/_images/smile.svg'
   header:
     leftItems:
       - text: "Telegram"
