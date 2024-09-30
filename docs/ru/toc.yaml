@@ -1,11 +1,16 @@
 title: Что мне делать? :-)
 href: index.md
 navigation:
+  logo:
+    url: './index.html'
+    dark:
+      icon: 'https://storage.yandexcloud.net/diplodoc-www-assets/logo/ddos-logo-dark.svg'
+      text: 'Что мне делать? :-)'
+    light:
+      icon: 'https://storage.yandexcloud.net/diplodoc-www-assets/navigation/diplodoc-logo.svg'
+      text: 'Что мне делать? :-)'
   header:
     leftItems:
-      - text: ":-)"
-        type: "link"
-        url: "./index.html"
       - text: "Telegram"
         type: "link"
         url: "https://t.me/bongiozzo_public"
