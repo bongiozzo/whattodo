@@ -5,9 +5,9 @@ navigation:
     url: './index.html'
     urlTitle: 'Вернуться на главную'
     dark:
-      icon: '/_images/smile.svg'
+      icon: '../_images/smile.svg'
     light:
-      icon: '/_images/smile.svg'
+      icon: '../_images/smile.svg'
   header:
     leftItems:
       - text: "Telegram"
