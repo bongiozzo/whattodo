@@ -1,3 +1,7 @@
 langs: ['ru']
+resources:
+  style:
+    - _assets/style/custom.css
 docs-viewer:
   themes: ['dark']
+  github-url-prefix: https://github.com/bongiozzo/whattodo/tree/master
