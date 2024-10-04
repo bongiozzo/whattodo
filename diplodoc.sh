@@ -18,15 +18,16 @@ for file in "$SOURCE_IMAGES"/*; do
 done
 
 rm -fr $OUTPUT_PATH
-npx -- @diplodoc/cli@latest -i $DD_PATH -o $OUTPUT_PATH --single-page
+npx -- @diplodoc/cli@latest -i $DD_PATH -o $OUTPUT_PATH --single-page --allow-custom-resources
 
 # Build PDF 
 
-npx -- @diplodoc/pdf-generator@latest -i $OUTPUT_PATH
+npx -- @diplodoc/pdf-generator@latest -i $OUTPUT_PATH 
+mv $OUTPUT_PATH/ru/single-page.pdf wtd.pdf
 
 # Build pandoc Epub and FB2
 
-pandoc -o $OUTPUT_PATH/wtd.epub --resource-path=$DD_PATH_LANG `ls $DD_PATH_LANG/*.md`
+# pandoc -o $OUTPUT_PATH/wtd.epub --resource-path=$DD_PATH_LANG `ls $DD_PATH_LANG/*.md`
 
 # YFM style INFO Formulas? Register
 
