@@ -5,9 +5,9 @@ navigation:
     url: './index.html'
     urlTitle: 'Вернуться на главную'
     dark:
-      icon: "/docs-assets/gh-aje25aj66hk7ts3emjan/rev/6ff48018740a712476ba446a8487bdf0c9d1fd4c/_images/logo-dark.svg"
+      icon: "https://storage.yandexcloud.net/sg-what-should-i-do/logo-dark.svg"
     light:
-      icon: "/docs-assets/gh-aje25aj66hk7ts3emjan/rev/6ff48018740a712476ba446a8487bdf0c9d1fd4c/_images/logo-lite.svg"
+      icon: "https://storage.yandexcloud.net/sg-what-should-i-do/logo-lite.svg"
   header:
     leftItems:
       - text: "Telegram"
