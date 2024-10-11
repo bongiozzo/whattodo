@@ -2,7 +2,7 @@
 DD_PATH="docs"
 DD_PATH_LANG="docs/ru"
 DD_PATH_IMAGES="docs/_images"
-SOURCE_IMAGES=".gitbook/assets"
+SOURCE_IMAGES="images"
 OUTPUT_PATH="docs-html"
 
 # Copy image files
