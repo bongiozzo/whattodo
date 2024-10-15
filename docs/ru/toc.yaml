@@ -19,6 +19,9 @@ navigation:
       - text: "PDF"
         type: "link"
         url: "https://github.com/bongiozzo/whattodo/blob/master/wtd.pdf"
+    rightItems:
+      - type: search
+      - type: controls
 items:
   - name: В качестве вступления
     href: index.md  

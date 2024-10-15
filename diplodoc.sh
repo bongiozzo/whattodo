@@ -18,12 +18,12 @@ for file in "$SOURCE_IMAGES"/*; do
 done
 
 rm -fr $OUTPUT_PATH
-npx -- @diplodoc/cli@latest -i $DD_PATH -o $OUTPUT_PATH --single-page --allow-custom-resources
+npx -- @diplodoc/cli@next -i $DD_PATH -o $OUTPUT_PATH --single-page --allow-custom-resources
 
 # Build PDF 
 
 npx -- @diplodoc/pdf-generator@latest -i $OUTPUT_PATH 
-mv $OUTPUT_PATH/ru/single-page.pdf wtd.pdf
+mv $OUTPUT_PATH/ru/single-page.pdf $OUTPUT_PATH/wtd.pdf
 
 # Build pandoc Epub and FB2
 
