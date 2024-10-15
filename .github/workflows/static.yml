@@ -32,17 +32,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Build docs
-        uses: diplodoc-platform/docs-build-action@v3
-        with:
-          src-root: './docs'
-          build-root: './docs-html'
+        uses: actions/configure-pages@v5     
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          path: 'docs-html'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
