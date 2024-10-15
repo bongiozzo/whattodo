@@ -18,7 +18,7 @@ navigation:
         url: "https://github.com/bongiozzo/whattodo/"
       - text: "PDF"
         type: "link"
-        url: "https://github.com/bongiozzo/whattodo/blob/master/wtd.pdf"
+        url: "/wtd.pdf"
     rightItems:
       - type: search
       - type: controls

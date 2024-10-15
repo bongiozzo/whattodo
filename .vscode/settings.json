@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
         "Abbyy",
+        "adoc",
         "Andreas",
         "andreevvs",
         "Araya",
@@ -42,6 +43,7 @@
         "Instructables",
         "INTJ",
         "Jigsore",
+        "kinopoisk",
         "linuxcenter",
         "lmsys",
         "lobachev",
@@ -56,9 +58,11 @@
         "mustdie",
         "Nekrogoblikon",
         "ntrovert",
+        "opensource",
         "Osbourne",
         "Ozzy",
         "pavelfrolov",
+        "petros",
         "petrosyan",
         "Photoshop",
         "Polyakov",
@@ -76,6 +80,7 @@
         "Trepаlium",
         "tuitive",
         "udging",
+        "vasilievskie",
         "Ville",
         "vkontakte",
         "xtravert",
@@ -107,6 +112,8 @@
         "Богоцентричного",
         "богоцентричном",
         "богоцентричному",
+        "Бостром",
+        "Бострома",
         "Бриггс",
         "британ",
         "василеостровца",
@@ -243,6 +250,7 @@
         "манипулятивной",
         "манипулятивную",
         "манипулятивных",
+        "Манхэттенского",
         "Маньпупунер",
         "Маслоу",
         "Мастдае",
@@ -364,7 +372,12 @@
         "Сбере",
         "свеже",
         "свежепереименованном",
+        "свежепросмотренном",
+        "сверинтеллектуалов",
+        "сверхинтеллектуального",
         "сверхлюдей",
+        "сверхразум",
+        "сверхразума",
         "Святаго",
         "Себрант",
         "симпатишный",
@@ -452,6 +465,10 @@
         "MD051": false
     },
     "accessibility.voice.speechLanguage": "ru-RU",
+    "asciidoc.preview.asciidoctorAttributes": {
+        "imagesdir": "../images"
+    },
+    "editor.unicodeHighlight.nonBasicASCII": true,
     "files.associations": {
         "*.yaml": "home-assistant"
     }

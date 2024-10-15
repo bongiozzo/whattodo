@@ -89,6 +89,4 @@ echo 's,[^(]*\.gitbook/assets/,../_images/,g;' >> replacement.sed
 # Titles for images !!!
 
 # Massive replacements
-sed -i -E -f replacement.sed $dd_path_lang/*.md
-
-diplodoc.sh
+sed -i -E -f gb_d_replacement.sed $dd_path_lang/*.md

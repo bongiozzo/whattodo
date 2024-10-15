@@ -1,4 +1,5 @@
 langs: ['ru']
+disableHtmlExt: true
 search: true
 resources:
   style:
