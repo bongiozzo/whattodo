@@ -1,0 +1,7 @@
+name: ROOT
+title: Что мне делать? :-)
+version: ~
+asciidoc:
+  attributes:
+nav:
+- modules/ROOT/nav.adoc
