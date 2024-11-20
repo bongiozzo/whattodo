@@ -6,10 +6,11 @@ content:
   - url: .
     start_path: formats/antora
     branches: HEAD
+    edit_url: https://github.com/bongiozzo/whattodo/blob/master/{path}
 ui:
   bundle:
     # url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
-    # url: https://github.com/bonitasoft/bonita-documentation-theme/releases/download/v1.21.0/bonita-documentation-theme-v1.21.0.zip
+    # https://github.com/bongiozzo/antora-ui-bongiozzo/
     url: ../antora-ui-bongiozzo/build/ui-bundle.zip
     snapshot: true
 urls: 
