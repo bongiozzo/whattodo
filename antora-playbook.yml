@@ -4,7 +4,7 @@ site:
 content:
   sources:
   - url: .
-    start_path: formats/antora
+    start_path: ru
     branches: HEAD
     edit_url: https://github.com/bongiozzo/whattodo/blob/master/{path}
 ui:
@@ -22,4 +22,4 @@ asciidoc:
 antora:
   extensions:
   - require: '@antora/lunr-extension'
-    languages: [en, ru]
+    languages: [ru, en]
