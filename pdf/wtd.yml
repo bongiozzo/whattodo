@@ -1,0 +1,12 @@
+extends: default-with-font-fallbacks
+image:
+  align: center
+  caption:
+    align: center
+quote:
+  font-size: $base_font_size
+  font-style: italic
+  unbreakable: true
+verse:
+  font-size: $base_font_size
+

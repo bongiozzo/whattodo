@@ -1,0 +1,67 @@
+title: Что мне делать? :-)
+href: index.md
+navigation:
+  logo:
+    url: './index.html'
+    urlTitle: 'Вернуться на главную'
+    dark:
+      icon: "https://storage.yandexcloud.net/sg-what-should-i-do/logo-dark.svg"
+    light:
+      icon: "https://storage.yandexcloud.net/sg-what-should-i-do/logo-lite.svg"
+  header:
+    leftItems:
+      - text: "Telegram"
+        type: "link"
+        url: "https://t.me/bongiozzo_public"
+      - text: "Github"
+        type: "link"
+        url: "https://github.com/bongiozzo/whattodo/"
+      - text: "PDF"
+        type: "link"
+        url: "/wtd.pdf"
+    rightItems:
+      - type: search
+      - type: controls
+items:
+  - name: В качестве вступления
+    href: index.md  
+  - name: Аналитическая часть
+    expanded: true
+    items: 
+    - name: Счастье как смысл жизни
+      href: p1-010-happiness.md
+    - name: Следование призванию
+      href: p1-020-call.md
+    - name: Особенности нашего времени
+      href: p1-030-time.md
+    - name: Стереотипы счастья и причины несчастий
+      href: p1-040-unhappiness.md
+    - name: Страна и Страх
+      href: p1-050-country.md
+  - name: Соавторы
+    href: p2-100-authors.md
+  - name: Практическая часть
+    expanded: true
+    items: 
+    - name: Персональная система ценностей
+      href: p2-110-system.md
+    - name: Счастье — ключевой KPI и предмет средней школы
+      href: p2-120-school.md
+    - name: Я Здесь Живу
+      href: p2-130-local.md
+    - name: Управление на основе «Цифры»
+      href: p2-140-digital.md
+    - name: Be happy or Die!
+      href: p2-150-absurd.md
+    - name: «Вкалывают роботы — счастлив человек»
+      href: p2-160-routine.md
+    - name: Open Source — свобода в движении к Любви
+      href: p2-170-opensource.md
+    - name: Общие Цели и Социальный капитал
+      href: p2-180-sharedgoals.md
+    - name: "Общие Цели: Презентация"
+      href: p2-190-presentation.md
+    - name: Memento Mori
+      href: p2-999-death.md
+  - name: Список литературы
+    href: p3-references.md
