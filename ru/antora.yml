@@ -1,6 +1,6 @@
 name: ROOT
 title: Что мне делать? :-)
-version: ~
+version: ru
 asciidoc:
   attributes:
 nav:
