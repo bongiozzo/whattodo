@@ -1,0 +1,59 @@
+= Что мне делать? :-)
+// :front-cover-image: image:forward.jpg[Front Cover,1050,1050] 
+:doctype: book
+// :docinfo:
+:publisher: Общие Цели
+:creator: [{"role"=>"author", "text"=>"Что мне делать? Чтобы быть счастливым. Коллективный текст."}]
+:favicon: favicon.png
+:toc:
+:toclevels: 3
+:imagesdir: images
+:pagenums:
+:icons: font
+:figure-caption!:
+:example-caption!:
+:stem: latexmath
+
+= Вводная часть
+
+:leveloffset: +1
+
+include::pages/index.adoc[]
+
+include::pages/p1-010-happiness.adoc[]
+
+include::pages/p1-020-call.adoc[]
+
+include::pages/p1-030-time.adoc[]
+
+include::pages/p1-040-unhappiness.adoc[]
+
+include::pages/p1-050-country.adoc[]
+
+= Практическая часть
+
+include::pages/p2-100-authors.adoc[]
+
+include::pages/p2-110-system.adoc[]
+
+include::pages/p2-120-school.adoc[]
+
+include::pages/p2-130-local.adoc[]
+
+include::pages/p2-140-digital.adoc[]
+
+include::pages/p2-150-absurd.adoc[]
+
+include::pages/p2-160-routine.adoc[]
+
+include::pages/p2-170-opensource.adoc[]
+
+include::pages/p2-180-sharedgoals.adoc[]
+
+include::pages/p2-190-presentation.adoc[]
+
+include::pages/p2-999-death.adoc[]
+
+include::pages/p3-references.adoc[]
+
+:leveloffset: -1
