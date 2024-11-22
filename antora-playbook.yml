@@ -1,5 +1,5 @@
 site:
-  title: Что мне делать? :-)
+  title: Общие цели
   start_page: ROOT::index.adoc
 content:
   sources:
@@ -19,7 +19,10 @@ asciidoc:
   attributes:
     figure-caption!:
     example-caption!:
-antora:
-  extensions:
-  - require: '@antora/lunr-extension'
-    languages: [ru, en]
+    page-pagination: ''
+    page-toctitle: 'Содержание'
+    page-editgittitle: 'Редактировать текст'
+# antora:
+#   extensions:
+#   - require: '@antora/lunr-extension'
+#     languages: [ru, en]

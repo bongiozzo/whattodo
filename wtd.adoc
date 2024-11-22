@@ -12,7 +12,6 @@
 :icons: font
 :figure-caption!:
 :example-caption!:
-:stem: latexmath
 
 = Вводная часть
 

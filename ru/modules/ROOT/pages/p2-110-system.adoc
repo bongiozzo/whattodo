@@ -1,6 +1,5 @@
 = Персональная система ценностей
 :description: Наличие собственной фундаментальной системы ценностей — необходимое условие для Счастья.
-:stem:
 
 [#again_and_again]
 == Смятение в головах далеко не первый раз
@@ -256,12 +255,7 @@ https://www.pravoslavie.ru/7007.html[Вот такое описание хрис
 
 [quote,Андрей Дмитриевич Сахаров]
 ____
-ifdef::site-gen-antora[]
-Любовь = stem:[sqrt(Истина)]
-endif::[]
-ifndef::site-gen-antora[]
 image::saharov.png[]
-endif::[]
 ____
 
 
