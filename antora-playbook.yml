@@ -1,6 +1,8 @@
 site:
   title: Общие цели
   start_page: ROOT::index.adoc
+output:
+  dir: ./public
 content:
   sources:
   - url: .
@@ -13,6 +15,16 @@ ui:
     # https://github.com/bongiozzo/antora-ui-bongiozzo/
     url: ../antora-ui-bongiozzo/build/ui-bundle.zip
     snapshot: true
+  supplemental_files:
+  - path: ui.yml
+    contents: |
+      static_files:
+      - .nojekyll
+      - CNAME
+  - path: .nojekyll
+  - path: CNAME
+    contents: |
+      text.sharedgoals.ru
 urls: 
   html_extension_style: drop
 asciidoc:

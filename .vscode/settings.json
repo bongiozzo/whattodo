@@ -468,7 +468,7 @@
     "asciidoc.preview.asciidoctorAttributes": {
         "imagesdir": "../images"
     },
-    "editor.unicodeHighlight.nonBasicASCII": true,
+    "editor.unicodeHighlight.nonBasicASCII": false,
     "files.associations": {
         "*.yaml": "home-assistant"
     }
