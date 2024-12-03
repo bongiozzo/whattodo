@@ -12,8 +12,8 @@ content:
 ui:
   bundle:
     # url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
-    # https://github.com/bongiozzo/antora-ui-bongiozzo/
-    url: ../antora-ui-bongiozzo/build/ui-bundle.zip
+    url: https://gitlab.com/bongiozzo/antora-ui-bongiozzo/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    # url: ../antora-ui-bongiozzo/build/ui-bundle.zip
     snapshot: true
   supplemental_files:
   - path: ui.yml
@@ -34,7 +34,14 @@ asciidoc:
     page-pagination: ''
     page-toctitle: 'Содержание'
     page-editgittitle: 'Редактировать текст'
-# antora:
-#   extensions:
-#   - require: '@antora/lunr-extension'
-#     languages: [ru, en]
+    page-searchthedocs: 'Поиск'
+    page-navread: 'Читать'
+    page-navdiscuss: 'Обсуждать'
+    page-navwrite: 'Писать'
+antora:
+  extensions:
+  - require: '@antora/lunr-extension'
+    index_latest_only: true
+    languages: [ru,en]
+runtime:
+  cache_dir: ./.cache/antora
