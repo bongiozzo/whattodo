@@ -8,7 +8,6 @@ content:
   - url: .
     start_path: ru
     branches: HEAD
-    edit_url: https://github.com/bongiozzo/whattodo/blob/master/{path}
 ui:
   bundle:
     # url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
