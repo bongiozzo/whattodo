@@ -36,7 +36,7 @@ jobs:
       with:
         ruby-version: '3.3'
     - name: Install Gems
-      run: apt-get update && apt-get install ghostscript -y && gem install asciidoctor-pdf asciidoctor-epub3 rghost
+      run: sudo apt-get update && sudo apt-get install -y ghostscript && gem install asciidoctor-pdf asciidoctor-epub3 rghost
     - name: Generate Books
       run: |
         asciidoctor-epub3 -a epub3-stylesdir=epub -D public/ru wtd.adoc
