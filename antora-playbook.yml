@@ -7,7 +7,7 @@ output:
 content:
   sources:
   - url: .
-    start_path: RU
+    start_path: ru
     branches: HEAD
 ui:
   bundle:
