@@ -1,0 +1,20 @@
+= Что мне делать? :-)
+:version-label: RU
+Сергей Поляков, {docdate}, {version-label}
+// :front-cover-image: image:forward.jpg[Front Cover,1050,1050]
+:doctype: book
+// :docinfo:
+:publisher: Общие Цели
+:creator: [{"role"=>"author", "text"=>"Что мне делать? Чтобы быть счастливым. Коллективный текст."}]
+:favicon: favicon.png
+:toc:
+:toclevels: 3
+:toc-title: Содержание
+:imagesdir: images
+:pagenums:
+:icons: font
+:figure-caption!:
+:example-caption!:
+
+// Generated from nav.adoc 
+include::generated-toc.adoc[]

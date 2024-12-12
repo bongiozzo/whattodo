@@ -1,4 +1,6 @@
 node_modules
+generated-toc.adoc
 public
+build
 .cache
 .DS_Store
