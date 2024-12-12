@@ -1,12 +1,13 @@
 site:
   title: Общие цели
   start_page: ROOT::index.adoc
+  url: https://text.sharedgoals.ru
 output:
   dir: ./public
 content:
   sources:
   - url: .
-    start_path: ru
+    start_path: RU
     branches: HEAD
 ui:
   bundle:
@@ -35,8 +36,12 @@ asciidoc:
     page-editgittitle: 'Редактировать текст'
     page-searchthedocs: 'Поиск'
     page-navread: 'Читать'
+    page-urlpdf: 'book-wtd.pdf'
+    page-urlepub: 'book-wtd.epub'
     page-navdiscuss: 'Обсуждать'
+    page-urldiscuss:  https://t.me/bongiozzo_public
     page-navwrite: 'Писать'
+    page-urlwrite:  https://github.com/bongiozzo/whattodo/
 antora:
   extensions:
   - require: '@antora/lunr-extension'
