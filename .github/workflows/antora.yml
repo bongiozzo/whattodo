@@ -42,9 +42,9 @@ jobs:
       # Change sed regexp accordingly of Site Structure - here 2 levels with parts
       run: |
         sed -E 's/\*\* (xref:([^[]+)\[\])/include::pages\/\2[leveloffset=+1]\n/g; s/\* (.+)/= \1\n/g; 1s/^/\/\/ GENERATED - edit nav.adoc\n\n/' ru/modules/ROOT/nav.adoc > ru/modules/ROOT/generated-toc.adoc
-        asciidoctor-epub3 -a epub3-stylesdir=../../../epub -D public/ru ru/modules/ROOT/book-wtd.adoc
-        asciidoctor-pdf --theme pdf/wtd.yml -D public/ru ru/modules/ROOT/book-wtd.adoc
-        asciidoctor-pdf-optimize public/ru/book-wtd.pdf
+        asciidoctor-epub3 -a epub3-stylesdir=../../../epub -D public/ru ru/modules/ROOT/book.adoc
+        asciidoctor-pdf --theme pdf/pdf.yml -D public/ru ru/modules/ROOT/book.adoc
+        asciidoctor-pdf-optimize public/ru/book.pdf
     - name: Upload Artifacts
       uses: actions/upload-pages-artifact@v3
       with:

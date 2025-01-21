@@ -12,7 +12,7 @@ content:
 ui:
   bundle:
     # url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
-    # url: ../antora-ui-bongiozzo/build/ui-bundle.zip
+    # url: ./ui-bundle.zip
     url: https://gitlab.com/bongiozzo/antora-ui-bongiozzo/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
   # supplemental_files:
@@ -36,8 +36,8 @@ asciidoc:
     page-editgittitle: 'Редактировать текст'
     page-searchthedocs: 'Поиск'
     page-navread: 'Читать'
-    page-urlpdf: 'book-wtd.pdf'
-    page-urlepub: 'book-wtd.epub'
+    page-urlpdf: 'book.pdf'
+    page-urlepub: 'book.epub'
     page-navdiscuss: 'Обсуждать'
     page-urldiscuss:  https://t.me/bongiozzo_public
     page-navwrite: 'Писать'
