@@ -16,5 +16,6 @@
 ** xref:p2-170-opensource.adoc[]
 ** xref:p2-180-sharedgoals.adoc[]
 ** xref:p2-190-presentation.adoc[]
+** xref:p2-200-text.adoc[]
 ** xref:p2-999-death.adoc[]
 ** xref:p3-references.adoc[]
