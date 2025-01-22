@@ -476,7 +476,4 @@ image::dragon_gadget.jpg[Дракон Гад-Жет, width=75%]
 
 А может быть лучше сделать спектакль?
 
-[sidebar]
-Начато: {created-date},
-Опубликовано: {publication-date},
-Исправлено (ISO): {docdate}.
+include::../partials/time.adoc[]

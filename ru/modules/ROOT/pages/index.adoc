@@ -353,7 +353,4 @@ https://t.me/bongiozzo_public[Комментарии можно писать в 
 
 Так вместе доведём Текст до сбалансированного вида.
 
-[sidebar]
-Начато: {created-date},
-Опубликовано: {publication-date},
-Исправлено (ISO): {docdate}.
+include::../partials/time.adoc[]
