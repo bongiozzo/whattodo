@@ -34,7 +34,4 @@
 * О нарко-зависимостях и их причинах: https://www.livelib.ru/review/3535819-zanimatelnaya-narkologiya-andrej-makarevich[Занимательная наркология]
 * О поведенческих зависимостях: https://www.livelib.ru/book/1002986342-ne-otorvatsya-pochemu-nash-mozg-lyubit-vsjo-novoe-i-tak-li-eto-horosho-v-epohu-interneta-adam-alter[Не оторваться!]
 
-[sidebar]
-Начато: {created-date},
-Опубликовано: {publication-date},
-Исправлено (ISO): {docdate}.
+include::../partials/time.adoc[]

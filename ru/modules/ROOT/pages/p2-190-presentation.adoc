@@ -392,7 +392,4 @@ image::slide25.png[Задачи проектной группы]
 
 Обсудить положения этой главы и всего остального текста можно в группе https://t.me/bongiozzo_public[по ссылке].
 
-[sidebar]
-Начато: {created-date},
-Опубликовано: {publication-date},
-Исправлено (ISO): {docdate}.
+include::../partials/time.adoc[]

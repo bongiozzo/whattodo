@@ -494,7 +494,4 @@ Microsoft Consulting Services спокойно берёт со своих кли
 
 Спасибо тебе, Паша! :-)
 
-[sidebar]
-Начато: {created-date},
-Опубликовано: {publication-date},
-Исправлено (ISO): {docdate}.
+include::../partials/time.adoc[]

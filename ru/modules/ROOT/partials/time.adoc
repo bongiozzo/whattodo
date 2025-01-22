@@ -1,0 +1,4 @@
+[sidebar]
+Создано: {created-date},
+Опубликовано: {publication-date},
+Исправлено (ISO): {docdate}.

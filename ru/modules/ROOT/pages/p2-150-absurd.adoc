@@ -758,7 +758,4 @@ image::concert_girl.jpg[На концерте Гробовой доски, width
 Никогда такого не испытывал.
 И я подумал — если есть такие тексты, значит и музыка должна быть...
 
-[sidebar]
-Начато: {created-date},
-Опубликовано: {publication-date},
-Исправлено (ISO): {docdate}.
+include::../partials/time.adoc[]

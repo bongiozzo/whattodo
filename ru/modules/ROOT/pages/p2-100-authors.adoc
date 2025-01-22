@@ -101,9 +101,6 @@ _https://www.16personalities.com/profiles/588b2e7c12189[INTJ — Architect-Ст�
 
 _https://www.16personalities.com/profiles/d66aeb0678e0d[ENTP — Полемист]_
 
-// [#nicholaspushkin]
-// == Николай Пушкин
-
 [#dark_mind]
 == Артём Суржиков @dark_mind
 
@@ -152,7 +149,4 @@ https://t.me/PavelFrolovX10[Телеграм канал]
 https://www.robbo.ru/manifesto[Манифест]
 ____
 
-[sidebar]
-Начато: {created-date},
-Опубликовано: {publication-date},
-Исправлено (ISO): {docdate}.
+include::../partials/time.adoc[]

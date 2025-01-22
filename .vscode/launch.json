@@ -5,10 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "bashdb",
+            "name": "Launch via NPM",
             "request": "launch",
-            "name": "Bash-Debug (simplest configuration)",
-            "program": "${file}"
-        }
+            "runtimeArgs": [
+                "antora",
+                "antora-playbook.yml"
+            ],
+            "runtimeExecutable": "npx",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node",
+        },
     ]
 }
