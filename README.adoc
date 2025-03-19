@@ -2,7 +2,7 @@
 
 https://text.sharedgoals.ru/[Текст] в https://text.sharedgoals.ru/ru/p2-170-opensource[формате Open Source] о том, что можно делать, чтобы https://text.sharedgoals.ru/ru/p1-010-happiness#moments_of_happiness[моментов счастья] было больше.
 
-== Инструкция по созданию собственного
+== Инструкция по созданию собственного Текста
 
 https://text.sharedgoals.ru/ru/p2-200-text#text_instruction
 
