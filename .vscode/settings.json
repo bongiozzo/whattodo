@@ -33,6 +33,7 @@
         "Equium",
         "erception",
         "Estepario",
+        "ewgeniyk",
         "Fitbit",
         "Fleshgod",
         "Freestyler",
@@ -109,6 +110,7 @@
         "Λόγος",
         "айронменных",
         "Алигьери",
+        "Алтер",
         "альбионностью",
         "антиполярного",
         "апгрейдить",
@@ -178,6 +180,7 @@
         "гликированный",
         "глюкометром",
         "глюкометры",
+        "Гнозис",
         "Голдратта",
         "гомохиральности",
         "гопоты",
@@ -280,6 +283,7 @@
         "Макаревича",
         "Макиннис",
         "Макнамара",
+        "Мальбраншу",
         "манипулятивное",
         "манипулятивной",
         "манипулятивную",
@@ -511,18 +515,11 @@
         "якорения",
         "Ялома"
     ],
-    // "markdownlint.config": {
-
-    //     "MD033": false,
-    //     "MD051": false
-    // },
     "accessibility.voice.speechLanguage": "ru-RU",
     "asciidoc.preview.asciidoctorAttributes": {
+        
         "imagesdir": "../images"
     },
     // "editor.unicodeHighlight.nonBasicASCII": false,
     "editor.unicodeHighlight.ambiguousCharacters": false,
-    "files.associations": {
-        "*.yaml": "home-assistant"
-    }
 }
