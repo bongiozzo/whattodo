@@ -514,5 +514,8 @@
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "files.associations": {
         "*.yaml": "home-assistant"
-    }
+    },
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "master"
+    ]
 }
