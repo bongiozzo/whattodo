@@ -23,7 +23,7 @@
 			"$TM_SELECTED_TEXT",
 			"****\n",
 		],
-		"description": "Note info block for Asciidoc format"
+		"description": "Note info block for my text"
 	},
 
 	"xref": {
@@ -31,16 +31,47 @@
 		"body": [
 			"xref$0 [$TM_SELECTED_TEXT]",
 		],
-		"description": "xref"
+		"description": "xref link"
 	},
 
 	"image": {
 		"prefix": "image",
 		"body": [
 			".$TM_SELECTED_TEXT",
-			"image::$0 [$TM_SELECTED_TEXT]",
+			"image:$0 [$TM_SELECTED_TEXT]",
 		],
-		"description": "image"
+		"description": "image with caption"
 	},
+
+	"quote": {
+		"prefix": "quote",
+		"body": [
+			"[quote, '$0[Author]']",
+			"____",
+			"$TM_SELECTED_TEXT",
+			"____\n",
+
+		],
+		"description": "Quote with link and author"
+	},
+
+	"table": {
+		"prefix": "table",
+		"body": [
+			"[cols='1,1,1,1,1']",
+			"|===",
+			"|Header1 |Header2 |Header3 |Header4 |Header5",
+			"",
+			"|$TM_SELECTED_TEXT",
+			"|Cell2",
+			"|Cell3",
+			"|Cell4",
+			"|Cell5",
+			"",
+			"|===\n",
+		],
+		"description": "Table with header"
+	},
+
 
 }
