@@ -34,7 +34,7 @@
 
 
 ----
-images::gatner1.png
+image::gatner1.png
 
 ----
 
