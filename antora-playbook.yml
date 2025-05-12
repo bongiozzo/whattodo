@@ -1,7 +1,7 @@
 site:
-  title: Общие цели
+  title: Умный город - хороший удел
   start_page: ROOT::index.adoc
-  url: https://text.sharedgoals.ru
+  url: https://strukovd1980.github.io/marytaba/ru/
 output:
   dir: ./public
 content:
@@ -39,9 +39,9 @@ asciidoc:
     page-urlpdf: 'book.pdf'
     page-urlepub: 'book.epub'
     page-navdiscuss: 'Обсуждать'
-    page-urldiscuss:  https://t.me/bongiozzo_public
+    page-urldiscuss:  https://t.me/Denis_Strukov 
     page-navwrite: 'Писать'
-    page-urlwrite:  https://github.com/bongiozzo/whattodo/
+    page-urlwrite:  https://strukovd1980.github.io/marytaba/ru/  
 antora:
   extensions:
   - require: '@antora/lunr-extension'
