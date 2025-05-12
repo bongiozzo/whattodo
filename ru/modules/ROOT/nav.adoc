@@ -1,1 +1,2 @@
 ** xref:index.adoc[]
+** link:https://russoft.org/news/kak-tehnologii-delayut-zhitelej-schastlivee/[Progorod] 

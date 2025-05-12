@@ -1,5 +1,5 @@
 site:
-  title: Денис Струков
+  title: Город счастливых жителей
   start_page: ROOT::index.adoc
   url: https://strukovd1980.github.io/marytaba/ru/
 output:
