@@ -1,5 +1,5 @@
 site:
-  title: Город счастливых жителей
+  title: Город счастливых жителей (эксперимент)
   start_page: ROOT::index.adoc
   url: https://strukovd1980.github.io/marytaba/ru/
 output:
@@ -41,7 +41,7 @@ asciidoc:
     page-navdiscuss: 'Обсуждать'
     page-urldiscuss:  https://t.me/Denis_Strukov 
     page-navwrite: 'Писать'
-    page-urlwrite:  https://strukovd1980.github.io/marytaba/ru/  
+    page-urlwrite:  https://t.me/Denis_Strukov   
 antora:
   extensions:
   - require: '@antora/lunr-extension'
