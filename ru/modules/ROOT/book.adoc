@@ -1,6 +1,6 @@
 = Умный город - хороший удел. Город счастливых жителей
 :version-label: RU
-Струков Денис, {docdate}, {version-label}
+Струков Денис, https://strukovdenis.ru/,  {docdate}, {version-label}
 :front-cover-image: image:forward.jpg[Front Cover,1050,1050]
 :doctype: book
 :publisher: Общие Цели
