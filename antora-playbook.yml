@@ -38,6 +38,7 @@ asciidoc:
     page-navread: 'Читать'
     page-urlpdf: 'book.pdf'
     page-urlepub: 'book.epub'
+    page-urladoc: 'book.txt'
     page-navdiscuss: 'Обсуждать'
     page-urldiscuss:  https://t.me/bongiozzo_public
     page-navwrite: 'Писать'

@@ -9,6 +9,7 @@ npx antora --fetch antora-playbook.yml
 sed -E 's/\*\* (xref:([^[]+)\[\])/include::pages\/\2[leveloffset=+1]\n/g; s/\* (.+)/= \1\n/g; 1s/^/\/\/ GENERATED - edit nav.adoc\n\n/' ru/modules/ROOT/nav.adoc > ru/modules/ROOT/generated-toc.adoc
 
 # Strange behavior of styledir for epub converter
-asciidoctor-epub3 -a epub3-stylesdir=../../../epub -D public/ru $BOOKADOC
+asc-epub3 -a epub3-stylesdir=../../../epub -D public/ru $BOOKADOC
 asciidoctor-pdf --theme pdf/pdf.yml -D public/ru $BOOKADOC
 asciidoctor-pdf-optimize public/ru/book.pdf
+asciidoctor-reducer -o public/ru/book.txt $BOOKADOC 
