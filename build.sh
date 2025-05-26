@@ -12,4 +12,4 @@ sed -E 's/\*\* (xref:([^[]+)\[\])/include::pages\/\2[leveloffset=+1]\n/g; s/\* (
 asc-epub3 -a epub3-stylesdir=../../../epub -D public/ru $BOOKADOC
 asciidoctor-pdf --theme pdf/pdf.yml -D public/ru $BOOKADOC
 asciidoctor-pdf-optimize public/ru/book.pdf
-asciidoctor-reducer -o public/ru/book.txt $BOOKADOC 
+asciidoctor-reducer -o public/ru/book.adoc $BOOKADOC 

@@ -45,7 +45,7 @@ jobs:
         asciidoctor-epub3 -a epub3-stylesdir=../../../epub -D public/ru ru/modules/ROOT/book.adoc
         asciidoctor-pdf --theme pdf/pdf.yml -D public/ru ru/modules/ROOT/book.adoc
         asciidoctor-pdf-optimize public/ru/book.pdf
-        asciidoctor-reducer -o public/ru/book.txt ru/modules/ROOT/book.adoc 
+        asciidoctor-reducer -o public/ru/book.adoc ru/modules/ROOT/book.adoc 
     - name: Upload Artifacts
       uses: actions/upload-pages-artifact@v3
       with:
