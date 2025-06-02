@@ -12,6 +12,7 @@
 ** xref:p2-130-local.adoc[]
 ** xref:p2-140-digital.adoc[]
 ** xref:p2-150-absurd.adoc[]
+** xref:p2-155-photo.adoc[]
 ** xref:p2-160-routine.adoc[]
 ** xref:p2-170-opensource.adoc[]
 ** xref:p2-180-sharedgoals.adoc[]
