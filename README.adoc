@@ -1,3 +1,5 @@
+link:https://deepwiki.com/bongiozzo/whattodo[image:https://deepwiki.com/badge.svg[Ask DeepWiki]]
+
 = Что мне делать? :-)
 
 https://text.sharedgoals.ru/[Текст] в https://text.sharedgoals.ru/ru/p2-170-opensource[формате Open Source] о том, что можно делать, чтобы https://text.sharedgoals.ru/ru/p1-010-happiness#moments_of_happiness[моментов счастья] было больше.
