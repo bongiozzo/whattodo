@@ -4,4 +4,4 @@ version: ru
 asciidoc:
   attributes:
 nav:
-modules/ROOT/nav.adoc
+- modules/ROOT/nav.adoc
