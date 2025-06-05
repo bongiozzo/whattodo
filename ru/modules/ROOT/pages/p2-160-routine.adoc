@@ -396,6 +396,13 @@ IBM и множество других компаний, которые соде
 
 https://text.sharedgoals.ru/ru/_attachments/genai.html[По этой ссылке доработанная презентация,window=_blank].
 
-xref:../attachments/genai.adoc[А тут исходник совместного творчества,window=_blank].
+.А это исходник совместного творчества:
+[%collapsible]
+====
+[source,asciidoc]
+----
+include::../attachments/genai.adoc[]
+----
+====
 
 include::../partials/time.adoc[]
