@@ -1,4 +1,3 @@
-[transition=zoom]
 = Между Страхом и Призванием
 Serge Polyakov
 :icons: font
@@ -6,6 +5,18 @@ Serge Polyakov
 :revealjs_transition: convex
 :revealjs_center: false
 :revealjs_history: true
+:revealjs_loop: true
+
+[.title-slide-style]
+++++
+<style>
+section.title h1 {
+  font-size: 3em !important;
+}
+</style>
+++++
+
+image::qrchimpX256.png[]
 
 == Черная большая собака
 
@@ -56,9 +67,10 @@ image::https://s1.livelib.ru/boocover/1005482422/o/c756/Viktor_Frankl__Skazat_zh
 
 [.notes]
 --
-* Если с рационализацией можно 
+* Если с рационализацией и усредненными подходами Человеку с ИИ тягаться уже нереально, то стоит развиваться в другом направлении
 * Книга номер 1 в Психологии про жизнь в экстремальных рацио условиях говорит о том, что выжили только те, кто нашел возможность Верить
 * Спустя 25 лет Виктор Франкл говорил об умышленной идеализации своих поступков, чтобы достигать сбалансированных Целей с учётом поправки на устоявшийся ветер Рацио подхода
+* Чтобы не улететь в космос с идеализацией стоит самому чувствовать все технологические нюансы – эта презентация сделана вместе с ИИ например
 --
 
 == Рельсы для ИИ
@@ -69,7 +81,7 @@ image::https://s1.livelib.ru/boocover/1005482422/o/c756/Viktor_Frankl__Skazat_zh
 ** Поиск/Wiki -> Промпт
 ** Best practices consultant
 * ИИ: Ослабление критического мышления
-** Проверка источников!
+** Проверка источников и тестирование!
 
 [.notes]
 --
@@ -106,7 +118,7 @@ image::https://s1.livelib.ru/boocover/1005482422/o/c756/Viktor_Frankl__Skazat_zh
 * https://text.sharedgoals.ru/ru/p2-140-digital#summary_and_references[KPI – % перевода рутины на ИИ]
 * https://text.sharedgoals.ru/ru/p2-180-sharedgoals#telegram_principles[Рабочая группа с ИИ-агентом в Telegram]
 * https://text.sharedgoals.ru/ru/p2-170-opensource#freedom_of_choice[Мультиагенты и open source решения] (https://www.langchain.com/[LangChain])
-* Сообщество и найм специалистов - ССЫЛКА
+* https://plan.aisa.ru/[Платформа, Сообщество и Специалисты]
 
 [.notes]
 --
@@ -122,5 +134,8 @@ image::solaris.png[width=50%]
 
 [.notes]
 --
-* Попросил MidJourney нарисовать картину по мотивам цитаты из Соляриса, которая отражает, что Человеку всё равно важен прежде всего Человек, как собственное отражение.
+* Попросил друга, который уже набил руку с MidJourney и разбирается в живописи, нарисовать картину по мотивам цитаты из Солярисе.
+* Человеку важен прежде всего Человек, как собственное отражение.
+* Поиск различий и совпадений, пример для собственного роста
+* Образ Бога
 --
