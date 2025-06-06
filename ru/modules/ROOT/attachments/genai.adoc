@@ -1,4 +1,4 @@
-= Между Страхом и Призванием
+= Вкалывают роботы Счастлив человек
 Serge Polyakov
 :icons: font
 :revealjs_theme: moon
@@ -11,7 +11,7 @@ Serge Polyakov
 ++++
 <style>
 section.title h1 {
-  font-size: 3em !important;
+  font-size: 2em !important;
 }
 </style>
 ++++
