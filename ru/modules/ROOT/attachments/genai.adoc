@@ -1,3 +1,5 @@
+// Presentation is built by
+// asciidoctor-revealjs -a revealjsdir=https://cdn.jsdelivr.net/npm/reveal.js@5.2.0 genai.adoc
 = Вкалывают роботы Счастлив человек
 Serge Polyakov + Perplexity
 :icons: font
@@ -16,7 +18,7 @@ section.title h1 {
 </style>
 ++++
 
-image::qrchimpX256.png[]
+image::https://text.sharedgoals.ru/ru/_images/qrchimpX256.png[]
 
 [.notes]
 --
@@ -145,11 +147,11 @@ image::https://s1.livelib.ru/boocover/1005482422/o/c756/Viktor_Frankl__Skazat_zh
 
 == Человеку Нужен Человек
 
-image::solaris.png[width=50%]
+image::https://text.sharedgoals.ru/ru/_images/solaris.png[width=50%]
 
 [.notes]
 --
-* Попросил друга, который уже набил руку с MidJourney и разбирается в живописи, нарисовать картину по мотивам цитаты из Солярисе.
+* Попросил друга, который уже набил руку с MidJourney и любит живопись, нарисовать картину по мотивам цитаты из «Соляриса».
 * Человеку важен прежде всего Человек, как собственное отражение.
 * Поиск различий и совпадений, вектор для собственного роста
 * Образ Бога
