@@ -396,7 +396,7 @@ IBM и множество других компаний, которые соде
 Пригласили поделиться на конференции мнением о перспективах Искусственного Интеллекта в бизнес процессах.
 ****
 
-Начал с того, что уже привычно попросил Perplexity https://www.perplexity.ai/search/generate-presentation-in-ascii-XisF6wTiQAGmPS4KU5QA7Q[покритиковать мою точку зрения, построенную на тезисах Текста, и оформить всё в виде презентации].
+Начал с того, что уже привычно попросил Perplexity https://www.perplexity.ai/search/generate-presentation-on-russi-Tc7M_aBcQyW1Slqlvo9C4Q#0[покритиковать мою точку зрения, построенную на тезисах Текста, и оформить всё в виде презентации].
 
 https://text.sharedgoals.ru/ru/_attachments/genai.html[По этой ссылке доработанная презентация,window=_blank].
 
