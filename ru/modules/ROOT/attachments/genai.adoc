@@ -115,11 +115,10 @@ image::https://s1.livelib.ru/boocover/1005482422/o/c756/Viktor_Frankl__Skazat_zh
 
 [%step]
 * https://text.sharedgoals.ru/ru/p2-160-routine#routine_as_disease[LLM + RPA убивают рутину (100 1000 часов)]
-* Next: Large Actions Models
+* https://text.sharedgoals.ru/ru/p2-160-routine#smart_assistants[Next: Large Actions Models]
 * Подпись требует ответственного Человека
 * «Джуны» не нужны – нужны «горящие» спецы
 * ИИ: Может привести к социальному неравенству
-* Может!
 * Конфиденциальность блокирует ИИ?
 * https://text.sharedgoals.ru/ru/p2-170-opensource#freedom_of_choice[Использовать Open Source наработки]
 
