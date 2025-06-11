@@ -9,7 +9,7 @@ Serge Polyakov + Perplexity
 :revealjs_history: true
 :revealjs_loop: true
 
-// Keep this in adoc for demonstration
+// Keep this in adoc for demonstration purposes
 [.title-slide-style]
 ++++
 <style>
@@ -200,6 +200,7 @@ image::https://s1.livelib.ru/boocover/1005482422/o/c756/Viktor_Frankl__Skazat_zh
 * https://text.sharedgoals.ru/ru/p2-180-sharedgoals#telegram_principles[Рабочая группа с ИИ-агентом в Telegram]
 * https://text.sharedgoals.ru/ru/p2-170-opensource#freedom_of_choice[Мультиагенты и open source решения]
 * https://plan.aisa.ru/[Платформа] и https://shuttlelink.ru/topteamai[Специалисты]
+* https://text.sharedgoals.ru/ru/p2-180-sharedgoals#ai_tool[Общие Цели – платформа сверхинтеллекта]
 
 [.notes]
 --
@@ -208,6 +209,7 @@ image::https://s1.livelib.ru/boocover/1005482422/o/c756/Viktor_Frankl__Skazat_zh
 * Рабочая группа амбассадоров, которые совместно с ИИ определяют рутинные процессы в работе компании и отбирают способы их перевода на GenAI
 * Open Source платформы, которая позволяют обойтись без онлайн сервисов в своей инфраструктуре без сверх мощностей и с любыми моделями – начать общаться с ИИ по теме LangChain, Spring AI
 * Платформа, чтобы начать применять в задачах без переключения контекста и найм специалистов, которые помогут сделать первые шаги
+* Глобальная платформа с использованием ИИ, которая работает на идеализированные цели общества – Shared Goals 
 --
 
 == Человеку Нужен Человек
