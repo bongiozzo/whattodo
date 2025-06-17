@@ -98,9 +98,9 @@ image::https://text.sharedgoals.ru/ru/_images/qrchimpX256.png[]
 == Сергей Поляков
 
 [%step]
-* https://text.sharedgoals.ru/ru/p1-040-unhappiness#money_for_nothing[1997: Webzavod]
-* https://text.sharedgoals.ru/ru/p1-020-call#dream_job_checklist[2007: Microsoft]
-* https://text.sharedgoals.ru/ru/p2-180-sharedgoals#shared_goals[2016: Ростех – Russian IT Export]
+* https://text.sharedgoals.ru/ru/p1-040-unhappiness#money_and_business[1997: Webzavod]
+* https://text.sharedgoals.ru/ru/p1-040-unhappiness#money_and_enterprise[2007: Microsoft]
+* https://text.sharedgoals.ru/ru/p2-180-sharedgoals#cross_culture_export[2016: Ростех – Russian IT Export]
 * https://text.sharedgoals.ru/ru/p2-130-local#mini_app_vkontakte[2020: Цифровой Петербург]
 * https://text.sharedgoals.ru/ru/[Что мне делать? :-)]
 * https://text.sharedgoals.ru/ru/p2-100-authors#bongiozzo[2023: Соавтор Open Source Текста]
@@ -155,7 +155,7 @@ Dream Job приглашение в Microsoft
 * ИИ: Отличный мотиватор!
 * Переизбыток информации
 * Что делать?
-* https://text.sharedgoals.ru/ru/p1-040-unhappiness#information_flow[Информационный поток]
+* https://text.sharedgoals.ru/ru/p1-040-unhappiness#gadgets[Информационный поток]
 
 [.column.is-one-quarter]
 image::https://s1.livelib.ru/boocover/1002986342/o/3a01/Adam_Alter__Ne_otorvatsya_Pochemu_nash_mozg_lyubit_vsjo_novoe_i_tak_li_eto_horos.jpeg[]
@@ -182,7 +182,7 @@ image::https://s1.livelib.ru/boocover/1001459912/o/cf2a/Nik_Bostrom__Iskusstvenn
 * https://text.sharedgoals.ru/ru/p1-030-time#happy_tomorrow[Решение широкого спектра задач]
 * Быстрее, Шире и Глубже!
 * https://text.sharedgoals.ru/ru/p2-160-routine#brave_new_world[2027: «Удалёнщики» под угрозой]
-* https://text.sharedgoals.ru/ru/p2-160-routine#routine_as_disease[LLM + RPA «убивают» рутину]
+* https://text.sharedgoals.ru/ru/p2-160-routine#robots_in_spb[LLM + RPA «убивают» рутину]
 * https://text.sharedgoals.ru/ru/p2-160-routine#smart_assistants[Next: Large Actions Models]
 * ИИ: Эмоциональный интеллект!?
 
@@ -337,7 +337,7 @@ image::https://s1.livelib.ru/boocover/1005482422/o/c756/Viktor_Frankl__Skazat_zh
 * «Джуны» не нужны – нужны «горящие» спецы
 * Ответственность равно Человек
 * https://text.sharedgoals.ru/ru/p2-180-sharedgoals#telegram_principles[Рабочая группа с ИИ-агентом в Telegram]
-* https://text.sharedgoals.ru/ru/p2-140-digital#summary_and_references[KPI руководителя: % рутины на ИИ]
+* https://text.sharedgoals.ru/ru/p2-140-digital#continual_improvement[KPI руководителя: % рутины на ИИ]
 * https://text.sharedgoals.ru/ru/p2-170-opensource#freedom_of_choice[Open Source мультиагентная платформа]
 * https://plan.aisa.ru/[Платформа] и https://shuttlelink.ru/aiexperts[Специалисты]
 * https://text.sharedgoals.ru/ru/p2-180-sharedgoals#ai_tool[Общие Цели – платформа сверхинтеллекта]
