@@ -277,7 +277,7 @@ image::https://s1.livelib.ru/boocover/1005482422/o/c756/Viktor_Frankl__Skazat_zh
 [.column]
 * https://www.livelib.ru/review/4226059-skazat-zhizni-da-psiholog-v-kontslagere-sbornik-viktor-frankl[Книга номер 1 в Психологии]
 * https://text.sharedgoals.ru/ru/p2-180-sharedgoals#psychology_of_belief[1947: Важность навыков Веры] 
-* https://text.sharedgoals.ru/ru/p2-180-sharedgoals#psychology_of_belief[1972: Идеализация как поправка]
+* https://text.sharedgoals.ru/ru/p2-180-sharedgoals#idealization[1972: Идеализация как поправка]
 * https://text.sharedgoals.ru/ru/p2-110-system#successful_salesmen[Система координат для AGI]
 * ИИ: Отрыв от реальности?
 
