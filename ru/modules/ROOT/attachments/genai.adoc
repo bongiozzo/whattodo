@@ -226,10 +226,10 @@ image::https://s1.livelib.ru/boocover/1001128870/o/47ab/__Strategicheskaya_psiho
 [.column]
 * https://text.sharedgoals.ru/ru/p2-130-local#mini_app_vkontakte[Диалог с петербуржцами]
 * https://text.sharedgoals.ru/ru/p1-010-happiness#happiness_model[Количественная модель счастья]
-* https://text.sharedgoals.ru/ru/p2-180-sharedgoals#human_capital_book[4 типа мышления:]
-* https://text.sharedgoals.ru/ru/p2-180-sharedgoals#psychology_of_mind[Разум]
-* https://text.sharedgoals.ru/ru/p2-180-sharedgoals#psychology_of_will[Воля]
-* https://text.sharedgoals.ru/ru/p2-180-sharedgoals#psychology_of_unconscious[Чувства]
+* https://text.sharedgoals.ru/ru/p2-120-school#human_capital_book[4 типа мышления:]
+* https://text.sharedgoals.ru/ru/p2-120-school#psychology_of_mind[Разум]
+* https://text.sharedgoals.ru/ru/p2-120-school#psychology_of_will[Воля]
+* https://text.sharedgoals.ru/ru/p2-120-school#psychology_of_unconscious[Чувства]
 * и ...
 
 [.notes]
@@ -276,8 +276,8 @@ image::https://s1.livelib.ru/boocover/1005482422/o/c756/Viktor_Frankl__Skazat_zh
 
 [.column]
 * https://www.livelib.ru/review/4226059-skazat-zhizni-da-psiholog-v-kontslagere-sbornik-viktor-frankl[Книга номер 1 в Психологии]
-* https://text.sharedgoals.ru/ru/p2-180-sharedgoals#psychology_of_belief[1947: Важность навыков Веры] 
-* https://text.sharedgoals.ru/ru/p2-180-sharedgoals#idealization[1972: Идеализация как поправка]
+* https://text.sharedgoals.ru/ru/p2-120-school#psychology_of_belief[1947: Важность навыков Веры] 
+* https://text.sharedgoals.ru/ru/p2-120-school#idealization[1972: Идеализация как поправка]
 * https://text.sharedgoals.ru/ru/p2-110-system#successful_salesmen[Система координат для AGI]
 * ИИ: Отрыв от реальности?
 
