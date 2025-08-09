@@ -389,8 +389,7 @@ ____
 Навык, без которого, очень легко xref:p1-040-unhappiness.adoc#egocentrism[стать несчастливым].
 Или другая формула, которая приводит к схожим выводам:
 
-[quote,'https://www.livelib.ru/quote/42810513-mysli-na-kazhdyj-den-lev-tolstoj
-[Лев Толстой]']
+[quote,'https://www.livelib.ru/quote/42810513-mysli-na-kazhdyj-den-lev-tolstoj[Лев Толстой]']
 ____
 Человек есть дробь.
 
