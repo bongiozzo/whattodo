@@ -1,2 +1,3 @@
 ** xref:index.adoc[]
-** link:https://russoft.org/news/kak-tehnologii-delayut-zhitelej-schastlivee/[Progorod - первый круглый стол] 
+** link:https://russoft.org/news/kak-tehnologii-delayut-zhitelej-schastlivee/[Progorod - первый круглый стол]
+** link:https://github.com/strukovd1980/marytaba/blob/master/ru/modules/ROOT/pages/index.adoc#%D1%81%D1%87%D0%B0%D1%81%D1%82%D0%BB%D0%B8%D0%B2%D1%8B%D0%B5-%D0%B6%D0%B8%D1%82%D0%B5%D0%BB%D0%B8[Примеры для жителей городов] 
