@@ -1,4 +1,4 @@
 ** xref:index.adoc[]
 ** link:https://russoft.org/news/kak-tehnologii-delayut-zhitelej-schastlivee/[Progorod - первый круглый стол]
 ** link:https://happycities.the-csr.ru/ru/#_счастливые_жители[Примеры для жителей городов] 
-** link:https://happycities.the-csr.ru/ru/#_#_примеры_для_госсектора[Примеры для госсектора]
+** link:https://happycities.the-csr.ru/ru/#_примеры_для_госсектора[Примеры для госсектора]
