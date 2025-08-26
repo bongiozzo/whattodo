@@ -1,6 +1,0 @@
-.yfm-note.yfm-accent-info {
-    padding: 20px 20px 20px 30px;
-}
-.yfm .yfm-note.yfm-accent-info > p:first-child::before {
-    content: none
-}
