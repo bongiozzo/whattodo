@@ -719,7 +719,7 @@ ____
 Любопытно было читать о https://www.livelib.ru/quote/48263488-svyatoj-protiv-lva-ioann-kronshtadtskij-i-lev-tolstoj-istoriya-odnoj-vrazhdy-pavel-basinskij[похожих рассуждениях Льва Толстого], которого не мог выносить Иоанн Кронштадтский.
 Мыслили они во https://www.livelib.ru/quote/48261079-svyatoj-protiv-lva-ioann-kronshtadtskij-i-lev-tolstoj-istoriya-odnoj-vrazhdy-pavel-basinskij[многом одинаково], но шли к xref:psychology_of_will[Вере] с разных сторон.
 
-Оттого было особенно интересно разобраться, что xref:p1-030-time.adoc#happy_tomorrow[было их общей целью и в чём были корневые отличия их сознания] при очевидно xref:p1-020-call.adoc#mbti_personalities[разных психотипах] и разных начальных условиях при рождении.
+Оттого было особенно интересно разобраться, что xref:p1-030-time.adoc#shared_vision[было их общей целью и в чём были корневые отличия их сознания] при очевидно xref:p1-020-call.adoc#mbti_personalities[разных психотипах] и разных начальных условиях при рождении.
 
 Иоанн поднимался с социального низа, изначально xref:psychology_of_belief[поверив в Таинство церковных обрядов], он развивал свой xref:psychology_of_mind[Разум] и укреплял xref:p2-110-system.adoc#paradox[Парадоксальный баланс] внутри.
 
