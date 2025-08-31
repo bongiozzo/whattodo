@@ -3,4 +3,5 @@ generated-toc.adoc
 public
 build
 .cache
+.idea
 .DS_Store
