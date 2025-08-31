@@ -3611,7 +3611,6 @@ https://highlightjs.org/
       && o[prop] !== null
       && (typeof o[prop] === "object" || typeof o[prop] === "function")
       // IE11 fix: https://github.com/highlightjs/highlight.js/issues/2318
-      // TODO: remove in the future
       && (objIsFunction ? prop !== 'caller' && prop !== 'callee' && prop !== 'arguments' : true)
       && !Object.isFrozen(o[prop])) {
         deepFreeze(o[prop]);

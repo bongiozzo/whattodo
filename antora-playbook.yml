@@ -38,11 +38,14 @@ asciidoc:
     page-navread: 'Читать'
     page-urlpdf: 'book.pdf'
     page-urlepub: 'book.epub'
-    page-urladoc: 'book.adoc'
+    page-urladoc: 'book.txt'
     page-navdiscuss: 'Обсуждать'
     page-urldiscuss:  https://t.me/bongiozzo_public
     page-navwrite: 'Писать'
     page-urlwrite:  https://github.com/bongiozzo/whattodo/
+    page-navcompanions: 'Разум-ИИ'
+    page-urldeepwiki:  https://deepwiki.com/bongiozzo/whattodo
+    # page-urlperplexity:  https://www.perplexity.ai/spaces/shared-goals-t..MKe7ISMSaS9lc81qstw
 antora:
   extensions:
   - require: '@antora/lunr-extension'
