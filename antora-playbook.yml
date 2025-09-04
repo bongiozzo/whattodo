@@ -43,7 +43,7 @@ asciidoc:
     page-urldiscuss:  https://t.me/bongiozzo_public
     page-navwrite: 'Писать'
     page-urlwrite:  https://github.com/bongiozzo/whattodo/
-    page-navcompanions: 'Разум-ИИ'
+    page-navcompanions: 'РазумИЙ'
     page-urldeepwiki:  https://deepwiki.com/bongiozzo/whattodo
     # page-urlperplexity:  https://www.perplexity.ai/spaces/shared-goals-t..MKe7ISMSaS9lc81qstw
 antora:
