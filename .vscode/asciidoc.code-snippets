@@ -29,7 +29,7 @@
 	"xref": {
 		"prefix": "xref",
 		"body": [
-			"xref$0 [$TM_SELECTED_TEXT]",
+			"xref$0[$TM_SELECTED_TEXT]",
 		],
 		"description": "xref link"
 	},
@@ -38,7 +38,7 @@
 		"prefix": "image",
 		"body": [
 			".$TM_SELECTED_TEXT",
-			"image:$0 [$TM_SELECTED_TEXT]",
+			"image$0[$TM_SELECTED_TEXT]",
 		],
 		"description": "image with caption"
 	},
