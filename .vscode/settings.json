@@ -675,4 +675,5 @@
     // "editor.unicodeHighlight.nonBasicASCII": false,
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "cSpell.enabled": true,
+    "editor.suggest.matchOnWordStartOnly": false,
 }
