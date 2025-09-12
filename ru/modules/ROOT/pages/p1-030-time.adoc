@@ -1,6 +1,7 @@
 = Особенности нашего времени
 :created-date: 21.06.2023
 :publication-date: 30.10.2023
+:revdate: 09.09.2025
 :description: Изменение восприятия Счастья в обществе на протяжении нескольких сотен лет.
 
 [#human_body_for_happiness]

@@ -1,6 +1,7 @@
 = Страна и страх
 :created-date: 21.06.2023
 :publication-date: 15.11.2023
+:revdate: 09.09.2025
 :description: Распространённая «причина» Несчастья — Страна, в которой мы живём. Другая частая причина — постоянный Страх.
 :url-truesize: https://www.thetruesize.com/#?borders=1~!MTc1NzY1ODE.OTIwODE3*MzYwMDAwMDA(MA~!CONTIGUOUS_US*MjkzNjQ1OA.MTY1NDcwNTg(MTc1)MA~!IN*ODU1ODk0Mw.MTU5ODkzNjE)Mg~!CN*NDAzNjc1Mw.MTcyMzQ4MTk)Mw~!VN*NzM2NDMzNA.MTQzNzExNjc)MA~!ID*Nzc5ODYxMQ.MTY5NzA5Nzk)MQ
 
