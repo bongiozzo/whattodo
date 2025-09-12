@@ -1,6 +1,7 @@
 = Open Source — свобода в движении к Любви
 :created-date: 07.09.2023
 :publication-date: 12.04.2024
+:revdate: 09.09.2025
 :description: Создание шедевров совместно с единомышленниками. Это ли не Счастье? Так устроена концепция Open Source.
 
 [#interview_is_easy_text_writing]

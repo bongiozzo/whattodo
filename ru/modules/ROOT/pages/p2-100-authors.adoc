@@ -1,6 +1,7 @@
 = Экватор
 :created-date: 03.08.2023
 :publication-date: 24.11.2023
+:revdate: 09.09.2025
 :description: Представление соавторов в начале практической части Текста.
 
 [#practical_part]

@@ -1,6 +1,7 @@
 = Be happy or Die!
 :created-date: 12.02.2024
 :publication-date: 04.03.2024
+:revdate: 09.09.2025
 :description: Рассуждения о связи Счастья с психологией Бессознательного на примере энергетически заряженной тяжёлой Музыки.
 
 [#absurd_as_salvation]

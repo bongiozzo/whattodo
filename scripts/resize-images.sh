@@ -1,5 +1,8 @@
 #!/bin/bash
 
+root="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$root"
+
 find . -type f \( -iname "*.jpg" -o -iname  "*.png" \) -exec identify -format "%B %f: %wx%h\n" {} + | sort -h
 for img in *.jpg; do
   # Get image width and height

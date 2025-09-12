@@ -1,6 +1,7 @@
 = Общие Цели: Презентация
 :created-date: 21.10.2023
 :publication-date: 26.06.2024
+:revdate: 09.09.2025
 :description: Сжатый пересказ предыдущей главы и всего Текста в виде презентации.
 
 [#time_possibilities]

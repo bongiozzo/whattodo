@@ -1,5 +1,9 @@
 # docker run -u $(id -u) -v $PWD:/antora:Z --rm -t whattodo:latest antora-playbook.yml
 export CI=true
+
+root="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$root"
+
 BOOKADOC="ru/modules/ROOT/book.adoc"
 rm -fr ./public
 npx antora --fetch antora-playbook.yml

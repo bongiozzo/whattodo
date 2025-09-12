@@ -9,4 +9,6 @@ quote:
   unbreakable: true
 verse:
   font-size: $base_font_size
-
+heading:
+  part:
+    break-after: avoid

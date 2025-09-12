@@ -1,6 +1,7 @@
 = Я Здесь Живу
 :created-date: 18.06.2023
 :publication-date: 24.12.2023
+:revdate: 09.09.2025
 :description: Значение места жительства в ощущении Счастья и что с этим можно делать?
 
 [#unhappy_foreigners]
