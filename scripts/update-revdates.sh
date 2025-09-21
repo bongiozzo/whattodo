@@ -22,6 +22,11 @@ find ru/modules/ROOT/pages -type f -name "*.adoc" | while read -r f; do
     continue
   fi
 
+  # Skip if no changes since last commit
+  if git diff --quiet HEAD -- "$f"; then
+    continue
+  fi
+
   # Replace revdate in file with modified date in dd.mm.YYYY
   sed -i '' "1,/:revdate:/s|^:revdate:.*$|:revdate: $mod_ddmmyyyy|" "$f"
   echo "Updated revdate in $f to $mod_ddmmyyyy"
