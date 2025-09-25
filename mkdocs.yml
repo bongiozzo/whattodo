@@ -1,0 +1,214 @@
+site_name: 'Общие цели'
+site_url: https://text.sharedgoals.ru/ru/
+site_author: Serge Polyakov
+copyright: Общие цели, 2020-2025
+site_description: 'Что мне делать? :-) Текст в концепции Общих Целей'
+repo_url: https://github.com/bongiozzo/whattodo
+repo_name: bongiozzo/whattodo
+edit_uri: blob/master/docs/
+
+docs_dir: text/ru
+nav:
+  - index.md 
+  - Наблюдения:
+    - p1-010-happiness.md
+    - p1-020-call.md
+    - p1-030-time.md
+    - p1-040-unhappiness.md
+    - p1-050-country.md
+  - Практика:
+    - p2-100-authors.md
+    - p2-110-system.md
+    - p2-120-school.md
+    - p2-130-local.md
+    - p2-140-digital.md
+    - p2-150-absurd.md
+    - p2-155-photo.md
+    - p2-160-routine.md
+    - p2-170-opensource.md
+    - p2-180-sharedgoals.md
+    - p2-190-presentation.md
+    - p2-200-text.md
+    - p2-999-death.md
+    - p3-references.md
+  - Друзья:
+    - 'Город счастливых людей ↗': https://happycities.the-csr.ru/
+  - Читать Текст:
+    - PDF ↓: book.pdf
+    - EPUB ↓: book.epub
+    - Markdown ↓: book.md
+  - Обсуждать Текст:
+    - Telegram группа ↗: https://t.me/bongiozzo_public 
+  - Писать свой Текст:
+    - Инструкция: p2-200-text.md#text_instruction
+  - Помощник РазумИЙ:
+    - DeepWiki ↗: https://deepwiki.com/bongiozzo/whattodo
+
+theme:
+  name: material
+  logo: img/logo-dark.svg
+  favicon: img/favicon.png
+  language: ru
+  custom_dir: overrides
+  features:
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.tracking
+    # - navigation.sections
+    # - navigation.expand
+    - navigation.top
+    - navigation.footer
+    # - navigation.prune
+    - toc.follow
+    # - toc.integrate
+    - search.highlight
+    - search.suggest
+    - search.share
+    - content.action.view
+    - content.action.edit
+  font: 
+    text: Noto Serif
+
+  palette:
+    # - primary: indigo
+    # - accent: indigo
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+plugins:
+  - search
+  # - macros
+  # - privacy # fix for discussion
+  - social:
+      # cards_layout_options:
+      # background_image: layouts/background.png
+        # background_color: transparent
+  # - i18n:
+  #     docs_structure: folder
+  #     languages:
+  #       - locale: ru
+  #         default: true
+  #         name: Русский
+  #         build: true
+  #     languages:
+  #       - locale: en
+  #         default: true
+  #         name: English
+  #         build: true
+  # - mkdocs_with_pdf
+  # - document-dates: # fetch-depth: 0 to the actions
+  # - document-dates:
+  #     position: bottom
+  #     date_format: '%d.%m.%Y'
+  #     type: date
+  #     show_author: true
+  - to-pdf:
+      download_link: header
+      output_path: book.pdf
+      cover_title: Что мне делать? :-)
+      cover_subtitle: Текст в концепции Общих Целей
+      toc_title: Содержание
+      # TODO make Serif font
+
+markdown_extensions:
+
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.blocks.caption
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  analytics:
+    provider: google
+    property: G-DD5EPVVX1K
+    # feedback: # doesn't work !
+    #   title: Страница полезна?
+    #   ratings:
+    #     - icon: material/heart
+    #       name: Всё понятно
+    #       data: 1
+    #       note: >-
+    #         Спасибо!
+    #     - icon: material/heart-broken
+    #       name: Этот текст можно улучшить
+    #       data: 0
+    #       note: >-
+    #         Спасибо за отзыв! Помогите нам <a href="https://github.com/bongiozzo/whattodo/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">доработать страницу</a>.
+  # alternate:
+    #   - name: English
+    #     link: /en/ 
+    #     lang: en
+    #   - name: Русский
+    #     link: /ru/
+    #     lang: ru
+  social:
+    - icon: fontawesome/brands/telegram
+      name: bongiozzo в Telegram
+      link: https://t.me/bongiozzo_public
+  consent:
+    title: Согласие на использование cookie
+    description: >- 
+      Мы используем cookie для распознавания повторных посещений,
+      а также, чтобы понять – находите ли Вы то, что ищете?
+      Спасибо, что делаете наш Текст лучше!
+
+# TODO Customize quote admonition
+#   - icon: material/format-quote-close
+extra_css:
+  - assets/css/extra.css
+
+# TODO Make annotation for code of presentations?
+# TODO Check math functionality
+# TODO Use Critic for deleted text? I live here
+
+# hooks:
+#   - hooks/socialmedia.py
+
+site_dir: public
+# epub support

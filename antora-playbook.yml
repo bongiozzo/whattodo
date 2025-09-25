@@ -48,8 +48,13 @@ asciidoc:
     # page-urlperplexity:  https://www.perplexity.ai/spaces/shared-goals-t..MKe7ISMSaS9lc81qstw
 antora:
   extensions:
-  - require: '@antora/lunr-extension'
+  # - require: '@antora/lunr-extension'
+  - require: '../antora-lunr-extension'
     index_latest_only: true
+    anchor_sections: true
     languages: [ru,en]
+    # - ru:
+    extra_stop_words: ['Создано', 'Опубликовано', 'Дополнено']
+    # - en
 runtime:
   cache_dir: ./.cache/antora

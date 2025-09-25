@@ -1,0 +1,16 @@
+.md-typeset .admonition, 
+.md-typeset details {
+    /* font-size: inherit; */
+    font-size: 0.75rem;
+    /* font-style: italic; */
+}
+
+.md-typeset .admonition.quote {
+    font-style: italic;
+}
+
+.md-typeset .admonition.quote ins {
+    display: block;
+    text-align: right;
+    margin-top: 0.5em;
+}
