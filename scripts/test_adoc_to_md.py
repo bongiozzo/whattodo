@@ -65,6 +65,11 @@ def test_front_matter_created():
     if image_block not in content:
         failures.append('Image block with caption missing or incorrect in output .md file')
 
+    # Check for string with underscores in URL
+    expected_string = 'в какой-то момент отступит благодаря'
+    if expected_string not in content:
+        failures.append(f"Expected string '{expected_string}' missing in output .md file")
+
     if failures:
         print('\nTEST FAILURES:')
         for fail in failures:

@@ -44,6 +44,19 @@ def convert_headings(line):
 def convert_bold_italic(line):
     # *bold* or _italic_ to **bold** or *italic*
     # Avoid converting inside markdown links/images: [text](url)
+    
+    # First, protect URLs in markdown links from underscore conversion
+    # by temporarily replacing them with placeholders
+    url_placeholders = []
+    def protect_urls(match):
+        url = match.group(1)
+        placeholder = f'<<<URLPLACEHOLDER{len(url_placeholders)}>>>'
+        url_placeholders.append(url)
+        return f']({placeholder})'
+    
+    # Protect URLs in markdown links
+    line = re.sub(r'\]\(([^)]+)\)', protect_urls, line)
+    
     def repl_bold(m):
         # Only replace if not inside []()
         if re.search(r'\[.*\]\(.*\)', line):
@@ -53,6 +66,12 @@ def convert_bold_italic(line):
     line = re.sub(r'_(.*?)_', r'*\1*', line)
     # Convert *bold* to **bold** (adoc to md)
     line = re.sub(r'\*(.*?)\*', repl_bold, line)
+    
+    # Restore protected URLs
+    for i, url in enumerate(url_placeholders):
+        placeholder = f'<<<URLPLACEHOLDER{i}>>>'
+        line = line.replace(f']({placeholder})', f']({url})')
+    
     return line
 
 def convert_links(line):
@@ -313,22 +332,23 @@ def main():
         # If not consumed by any block, process for links, images, bold/italic
         if not line_consumed:
             orig_line = line
-            line = convert_links(line)
-            # Remove lines containing unwanted anchors after link conversion
-            if 'what_is_happiness' in line or 'brief_happiness_model' in line:
-                line_consumed = True
-            # If xref: was converted anywhere in the line, do not output the original AsciiDoc xref line
-            elif orig_line != line and 'xref:' in orig_line:
-                line = convert_images(line)
-                line = convert_bold_italic(line)
-                line = re.sub(r'\[([^\]]+)\]\(([^)\s]+\*[^)\s]*)\)', r'\1', line)
-                md_lines.append(line)
+            # Remove standalone anchor lines for specific anchors (check BEFORE conversion)
+            if orig_line.strip() in ['[#what_is_happiness]', '[#brief_happiness_model]', 'what_is_happiness', 'brief_happiness_model']:
                 line_consumed = True
             else:
-                line = convert_images(line)
-                line = convert_bold_italic(line)
-                line = re.sub(r'\[([^\]]+)\]\(([^)\s]+\*[^)\s]*)\)', r'\1', line)
-                md_lines.append(line)
+                line = convert_links(line)
+                # If xref: was converted anywhere in the line, do not output the original AsciiDoc xref line
+                if orig_line != line and 'xref:' in orig_line:
+                    line = convert_images(line)
+                    line = convert_bold_italic(line)
+                    line = re.sub(r'\[([^\]]+)\]\(([^)\s]+\*[^)\s]*)\)', r'\1', line)
+                    md_lines.append(line)
+                    line_consumed = True
+                else:
+                    line = convert_images(line)
+                    line = convert_bold_italic(line)
+                    line = re.sub(r'\[([^\]]+)\]\(([^)\s]+\*[^)\s]*)\)', r'\1', line)
+                    md_lines.append(line)
     # At end of file, flush any open sidebar block (even if not closed by delimiter)
     if sidebar_state in ('pending', 'title', 'collect'):
         flush_sidebar_block(sidebar_title, sidebar_content)
