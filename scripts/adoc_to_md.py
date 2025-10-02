@@ -234,8 +234,8 @@ def main():
             else:
                 sidebar_content.append(line)
                 line_consumed = True
-        # Skip block IDs or anchors that are not attached to headings
-        if not line_consumed and (re.match(r'^\[#?[\w\-_]+\]$', line) or re.match(r'^\{#?[\w\-_]+\}$', line) or (re.match(r'^\.[\w\-_]+$', line) and not line.startswith('.Title'))):
+        # Skip block IDs or anchors that are not attached to headings (but not [quote] or [sidebar])
+        if not line_consumed and not line.strip().startswith('[quote') and not line.strip().startswith('[sidebar') and (re.match(r'^\[#?[\w\-_]+\]$', line) or re.match(r'^\{#?[\w\-_]+\}$', line) or (re.match(r'^\.[\w\-_]+$', line) and not line.startswith('.Title'))):
             m_anchor = re.match(r'^\[#([\w\-_]+)\]$', line)
             if m_anchor:
                 anchor = m_anchor.group(1)
@@ -273,9 +273,22 @@ def main():
             quote_content = []
             line_consumed = True
         if not line_consumed and quote_waiting_for_start and line.strip() in ('____', '********'):
-            md_lines.append('!!! quote "Цитата"')
+            if quote_author:
+                md_lines.append('!!! quote "Цитата"')
+            else:
+                md_lines.append('!!! quote ""')
             md_lines.append('')
             in_quote = True
+            quote_waiting_for_start = False
+            line_consumed = True
+        # Handle single-line quotes (no delimiter, just [quote] followed by content)
+        if not line_consumed and quote_waiting_for_start and line.strip() != '':
+            md_lines.append('!!! quote ""')
+            md_lines.append('')
+            ql_conv = convert_links(line)
+            ql_conv = convert_images(ql_conv)
+            ql_conv = convert_bold_italic(ql_conv)
+            md_lines.append('    ' + ql_conv)
             quote_waiting_for_start = False
             line_consumed = True
         if not line_consumed and in_quote and line.strip() in ('____', '********'):

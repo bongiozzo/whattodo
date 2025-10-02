@@ -40,6 +40,14 @@ def test_front_matter_created():
         quote_block_url = f.read()
     if quote_block_url not in content:
         failures.append('Quote block with title, author, url and indented content missing or incorrect in output .md file')
+    with open('scripts/fixtures/quote_no_author.md', encoding='utf-8') as f:
+        quote_no_author = f.read()
+    if quote_no_author not in content:
+        failures.append('Quote block without author missing or incorrect in output .md file')
+    with open('scripts/fixtures/quote_one_line.md', encoding='utf-8') as f:
+        quote_one_line = f.read()
+    if quote_one_line not in content:
+        failures.append('Quote block with one line missing or incorrect in output .md file')
     if 'Пожалуй, в xref:p2-110-system.adoc#rational_definition_of_christ[ещё более жесткой конкурентной системе координат пребывает внешняя политика].' in content:
         failures.append('Output .md file should not contain AsciiDoc xref link with .adoc.')
     # Check that AsciiDoc xref link is not present in the output
