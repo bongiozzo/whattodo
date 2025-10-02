@@ -97,9 +97,9 @@ def convert_links(line):
         if '#' in ref:
             anchor = ref.replace('#', '-')
             return f'[{text}](#{anchor})'
-        # Convert xref:anchor[text] => [text](anchor)
+        # Convert xref:anchor[text] => [text](#anchor) (same-page anchor)
         if re.match(r'^[\w\-_]+$', ref):
-            return f'[{text}]({ref})'
+            return f'[{text}](#{ref})'
         # Convert xref:http(s)://url[text] => [text](url)
         if ref.startswith(('http://', 'https://')):
             return f'[{text}]({ref})'
@@ -234,11 +234,26 @@ def main():
             else:
                 sidebar_content.append(line)
                 line_consumed = True
-        # Skip block IDs or anchors that are not attached to headings (but not [quote] or [sidebar])
+        # Handle block IDs or anchors that are not attached to headings (but not [quote] or [sidebar])
         if not line_consumed and not line.strip().startswith('[quote') and not line.strip().startswith('[sidebar') and (re.match(r'^\[#?[\w\-_]+\]$', line) or re.match(r'^\{#?[\w\-_]+\}$', line) or (re.match(r'^\.[\w\-_]+$', line) and not line.startswith('.Title'))):
             m_anchor = re.match(r'^\[#([\w\-_]+)\]$', line)
             if m_anchor:
-                anchor = m_anchor.group(1)
+                # Check if next non-empty line is a heading
+                next_is_heading = False
+                for j in range(idx + 1, len(adoc_lines)):
+                    next_line = adoc_lines[j].strip()
+                    if next_line == '':
+                        continue
+                    if re.match(r'^=+\s', next_line):
+                        next_is_heading = True
+                    break
+                
+                if next_is_heading:
+                    # Store anchor to attach to heading
+                    anchor = m_anchor.group(1)
+                else:
+                    # Output as HTML anchor tag
+                    md_lines.append(f'<a id="{m_anchor.group(1)}"></a>')
             line_consumed = True
 
         # Headings: merge anchor if present
@@ -337,6 +352,9 @@ def main():
             else:
                 processed = convert_links(line)
                 md_lines.append(processed)
+            line_consumed = True
+        # Remove include directives
+        if not line_consumed and line.strip().startswith('include::'):
             line_consumed = True
         # Special handling for author italic lines to avoid encoding/whitespace issues
         if not line_consumed and re.match(r'^\*Автор текста: ', line):

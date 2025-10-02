@@ -5,7 +5,7 @@ import re
 
 def test_front_matter_created():
     adoc = 'ru/modules/ROOT/pages/p2-120-school.adoc'
-    md = 'text/ru/p2-120-school.md'
+    md = '/tmp/p2-120-school.md'
     failures = []
     # Run the conversion script
     subprocess.run([
@@ -48,11 +48,16 @@ def test_front_matter_created():
         quote_one_line = f.read()
     if quote_one_line not in content:
         failures.append('Quote block with one line missing or incorrect in output .md file')
-    if 'Пожалуй, в xref:p2-110-system.adoc#rational_definition_of_christ[ещё более жесткой конкурентной системе координат пребывает внешняя политика].' in content:
-        failures.append('Output .md file should not contain AsciiDoc xref link with .adoc.')
     # Check that AsciiDoc xref link is not present in the output
     if 'xref:' in content:
         failures.append('Output .md file should not contain AsciiDoc xref link.')
+    if '[Кризис «Интеграции»](#brief_happiness_model)' not in content:
+        failures.append('Markdown link to anchor on the same page is missing in output .md file')
+
+    if '<a id="perl"></a>' not in content:
+        failures.append('if [#anchor] is found and it is not before the heading, it should be converted to <a id="anchor"></a>')
+    if 'include::../partials/time.adoc[]' in content:
+        failures.append('Output .md file should not contain AsciiDoc include directive – remove it.')
 
     # Check for author italic line
     author_line_expected = '*Автор текста: ([Владимир Андреев](p2-100-authors.md#andreevvs))*'
