@@ -44,34 +44,40 @@ def convert_headings(line):
 def convert_bold_italic(line):
     # *bold* or _italic_ to **bold** or *italic*
     # Avoid converting inside markdown links/images: [text](url)
-    
-    # First, protect URLs in markdown links from underscore conversion
-    # by temporarily replacing them with placeholders
+    # Do not convert (*text*) to (**text**), keep as italic
+
+    # Protect URLs in markdown links from underscore conversion
     url_placeholders = []
     def protect_urls(match):
         url = match.group(1)
         placeholder = f'<<<URLPLACEHOLDER{len(url_placeholders)}>>>'
         url_placeholders.append(url)
         return f']({placeholder})'
-    
-    # Protect URLs in markdown links
+
     line = re.sub(r'\]\(([^)]+)\)', protect_urls, line)
-    
-    def repl_bold(m):
-        # Only replace if not inside []()
-        if re.search(r'\[.*\]\(.*\)', line):
-            return m.group(0)
-        return f"**{m.group(1)}**"
-    # Always convert _italic_ to *italic*, even if inside links or with parentheses
+
+    # Always convert _italic_ to *italic*
     line = re.sub(r'_(.*?)_', r'*\1*', line)
-    # Convert *bold* to **bold** (adoc to md)
-    line = re.sub(r'\*(.*?)\*', repl_bold, line)
-    
+
+    # Only convert *bold* to **bold** if not surrounded by parentheses (i.e., not (*text*))
+    def repl_bold(m):
+        before = m.start() - 1
+        after = m.end()
+        # Check if the match is inside parentheses: (*text*)
+        if before >= 0 and line[before] == '(' and after < len(line) and line[after] == ')':
+            return m.group(0)  # do not convert
+        return f"**{m.group(1)}**"
+
+    # Use negative lookbehind and lookahead to avoid (*text*)
+    # But allow *text* at start/end or with spaces
+    # This will not convert *text* if it is inside parentheses: (*text*)
+    line = re.sub(r'(?<!\()\*(\S[^*]*\S)\*(?!\))', repl_bold, line)
+
     # Restore protected URLs
     for i, url in enumerate(url_placeholders):
         placeholder = f'<<<URLPLACEHOLDER{i}>>>'
         line = line.replace(f']({placeholder})', f']({url})')
-    
+
     return line
 
 def convert_links(line):
@@ -356,9 +362,13 @@ def main():
         # Remove include directives
         if not line_consumed and line.strip().startswith('include::'):
             line_consumed = True
-        # Special handling for author italic lines to avoid encoding/whitespace issues
-        if not line_consumed and re.match(r'^\*Автор текста: ', line):
-            md_lines.append(line.strip())
+        # Special handling for author italic lines (AsciiDoc: _Автор текста: (xref:...))
+        if not line_consumed and re.match(r'^_Автор текста: ', line):
+            # Convert xref to Markdown link
+            author_line = convert_links(line)
+            # Convert _..._ to *...*
+            author_line = re.sub(r'^_(.*)_$', r'*\1*', author_line.strip())
+            md_lines.append(author_line)
             line_consumed = True
         # If not consumed by any block, process for links, images, bold/italic
         if not line_consumed:
@@ -367,6 +377,12 @@ def main():
             if orig_line.strip() in ['[#what_is_happiness]', '[#brief_happiness_model]', 'what_is_happiness', 'brief_happiness_model']:
                 line_consumed = True
             else:
+                # Convert AsciiDoc bullet list '*' to Markdown hyphen '-', but only if line starts with '* '
+                if line.startswith('* '):
+                    line = '- ' + line[2:]
+                # Convert AsciiDoc ordered list '.' to Markdown '1.', but only if line starts with '. '
+                if line.startswith('. '):
+                    line = '1. ' + line[2:]
                 line = convert_links(line)
                 # If xref: was converted anywhere in the line, do not output the original AsciiDoc xref line
                 if orig_line != line and 'xref:' in orig_line:

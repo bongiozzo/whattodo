@@ -1,4 +1,3 @@
-
 import subprocess
 from pathlib import Path
 import re
@@ -68,8 +67,8 @@ def test_front_matter_created():
     if not found:
         failures.append('Italic author line missing in output .md file')
     # Check for link to anchor in another file (should be Markdown, not xref)
-    expected_crossfile = 'Лучше осознаёшь [влияние зависимостей от модификаторов состояния](p1-030-time.md#awareness_and_addictions).'
-    if expected_crossfile not in content:
+    expected_cross_file = 'Лучше осознаёшь [влияние зависимостей от модификаторов состояния](p1-030-time.md#awareness_and_addictions).'
+    if expected_cross_file not in content:
         failures.append('Link to anchor in another file missing in output .md file')
 
     # Check for image block with caption
@@ -82,6 +81,21 @@ def test_front_matter_created():
     expected_string = 'в какой-то момент отступит благодаря'
     if expected_string not in content:
         failures.append(f"Expected string '{expected_string}' missing in output .md file")
+
+    # --- Second file: p2-130-local.adoc ---
+    adoc = 'ru/modules/ROOT/pages/p2-130-local.adoc'
+    md = '/tmp/p2-130-local.md'
+    subprocess.run([
+        'python', 'scripts/adoc_to_md.py', adoc, md
+    ], check=True)
+    with open(md, encoding='utf-8') as f:
+        content = f.read()
+    # First check for the second file
+    if '(*отличный, кстати, заголовок!*)' not in content:
+        failures.append("Expected italic text (not bold) in output .md file for p2-130-local.adoc")
+
+    if '- [Как убирается снег и мусор в моем доме?](https://vk.com/app7710919#road_cleaning)' not in content:
+        failures.append("Expected hyphen bullet (not asterisk) in output .md file for p2-130-local.adoc")
 
     if failures:
         print('\nTEST FAILURES:')

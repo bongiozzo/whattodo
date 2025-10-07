@@ -7,10 +7,15 @@ repo_url: https://github.com/bongiozzo/whattodo
 repo_name: bongiozzo/whattodo
 edit_uri: blob/master/docs/
 
-docs_dir: text/ru
+# TODO - try to make Terminal like theme
+# — favicon (https://favicon.im/blog/complete-favicon-size-format-guide-2025)
+# — ru path and trailing / in urls
+# — pdf, epub, md download 
+
+docs_dir: text/ru 
 nav:
-  - index.md 
   - Наблюдения:
+    - index.md 
     - p1-010-happiness.md
     - p1-020-call.md
     - p1-030-time.md
@@ -40,7 +45,7 @@ nav:
   - Обсуждать Текст:
     - Telegram группа ↗: https://t.me/bongiozzo_public 
   - Писать свой Текст:
-    - Инструкция: p2-200-text.md#text_instruction
+    - Инструкция: p2-200-text#text_instruction
   - Помощник РазумИЙ:
     - DeepWiki ↗: https://deepwiki.com/bongiozzo/whattodo
 
@@ -129,6 +134,7 @@ plugins:
       # TODO make Serif font
 
 markdown_extensions:
+  - tables
 
   # Python Markdown
   - abbr
@@ -205,7 +211,6 @@ extra_css:
 
 # TODO Make annotation for code of presentations?
 # TODO Check math functionality
-# TODO Use Critic for deleted text? I live here
 
 # hooks:
 #   - hooks/socialmedia.py
