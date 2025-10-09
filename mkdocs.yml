@@ -7,10 +7,10 @@ repo_url: https://github.com/bongiozzo/whattodo
 repo_name: bongiozzo/whattodo
 edit_uri: blob/master/docs/
 
-# TODO - try to make Terminal like theme
-# — favicon (https://favicon.im/blog/complete-favicon-size-format-guide-2025)
-# — ru path and trailing / in urls
-# — pdf, epub, md download 
+# TODO — ru path and trailing / in urls
+# TODO — pdf, epub, md download 
+# TODO — favicon (https://favicon.im/blog/complete-favicon-size-format-guide-2025)
+# CONSIDER - try to make Terminal like theme
 
 docs_dir: text/ru 
 nav:
@@ -128,10 +128,16 @@ plugins:
   - to-pdf:
       download_link: header
       output_path: book.pdf
+      html_path: single.html
       cover_title: Что мне делать? :-)
       cover_subtitle: Текст в концепции Общих Целей
       toc_title: Содержание
+      # debug_html: true
+      enabled_if_env: PDF
+      # Remove JS embeddings (Comments) for PDF build
+      # Format dates (published and modified) in HTML
       # TODO make Serif font
+      # pandoc EPUB fix title 
 
 markdown_extensions:
   - tables

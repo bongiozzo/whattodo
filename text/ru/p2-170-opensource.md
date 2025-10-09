@@ -240,7 +240,7 @@ Open Source — это Свобода в Движении к Любви.
 
 !!! note ""
 
-    ![Фрагмент фильма «Революционная OS»](img/bill_letter.jpg){ width=75%, loading=lazy }
+    ![Фрагмент фильма «Революционная OS»](img/bill_letter.jpg){ width="75%", loading=lazy }
     /// caption
     Фрагмент фильма «Революционная OS»
     ///
