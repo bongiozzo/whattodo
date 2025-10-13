@@ -7,12 +7,11 @@ repo_url: https://github.com/bongiozzo/whattodo
 repo_name: bongiozzo/whattodo
 edit_uri: blob/master/docs/
 
-# TODO — ru path and trailing / in urls
-# TODO — pdf, epub, md download 
-# TODO — favicon (https://favicon.im/blog/complete-favicon-size-format-guide-2025)
+# TODO_LAST — pdf, epub, md download 
 # CONSIDER - try to make Terminal like theme
 
-docs_dir: text/ru 
+docs_dir: text/ru
+use_directory_urls: true
 nav:
   - Наблюдения:
     - index.md 
@@ -38,10 +37,10 @@ nav:
     - p3-references.md
   - Друзья:
     - 'Город счастливых людей ↗': https://happycities.the-csr.ru/
-  - Читать Текст:
-    - PDF ↓: book.pdf
-    - EPUB ↓: book.epub
-    - Markdown ↓: book.md
+  # - Читать Текст: TODO_LAST — pdf, epub, md download 
+  #   - PDF ↓: book.pdf # TODO move to CI/CD
+  #   - EPUB ↓: book.epub # TODO move to CI/CD
+  #   # - Markdown ↓: book.md # TODO mkdocs-combine
   - Обсуждать Текст:
     - Telegram группа ↗: https://t.me/bongiozzo_public 
   - Писать свой Текст:
@@ -52,7 +51,7 @@ nav:
 theme:
   name: material
   logo: img/logo-dark.svg
-  favicon: img/favicon.png
+  favicon: img/favicon.png # TODO WARNING -  [00:52:45] "GET /apple-touch-icon-precomposed.png HTTP/1.1" code 404 WARNING -  [00:52:45] "GET /apple-touch-icon.png HTTP/1.1" code 404 WARNING -  [00:52:45] "GET /favicon.ico HTTP/1.1" code 404
   language: ru
   custom_dir: overrides
   features:
@@ -134,10 +133,10 @@ plugins:
       toc_title: Содержание
       # debug_html: true
       enabled_if_env: PDF
-      # Remove JS embeddings (Comments) for PDF build
-      # Format dates (published and modified) in HTML
-      # TODO make Serif font
-      # pandoc EPUB fix title 
+      # TODO_LAST Remove JS embeddings (Comments) for PDF build
+      # TODO_LAST Format dates (published and modified) in HTML
+      # TODO_LAST make Serif font
+      # TODO_LAST pandoc EPUB fix title
 
 markdown_extensions:
   - tables
@@ -169,6 +168,9 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences
+  - pymdownx.snippets:
+      base_path: text/ru/assets
+      check_paths: true
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
@@ -210,12 +212,9 @@ extra:
       а также, чтобы понять – находите ли Вы то, что ищете?
       Спасибо, что делаете наш Текст лучше!
 
-# TODO Customize quote admonition
-#   - icon: material/format-quote-close
 extra_css:
   - assets/css/extra.css
 
-# TODO Make annotation for code of presentations?
 # TODO Check math functionality
 
 # hooks:

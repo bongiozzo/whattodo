@@ -3,7 +3,7 @@
 root="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$root"
 
-images_dir="ru/modules/ROOT/images"
+images_dir="text/ru/img"
 
 images=$(find "$images_dir" -type f \( -iname "*.jpg" -o -iname "*.png" \))
 for img in $images; do
