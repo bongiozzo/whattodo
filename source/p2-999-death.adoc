@@ -1,8 +1,4 @@
----
-description: >-
-    Незавершённая глава.
----
-
-# Memento Mori
+== Memento Mori
+:description: Незавершённая глава.
 
 Незавершённая глава.
