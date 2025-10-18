@@ -8,7 +8,10 @@ repo_name: bongiozzo/whattodo
 edit_uri: blob/master/docs/
 
 # TODO_LAST — pdf, epub, md download 
-# CONSIDER - try to make Terminal like theme
+# TODO_CONSIDER - try to make Terminal like theme
+# TODO - remove .html assets from text
+# TODO - tag migrate commit
+# TODO - check rock hail icon in print version
 
 docs_dir: text/ru
 use_directory_urls: true
@@ -51,7 +54,7 @@ nav:
 theme:
   name: material
   logo: img/logo-dark.svg
-  favicon: img/favicon.png # TODO WARNING -  [00:52:45] "GET /apple-touch-icon-precomposed.png HTTP/1.1" code 404 WARNING -  [00:52:45] "GET /apple-touch-icon.png HTTP/1.1" code 404 WARNING -  [00:52:45] "GET /favicon.ico HTTP/1.1" code 404
+  favicon: img/favicon.ico
   language: ru
   custom_dir: overrides
   features:
@@ -129,14 +132,17 @@ plugins:
       output_path: book.pdf
       html_path: single.html
       cover_title: Что мне делать? :-)
-      cover_subtitle: Текст в концепции Общих Целей
+      cover_subtitle: Текст в концепции «Общих Целей»
+      # TODO_LAST Fix page break in h2 cover title
       toc_title: Содержание
+      # verbose: true
       # debug_html: true
       enabled_if_env: PDF
-      # TODO_LAST Remove JS embeddings (Comments) for PDF build
+      custom_template_path: overrides
       # TODO_LAST Format dates (published and modified) in HTML
-      # TODO_LAST make Serif font
-      # TODO_LAST pandoc EPUB fix title
+      # TODO_LAST Fix pandoc EPUB title  
+      # TODO_LAST Remove file:///Users/serpo/Work/whattodo from single.html links
+      # TODO_LAST Remove Heading's numbering
 
 markdown_extensions:
   - tables
@@ -152,8 +158,8 @@ markdown_extensions:
       permalink: true
 
   # Python Markdown Extensions
-  - pymdownx.arithmatex:
-      generic: true
+  # - pymdownx.arithmatex:
+  #     generic: true
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.blocks.caption
@@ -214,8 +220,6 @@ extra:
 
 extra_css:
   - assets/css/extra.css
-
-# TODO Check math functionality
 
 # hooks:
 #   - hooks/socialmedia.py

@@ -1,26 +1,20 @@
-{% macro render_updated(date) %}
+{% macro render_created(date) %}
   <span class="md-source-file__fact">
-    <span class="md-icon" title="{{ lang.t('source.file.date.updated') }}">
-      {% include ".icons/material/clock-edit-outline.svg" %}
-    </span>
-    {{ date }}
-  </span>
+    <span class="md-icon">
+      {% include ".icons/material/clock-plus-outline.svg" %}
+    </span>Создано: {{ date }}</span>
 {% endmacro %}
 {% macro render_published(date) %}
   <span class="md-source-file__fact">
-    <span class="md-icon" title="{{ lang.t('Дата публикации') }}">
+    <span class="md-icon">
       {% include ".icons/material/clock-check-outline.svg" %}
-    </span>
-    {{ date }}
-  </span>
+    </span>Опубликовано: {{ date }}</span>
 {% endmacro %}
-{% macro render_created(date) %}
+{% macro render_updated(date) %}
   <span class="md-source-file__fact">
-    <span class="md-icon" title="{{ lang.t('source.file.date.created') }}">
-      {% include ".icons/material/clock-plus-outline.svg" %}
-    </span>
-    {{ date }}
-  </span>
+    <span class="md-icon">
+      {% include ".icons/material/clock-edit-outline.svg" %}
+    </span>Обновлено: {{ date }}</span>
 {% endmacro %}
 {% macro render_authors(authors) %}
   {% set git_authors = config.plugins["git-authors"] %}
@@ -104,14 +98,14 @@
 {% endif %}
 {% if updated or published or created or git_info or committers %}
   <aside class="md-source-file">
+    {% if updated %}
+      {{ render_updated(updated) }}
+    {% endif %}
     {% if created %}
       {{ render_created(created) }}
     {% endif %}
     {% if published %}
       {{ render_published(published) }}
-    {% endif %}
-    {% if updated %}
-      {{ render_updated(updated) }}
     {% endif %}
     {% if git_info %}
       {{ render_authors(git_info["page_authors"]) }}
