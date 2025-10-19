@@ -16,8 +16,8 @@ edit_uri: blob/master/docs/
 docs_dir: text/ru
 use_directory_urls: true
 nav:
+  - index.md 
   - Наблюдения:
-    - index.md 
     - p1-010-happiness.md
     - p1-020-call.md
     - p1-030-time.md
@@ -56,7 +56,7 @@ theme:
   logo: img/logo-dark.svg
   favicon: img/favicon.ico
   language: ru
-  custom_dir: overrides
+  custom_dir: mkdocs/overrides
   features:
     # - navigation.tabs
     # - navigation.tabs.sticky
@@ -222,7 +222,7 @@ extra_css:
   - assets/css/extra.css
 
 # hooks:
-#   - hooks/socialmedia.py
+#   - mkdocs/hooks/socialmedia.py
 
 site_dir: public
 # epub support
