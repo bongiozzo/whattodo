@@ -1,0 +1,21 @@
+body {
+  font-family: serif;
+  line-height: 1.6;
+  margin: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.note, .warning, .tip {
+  border-left: 4px solid #ccc;
+  padding-left: 1em;
+  margin: 1em 0;
+}
+
+.note { border-color: #3498db; }
+.warning { border-color: #e74c3c; }
+.tip { border-color: #2ecc71; }

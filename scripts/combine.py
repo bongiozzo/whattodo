@@ -1,12 +1,38 @@
 #!/usr/bin/env python3
 """
-Combine MkDocs Markdown files into a single document.
+Combine MkDocs Markdown files into a single document for pandoc processing.
 
-This script:
-1. Reads mkdocs.yml configuration
-2. Combines all .md files from docs_dir into a single Markdown file
-3. Generates a Table of Contents following the nav: section structure
-4. Fixes internal links: (filename.md#anchor) -> (#filename-md-anchor)
+Key improvements:
+1. Adjusts heading levels based on nav hierarchy
+2. Converts PyMdown syntax to pandoc-compatible markdown
+3. Better link fixing for combined document
+4. Removes frontmatter that causes pandoc issues
+
+TODO make args for:
+- input mkdocs.yml path
+- output combined.md path if not specified, than don't combine
+
+Make conversion tests.
+
+TODO copy following values from mkdocs.yml to combined.md frontmatter:
+
+---
+title:
+- type: main
+  text: My Book
+- type: subtitle
+  text: An investigation of metadata
+creator:
+- role: author
+  text: John Smith
+- role: editor
+  text: Sarah Jones
+identifier:
+- scheme: DOI
+  text: doi:10.234234.234/33
+publisher:  My Press
+rights: © 2007 John Smith, CC BY-NC
+
 """
 
 import yaml
@@ -17,35 +43,19 @@ from typing import List, Dict, Any, Tuple
 
 
 def load_config(config_path: str = "mkdocs.yml") -> Dict[str, Any]:
-    """
-    Load and parse MkDocs configuration file.
-    
-    Args:
-        config_path: Path to mkdocs.yml relative to script location
-        
-    Returns:
-        Dictionary containing parsed YAML configuration
-        
-    Raises:
-        FileNotFoundError: If config file doesn't exist
-        yaml.YAMLError: If config file is invalid YAML
-    """
-    # Resolve path relative to script location
+    """Load and parse MkDocs configuration file."""
     script_dir = Path(__file__).parent
     config_file = script_dir / config_path
     
     if not config_file.exists():
         raise FileNotFoundError(f"Config file not found: {config_file}")
     
-    # Read and parse YAML file (using BaseLoader to avoid Python object instantiation)
     with open(config_file, 'r', encoding='utf-8') as f:
-        # Try safe_load first, fall back to BaseLoader if it fails
         try:
             f.seek(0)
             config = yaml.safe_load(f)
         except yaml.constructor.ConstructorError:
             f.seek(0)
-            # Use custom loader that skips unknown tags
             class SkipUnknownLoader(yaml.SafeLoader):
                 pass
             
@@ -57,7 +67,6 @@ def load_config(config_path: str = "mkdocs.yml") -> Dict[str, Any]:
             
             config = yaml.load(f, Loader=SkipUnknownLoader)
     
-    # Validate required fields
     if 'docs_dir' not in config:
         raise ValueError("Config must contain 'docs_dir' field")
     if 'nav' not in config:
@@ -67,288 +76,332 @@ def load_config(config_path: str = "mkdocs.yml") -> Dict[str, Any]:
 
 
 def extract_nav_items(nav_config: List[Any], level: int = 0) -> List[Tuple[str, str, int]]:
-    """
-    Extract navigation items from mkdocs nav configuration.
-    
-    Args:
-        nav_config: List of navigation items from mkdocs.yml
-        level: Current nesting level for hierarchy
-        
-    Returns:
-        List of tuples (title, filepath, level) for each item
-        
-    Example:
-        Input: [{'Section': ['file1.md', 'file2.md']}]
-        Output: [('Section', '', 0), ('file1.md', 'file1.md', 1), ('file2.md', 'file2.md', 1)]
-    """
+    """Extract navigation items with proper hierarchy levels."""
     items = []
     
     for item in nav_config:
         if isinstance(item, str):
-            # Simple file entry
             if item.endswith('.md'):
-                # Extract title from filename
-                title = item.replace('.md', '').replace('-', ' ').title()
-                items.append((title, item, level))
+                # Title will be extracted from file later, use empty string as placeholder
+                items.append(('', item, level))
         elif isinstance(item, dict):
-            # Section with nested items
             for section_title, section_items in item.items():
-                # Check if this is an external link
                 if isinstance(section_items, str) and '://' in section_items:
-                    # Skip external links
+                    # External link - add as item with URL
+                    items.append((section_title, section_items, level))
                     continue
                 
                 # Add section header
                 items.append((section_title, '', level))
                 
-                # Recursively process nested items
+                # Process nested items at level+1
                 if isinstance(section_items, list):
                     items.extend(extract_nav_items(section_items, level + 1))
     
     return items
 
 
-def generate_toc(nav_items: List[Tuple[str, str, int]]) -> str:
+def convert_pymdown_to_pandoc(content: str) -> str:
     """
-    Generate Table of Contents in Markdown format.
+    Convert PyMdown Extensions syntax to pandoc-compatible markdown.
     
-    Args:
-        nav_items: List of (title, filepath, level) tuples from navigation
-        
-    Returns:
-        Markdown-formatted TOC string
-        
-    Logic:
-        - Section headers become TOC headers (##, ###, etc.)
-        - Files become links to their anchors in combined document
-        - Anchor format: #filename-md (without extension dots)
+    Conversions:
+    1. Image captions: ![](url)\n/// caption\ntext\n/// -> ![caption](url)
+    2. Admonitions: !!! type "title" -> ::: {.type}\n**title**\n
+    3. Superscript: ^^text^^ -> ^text^
+    4. Subscript: ~~text~~ -> ~text~
     """
-    toc_lines = ["# Содержание\n"]
     
-    for title, filepath, level in nav_items:
-        indent = "  " * level  # Indentation for nested items
+    # Convert image captions
+    # Pattern: ![alt](url){ attrs }\n/// caption\ncaption text\n///
+    def replace_caption(match):
+        img_line = match.group(1)
+        caption_text = match.group(2).strip()
         
-        if filepath:
-            # This is a file entry - create anchor link
-            anchor = filepath.replace('.md', '-md').replace('.', '-')
-            toc_lines.append(f"{indent}- [{title}](#{anchor})")
-        else:
-            # This is a section header
-            heading_level = "#" * (level + 2)  # Start from ## for sections
-            toc_lines.append(f"\n{heading_level} {title}\n")
+        # Extract alt, url, and attributes from image
+        img_match = re.search(r'!\[([^\]]*)\]\(([^)]+)\)(?:\{([^}]+)\})?', img_line)
+        if img_match:
+            alt = img_match.group(1)
+            url = img_match.group(2)
+            attrs = img_match.group(3) or ''
+            
+            # Keep original alt text, use caption as title
+            # If no alt text, use caption for both
+            final_alt = alt if alt else caption_text
+            
+            # Convert MkDocs-style attributes to Pandoc format
+            # Remove 'loading=lazy' and other non-pandoc attributes
+            attrs_cleaned = ''
+            if attrs:
+                # Keep only width, height, and other pandoc-supported attributes
+                # Remove quotes from attribute values for pandoc
+                attrs_cleaned = re.sub(r'loading\s*=\s*\w+', '', attrs)
+                attrs_cleaned = re.sub(r'["\']', '', attrs_cleaned)
+                attrs_cleaned = re.sub(r',\s*', ' ', attrs_cleaned)
+                attrs_cleaned = attrs_cleaned.strip()
+            
+            # Build the result: ![alt](url "caption"){attrs}
+            if attrs_cleaned:
+                return f'![{final_alt}]({url} "{caption_text}"){{{attrs_cleaned}}}'
+            else:
+                return f'![{final_alt}]({url} "{caption_text}")'
+        return match.group(0)
     
-    return "\n".join(toc_lines) + "\n"
+    content = re.sub(
+        r'(!\[.*?\]\([^)]+\)(?:\{[^}]*\})?)\s*\n///\s*caption\s*\n(.*?)\n///',
+        replace_caption,
+        content,
+        flags=re.DOTALL
+    )
+    
+    # Convert admonitions: !!! type "title" -> pandoc div with class
+    def replace_admonition(match):
+        adm_type = match.group(1)
+        title = match.group(2) or adm_type.title()
+        adm_content = match.group(3)
+        
+        # Dedent content
+        lines = adm_content.split('\n')
+        dedented = '\n'.join(line[4:] if line.startswith('    ') else line for line in lines)
+        
+        return f'::: {{{adm_type}}}\n**{title}**\n\n{dedented}\n:::'
+    
+    content = re.sub(
+        r'!!!\s+(\w+)\s*(?:"([^"]*)")?\s*\n((?:    .*\n?)*)',
+        replace_admonition,
+        content
+    )
+    
+    # Convert superscript: ^^text^^ -> ^text^
+    content = re.sub(r'\^\^([^\^]+)\^\^', r'^\1^', content)
+    
+    # Convert subscript: ~~text~~ (only if not strikethrough)
+    # This is tricky - skip if it looks like strikethrough (has spaces)
+    content = re.sub(r'~~([^~\s]+)~~', r'~\1~', content)
+    
+    return content
 
 
-def read_markdown_file(filepath: Path) -> str:
-    """
-    Read markdown file content.
-    
-    Args:
-        filepath: Path to markdown file
-        
-    Returns:
-        File content as string
-        
-    Raises:
-        FileNotFoundError: If file doesn't exist
-        UnicodeDecodeError: If file encoding is not UTF-8
-    """
-    if not filepath.exists():
-        raise FileNotFoundError(f"Markdown file not found: {filepath}")
-    
-    try:
-        with open(filepath, 'r', encoding='utf-8') as f:
-            return f.read()
-    except UnicodeDecodeError as e:
-        raise UnicodeDecodeError(
-            e.encoding, e.object, e.start, e.end,
-            f"Failed to decode {filepath} as UTF-8"
-        )
+def remove_frontmatter(content: str) -> str:
+    """Remove YAML frontmatter from markdown content."""
+    if content.startswith('---\n'):
+        # Find end of frontmatter
+        end_match = re.search(r'\n---\n', content[4:])
+        if end_match:
+            return content[end_match.end() + 4:]
+    return content
 
 
 def fix_internal_links(content: str, current_file: str) -> str:
     """
-    Fix internal links in markdown content for combined document.
+    Fix internal links for combined document.
     
-    Args:
-        content: Markdown content with links
-        current_file: Name of current file (for relative link resolution)
-        
-    Returns:
-        Content with fixed links
-        
-    Link transformation logic:
-        - [text](filename.md) -> [text](#filename-md)
-        - [text](filename.md#anchor) -> [text](#filename-md-anchor)
-        - [text](#anchor) -> [text](#current-file-anchor)
-        - External links (http://, https://) remain unchanged
-        - Image links (![...]) remain unchanged
+    Transformations:
+    - [text](file.md) -> [text](#file-md)
+    - [text](file.md#anchor) -> [text](#file-md-anchor)
+    - [text](#anchor) -> [text](#current-file-anchor)
     """
     def replace_link(match):
-        # Extract link components
         is_image = match.group(1) == '!'
         text = match.group(2)
         url = match.group(3)
         
-        # Skip image links
-        if is_image:
-            return match.group(0)
-        
-        # Skip external links
-        if url.startswith(('http://', 'https://', '//', 'mailto:')):
+        # Skip image links and external links
+        if is_image or url.startswith(('http://', 'https://', '//', 'mailto:')):
             return match.group(0)
         
         # Handle internal links
         if '#' in url:
-            # Link with anchor
             if url.startswith('#'):
-                # Anchor-only link in current file
-                filename_base = current_file.replace('.md', '-md')
-                new_url = f"#{filename_base}-{url[1:]}"
+                # Anchor in current file
+                filename_base = current_file.replace('.md', '-md').replace('/', '-')
+                new_url = f"#{filename_base}{url}"
             else:
                 # Link to another file with anchor
                 file_part, anchor_part = url.split('#', 1)
                 if file_part.endswith('.md'):
-                    file_base = file_part.replace('.md', '-md').replace('.', '-')
+                    file_base = file_part.replace('.md', '-md').replace('/', '-')
                     new_url = f"#{file_base}-{anchor_part}"
                 else:
                     new_url = url
         else:
             # Link without anchor
             if url.endswith('.md'):
-                file_base = url.replace('.md', '-md').replace('.', '-')
+                file_base = url.replace('.md', '-md').replace('/', '-')
                 new_url = f"#{file_base}"
             else:
-                # Not a markdown file, keep as is
                 new_url = url
         
         return f"[{text}]({new_url})"
     
-    # Regex to match markdown links: [text](url) or ![text](url)
     pattern = r'(!?)\[([^\]]+)\]\(([^)]+)\)'
     return re.sub(pattern, replace_link, content)
 
 
-def add_file_anchor(filename: str) -> str:
+def adjust_heading_levels(content: str, base_level: int) -> str:
     """
-    Generate anchor for a file in combined document.
+    Adjust markdown heading levels based on nav hierarchy.
     
     Args:
-        filename: Original filename (e.g., 'p1-010-happiness.md')
-        
+        content: Markdown content with headings
+        base_level: Base level for this content (0 = no adjustment, 1 = add one level, etc.)
+    
     Returns:
-        Anchor string (e.g., '# p1-010-happiness-md {#p1-010-happiness-md}')
-        
-    Logic:
-        - Remove .md extension
-        - Add -md suffix
-        - Create level 1 heading with anchor
+        Content with adjusted heading levels
     """
-    # Strip .md extension and replace dots with hyphens
-    base_name = filename.replace('.md', '').replace('.', '-')
+    if base_level <= 0:
+        return content
     
-    # Add -md suffix for anchor
-    anchor_id = f"{base_name}-md"
+    def replace_heading(match):
+        hashes = match.group(1)
+        title = match.group(2)
+        anchor = match.group(3) or ''
+        
+        # Increase heading level
+        new_level = len(hashes) + base_level
+        # Cap at h6
+        new_level = min(new_level, 6)
+        new_hashes = '#' * new_level
+        
+        return f"{new_hashes} {title}{anchor}"
     
-    # Format as markdown heading with explicit anchor
-    return f"\n\n---\n\n# {base_name} {{#{anchor_id}}}\n\n"
+    # Match headings with optional {#anchor}
+    pattern = r'^(#{1,6})\s+(.+?)(\s*\{#[^}]+\})?$'
+    return re.sub(pattern, replace_heading, content, flags=re.MULTILINE)
+
+
+def extract_first_heading(content: str) -> str:
+    """Extract the first heading from markdown content."""
+    # Remove frontmatter first
+    content_no_frontmatter = remove_frontmatter(content)
+    
+    # Find first heading (any level)
+    match = re.search(r'^#{1,6}\s+(.+?)(?:\s*\{#[^}]+\})?$', content_no_frontmatter, re.MULTILINE)
+    if match:
+        return match.group(1).strip()
+    
+    # Fallback to empty string if no heading found
+    return ''
+
+
+def read_markdown_file(filepath: Path) -> str:
+    """Read markdown file content."""
+    if not filepath.exists():
+        raise FileNotFoundError(f"Markdown file not found: {filepath}")
+    
+    with open(filepath, 'r', encoding='utf-8') as f:
+        return f.read()
 
 
 def combine_files(docs_dir: Path, nav_items: List[Tuple[str, str, int]]) -> str:
     """
     Combine all markdown files into single document.
     
-    Args:
-        docs_dir: Base directory containing markdown files
-        nav_items: List of (title, filepath, level) tuples from navigation
-        
-    Returns:
-        Combined markdown content
-        
-    Logic:
-        - Iterate through nav_items in order
-        - For each file:
-          - Add file anchor heading
-          - Read file content
-          - Fix internal links
-          - Add content to combined output
-        - Separate files with horizontal rules or page breaks
+    Process:
+    1. Add section headers from nav
+    2. For each file:
+       - Remove frontmatter
+       - Extract title from first heading
+       - Convert PyMdown syntax
+       - Adjust heading levels
+       - Fix internal links
+       - Add to output
     """
     combined_content = []
     
     for title, filepath, level in nav_items:
-        # Skip section headers (no filepath)
-        if not filepath:
+        # External links (contain ://)
+        if filepath and '://' in filepath:
+            # Add external link as markdown link in the TOC
+            section_level = level + 1  # Start from h1
+            section_hashes = '#' * section_level
+            combined_content.append(f"\n\n{section_hashes} [{title}]({filepath})\n\n")
             continue
         
-        # Construct full file path
+        # Section headers (no filepath)
+        if not filepath:
+            # Add section as heading at appropriate level
+            section_level = level + 1  # Start from h1
+            section_hashes = '#' * section_level
+            combined_content.append(f"\n\n{section_hashes} {title}\n\n")
+            continue
+        
+        # File content
         file_path = docs_dir / filepath
         
         if not file_path.exists():
             print(f"Warning: File not found: {file_path}")
             continue
         
-        print(f"Processing: {filepath}")
+        print(f"Processing: {filepath} (level {level})")
         
-        # Add file anchor
-        combined_content.append(add_file_anchor(filepath))
-        
-        # Read file content
         try:
+            # Read content
             content = read_markdown_file(file_path)
             
-            # Fix internal links
-            fixed_content = fix_internal_links(content, filepath)
+            # Extract title from first heading
+            extracted_title = extract_first_heading(content)
+            if not extracted_title:
+                # Fallback to filename-based title
+                extracted_title = filepath.replace('.md', '').replace('-', ' ').title()
             
-            # Add to combined output
-            combined_content.append(fixed_content)
+            print(f"  Title: {extracted_title}")
+            
+            # Remove frontmatter
+            content = remove_frontmatter(content)
+            
+            # Convert PyMdown syntax
+            content = convert_pymdown_to_pandoc(content)
+            
+            # Adjust heading levels based on nav hierarchy
+            # Don't adjust for level 0 (top-level files)
+            content = adjust_heading_levels(content, level)
+            
+            # Fix internal links
+            content = fix_internal_links(content, filepath)
+            
+            # Add anchor for this file
+            anchor_id = filepath.replace('.md', '-md').replace('/', '-')
+            
+            # Add to output with section separator
+            combined_content.append(f"\n\n---\n\n# {extracted_title} {{#{anchor_id}}}\n\n{content}")
             
         except Exception as e:
             print(f"Error processing {filepath}: {e}")
+            import traceback
+            traceback.print_exc()
             continue
     
     return "\n".join(combined_content)
 
 
 def main():
-    """
-    Main entry point for the script.
-    
-    Workflow:
-        1. Load mkdocs.yml configuration
-        2. Extract navigation structure
-        3. Generate Table of Contents
-        4. Combine all files with fixed links
-        5. Write output to combined.md
-    """
+    """Main entry point."""
     try:
-        # Load config from mkdocs.yml (parent directory)
         print("Loading configuration...")
         config = load_config("../mkdocs.yml")
         
-        # Extract docs_dir and nav sections
         docs_dir = Path(__file__).parent.parent / config['docs_dir']
         nav_config = config['nav']
         
         print(f"Documents directory: {docs_dir}")
         
-        # Extract navigation items
         print("Extracting navigation structure...")
         nav_items = extract_nav_items(nav_config)
         
-        # Generate TOC
-        print("Generating Table of Contents...")
-        toc = generate_toc(nav_items)
-        
-        # Combine all files
         print("Combining markdown files...")
         combined_content = combine_files(docs_dir, nav_items)
         
-        # Prepare output
-        output_content = toc + "\n\n" + combined_content
+        # Add document header
+        header = f"""---
+title: {config.get('site_name', 'Combined Document')}
+lang: ru
+---
+
+"""
         
-        # Write output file
+        output_content = header + combined_content
+        
         output_file = Path(__file__).parent.parent / "combined.md"
         print(f"Writing output to: {output_file}")
         
@@ -357,6 +410,8 @@ def main():
         
         print(f"\n✓ Successfully created combined document: {output_file}")
         print(f"  Total files processed: {sum(1 for _, fp, _ in nav_items if fp)}")
+        print(f"\nNext step: Run pandoc to generate epub:")
+        print(f"  pandoc combined.md -o book.epub --toc --toc-depth=3")
         
     except Exception as e:
         print(f"\n✗ Error: {e}")

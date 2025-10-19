@@ -17,13 +17,13 @@ docs_dir: text/ru
 use_directory_urls: true
 nav:
   - index.md 
-  - Наблюдения:
+  - 'Наблюдения':
     - p1-010-happiness.md
     - p1-020-call.md
     - p1-030-time.md
     - p1-040-unhappiness.md
     - p1-050-country.md
-  - Практика:
+  - 'Практика':
     - p2-100-authors.md
     - p2-110-system.md
     - p2-120-school.md
@@ -38,23 +38,23 @@ nav:
     - p2-200-text.md
     - p2-999-death.md
     - p3-references.md
-  - Друзья:
+  - 'Друзья':
     - 'Город счастливых людей ↗': https://happycities.the-csr.ru/
   # - Читать Текст: TODO_LAST — pdf, epub, md download 
   #   - PDF ↓: book.pdf # TODO move to CI/CD
   #   - EPUB ↓: book.epub # TODO move to CI/CD
   #   # - Markdown ↓: book.md # TODO mkdocs-combine
-  - Обсуждать Текст:
-    - Telegram группа ↗: https://t.me/bongiozzo_public 
-  - Писать свой Текст:
-    - Инструкция: p2-200-text#text_instruction
-  - Помощник РазумИЙ:
-    - DeepWiki ↗: https://deepwiki.com/bongiozzo/whattodo
+  - 'Обсуждать Текст':
+    - 'Telegram группа ↗': https://t.me/bongiozzo_public'
+  - 'Писать свой Текст':
+    - 'Инструкция': p2-200-text#text_instruction
+  - 'Помощник РазумИЙ':
+    - 'DeepWiki ↗': https://deepwiki.com/bongiozzo/whattodo
 
 theme:
   name: material
-  logo: img/logo-dark.svg
-  favicon: img/favicon.ico
+  logo: /ru/img/logo-dark.svg
+  favicon: /ru/img/favicon.ico
   language: ru
   custom_dir: mkdocs/overrides
   features:
@@ -127,22 +127,22 @@ plugins:
   #     date_format: '%d.%m.%Y'
   #     type: date
   #     show_author: true
-  - to-pdf:
-      download_link: header
-      output_path: book.pdf
-      html_path: single.html
-      cover_title: Что мне делать? :-)
-      cover_subtitle: Текст в концепции «Общих Целей»
-      # TODO_LAST Fix page break in h2 cover title
-      toc_title: Содержание
-      # verbose: true
-      # debug_html: true
-      enabled_if_env: PDF
-      custom_template_path: overrides
-      # TODO_LAST Format dates (published and modified) in HTML
-      # TODO_LAST Fix pandoc EPUB title  
-      # TODO_LAST Remove file:///Users/serpo/Work/whattodo from single.html links
-      # TODO_LAST Remove Heading's numbering
+  # - to-pdf:
+  #     download_link: header
+  #     output_path: book.pdf
+  #     html_path: single.html
+  #     cover_title: Что мне делать? :-)
+  #     cover_subtitle: Текст в концепции «Общих Целей»
+  #     # TODO_LAST Fix page break in h2 cover title
+  #     toc_title: Содержание
+  #     # verbose: true
+  #     # debug_html: true
+  #     enabled_if_env: PDF
+  #     custom_template_path: overrides
+  #     # TODO_LAST Format dates (published and modified) in HTML
+  #     # TODO_LAST Fix pandoc EPUB title  
+  #     # TODO_LAST Remove file:///Users/serpo/Work/whattodo from single.html links
+  #     # TODO_LAST Remove Heading's numbering
 
 markdown_extensions:
   - tables
