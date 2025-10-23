@@ -1,22 +1,29 @@
 site_name: 'Общие цели'
 site_url: https://text.sharedgoals.ru/ru/
 site_author: Serge Polyakov
-copyright: Общие цели, 2020-2025
-site_description: 'Что мне делать? :-) Текст в концепции Общих Целей'
+copyright: Shared Goals, 2020-2025
+site_description: 'Что мне делать? :-) Текст в концепции «Общие Цели»'
 repo_url: https://github.com/bongiozzo/whattodo
 repo_name: bongiozzo/whattodo
 edit_uri: blob/master/docs/
 
-# TODO_LAST — pdf, epub, md download 
-# TODO_CONSIDER - try to make Terminal like theme
-# TODO - remove .html assets from text
 # TODO - tag migrate commit
-# TODO - check rock hail icon in print version
+# TODO — pdf, epub, md download 
+# TODO ??? - remove .html assets from text
+# TODO ??? - rock hail icon in print version
+# TODO Make Epub cover
+# TODO Center images (CSS)
+
+# TODO TOC remove page breaks
+# TODO Page breaks after chapters (pandoc, combine, CSS?)
+# Divs <-> Quotes
+# mkdocs serve reload
 
 docs_dir: text/ru
 use_directory_urls: true
 nav:
-  - index.md 
+  - 'Вводная':
+    - index.md
   - 'Наблюдения':
     - p1-010-happiness.md
     - p1-020-call.md
@@ -37,24 +44,16 @@ nav:
     - p2-190-presentation.md
     - p2-200-text.md
     - p2-999-death.md
-    - p3-references.md
-  - 'Друзья':
-    - 'Город счастливых людей ↗': https://happycities.the-csr.ru/
-  # - Читать Текст: TODO_LAST — pdf, epub, md download 
-  #   - PDF ↓: book.pdf # TODO move to CI/CD
-  #   - EPUB ↓: book.epub # TODO move to CI/CD
-  #   # - Markdown ↓: book.md # TODO mkdocs-combine
-  - 'Обсуждать Текст':
-    - 'Telegram группа ↗': https://t.me/bongiozzo_public'
-  - 'Писать свой Текст':
-    - 'Инструкция': p2-200-text#text_instruction
-  - 'Помощник РазумИЙ':
+  - p3-links.md
+  - p3-references.md
+  - 'РазумИЙ':
     - 'DeepWiki ↗': https://deepwiki.com/bongiozzo/whattodo
+    - 'DZhechko ↗': https://dzhechko.github.io/theory-of-wellbeing-analysis/
 
 theme:
   name: material
-  logo: /ru/img/logo-dark.svg
-  favicon: /ru/img/favicon.ico
+  logo: img/logo-dark.svg
+  favicon: img/favicon.ico
   language: ru
   custom_dir: mkdocs/overrides
   features:
@@ -104,52 +103,17 @@ plugins:
   - search
   # - macros
   # - privacy # fix for discussion
-  - social:
-      # cards_layout_options:
-      # background_image: layouts/background.png
-        # background_color: transparent
-  # - i18n:
-  #     docs_structure: folder
-  #     languages:
-  #       - locale: ru
-  #         default: true
-  #         name: Русский
-  #         build: true
-  #     languages:
-  #       - locale: en
-  #         default: true
-  #         name: English
-  #         build: true
-  # - mkdocs_with_pdf
-  # - document-dates: # fetch-depth: 0 to the actions
-  # - document-dates:
-  #     position: bottom
-  #     date_format: '%d.%m.%Y'
-  #     type: date
-  #     show_author: true
-  # - to-pdf:
-  #     download_link: header
-  #     output_path: book.pdf
-  #     html_path: single.html
-  #     cover_title: Что мне делать? :-)
-  #     cover_subtitle: Текст в концепции «Общих Целей»
-  #     # TODO_LAST Fix page break in h2 cover title
-  #     toc_title: Содержание
-  #     # verbose: true
-  #     # debug_html: true
-  #     enabled_if_env: PDF
-  #     custom_template_path: overrides
-  #     # TODO_LAST Format dates (published and modified) in HTML
-  #     # TODO_LAST Fix pandoc EPUB title  
-  #     # TODO_LAST Remove file:///Users/serpo/Work/whattodo from single.html links
-  #     # TODO_LAST Remove Heading's numbering
+  # - social:
+  #     # cards_layout_options:
+  #     # background_image: layouts/background.png
+  #       # background_color: transparent
 
 markdown_extensions:
   - tables
 
   # Python Markdown
   - abbr
-  - admonition
+  # - admonition
   - attr_list
   - def_list
   - footnotes
@@ -162,12 +126,15 @@ markdown_extensions:
   #     generic: true
   - pymdownx.betterem:
       smart_enable: all
+  - pymdownx.blocks.admonition:
+      types: ['note', 'quote', 'music']
   - pymdownx.blocks.caption
+  - pymdownx.blocks.details
   - pymdownx.caret
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # - pymdownx.details
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:material.extensions.emoji.twemoji
+  #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
@@ -207,10 +174,10 @@ extra:
     #   - name: Русский
     #     link: /ru/
     #     lang: ru
-  social:
-    - icon: fontawesome/brands/telegram
-      name: bongiozzo в Telegram
-      link: https://t.me/bongiozzo_public
+  # social:
+  #   - icon: fontawesome/brands/telegram
+  #     name: bongiozzo в Telegram
+  #     link: https://t.me/bongiozzo_public
   consent:
     title: Согласие на использование cookie
     description: >- 
@@ -225,4 +192,3 @@ extra_css:
 #   - mkdocs/hooks/socialmedia.py
 
 site_dir: public
-# epub support

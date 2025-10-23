@@ -105,7 +105,7 @@ IT-юрист с филологическими корнями.
 
 ## Александр Петросян {#AlexanderPetrosyan}
 
-Фотограф из Санкт-Петербурга, [Телеграм канал](https://t.me/petrosphotos)
+[Фотограф из Санкт-Петербурга](https://t.me/petrosphotos).
 
 *[INFP — Mediator-Посредник](https://www.16personalities.com/ru/lichnost-infp)*
 
@@ -129,13 +129,14 @@ IT-юрист с филологическими корнями.
 
 ## Савва Сахиб {#savvasahib}
 
-Странник. Практикует православие.
+Странник.
+Практикует православие.
 
 *[ENTJ-A — Commander-Командир](https://www.16personalities.com/ru/результаты/entj-a/m/2uenlsu9n)*
 
 ## Артём Суржиков {#dark_mind}
 
-Руководитель отдела
+Руководитель отдела.
 
 *[ENTJ — Commander-Командир](https://www.16personalities.com/profiles/entj-a/m/5ow1aqnet)*
 
