@@ -1,25 +1,167 @@
-.md-typeset .admonition, 
+/*
+ * Fix figure/image width: make <p> wrapper respect <img> width
+ * MkDocs Material wraps images in <figure><p><img></p></figure>
+ * The image's width attribute controls the container width
+ */
+.md-typeset figure {
+  display: table;              /* Makes figure shrink-wrap content by default */
+  margin: 0.8em auto;          /* Center horizontally */
+  margin-inline-start: auto;   /* Override Material's inline-start margin */
+  margin-inline-end: auto;     /* Override Material's inline-end margin */
+}
+.md-typeset figure > p {
+  display: block;              /* Block layout for proper width calculation */
+  margin: 0;
+  max-width: none;             /* Remove any max-width constraints */
+}
+.md-typeset figure > p > img {
+  display: block;              /* Remove inline spacing */
+  max-width: 100%;             /* Responsive: don't exceed container */
+  height: auto;                /* Maintain aspect ratio */
+}
+
+/*
+ * When image has percentage width, make containers full-width
+ * but let the HTML width attribute control the actual image size
+ */
+.md-typeset figure:has(> p > img[width*="%"]) {
+  width: 100%;                 /* Full width container when image uses % */
+  display: block;              /* Block layout instead of table */
+}
+.md-typeset figure:has(> p > img[width*="%"]) > p {
+  width: 100%;                 /* Make p fill figure */
+  text-align: center;          /* Center the image inside */
+}
+.md-typeset figure:has(> p > img[width*="%"]) > p > img {
+  max-width: 100%;             /* Responsive limit */
+  /* width is controlled by HTML width attribute, not CSS */
+}
+
+/*
+ * Base admonition/expandable block style
+ * Applies to all admonitions and details blocks
+ */
+.md-typeset .admonition,
 .md-typeset details {
-    /* font-size: inherit; */
-    font-size: 0.75rem;
-    /* font-style: italic; */
+  font-size: 0.8rem;           /* Slightly condensed text (use rem for scaling) */
+  margin-block: 0.8em;         /* Vertical space between blocks (em for font-relative) */
+  padding: 0;                  /* Remove default padding, handled below */
+  border: none;                /* Remove all borders except left */
+  border-left: 0.2rem solid var(--md-default-fg-color--light); /* Only left border (rem for sharpness) */
+  border-radius: 0.1rem;       /* Slight rounding for left border */
+  background: transparent;     /* No background by default */
+  box-shadow: none;            /* No shadow */
+  overflow: hidden;            /* Clip children to border radius */
 }
 
+/*
+ * Quote variant: italic text
+ * Applies to .admonition.quote blocks
+ */
 .md-typeset .admonition.quote {
-    font-style: italic;
+  font-style: italic;
 }
 
+
+/*
+ * Quote signature: right-aligned, spaced from text
+ * Applies to <ins> inside .admonition.quote
+ */
 .md-typeset .admonition.quote ins {
-    display: block;
-    text-align: right;
-    margin-top: 0.5em;
+  display: block;
+  text-align: right;
+  margin-top: 0.4em;
 }
 
+
+/*
+ * Icon layout: defer to original mkdocs-material (avoid overlap)
+ * Intentionally no overrides for ::before icon sizing/placement
+ */
+
+/*
+ * Admonition title bar: condensed, with space for icon
+ * Applies to .admonition-title and details > summary
+ * - position: relative for icon pseudo-element
+ * - padding: top/right/bottom/left (rem for vertical, em for icon space)
+ */
+.md-typeset .admonition > .admonition-title,
+.md-typeset details > summary {
+  position: relative;         /* Anchor pseudo-element icons if absolutely positioned by theme */
+  margin: 0;
+  margin-bottom: 0.4em; /* Space between title and content */
+  /* Padding order: top, right, bottom, left */
+  padding-top: 0.45rem;    /* Space above title text */
+  padding-right: 0.9rem;   /* Space to the right of title text */
+  padding-bottom: 0.45rem; /* Space below title text */
+  padding-left: 2.5em;     /* Reserve space for icon on the left */
+  font-weight: 700;
+  background-color: var(--md-code-bg-color, rgba(0,0,0,.03));
+  border-bottom: 0;
+  line-height: 1.2;           /* Slightly tighter lines */
+}
+
+/*
+ * Hide default disclosure marker on <summary> to avoid overlap
+ * Applies to details > summary only
+ */
+.md-typeset details > summary {
+  list-style: none;                  /* Remove default marker space */
+}
+.md-typeset details > summary::-webkit-details-marker {
+  display: none;                     /* Hide WebKit default marker */
+}
+
+/*
+ * Admonition body/content: condensed, like <dd>
+ * Applies to all direct children except .admonition-title
+ */
+.md-typeset .admonition > :not(.admonition-title) {
+  margin: 0;
+  padding: 0.4rem 0.8rem;
+  line-height: 1.35;
+}
+.md-typeset details > .admonition-content {
+  margin: 0;
+  padding: 1.4rem 0.8rem;
+  line-height: 1.35;
+}
+
+/*
+ * Definition lists styled like admonitions
+ * Frame, title, and body spacing
+ */
+.md-typeset dl {
+  margin-block: 0.8em;
+  padding: 0;
+  border-left: 0.2rem solid var(--md-default-fg-color--light);
+  border-radius: 0.1rem;
+  overflow: hidden; /* clip title background to frame */
+}
+.md-typeset dl > dt {
+  margin: 0;
+  margin-bottom: 0.4em; /* Space between title and content */
+  padding: 0.4rem 0.8rem;
+  font-weight: 700;
+  background-color: var(--md-code-bg-color, rgba(0,0,0,.03));
+  line-height: 1.2;
+}
+.md-typeset dl > dd {
+  margin: 0;
+  padding: 0.4rem 0.8rem;
+  line-height: 1.35;
+}
+
+/*
+ * Custom icon for music admonition (SVG as CSS var)
+ */
 :root {
-  /* --md-tooltip-width: 600px; */
   --md-admonition-icon--music: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 18V7c0-1.1.9-2 2-2h0c1.1 0 2 .9 2 2v8"/><path d="M14 15v-1c0-1.1.9-2 2-2h0c1.1 0 2 .9 2 2v1"/><path d="M18 15v-1c0-1.1.9-2 2-2h0c1.1 0 2 .9 2 2v1"/><path d="M22 15V9c0-1.1.9-2 2-2h0c1.1 0 2 .9 2 2v11"/><path d="M10 16v4.6l-1.5-1.8c-.8-.9-2.2-1-3.1-.1l0 0c-.8.8-.8 2-.1 2.9l3.2 3.6c1.6 1.9 4 2.9 6.4 2.9h2.5H18h.6c4.1 0 7.4-3.3 7.4-7.4V16"/></svg>');
 }
 
+/*
+ * Music variant: red border and icon, light red title bg
+ */
 .md-typeset .admonition.music,
 .md-typeset details.music {
   border-color: rgb(194, 29, 29);
@@ -33,4 +175,12 @@
   background-color: rgb(194, 29, 29);
   -webkit-mask-image: var(--md-admonition-icon--music);
           mask-image: var(--md-admonition-icon--music);
+}
+
+/*
+ * Prevent inline content from breaking across lines
+ * Follows Material naming convention with md- prefix
+ */
+.md-typeset .md-nobr {
+  white-space: nowrap;
 }

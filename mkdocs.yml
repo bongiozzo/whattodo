@@ -8,16 +8,19 @@ repo_name: bongiozzo/whattodo
 edit_uri: blob/master/docs/
 
 # TODO - tag migrate commit
+# TODO - https://docs.astral.sh/uv/guides/integration/github/#setting-up-python
+# TODO - uv version --bump beta --dry-run
 # TODO — pdf, epub, md download 
 # TODO ??? - remove .html assets from text
 # TODO ??? - rock hail icon in print version
+# TODO ??? - icon for define
 # TODO Make Epub cover
 # TODO Center images (CSS)
+# <div style="page-break-after: always;"></div>
 
 # TODO TOC remove page breaks
 # TODO Page breaks after chapters (pandoc, combine, CSS?)
 # Divs <-> Quotes
-# mkdocs serve reload
 
 docs_dir: text/ru
 use_directory_urls: true
@@ -73,7 +76,7 @@ theme:
     - content.action.view
     - content.action.edit
   font: 
-    text: Noto Serif
+    text: Tahoma # TODO - check
 
   palette:
     # - primary: indigo
@@ -128,6 +131,7 @@ markdown_extensions:
       smart_enable: all
   - pymdownx.blocks.admonition:
       types: ['note', 'quote', 'music']
+  - pymdownx.blocks.definition
   - pymdownx.blocks.caption
   - pymdownx.blocks.details
   - pymdownx.caret
@@ -188,7 +192,8 @@ extra:
 extra_css:
   - assets/css/extra.css
 
-# hooks:
+hooks:
+  - mkdocs/hooks/nobr_emoticons.py
 #   - mkdocs/hooks/socialmedia.py
 
 site_dir: public
