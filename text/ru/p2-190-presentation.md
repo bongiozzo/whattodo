@@ -200,7 +200,8 @@ description: Сжатый пересказ предыдущей главы и в
 
 КАНТ: Повторяю – на это не будет согласия, вот увидите!
 
-^^[Виктор Франкл, Синхронизация в Биркенвальде](https://www.livelib.ru/quote/47015722-skazat-zhizni-da-psiholog-v-kontslagere-viktor-frankl)^^
+[Виктор Франкл, Синхронизация в Биркенвальде](https://www.livelib.ru/quote/47015722-skazat-zhizni-da-psiholog-v-kontslagere-viktor-frankl)
+{ .author }
 
 ///
 

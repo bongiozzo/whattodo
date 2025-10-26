@@ -1,4 +1,8 @@
--- Pandoc Lua filter - convert PyMdown admonitions and format images
+-- Pandoc Lua filter - convert PyMdown blocks to Pandoc Divs
+--
+-- Converts /// block-type | caption ... /// to ::: block-type ... :::
+-- Handles nested blocks recursively
+-- Special handling for image caption blocks
 
 -- Extract image attributes from markdown syntax { width="75%", loading=lazy }
 local function extract_image_attributes(para, start_index)
@@ -20,10 +24,8 @@ local function extract_image_attributes(para, start_index)
         break
       elseif in_braces then
         if text:match("=$") then
-          -- Key ending with =, like "width="
           pending_key = text:sub(1, -2)
         elseif text:match("^[a-z_%-]+=[a-z_%-]+$") then
-          -- Full attribute like "loading=lazy"
           local key, val = text:match("^([a-z_%-]+)=([a-z_%-]+)$")
           if key and val then
             new_attributes[key] = val
@@ -31,7 +33,6 @@ local function extract_image_attributes(para, start_index)
         end
       end
     elseif elem.t == 'Quoted' and in_braces and pending_key ~= "" then
-      -- Quoted value follows pending key
       local quoted_val = pandoc.utils.stringify(elem.c)
       new_attributes[pending_key] = quoted_val
       pending_key = ""
@@ -43,56 +44,67 @@ local function extract_image_attributes(para, start_index)
   return new_attributes
 end
 
--- Process images: extract attributes and handle captions
+-- Process images: extract attributes and keep only width/height
 function Para(para)
-  -- Check if para contains Image element
   if not para.c or #para.c < 1 or para.c[1].t ~= 'Image' then
     return nil
   end
   
   local img = para.c[1]
-  local src = img.src
-  local caption_text = pandoc.utils.stringify(img.caption)
   local attr = img.attr or pandoc.Attr()
   
   -- Extract attributes from following elements
   local new_attributes = extract_image_attributes(para, 2)
   
-  -- Update image attributes if we found any
+  -- Merge new attributes
   if next(new_attributes) then
     for k, v in pairs(new_attributes) do
       attr.attributes[k] = v
     end
   end
   
-  -- Keep only width and height attributes; drop everything else
-  do
-    local kept = {}
-    if attr and attr.attributes then
-      for k, v in pairs(attr.attributes) do
-        if k == 'width' or k == 'height' then
-          kept[k] = v
-        end
+  -- Keep only width and height
+  local kept = {}
+  if attr and attr.attributes then
+    for k, v in pairs(attr.attributes) do
+      if k == 'width' or k == 'height' then
+        kept[k] = v
       end
-    end
-    if next(kept) then
-      attr.attributes = kept
-    else
-      -- No allowed attributes left: remove attribute block entirely
-      attr = pandoc.Attr()
     end
   end
   
-  -- Return modified image in a paragraph
-  return pandoc.Para{pandoc.Image(
-    img.caption,
-    src,
-    caption_text,
-    attr
-  )}
+  if next(kept) then
+    attr.attributes = kept
+  else
+    attr = pandoc.Attr()
+  end
+  
+  return pandoc.Para{pandoc.Image(img.caption, img.src, pandoc.utils.stringify(img.caption), attr)}
 end
 
--- Convert PyMdown admonitions to BlockQuotes (recursive)
+-- Convert /// blocks to Pandoc Divs
+-- Handles: /// block-type | caption ... ///
+-- Output: ::: {.block-type caption="caption text"} ... :::
+-- Helper: stringify inlines preserving soft breaks as newlines
+local function inlines_to_text(inlines)
+  local buf = {}
+  for _, el in ipairs(inlines) do
+    if el.t == 'Str' then
+      table.insert(buf, el.text or '')
+    elseif el.t == 'Space' then
+      table.insert(buf, ' ')
+    elseif el.t == 'SoftBreak' or el.t == 'LineBreak' then
+      table.insert(buf, '\n')
+    elseif el.t == 'Code' then
+      table.insert(buf, el.text or '')
+    elseif el.t == 'Quoted' then
+      table.insert(buf, pandoc.utils.stringify(el.c))
+    else
+      -- ignore other inline types for our purposes
+    end
+  end
+  return table.concat(buf)
+end
 function Blocks(blocks)
   local result = {}
   local i = 1
@@ -100,54 +112,114 @@ function Blocks(blocks)
   while i <= #blocks do
     local block = blocks[i]
     
-    -- Check if this is an admonition marker: Para starting with !!!
-    if block.t == 'Para' and 
-       block.c[1] and block.c[1].t == 'Str' and block.c[1].text == '!!!' and
-       block.c[2] and block.c[2].t == 'Space' and
-       block.c[3] and block.c[3].t == 'Str' then
+    -- Check for /// block markers: Para starting with "///"
+    if block.t == 'Para' and block.c[1] and block.c[1].t == 'Str' then
+      local first_text = block.c[1].text or ""
       
-      -- Check if next block is CodeBlock (the content)
-      if i + 1 <= #blocks and blocks[i + 1].t == 'CodeBlock' then
-        local admon_type = block.c[3].text  -- e.g., "note"
-        local title = ""
-        
-        -- Extract title from Quoted element if present
-        if block.c[5] and block.c[5].t == 'Quoted' then
-          title = pandoc.utils.stringify(block.c[5].c)
+      -- Opening marker: "///" followed by block-type
+      if first_text:match("^///") then
+        -- Support condensed syntax where opening, content, and closing are within one paragraph:
+        --   /// type\ncontent\n///
+        -- Extract full paragraph text with preserved soft breaks
+        local para_text = inlines_to_text(block.c)
+        -- Split into lines
+        local lines = {}
+        for line in (para_text .. "\n"):gmatch("([^\n]*)\n") do
+          table.insert(lines, line)
         end
-        
-        -- Get the CodeBlock content and parse as markdown
-        local content_text = blocks[i + 1].text or ""
-        local parsed_doc = pandoc.read(content_text, "markdown")
-        
-        -- Recursively process the parsed content (handles nested admonitions and images)
-        parsed_doc = parsed_doc:walk({
-          Blocks = Blocks,
-          Para = Para
-        })
-
-        -- If this is a quote admonition, make all inline content italic
-        if admon_type == 'quote' then
-          parsed_doc = parsed_doc:walk({
-            Inlines = function(inlines)
-              return {pandoc.Emph(inlines)}
+        -- Try to find a closing marker within the same paragraph
+        local handled_inline = false
+        if #lines >= 2 and lines[1]:match("^///") then
+          local close_idx = nil
+          for idx = 2, #lines do
+            if lines[idx]:match("^%s*///%s*$") then
+              close_idx = idx
+              break
             end
-          })
+          end
+          if close_idx then
+            local opening_line = lines[1]
+            local block_type_inline, caption_inline = opening_line:match("^///[%s]*([^%s|]+)[%s]*|?[%s]*(.*)")
+            if block_type_inline and block_type_inline ~= '' then
+              -- Gather content between opening and closing lines
+              local content_lines = {}
+              for idx = 2, close_idx - 1 do
+                table.insert(content_lines, lines[idx])
+              end
+              local content_text = table.concat(content_lines, "\n")
+              -- Parse content as markdown, then recursively process blocks/images
+              local parsed_doc = pandoc.read(content_text, "markdown")
+              parsed_doc = parsed_doc:walk({ Blocks = Blocks, Para = Para })
+              -- Build Div with class and optional caption
+              local attr = pandoc.Attr("", { block_type_inline }, {})
+              if caption_inline and caption_inline ~= "" then
+                attr.attributes["caption"] = caption_inline
+              end
+              local div = pandoc.Div(parsed_doc.blocks, attr)
+              table.insert(result, div)
+              i = i + 1
+              handled_inline = true
+            end
+          end
         end
-
-        -- Create BlockQuote with title and processed content blocks
-        local title_para = pandoc.Para(pandoc.Strong(title))
-        local quote_blocks = {title_para}
-
-        -- Add all processed blocks to the quote
-        for _, content_block in ipairs(parsed_doc.blocks) do
-          table.insert(quote_blocks, content_block)
+        if handled_inline then
+          -- processed condensed block; continue loop
+        else
+        -- Extract block type and optional caption from the opening line
+        -- Format: /// block-type | caption text
+        local opening_line = pandoc.utils.stringify(block.c)
+        local block_type, caption = opening_line:match("^///[%s]*([^%s|]+)[%s]*|?[%s]*(.*)")
+        
+        if not block_type then
+          -- No block type found, treat as plain paragraph
+          table.insert(result, block)
+          i = i + 1
+        else
+          -- Collect content blocks until closing "///"
+          local content_blocks = {}
+          local j = i + 1
+          local found_closing = false
+          
+          while j <= #blocks do
+            local content_block = blocks[j]
+            
+            -- Check for closing marker
+            if content_block.t == 'Para' and 
+               content_block.c[1] and 
+               content_block.c[1].t == 'Str' and
+               content_block.c[1].text == "///" then
+              found_closing = true
+              break
+            end
+            
+            table.insert(content_blocks, content_block)
+            j = j + 1
+          end
+          
+          if found_closing then
+            -- Recursively process content blocks (handles nesting)
+            content_blocks = Blocks(content_blocks)
+            
+            -- Create Pandoc Div with class and optional caption
+            local attr = pandoc.Attr("", {block_type}, {})
+            if caption and caption ~= "" then
+              attr.attributes["caption"] = caption
+            end
+            
+            -- For 'details' blocks, we may want special handling
+            -- but for now treat all blocks uniformly as Divs
+            local div = pandoc.Div(content_blocks, attr)
+            table.insert(result, div)
+            
+            -- Skip to after closing marker
+            i = j + 1
+          else
+            -- No closing found, treat as plain paragraph
+            table.insert(result, block)
+            i = i + 1
+          end
         end
-
-        table.insert(result, pandoc.BlockQuote(quote_blocks))
-
-        -- Skip both blocks (Para marker and CodeBlock content)
-        i = i + 2
+        end
       else
         table.insert(result, block)
         i = i + 1

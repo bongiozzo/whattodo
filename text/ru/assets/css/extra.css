@@ -184,3 +184,14 @@
 .md-typeset .md-nobr {
   white-space: nowrap;
 }
+
+/*
+ * Author signature style: right-aligned, italic, spaced from text
+ * Applies to .author class in quotes
+ */
+.author {
+  text-align: right;
+  font-style: italic;
+  color: #666;
+  margin-top: 0.5em;
+}

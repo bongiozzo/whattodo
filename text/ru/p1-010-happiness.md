@@ -128,7 +128,8 @@ description: Задача текста — описать причины, вли
 
 Однажды я купил самую желанную машину. Но радость от покупки длилась всего 5 дней. Я периодически переезжал — новый дом поднимал настроение дольше, чем «Порше» или «Бентли», но несильно.
 
-^^[Мэттью Перри](https://www.livelib.ru/quote/47121569-druzya-lyubimye-i-odna-bolshaya-uzhasnaya-vesch-avtobiografiya-mettyu-perri)^^
+[Мэттью Перри](https://www.livelib.ru/quote/47121569-druzya-lyubimye-i-odna-bolshaya-uzhasnaya-vesch-avtobiografiya-mettyu-perri)
+{ .author }
 
 ///
 
@@ -182,7 +183,8 @@ description: Задача текста — описать причины, вли
 
 Человек умирает тогда, когда перестаёт меняться, а похороны — просто формальность.
 
-^^[Генри Форд](https://www.livelib.ru/quote/47208530-moya-zhizn-moi-dostizheniya-s-sovremennymi-kommentariyami-genri-ford)^^
+[Генри Форд](https://www.livelib.ru/quote/47208530-moya-zhizn-moi-dostizheniya-s-sovremennymi-kommentariyami-genri-ford)
+{ .author }
 
 ///
 
@@ -205,7 +207,8 @@ description: Задача текста — описать причины, вли
 
 Физически смерть разрушает человека, но идея смерти спасает его!
 
-^^[Ирвин Ялом](https://www.livelib.ru/quote/45324397-ekzistentsialnaya-psihoterapiya-irvin-yalom)^^
+[Ирвин Ялом](https://www.livelib.ru/quote/45324397-ekzistentsialnaya-psihoterapiya-irvin-yalom)
+{ .author }
 
 ///
 
@@ -387,7 +390,8 @@ description: Задача текста — описать причины, вли
 
 Сенека предупреждал, что чем больше стремишься к счастью, тем больше от него отдаляешься.
 
-^^[Александр Иванович Юрьев](https://www.livelib.ru/quote/47010373-strategicheskaya-psihologiya-globalizatsii-psihologiya-chelovecheskogo-kapitala)^^
+[Александр Иванович Юрьев](https://www.livelib.ru/quote/47010373-strategicheskaya-psihologiya-globalizatsii-psihologiya-chelovecheskogo-kapitala)
+{ .author }
 
 ///
 
@@ -397,7 +401,8 @@ description: Задача текста — описать причины, вли
 
 Люди могут быть счастливы лишь при условии, что они не считают счастье целью жизни.
 
-^^[Джордж Оруэлл](https://www.livelib.ru/quote/42434395-1984-dzhordzh-oruell)^^
+[Джордж Оруэлл](https://www.livelib.ru/quote/42434395-1984-dzhordzh-oruell)
+{ .author }
 
 ///
 

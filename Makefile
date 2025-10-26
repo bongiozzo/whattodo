@@ -23,9 +23,9 @@ CSS_FILE := $(EPUB_DIR)/styles.css
 COVER_IMAGE := $(EPUB_DIR)/cover.jpg
 
 # Build targets
-COMBINED_MD := $(RELEASE_DIR)/text_combined.txt
+COMBINED_MD := $(BUILD_DIR)/text_combined.txt
 PANDOC_MD := $(BUILD_DIR)/pandoc.md
-EPUB_OUT := $(RELEASE_DIR)/text_book.epub
+EPUB_OUT := $(BUILD_DIR)/text_book.epub
 
 # --- Phony targets ---
 .PHONY: all epub clean test help debug
@@ -58,7 +58,7 @@ $(EPUB_OUT): $(PANDOC_MD) $(BOOK_META) $(CSS_FILE) $(COVER_IMAGE)
 $(PANDOC_MD): $(COMBINED_MD) $(LUA_FILTER)
 	@echo "==> Stage 2: Converting PyMdown syntax to Pandoc markdown..."
 	$(PANDOC) -f markdown+smart $(COMBINED_MD) \
-		--lua-filter=$(LUA_FILTER) \
+ 		--lua-filter=$(LUA_FILTER) \
 		--wrap=preserve \
 		-t markdown \
 		-o $@
@@ -73,8 +73,11 @@ $(COMBINED_MD): $(MKDOCS_CONFIG) $(COMBINE_SCRIPT)
 
 # Test target - run validation tests
 test:
+	@echo "==> Unzipping EPUB for tests..."
+	@rm -rf $(BUILD_DIR)/epub
+	@unzip -q $(EPUB_OUT) -d $(BUILD_DIR)/epub
 	@echo "==> Running tests..."
-	@$(PYTHON) -m pytest $(SCRIPTS_DIR)/tests.py -v
+	@COMBINED_MD=$(COMBINED_MD) PANDOC_MD=$(PANDOC_MD) EPUB_DIR=$(BUILD_DIR)/epub $(PYTHON) -m pytest $(SCRIPTS_DIR)/tests.py -v
 	@echo "✓ Tests passed"
 
 # Help target

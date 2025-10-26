@@ -665,7 +665,8 @@ Buicide 26 января 2024
 По его словам, Горчаков «замечает и страдает от неравномерности развития духовного и материального».
 Это помогает понять, отчего «слишком красивые» сцены недопустимы: в них материальное и духовное уравниваются, что неуместно и разрушительно для центральной темы.
 
-^^[Лев Наумов](https://www.livelib.ru/quote/48065548-italyanskie-marshruty-andreya-tarkovskogo-lev-naumov)^^
+[Лев Наумов](https://www.livelib.ru/quote/48065548-italyanskie-marshruty-andreya-tarkovskogo-lev-naumov)
+{ .author }
 
 ///
 
@@ -829,7 +830,8 @@ Buicide 26 января 2024
 Когда Кара Макиннис и Гордон Ходсон, занявшись изучением поведения жителей разных штатов США, получили информацию от Google Trends, они выявили прочную связь между религиозными убеждениями и запросами на порнографию в интернете, между консерватизмом и порнографией.
 Они писали: «Хотя некоторые регионы громко заявляют о неприятии сексуальной свободы и своих правых политических убеждениях, именно здесь отмечается самый сильный интерес к сексуальному контенту».
 
-^^[Адам Алтер](https://www.livelib.ru/quote/46769833-ne-otorvatsya-pochemu-nash-mozg-lyubit-vsjo-novoe-i-tak-li-eto-horosho-v-epohu-interneta-adam-alter)^^
+[Адам Алтер](https://www.livelib.ru/quote/46769833-ne-otorvatsya-pochemu-nash-mozg-lyubit-vsjo-novoe-i-tak-li-eto-horosho-v-epohu-interneta-adam-alter)
+{ .author }
 
 ///
 

@@ -128,8 +128,9 @@ def format_dates_from_frontmatter(frontmatter: Dict[str, Any]) -> str:
     if frontmatter.get('updated'):
         dates.append(f"Обновлено: {frontmatter['updated']}")
     if dates:
-        # Option 3: Pandoc div with class
-        return f"::: {{.chapter-dates}}\n{' '.join(dates)}\n:::"
+        # Ensure blank lines so Pandoc treats markers and content as separate blocks
+        # This helps the Lua filter detect opening/content/closing correctly.
+        return f"/// chapter-dates\n{' '.join(dates)}\n///"
     return ""
 
 
@@ -230,13 +231,30 @@ def extract_first_heading(content: str) -> str:
     return match.group(1).strip() if match else ''
 
 
-def convert_collapsible_to_blockquote(content: str, site_url: str, filepath: str, headings: list) -> str:
+def replace_details_with_source_link(content: str, site_url: str, filepath: str, headings: list) -> str:
     """
-    Convert PyMdown collapsible admonitions to blockquote format with source link.
+    Replace content inside /// details blocks with source link.
+    
+    Transforms:
+        /// details | Title
+        <content>
+        ///
+    
+    Into:
+        /// details | Title
+        <source_link>
+        ///
+    
     Uses headings array to find nearest anchor above each block.
     """
-    pattern = r'^(\?\?\?)\s+(\w+)(\s+"[^"]*")?[ ]*\n((?:(?:[ ]{4,}.*|\s*)\n)*)'
+    # Pattern: capture opening line with optional title, then any content until closing ///
+    # Group 1: optional title part after 'details' (e.g., ' | Исходник')
+    # Group 2: inner content (to be replaced)
+    details_pattern = r'^///\s*details([^\n]*)\n+(.*?)\n+///'
+
+    # Keep filename normalized for URL building
     filename_without_md = filepath.replace('.md', '').replace('\\', '/')
+
     def find_nearest_anchor_above(pos):
         anchor = None
         for hpos, hanchor in headings:
@@ -245,18 +263,20 @@ def convert_collapsible_to_blockquote(content: str, site_url: str, filepath: str
             elif hpos >= pos:
                 break
         return anchor
-    def replace_collapsible(match):
-        word = match.group(2)
-        title = match.group(3) or ''
+
+    def replace_details(match):
+        title_part = match.group(1)  # Includes everything after 'details' on first line
         match_pos = match.start()
         anchor = find_nearest_anchor_above(match_pos)
         if anchor:
             source_link = f"{site_url.rstrip('/')}/{filename_without_md}#{anchor}"
         else:
             source_link = f"{site_url.rstrip('/')}/{filename_without_md}"
-        result = f"!!! {word}{title}\n\n    <{source_link}>\n\n"
-        return result
-    return re.sub(pattern, replace_collapsible, content, flags=re.MULTILINE)
+        # Preserve delimiters and title, replace inner content with the link only
+        return f"/// details{title_part}\n\n<{source_link}>\n\n///"
+
+    # Apply details-block replacement (DOTALL so '.' matches newlines)
+    return re.sub(details_pattern, replace_details, content, flags=re.MULTILINE | re.DOTALL)
 
 
 def mode_mkdocs(config_path: str) -> str:
@@ -335,7 +355,7 @@ def mode_mkdocs(config_path: str) -> str:
             
             content = add_anchor_to_first_h1(content, anchor_id)  # Add anchor to original h1
             content, headings = adjust_heading_levels(content, level)
-            content = convert_collapsible_to_blockquote(content, config['site_url'], filepath, headings)
+            content = replace_details_with_source_link(content, config['site_url'], filepath, headings)
             content = fix_internal_links(content, filepath)
             
             # Combine with dates

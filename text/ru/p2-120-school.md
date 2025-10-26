@@ -50,7 +50,8 @@ description: Количественная модель Счастья повыш
 
 Невозможно управлять тем, что не можешь измерить.
 
-^^Питер Друкер^^
+Питер Друкер
+{ .author }
 
 ///
 
@@ -384,7 +385,8 @@ description: Количественная модель Счастья повыш
 
 Для этого можно попытаться расширить принятую сегодня дифференциацию психологического знания на сферы Разума, Воли, Бессознательного и Веры.
 
-^^[Александр Иванович Юрьев](https://www.livelib.ru/quote/47214101-strategicheskaya-psihologiya-globalizatsii-psihologiya-chelovecheskogo-kapitala)^^
+[Александр Иванович Юрьев](https://www.livelib.ru/quote/47214101-strategicheskaya-psihologiya-globalizatsii-psihologiya-chelovecheskogo-kapitala)
+{ .author }
 
 ///
 
@@ -539,7 +541,8 @@ Many things are easier to explain if there is than if there isn't.
 
 Вероятно, должен быть Бог, потому что многое труднее объяснить, если Его нет.
 
-^^[Джон фон Нейман](https://en.wikipedia.org/wiki/John_von_Neumann)^^
+[Джон фон Нейман](https://en.wikipedia.org/wiki/John_von_Neumann)
+{ .author }
 
 ///
 
@@ -547,7 +550,8 @@ Many things are easier to explain if there is than if there isn't.
 
 По молодости и по глупости никто в Бога не верит, и лишь к старости люди понимают, что всю жизнь, даже не зная того, постоянно вели внутренние разговоры с Ним.
 
-^^[Наринэ Абгарян](https://www.livelib.ru/quote/746565-lyudi-kotorye-vsegda-so-mnoj-narine-abgaryan)^^
+[Наринэ Абгарян](https://www.livelib.ru/quote/746565-lyudi-kotorye-vsegda-so-mnoj-narine-abgaryan)
+{ .author }
 
 ///
 
@@ -726,7 +730,8 @@ Many things are easier to explain if there is than if there isn't.
 
 Мои только ошибки и недостатки.
 
-^^Иоанн Кронштадтский^^
+Иоанн Кронштадтский
+{ .author }
 
 ///
 
@@ -813,7 +818,8 @@ Many things are easier to explain if there is than if there isn't.
 
 Необходимо открыть юридическое право на свободу как психологию свободного поведения.
 
-^^[Александр Иванович Юрьев](https://www.livelib.ru/quote/47052949-strategicheskaya-psihologiya-globalizatsii-psihologiya-chelovecheskogo-kapitala)^^
+[Александр Иванович Юрьев](https://www.livelib.ru/quote/47052949-strategicheskaya-psihologiya-globalizatsii-psihologiya-chelovecheskogo-kapitala)
+{ .author }
 
 ///
 

@@ -65,7 +65,8 @@ description: Практические предложения развития н
 Вот только когда требуется формировать Вооруженные силы, высокотехнологичные производства, обеспечить рабочей силой капитальное строительство, то вдруг оказывается, что некому служить в армии, строить, добывать нефть и прочее.
 Реальные люди, измеренные по многим психологическим параметрам развития и состояния научными методами, — объект настоящей книги.
 
-^^[Александр Иванович Юрьев](https://www.livelib.ru/quote/47030374-strategicheskaya-psihologiya-globalizatsii-psihologiya-chelovecheskogo-kapitala)^^
+[Александр Иванович Юрьев](https://www.livelib.ru/quote/47030374-strategicheskaya-psihologiya-globalizatsii-psihologiya-chelovecheskogo-kapitala)
+{ .author }
 
 ///
 
@@ -546,7 +547,8 @@ Huawei создали [продвинутые часы для мониторин
 
 — Когда построите, тогда и спать начнёте.
 
-^^[Олег Тиньков](https://www.livelib.ru/quote/2030034-ya-takoj-kak-vse-oleg-tinkov)^^
+[Олег Тиньков](https://www.livelib.ru/quote/2030034-ya-takoj-kak-vse-oleg-tinkov)
+{ .author }
 
 ///
 
@@ -622,7 +624,8 @@ Huawei создали [продвинутые часы для мониторин
 
 Ведя строгий счёт каждому рублю, Савва Тимофеевич легко шёл на тысячные расходы ради хорошего, как он считал, дела.
 
-^^[Лира Муховицкая](https://www.livelib.ru/quote/48372460-morozovy-dinastiya-metsenatov-lira-muhovitskaya)^^
+[Лира Муховицкая](https://www.livelib.ru/quote/48372460-morozovy-dinastiya-metsenatov-lira-muhovitskaya)
+{ .author }
 
 ///
 
@@ -1065,7 +1068,8 @@ Huawei создали [продвинутые часы для мониторин
 Если знать, где искать, можно найти массу свидетельств развития культуры целей.
 Само выражение «стремление к цели» появилось в английских словарях лишь в 1950 году.
 
-^^[Адам Алтер](https://www.livelib.ru/quote/46741534-ne-otorvatsya-pochemu-nash-mozg-lyubit-vsjo-novoe-i-tak-li-eto-horosho-v-epohu-interneta-adam-alter)^^
+[Адам Алтер](https://www.livelib.ru/quote/46741534-ne-otorvatsya-pochemu-nash-mozg-lyubit-vsjo-novoe-i-tak-li-eto-horosho-v-epohu-interneta-adam-alter)
+{ .author }
 
 ///
 
