@@ -19,7 +19,7 @@ MKDOCS_CONFIG := mkdocs.yml
 COMBINE_SCRIPT := $(SCRIPTS_DIR)/mkdocs-combine.py
 LUA_FILTER := $(SCRIPTS_DIR)/pymdown-pandoc.lua
 BOOK_META := $(EPUB_DIR)/book_meta.yml
-CSS_FILE := $(EPUB_DIR)/styles.css
+CSS_FILE := $(EPUB_DIR)/epub.css
 COVER_IMAGE := $(EPUB_DIR)/cover.jpg
 
 # Build targets

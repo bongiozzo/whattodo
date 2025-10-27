@@ -16,8 +16,7 @@ description: Фотографировать и делиться фотограф
 
 И в самой истории, и в изображении.
 
-[Георгий Рерберг](https://ru.wikipedia.org/wiki/Рерберг,_Георгий_Иванович)
-{ .author }
+[Георгий Рерберг](https://ru.wikipedia.org/wiki/Рерберг,_Георгий_Иванович){ .author }
 
 ///
 
@@ -67,8 +66,7 @@ Ph. Mikhail Krugov, [2 Jun 2025 at 20:56:01]:
 С необычайным волнением я стал изучать эти фотографии.
 И увидел, что они меня волнуют больше, чем даже желание найти причину моих несчастий.
 
-[Михаил Михайлович Зощенко](https://www.livelib.ru/quote/48042808-pered-voshodom-solntsa-mihail-zoschenko)
-{ .author }
+[Михаил Михайлович Зощенко](https://www.livelib.ru/quote/48042808-pered-voshodom-solntsa-mihail-zoschenko){ .author }
 
 ///
 
@@ -88,8 +86,7 @@ Ph. Mikhail Krugov, [2 Jun 2025 at 20:56:01]:
 
 Детство – самое совершенное состояние души – всех любишь, ни на кого не держишь зла.
 
-[Наринэ Абгарян](https://www.livelib.ru/quote/799961-lyudi-kotorye-vsegda-so-mnoj-narine-abgaryan)
-{ .author }
+[Наринэ Абгарян](https://www.livelib.ru/quote/799961-lyudi-kotorye-vsegda-so-mnoj-narine-abgaryan){ .author }
 
 ///
 
@@ -129,8 +126,7 @@ Ph. Mikhail Krugov, [2 Jun 2025 at 20:56:01]:
 
 Тарковский часто размышлял над подобным полётом „времени“ и желал только одного: остановить его – пусть даже и быстрым взглядом из моментальных полароидных изображений.
 
-[Лев Наумов](https://www.livelib.ru/quote/48072508-italyanskie-marshruty-andreya-tarkovskogo-lev-naumov)
-{ .author }
+[Лев Наумов](https://www.livelib.ru/quote/48072508-italyanskie-marshruty-andreya-tarkovskogo-lev-naumov){ .author }
 
 ///
 
@@ -513,8 +509,7 @@ Point and shoot.
 Я стала плакать и чувствовала, как со слезами оттаивает мое заледеневшее сердце.
 Мне стало жаль нашей любви – такой необъятной и такой необыкновенной…
 
-[Вера Алентова](https://www.livelib.ru/quote/48190393-vsjo-ne-sluchajno-vera-alentova)
-{ .author }
+[Вера Алентова](https://www.livelib.ru/quote/48190393-vsjo-ne-sluchajno-vera-alentova){ .author }
 
 ///
 
@@ -952,8 +947,7 @@ Zoom-объектив перевернул моё представление о 
 Человек живёт не для того, чтобы быть счастливым.
 Есть вещи гораздо более важные, чем счастье!
 
-[Андрей Тарковский](https://www.livelib.ru/quote/48219463-italyanskie-marshruty-andreya-tarkovskogo-lev-naumov)
-{ .author }
+[Андрей Тарковский](https://www.livelib.ru/quote/48219463-italyanskie-marshruty-andreya-tarkovskogo-lev-naumov){ .author }
 
 ///
 

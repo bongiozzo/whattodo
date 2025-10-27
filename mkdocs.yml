@@ -8,6 +8,7 @@ repo_name: bongiozzo/whattodo
 edit_uri: blob/master/docs/
 
 # TODO - tag migrate commit
+# TODO - update publish and update dates
 # TODO - Try to optimize size of images with check git-filter-repo
 # TODO - https://docs.astral.sh/uv/guides/integration/github/#setting-up-python
 # TODO - uv version --bump beta --dry-run 0.51beta1
@@ -131,7 +132,7 @@ markdown_extensions:
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.blocks.admonition:
-      types: ['note', 'quote', 'music']
+      types: ['note', 'quote', 'music', 'abstract', 'tip', 'warning', 'success']
   - pymdownx.blocks.definition
   - pymdownx.blocks.caption
   - pymdownx.blocks.details
