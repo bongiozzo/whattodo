@@ -1,0 +1,97 @@
+name: Publish to GitHub Pages with MkDocs Material
+
+on:
+  push:
+    branches:
+      - master 
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Concurrency: Prevent multiple simultaneous deployments to GitHub Pages
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v5
+
+      - name: Configure Git Credentials
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          # Install a specific version of uv
+          # https://docs.astral.sh/uv/guides/integration/github/#setting-up-python
+          version: "0.9.5"
+          enable-cache: true
+              
+      - name: Set up Python
+        run: uv python install
+
+      - name: Install Pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+        
+      - name: Install the project
+        run: uv sync --locked --all-extras --dev
+
+      - name: Cache MkDocs Material
+        run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+      - uses: actions/cache@v4
+        with:
+          key: mkdocs-material-${{ env.cache_id }}
+          path: ~/.cache 
+          restore-keys: |
+            mkdocs-material-
+
+      # FUTURE OPTIMIZATION: Implement build directory caching
+      # (Phase 2: After pipeline runs flawlessly)
+      #
+      # Benefits: Skip EPUB rebuild if source files unchanged
+      # Implementation:
+      # - name: Cache Build Artifacts
+      #   uses: actions/cache@v4
+      #   with:
+      #     path: build/
+      #     key: build-${{ runner.os }}-${{ hashFiles('text/ru/**/*.md', 'mkdocs.yml', 'epub/**') }}
+      #     restore-keys: |
+      #       build-${{ runner.os }}-
+      #
+      # Note: uv already caches Python packages via enable-cache: true
+      #       This cache would specifically target intermediate build artifacts
+
+      - name: Build Everything (EPUB + MkDocs site)
+        run: uv run make all
+
+      - name: Run Tests
+        run: uv run make test
+
+      # FUTURE IMPROVEMENT: Add build artifact upload for debugging
+      # (Phase 2: After pipeline runs flawlessly)
+      #
+      # Benefits: Download artifacts if builds fail for investigation
+      # Implementation:
+      # - name: Upload Build Artifacts
+      #   if: always()
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: build-artifacts
+      #     path: |
+      #       build/
+      #       public/assets/
+      #     retention-days: 7
+
+      - name: Deploy to GitHub Pages
+        if: success()
+        run: uv run mkdocs gh-deploy --force

@@ -1,9 +1,11 @@
-= Memento Mori
-:created-date: 29.08.2023
-:publication-date: ??.??.????
-:revdate: 09.09.2025
-:description: Незавершённая глава.
+---
+comments: true
+created: 29.08.2023
+published: ??.??.????
+# updated: 09.09.2025
+description: Незавершённая глава.
+---
+
+# Memento Mori
 
 Незавершённая глава.
-
-include::../partials/time.adoc[]
