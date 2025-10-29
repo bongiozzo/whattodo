@@ -185,4 +185,4 @@ extra_css:
 hooks:
   - mkdocs/hooks/nobr_emoticons.py
 
-site_dir: public
+site_dir: public/ru

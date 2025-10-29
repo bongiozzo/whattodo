@@ -13,7 +13,8 @@ DOCS_DIR := text/ru
 SCRIPTS_DIR := scripts
 BUILD_DIR := build
 EPUB_DIR := epub
-SITE_DIR := public
+PUBLIC_DIR := public
+SITE_DIR := $(PUBLIC_DIR)/ru
 ASSETS_DIR := $(SITE_DIR)/assets
 
 # Assets
@@ -48,6 +49,10 @@ mkdocs: epub
 	@echo "==> Building MkDocs site..."
 	$(MKDOCS) build --config-file=$(MKDOCS_CONFIG) --site-dir=$(SITE_DIR) --strict
 	@echo "✓ MkDocs site built: $(SITE_DIR)"
+	@echo "==> Creating redirect from / to /ru/..."
+	@mkdir -p $(PUBLIC_DIR)
+	@echo '<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=/ru/"><link rel="canonical" href="/ru/"><title>Redirecting to /ru/...</title></head><body><p>Redirecting to <a href="/ru/">/ru/</a>...</p><script>window.location.href="/ru/";</script></body></html>' > $(PUBLIC_DIR)/index.html
+	@echo "✓ Redirect created: $(PUBLIC_DIR)/index.html"
 
 # Alias for mkdocs target
 site: mkdocs
