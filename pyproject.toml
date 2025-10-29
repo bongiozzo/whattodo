@@ -1,0 +1,18 @@
+[project]
+name = "whattodo"
+version = "0.51.0b1"
+description = "Comprehensive text around the SharedGoals platform concept"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "click>=8.1.7,<8.2.2",
+    "livereload>=2.7.1",
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.6.22",
+    "pyyaml>=6.0.3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+]

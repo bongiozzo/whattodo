@@ -1,0 +1,188 @@
+site_name: 'Общие цели'
+site_url: https://text.sharedgoals.ru/ru/
+site_author: Serge Polyakov
+copyright: Shared Goals, 2020-2025
+site_description: 'Что мне делать? :-) Текст в концепции «Общие Цели»'
+repo_url: https://github.com/bongiozzo/whattodo
+repo_name: bongiozzo/whattodo
+edit_uri: blob/master/docs/
+
+# TODO - tag migrate commit
+# TODO -- optimize size of images with check git-filter-repo
+# TODO -- remove .html assets from text
+# TODO -- write mkdocs story
+# TODO -- epub nobr in smiles
+# TODO -- epub center images for non-Apple
+
+docs_dir: text/ru
+use_directory_urls: true
+nav:
+  - 'Вводная':
+    - index.md
+  - 'Наблюдения':
+    - p1-010-happiness.md
+    - p1-020-call.md
+    - p1-030-time.md
+    - p1-040-unhappiness.md
+    - p1-050-country.md
+  - 'Практика':
+    - p2-100-authors.md
+    - p2-110-system.md
+    - p2-120-school.md
+    - p2-130-local.md
+    - p2-140-digital.md
+    - p2-150-absurd.md
+    - p2-155-photo.md
+    - p2-160-routine.md
+    - p2-170-opensource.md
+    - p2-180-sharedgoals.md
+    - p2-190-presentation.md
+    - p2-200-text.md
+    - p2-999-death.md
+  - p3-links.md
+  - p3-references.md
+  - 'РазумИЙ':
+    - 'DeepWiki ↗': https://deepwiki.com/bongiozzo/whattodo
+    - 'DZhechko ↗': https://dzhechko.github.io/theory-of-wellbeing-analysis/
+
+theme:
+  name: material
+  logo: img/logo-dark.svg
+  favicon: img/favicon.ico
+  language: ru
+  custom_dir: mkdocs/overrides
+  features:
+    - navigation.tracking
+    - navigation.top
+    - navigation.footer
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    # - navigation.sections
+    # - navigation.expand
+    # - navigation.prune
+    - toc.follow
+    # - toc.integrate
+    - search.highlight
+    - search.suggest
+    - search.share
+    - content.action.view
+    - content.action.edit
+  font: 
+    text: Tahoma, Verdana, sans-serif
+
+  palette:
+    # - primary: indigo
+    # - accent: indigo
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+plugins:
+  - search
+  # - macros
+  # - privacy # fix for discussion
+  # - social: # TODO configure later
+  #     # cards_layout_options:
+  #     # background_image: layouts/background.png
+  #       # background_color: transparent
+
+markdown_extensions:
+  - tables
+
+  # Python Markdown
+  - abbr
+  # - admonition # use new pymdownx.blocks.admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.blocks.admonition:
+      types: ['note', 'quote', 'music', 'abstract', 'tip', 'warning', 'success']
+  - pymdownx.blocks.definition
+  - pymdownx.blocks.caption
+  - pymdownx.blocks.details
+  - pymdownx.caret
+  # - pymdownx.details # use new pymdownx.blocks.details
+  # - pymdownx.emoji: # prefer old school :-)
+  #     emoji_index: !!python/name:material.extensions.emoji.twemoji
+  #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.snippets:
+      base_path: text/ru/assets
+      check_paths: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  analytics:
+    provider: google
+    property: G-DD5EPVVX1K
+    # feedback: # fix feedback later
+    #   title: Страница полезна?
+    #   ratings:
+    #     - icon: material/heart
+    #       name: Всё понятно
+    #       data: 1
+    #       note: >-
+    #         Спасибо!
+    #     - icon: material/heart-broken
+    #       name: Этот текст можно улучшить
+    #       data: 0
+    #       note: >-
+    #         Спасибо за отзыв! Помогите нам <a href="https://github.com/bongiozzo/whattodo/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">доработать страницу</a>.
+  # alternate: # TODO configure languages if needed ?
+    #   - name: English
+    #     link: /en/ 
+    #     lang: en
+    #   - name: Русский
+    #     link: /ru/
+    #     lang: ru
+  social:
+    - icon: fontawesome/brands/telegram
+      name: bongiozzo в Telegram
+      link: https://t.me/bongiozzo_public
+  consent:
+    title: Согласие на использование cookie
+    description: >- 
+      Мы используем cookie для распознавания повторных посещений,
+      а также, чтобы понять – находите ли Вы то, что ищете?
+      Спасибо, что делаете наш Текст лучше!
+
+extra_css:
+  - assets/css/extra.css
+
+hooks:
+  - mkdocs/hooks/nobr_emoticons.py
+
+site_dir: public

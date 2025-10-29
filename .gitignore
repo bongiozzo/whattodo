@@ -1,7 +1,11 @@
 node_modules
-generated-toc.adoc
-public
-build
+public/
+build/
 .cache
 .idea
 .DS_Store
+__pycache__/
+# Build artifacts - generated files, not source
+*.epub
+text/ru/assets/*.txt
+text/ru/assets/*.epub
