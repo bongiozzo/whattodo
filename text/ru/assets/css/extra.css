@@ -1,16 +1,206 @@
-.md-typeset .admonition, 
-.md-typeset details {
-    /* font-size: inherit; */
-    font-size: 0.75rem;
-    /* font-style: italic; */
+/* 
+Reference of mkdocs-material types and corresponding colors used for mappings note, music, quote blocks
+
+Here parent mkdocs-material theme
+https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types
+https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/assets/stylesheets/main/extensions/markdown/_admonition.scss 
+
+Ситуация - abstract
+Пример / История / Анекдот / Притча - tip
+Цитата - quote
+Дополнение - warning
+Определение / Правило / define - success
+Исходник / details - example
+Музыка / music - danger
+
+/// Admonition flavours
+
+  "note":     pencil-circle         $clr-blue-a200,
+  "abstract": clipboard-text        $clr-light-blue-a400,
+  "info":     information           $clr-cyan-a700,
+  "tip":      fire                  $clr-teal-a700,
+  "success":  check                 $clr-green-a700,
+  "question": help-circle           $clr-light-green-a700,
+  "warning":  alert                 $clr-orange-a400,
+  "failure":  close                 $clr-red-a200,
+  "danger":   lightning-bolt-circle $clr-red-a400,
+  "bug":      shield-bug            $clr-pink-a400,
+  "example":  test-tube             $clr-deep-purple-a200,
+  "quote":    format-quote-close    $clr-grey
+
+background-color: color.adjust($clr-blue-a200, $alpha: -0.9);
+
+ * Fix figure/image width: make <p> wrapper respect <img> width
+ * MkDocs Material wraps images in <figure><p><img></p></figure>
+ * The image's width attribute controls the container width
+ */
+.md-typeset figure {
+  display: table;              /* Makes figure shrink-wrap content by default */
+  margin: 0.8em auto;          /* Center horizontally */
+  margin-inline-start: auto;   /* Override Material's inline-start margin */
+  margin-inline-end: auto;     /* Override Material's inline-end margin */
+}
+.md-typeset figure > p {
+  display: block;              /* Block layout for proper width calculation */
+  margin: 0;
+  max-width: none;             /* Remove any max-width constraints */
+}
+.md-typeset figure > p > img {
+  display: block;              /* Remove inline spacing */
+  max-width: 100%;             /* Responsive: don't exceed container */
+  height: auto;                /* Maintain aspect ratio */
 }
 
+/*
+ * When image has percentage width, make containers full-width
+ * but let the HTML width attribute control the actual image size
+ */
+.md-typeset figure:has(> p > img[width*="%"]) {
+  width: 100%;                 /* Full width container when image uses % */
+  display: block;              /* Block layout instead of table */
+}
+.md-typeset figure:has(> p > img[width*="%"]) > p {
+  width: 100%;                 /* Make p fill figure */
+  text-align: center;          /* Center the image inside */
+}
+.md-typeset figure:has(> p > img[width*="%"]) > p > img {
+  max-width: 100%;             /* Responsive limit */
+  /* width is controlled by HTML width attribute, not CSS */
+}
+
+
+/* Base admonition/expandable block style
+ * Applies to all admonitions and details blocks
+ */
+.md-typeset .admonition,
+.md-typeset details,
+.md-typeset dl {
+  font-size: 0.8rem;           /* Slightly condensed text (use rem for scaling) */
+  line-height: 1.6;
+  margin-block: 0.8em;         /* Vertical space between blocks (em for font-relative) */
+  border: none;                /* Remove all borders except left */
+  border-left: 0.2rem solid;   /* Only left border (rem for sharpness) */
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+}
+/*
+ * Admonition body/content: condensed, like <dd>
+ * Applies to all direct children except .admonition-title
+ */
+  /* Base icon layout to match Material's .admonition-title::before */
+ .md-typeset dl > dt::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0.6rem;               /* align with Material icon gutter */
+  width: 1.2rem;               /* match icon box */
+  height: 1.2rem;
+  transform: translateY(-50%);
+  background-color: var(--md-default-fg-color--light);
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+ }
+ .md-typeset dl > dt {
+  border-top-right-radius: .1rem;
+  position: relative;            /* align with .admonition-title for icon anchoring */
+  margin: 0;
+  /* Padding order: top right bottom left (copied from .admonition-title) */
+  padding-top: 0.45rem;
+  padding-right: 0.9rem;
+  padding-bottom: 0.45rem;
+  padding-left: 2.5em;           /* reserve space for ::before icon */
+  font-weight: 700;
+  background-color: var(--md-code-bg-color, rgba(0,0,0,.03));
+  line-height: 1.2;
+ }
+
+
+.md-typeset .admonition > :not(.admonition-title) {
+  margin: 0;
+  padding: 0.5rem 1.5rem;      /* match admonition body padding */
+}
+
+/* Override Material's default dd left margin for dl blocks styled as admonitions */
+[dir="ltr"] .md-typeset dl > dd {
+  margin: 0 0 0 0;
+  padding: 0.5rem 2rem;
+}
+
+/*
+ * Quote variant: italic text
+ * Applies to .admonition.quote blocks
+ */
 .md-typeset .admonition.quote {
-    font-style: italic;
+  font-style: italic;
 }
 
-.md-typeset .admonition.quote ins {
-    display: block;
-    text-align: right;
-    margin-top: 0.5em;
+/*
+ * Custom icon for music admonition (SVG as CSS var)
+ */
+:root {
+  --md-admonition-icon--music: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 18V7c0-1.1.9-2 2-2h0c1.1 0 2 .9 2 2v8"/><path d="M14 15v-1c0-1.1.9-2 2-2h0c1.1 0 2 .9 2 2v1"/><path d="M18 15v-1c0-1.1.9-2 2-2h0c1.1 0 2 .9 2 2v1"/><path d="M22 15V9c0-1.1.9-2 2-2h0c1.1 0 2 .9 2 2v11"/><path d="M10 16v4.6l-1.5-1.8c-.8-.9-2.2-1-3.1-.1l0 0c-.8.8-.8 2-.1 2.9l3.2 3.6c1.6 1.9 4 2.9 6.4 2.9h2.5H18h.6c4.1 0 7.4-3.3 7.4-7.4V16"/></svg>');
+}
+
+/*
+ * Music variant: red border and icon, light red title bg
+ */
+.md-typeset .music {
+  border-color: rgb(194, 29, 29);
+}
+.md-typeset .music > .admonition-title {
+  background-color: rgba(194, 29, 29, 0.1);
+}
+.md-typeset .music > .admonition-title::before {
+  background-color: rgb(194, 29, 29);
+  -webkit-mask-image: var(--md-admonition-icon--music);
+          mask-image: var(--md-admonition-icon--music);
+}
+
+/* Definition lists styled like success admonition */
+.md-typeset dl {
+  border-color: rgb(0, 200, 83); /* Material green A700 #00C853 */
+}
+.md-typeset dl > dt {
+  background-color: rgba(0, 200, 83, 0.1);
+}
+.md-typeset dl > dt::before {
+  background-color: rgb(0, 200, 83);
+  -webkit-mask-image: var(--md-admonition-icon--success);
+          mask-image: var(--md-admonition-icon--success);
+}
+
+/* Definition lists styled like example admonition */
+.md-typeset details {
+  border-color: rgb(103, 58, 183); /* Material deep purple A200 #673AB7 */
+}
+.md-typeset details > summary {
+  background-color: rgba(103, 58, 183, 0.1);
+}
+.md-typeset details > summary::before {
+  background-color: rgb(103, 58, 183);
+  -webkit-mask-image: var(--md-admonition-icon--example);
+          mask-image: var(--md-admonition-icon--example);
+}
+
+/*
+ * Prevent inline emoji :-) from breaking across lines 
+ * Follows Material naming convention with md- prefix
+ */
+.md-typeset .md-nobr {
+  white-space: nowrap;
+}
+
+
+/*
+ * Author signature style: right-aligned, italic, spaced from text
+ * Applies to .author class in quotes
+ */
+p > .author {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
 }

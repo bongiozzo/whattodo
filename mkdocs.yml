@@ -1,22 +1,31 @@
 site_name: 'Общие цели'
 site_url: https://text.sharedgoals.ru/ru/
 site_author: Serge Polyakov
-copyright: Общие цели, 2020-2025
-site_description: 'Что мне делать? :-) Текст в концепции Общих Целей'
+copyright: Shared Goals, 2020-2025
+site_description: 'Что мне делать? :-) Текст в концепции «Общие Цели»'
 repo_url: https://github.com/bongiozzo/whattodo
 repo_name: bongiozzo/whattodo
 edit_uri: blob/master/docs/
 
+# TODO - tag migrate commit
+# TODO -- optimize size of images with check git-filter-repo
+# TODO -- remove .html assets from text
+# TODO -- write mkdocs story
+# TODO -- epub nobr in smiles
+# TODO -- epub center images for non-Apple
+
 docs_dir: text/ru
+use_directory_urls: true
 nav:
-  - index.md 
-  - Наблюдения:
+  - 'Вводная':
+    - index.md
+  - 'Наблюдения':
     - p1-010-happiness.md
     - p1-020-call.md
     - p1-030-time.md
     - p1-040-unhappiness.md
     - p1-050-country.md
-  - Практика:
+  - 'Практика':
     - p2-100-authors.md
     - p2-110-system.md
     - p2-120-school.md
@@ -30,34 +39,26 @@ nav:
     - p2-190-presentation.md
     - p2-200-text.md
     - p2-999-death.md
-    - p3-references.md
-  - Друзья:
-    - 'Город счастливых людей ↗': https://happycities.the-csr.ru/
-  - Читать Текст:
-    - PDF ↓: book.pdf
-    - EPUB ↓: book.epub
-    - Markdown ↓: book.md
-  - Обсуждать Текст:
-    - Telegram группа ↗: https://t.me/bongiozzo_public 
-  - Писать свой Текст:
-    - Инструкция: p2-200-text.md#text_instruction
-  - Помощник РазумИЙ:
-    - DeepWiki ↗: https://deepwiki.com/bongiozzo/whattodo
+  - p3-links.md
+  - p3-references.md
+  - 'РазумИЙ':
+    - 'DeepWiki ↗': https://deepwiki.com/bongiozzo/whattodo
+    - 'DZhechko ↗': https://dzhechko.github.io/theory-of-wellbeing-analysis/
 
 theme:
   name: material
   logo: img/logo-dark.svg
-  favicon: img/favicon.png
+  favicon: img/favicon.ico
   language: ru
-  custom_dir: overrides
+  custom_dir: mkdocs/overrides
   features:
-    # - navigation.tabs
-    # - navigation.tabs.sticky
     - navigation.tracking
-    # - navigation.sections
-    # - navigation.expand
     - navigation.top
     - navigation.footer
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    # - navigation.sections
+    # - navigation.expand
     # - navigation.prune
     - toc.follow
     # - toc.integrate
@@ -67,7 +68,7 @@ theme:
     - content.action.view
     - content.action.edit
   font: 
-    text: Noto Serif
+    text: Tahoma, Verdana, sans-serif
 
   palette:
     # - primary: indigo
@@ -97,42 +98,17 @@ plugins:
   - search
   # - macros
   # - privacy # fix for discussion
-  - social:
-      # cards_layout_options:
-      # background_image: layouts/background.png
-        # background_color: transparent
-  # - i18n:
-  #     docs_structure: folder
-  #     languages:
-  #       - locale: ru
-  #         default: true
-  #         name: Русский
-  #         build: true
-  #     languages:
-  #       - locale: en
-  #         default: true
-  #         name: English
-  #         build: true
-  # - mkdocs_with_pdf
-  # - document-dates: # fetch-depth: 0 to the actions
-  # - document-dates:
-  #     position: bottom
-  #     date_format: '%d.%m.%Y'
-  #     type: date
-  #     show_author: true
-  - to-pdf:
-      download_link: header
-      output_path: book.pdf
-      cover_title: Что мне делать? :-)
-      cover_subtitle: Текст в концепции Общих Целей
-      toc_title: Содержание
-      # TODO make Serif font
+  # - social: # TODO configure later
+  #     # cards_layout_options:
+  #     # background_image: layouts/background.png
+  #       # background_color: transparent
 
 markdown_extensions:
+  - tables
 
   # Python Markdown
   - abbr
-  - admonition
+  # - admonition # use new pymdownx.blocks.admonition
   - attr_list
   - def_list
   - footnotes
@@ -141,22 +117,27 @@ markdown_extensions:
       permalink: true
 
   # Python Markdown Extensions
-  - pymdownx.arithmatex:
-      generic: true
   - pymdownx.betterem:
       smart_enable: all
+  - pymdownx.blocks.admonition:
+      types: ['note', 'quote', 'music', 'abstract', 'tip', 'warning', 'success']
+  - pymdownx.blocks.definition
   - pymdownx.blocks.caption
+  - pymdownx.blocks.details
   - pymdownx.caret
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # - pymdownx.details # use new pymdownx.blocks.details
+  # - pymdownx.emoji: # prefer old school :-)
+  #     emoji_index: !!python/name:material.extensions.emoji.twemoji
+  #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences
+  - pymdownx.snippets:
+      base_path: text/ru/assets
+      check_paths: true
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
@@ -167,7 +148,7 @@ extra:
   analytics:
     provider: google
     property: G-DD5EPVVX1K
-    # feedback: # doesn't work !
+    # feedback: # fix feedback later
     #   title: Страница полезна?
     #   ratings:
     #     - icon: material/heart
@@ -180,7 +161,7 @@ extra:
     #       data: 0
     #       note: >-
     #         Спасибо за отзыв! Помогите нам <a href="https://github.com/bongiozzo/whattodo/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">доработать страницу</a>.
-  # alternate:
+  # alternate: # TODO configure languages if needed ?
     #   - name: English
     #     link: /en/ 
     #     lang: en
@@ -198,17 +179,10 @@ extra:
       а также, чтобы понять – находите ли Вы то, что ищете?
       Спасибо, что делаете наш Текст лучше!
 
-# TODO Customize quote admonition
-#   - icon: material/format-quote-close
 extra_css:
   - assets/css/extra.css
 
-# TODO Make annotation for code of presentations?
-# TODO Check math functionality
-# TODO Use Critic for deleted text? I live here
-
-# hooks:
-#   - hooks/socialmedia.py
+hooks:
+  - mkdocs/hooks/nobr_emoticons.py
 
 site_dir: public
-# epub support

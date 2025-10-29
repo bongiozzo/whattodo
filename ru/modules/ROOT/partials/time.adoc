@@ -1,4 +1,0 @@
-[sidebar]
-Создано: {created-date},
-Опубликовано: {publication-date},
-Дополнено: {revdate}.
