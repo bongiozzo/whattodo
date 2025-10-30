@@ -5,13 +5,14 @@ copyright: Shared Goals, 2020-2025
 site_description: 'Что мне делать? :-) Текст в концепции «Общие Цели»'
 repo_url: https://github.com/bongiozzo/whattodo
 repo_name: bongiozzo/whattodo
-edit_uri: blob/master/docs/
+edit_uri: blob/master/text/ru/
 
 # TODO - tag migrate commit
-# TODO -- optimize size of images with check git-filter-repo
+# TODO -- optimize size of images with git-filter-repo
 # TODO -- remove .html assets from text
 # TODO -- write mkdocs story
 # TODO -- epub nobr in smiles
+# TODO -- mobile view - gigantic logo on top left corner
 # TODO -- epub center images for non-Apple
 
 docs_dir: text/ru
