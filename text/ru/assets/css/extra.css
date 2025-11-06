@@ -1,9 +1,7 @@
 /* 
 Reference of mkdocs-material types and corresponding colors used for mappings note, music, quote blocks
 
-Here parent mkdocs-material theme
-https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types
-https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/assets/stylesheets/main/extensions/markdown/_admonition.scss 
+Admonition flavours, Markdown classes and corresponding styles from mkdocs-material:
 
 Ситуация - abstract
 Пример / История / Анекдот / Притча - tip
@@ -13,7 +11,9 @@ https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/assets/st
 Исходник / details - example
 Музыка / music - danger
 
-/// Admonition flavours
+Admonition flavours sheet from parent mkdocs-material theme
+https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types
+https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/assets/stylesheets/main/extensions/markdown/_admonition.scss 
 
   "note":     pencil-circle         $clr-blue-a200,
   "abstract": clipboard-text        $clr-light-blue-a400,
@@ -28,7 +28,7 @@ https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/assets/st
   "example":  test-tube             $clr-deep-purple-a200,
   "quote":    format-quote-close    $clr-grey
 
-background-color: color.adjust($clr-blue-a200, $alpha: -0.9);
+  background-color: color.adjust($clr-blue-a200, $alpha: -0.9);
 
  * Fix figure/image width: make <p> wrapper respect <img> width
  * MkDocs Material wraps images in <figure><p><img></p></figure>

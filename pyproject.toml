@@ -5,9 +5,12 @@ description = "Comprehensive text around the SharedGoals platform concept"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    # Remove after fix of https://github.com/mkdocs/mkdocs/issues/4032
     "click>=8.1.7,<8.2.2",
     "livereload>=2.7.1",
     "mkdocs>=1.6.1",
+    "mkdocs-git-committers-plugin-2>=2.5.0",
+    "mkdocs-git-revision-date-localized-plugin>=1.5.0",
     "mkdocs-material>=9.6.22",
     "pyyaml>=6.0.3",
 ]

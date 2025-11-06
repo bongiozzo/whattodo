@@ -118,7 +118,8 @@ section.titlepage > * {
 }
 
 section.titlepage h1.main,
-section.titlepage h1.subtitle {
+section.titlepage h1.subtitle,
+section.titlepage h1.edition {
   text-align: center;
   width: 100%;
   margin: 0;
@@ -127,15 +128,20 @@ section.titlepage h1.subtitle {
 }
 
 section.titlepage h1.main {
-  font-size: 2.4em;
+  font-size: 2em;
   font-weight: bold;
   margin-top: 2em;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.5em;
   text-decoration: underline;
 }
 
 section.titlepage h1.subtitle {
-  font-size: 1.5em;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+section.titlepage h1.edition {
+  font-size: 0.8em;
   font-weight: normal;
   margin-bottom: auto;
 }
@@ -143,58 +149,31 @@ section.titlepage h1.subtitle {
 section.titlepage p.author {
   text-align: right;
   font-size: 1.1em;
-  font-weight: bold;
+  font-weight: normal;
   margin: 0 0 0.2em 0;
-  padding: 0;
-}
-
-section.titlepage div.rights {
-  text-align: right;
-  font-size: 0.85em;
-  color: #666;
-  margin: 0 0 2em 0;
   padding: 0;
 }
 
 section.titlepage p.publisher {
-  display: none;
-}
-
-
-/* section.titlepage {
-  margin-top: 2em;
-  margin-bottom: 2em;
-  padding: 2em 0;
-  page-break-after: always;
-  text-align: center;
-}
-section.titlepage h1.main {
-  font-size: 2.5em;
-  font-weight: bold;
-  margin-top: 2em;
-  margin-bottom: 0.3em;
-  text-decoration: underline;
-}
-section.titlepage h1.subtitle {
-  font-size: 1.5em;
-  font-weight: normal;
-  margin-bottom: 1em;
-}
-section.titlepage p.author {
   text-align: right;
   font-size: 1.1em;
-  font-weight: bold;
+  font-style: italic; 
   margin: 0 0 0.2em 0;
   padding: 0;
 }
+
 section.titlepage div.rights {
   text-align: right;
-  font-size: 0.85em;
-  color: #666;
-  margin: 0 0 2em 0;
+  font-size: 1.1em;
+  font-style: italic;
+  margin: 0 0 0.2em 0;
   padding: 0;
 }
-section.titlepage p.publisher { display: none; } */
+
+section.titlepage p.date,
+section.titlepage p.author {
+  display: none
+}
 
 /* Chapter dates styling */
 .chapter-dates {

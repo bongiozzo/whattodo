@@ -29,6 +29,7 @@ COVER_IMAGE := $(EPUB_DIR)/cover.jpg
 COMBINED_MD := $(BUILD_DIR)/text_combined.txt
 PANDOC_MD := $(BUILD_DIR)/pandoc.md
 EPUB_OUT := $(BUILD_DIR)/text_book.epub
+BOOK_META_PROCESSED := $(BUILD_DIR)/book_meta_processed.yml
 
 # --- Phony targets ---
 .PHONY: all epub mkdocs site test clean help debug
@@ -58,8 +59,8 @@ mkdocs: epub
 site: mkdocs
 
 # Stage 3: Generate final EPUB from pandoc-converted markdown
-# (Metadata comes from BOOK_META file generated from mkdocs.yml)
-$(EPUB_OUT): $(PANDOC_MD) $(BOOK_META) $(CSS_FILE) $(COVER_IMAGE)
+# (Metadata comes from BOOK_META_PROCESSED file with git placeholders replaced)
+$(EPUB_OUT): $(PANDOC_MD) $(BOOK_META_PROCESSED) $(CSS_FILE) $(COVER_IMAGE)
 	@echo "==> Stage 3: Generating EPUB..."
 	@mkdir -p $(BUILD_DIR)
 	$(PANDOC) -f markdown+smart $(PANDOC_MD) \
@@ -67,12 +68,25 @@ $(EPUB_OUT): $(PANDOC_MD) $(BOOK_META) $(CSS_FILE) $(COVER_IMAGE)
 		--standalone \
 		--toc \
 		--toc-depth=2 \
-		--metadata-file=$(BOOK_META) \
+		--metadata-file=$(BOOK_META_PROCESSED) \
 		--resource-path=$(DOCS_DIR) \
 		--css=$(CSS_FILE) \
 		--epub-cover-image=$(COVER_IMAGE) \
 		-t epub3
 	@echo "✓ EPUB generated: $@"
+
+# Process book metadata - replace git placeholders
+$(BOOK_META_PROCESSED): $(BOOK_META)
+	@echo "==> Processing book metadata..."
+	@mkdir -p $(BUILD_DIR)
+	@GIT_TAG=$$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.1.0"); \
+	GIT_DATE=$$(git log -1 --format=%cd --date=format:%Y-%m-%d); \
+	GIT_DATE_DISPLAY=$$(echo "$$GIT_DATE" | $(PYTHON) -c "import sys, datetime; d = datetime.datetime.strptime(sys.stdin.read().strip(), '%Y-%m-%d'); print(d.strftime('%d %B %Y').replace('January', 'января').replace('February', 'февраля').replace('March', 'марта').replace('April', 'апреля').replace('May', 'мая').replace('June', 'июня').replace('July', 'июля').replace('August', 'августа').replace('September', 'сентября').replace('October', 'октября').replace('November', 'ноября').replace('December', 'декабря'))"); \
+	EDITION="$$GIT_TAG, $$GIT_DATE_DISPLAY"; \
+	sed -e "s/\[edition\]/$$EDITION/" \
+	    -e "s/\[date\]/$$GIT_DATE/" \
+	    $(BOOK_META) > $@
+	@echo "✓ Metadata processed: $@"
 
 # Stage 2: Process PyMdown Extensions syntax via Lua filter
 # (Combined markdown contains no frontmatter - just content)
@@ -93,7 +107,7 @@ $(COMBINED_MD): $(MKDOCS_CONFIG) $(COMBINE_SCRIPT)
 	@echo "✓ Combined markdown: $@"
 
 # Test target - run validation tests
-test:
+test: $(EPUB_OUT)
 	@echo "==> Unzipping EPUB for tests..."
 	@rm -rf $(BUILD_DIR)/epub
 	@unzip -q $(EPUB_OUT) -d $(BUILD_DIR)/epub

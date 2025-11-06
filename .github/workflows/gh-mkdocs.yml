@@ -22,15 +22,15 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.COMMITTERS_TOKEN }}
     
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v5
-
-      # - name: Configure Git Credentials
-      #   run: |
-      #     git config user.name github-actions[bot]
-      #     git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+        with:
+          fetch-depth: 0
+          fetch-tags: true
 
       - name: Install uv
         uses: astral-sh/setup-uv@v6
@@ -43,6 +43,7 @@ jobs:
       - name: Set up Python
         run: uv python install
 
+      # sudo apt-get remove -y man-db ??? https://github.com/actions/runner-images/issues/10977 
       - name: Install Pandoc
         run: |
           sudo apt-get update

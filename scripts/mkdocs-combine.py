@@ -118,15 +118,92 @@ def remove_frontmatter(content: str) -> str:
     return content
 
 
-def format_dates_from_frontmatter(frontmatter: Dict[str, Any]) -> str:
-    """Format dates from frontmatter as italic text."""
+def get_git_file_dates(file_path: Path) -> Tuple[str, str]:
+    """
+    Retrieve file dates from Git history.
+    
+    Returns tuple: (created_date, updated_date) in format %d.%m.%Y
+    - created_date: date of first commit (--follow to track renames)
+    - updated_date: date of most recent commit
+    """
+    import subprocess
+    
+    try:
+        # Get creation date (first commit following file history)
+        result_created = subprocess.run(
+            ['git', 'log', '--follow', '--diff-filter=A', '--format=%ai', '--reverse', '--', str(file_path)],
+            capture_output=True,
+            text=True,
+            timeout=5
+        )
+        
+        created_date = None
+        if result_created.stdout:
+            # Extract first line and parse date (format: YYYY-MM-DD HH:MM:SS +ZZZZ)
+            first_line = result_created.stdout.strip().split('\n')[0]
+            if first_line:
+                date_part = first_line.split()[0]
+                created_date = format_git_date(date_part)
+        
+        # Get update date (most recent commit)
+        result_updated = subprocess.run(
+            ['git', 'log', '--follow', '--format=%ai', '--max-count=1', '--', str(file_path)],
+            capture_output=True,
+            text=True,
+            timeout=5
+        )
+        
+        updated_date = None
+        if result_updated.stdout:
+            first_line = result_updated.stdout.strip()
+            if first_line:
+                date_part = first_line.split()[0]
+                updated_date = format_git_date(date_part)
+        
+        return created_date or '', updated_date or ''
+    
+    except (subprocess.TimeoutExpired, FileNotFoundError, Exception) as e:
+        print(f"[WARN] Could not retrieve Git dates for {file_path}: {e}", file=sys.stderr)
+        return '', ''
+
+
+def format_git_date(date_str: str) -> str:
+    """Convert date from YYYY-MM-DD format to %d.%m.%Y format."""
+    try:
+        from datetime import datetime
+        dt = datetime.strptime(date_str, '%Y-%m-%d')
+        return dt.strftime('%d.%m.%Y')
+    except ValueError:
+        return ''
+
+
+def format_dates_from_frontmatter(frontmatter: Dict[str, Any], file_path: Path = None) -> str:
+    """
+    Format dates from frontmatter as italic text.
+    
+    Falls back to Git history if dates are not specified in frontmatter.
+    Date format: %d.%m.%Y
+    """
     dates = []
-    if frontmatter.get('created'):
-        dates.append(f"Создано: {frontmatter['created']}")
-    if frontmatter.get('published'):
-        dates.append(f"Опубликовано: {frontmatter['published']}")
-    if frontmatter.get('updated'):
-        dates.append(f"Обновлено: {frontmatter['updated']}")
+    
+    # Get Git dates as fallback
+    git_created = ''
+    git_updated = ''
+    if file_path:
+        git_created, git_updated = get_git_file_dates(file_path)
+    
+    # Use frontmatter date or fall back to Git date
+    created = frontmatter.get('created') or git_created
+    published = frontmatter.get('published') or git_created
+    updated = frontmatter.get('updated') or git_updated
+    
+    if created:
+        dates.append(f"Создано: {created}")
+    if published and published != created:
+        dates.append(f"Опубликовано: {published}")
+    if updated and updated != created:
+        dates.append(f"Обновлено: {updated}")
+    
     if dates:
         # Ensure blank lines so Pandoc treats markers and content as separate blocks
         # This helps the Lua filter detect opening/content/closing correctly.
@@ -336,7 +413,7 @@ def mode_mkdocs(config_path: str) -> str:
             frontmatter = extract_frontmatter(content)
             
             # Extract dates for display at end of section
-            dates_text = format_dates_from_frontmatter(frontmatter)
+            dates_text = format_dates_from_frontmatter(frontmatter, file_path)
             
             # Extract title from first heading
             title_from_file = extract_first_heading(content)

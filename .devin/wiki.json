@@ -1,0 +1,73 @@
+{
+  "repo_notes": [
+    {
+      "content": "This is an open-source platform for creating, publishing, and sharing philosophical/conceptual texts. The project demonstrates how to write long-form content collaboratively using Git, publish it as a beautiful website with MkDocs Material, and generate professional ePub books automatically. Everything is completely free and accessible to non-experts. The main entry point is text/ru/index.md which explains the concept and guides users on how to create their own version.",
+      "author": "bongiozzo"
+    },
+    {
+      "content": "Key features: (1) Write text in Markdown format with support for formatting, citations, and structured content types (quotes, examples, rules, etc); (2) Publish automatically to GitHub Pages with full Git history tracking; (3) Generate ePub books from Markdown using Pandoc and custom filters; (4) Use MkDocs Material for beautiful, responsive website; (5) Support for Russian language with customizable styling. All build automation is in the Makefile.",
+      "author": "bongiozzo"
+    },
+    {
+      "content": "The text/ru/ folder contains all source Markdown files organized by chapters: p1-* files cover observations/philosophy, p2-* files cover practical guidance. The index.md is the starting point that explains the project philosophy and how non-experts can fork and create their own version. These Markdown files are the heart of the project and should be thoroughly documented in the wiki."
+    }
+  ],
+  "pages": [
+    {
+      "title": "Project Overview",
+      "purpose": "High-level introduction explaining that this is a free, open-source platform for writing philosophical texts, publishing them as websites and ePub books. Emphasize accessibility for non-experts and the collaborative nature via Git/GitHub."
+    },
+    {
+      "title": "Quick Start for Non-Experts",
+      "purpose": "How to fork the repository and create your own text version. Link to text/ru/index.md which is the main guide. Explain the simple 3-step process: fork → enable GitHub Actions → start writing in Markdown."
+    },
+    {
+      "title": "Writing Structure",
+      "purpose": "Document the text/ru/ folder structure and all Markdown files (p1-*.md for observations, p2-*.md for practice, p3-*.md for references). Explain the front matter (created, published, updated dates) and how to organize content chapters."
+    },
+    {
+      "title": "Text Content - Philosophy (p1-*.md)",
+      "purpose": "Describe the observation/philosophy chapters: p1-010-happiness.md (happiness concept), p1-020-call.md (vocation/calling), p1-030-time.md (modern era challenges), p1-040-unhappiness.md (causes of unhappiness), p1-050-country.md (geographical/cultural perspectives). These form the conceptual foundation.",
+      "parent": "Writing Structure"
+    },
+    {
+      "title": "Text Content - Practical Guidance (p2-*.md)",
+      "purpose": "Describe the practice/implementation chapters: p2-100-authors.md through p2-190-*.md covering authors, systems, schools, locality, digital tools, absurdism, photography, routine, open source, shared goals, presentations, and the Markdown/text format evolution (p2-200-text.md). Also p2-999-death.md and references.",
+      "parent": "Writing Structure"
+    },
+    {
+      "title": "Publishing Pipeline",
+      "purpose": "Explain how MkDocs Material converts Markdown files to a beautiful website. Document the mkdocs.yml configuration, custom CSS, and Material theme features used. Show how the site publishes to GitHub Pages at /ru/ subdirectory."
+    },
+    {
+      "title": "Build & Automation",
+      "purpose": "Document the Makefile which orchestrates: (1) Markdown validation, (2) ePub generation via Pandoc, (3) Website building with MkDocs, (4) Artifact management. Explain build targets and how GitHub Actions automates publication on git push."
+    },
+    {
+      "title": "ePub Book Generation",
+      "purpose": "Explain the Pandoc-based workflow for converting Markdown to ePub format. Document custom Lua filters for handling Russian text, styling, and content blocks (quotes, examples, etc). Highlight that ePub is automatically generated from the same Markdown source.",
+      "parent": "Build & Automation"
+    },
+    {
+      "title": "GitHub Integration",
+      "purpose": "Document how the project uses Git for version control with meaningful commit history, GitHub for repository hosting, and GitHub Actions for CI/CD. Explain how anyone can fork to create their own version and have automatic publishing without DevOps knowledge."
+    },
+    {
+      "title": "Markdown Extensions & Formatting",
+      "purpose": "Document the custom Markdown syntax used: admonition blocks (/// quote, /// success, /// warning, etc), image captions, inline attributes, footnotes, tables, and special content types (citations with authors, examples, rules, definitions). Show examples from text/ru/ files.",
+      "parent": "Writing Structure"
+    },
+    {
+      "title": "Internationalization & Russian Support",
+      "purpose": "Document Russian language support in MkDocs configuration, custom CSS for proper typography, and language-specific features. Show how the platform can be adapted for other languages."
+    },
+    {
+      "title": "For Contributors",
+      "purpose": "Explain how contributors can improve the text via pull requests, with emphasis on the grammar review process. Document the /grammar Copilot prompt for checking Russian language quality and the workflow for suggesting improvements while preserving author's voice."
+    },
+    {
+      "title": "Deployment & Hosting",
+      "purpose": "Document how the site is published to GitHub Pages, custom domain setup at text.sharedgoals.ru/ru/, and how fork deployment works automatically via GitHub Actions without manual steps."
+    }
+  ]
+}

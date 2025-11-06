@@ -7,16 +7,19 @@ repo_url: https://github.com/bongiozzo/whattodo
 repo_name: bongiozzo/whattodo
 edit_uri: blob/master/text/ru/
 
-# TODO - tag migrate commit
-# TODO -- optimize size of images with git-filter-repo
+site_dir: public/ru
+docs_dir: text/ru
+use_directory_urls: true
+
+# TODO ???? optimize size of images with git-filter-repo
 # TODO -- remove .html assets from text
 # TODO -- write mkdocs story
 # TODO -- epub nobr in smiles
 # TODO -- mobile view - gigantic logo on top left corner
 # TODO -- epub center images for non-Apple
+# TODO -- check updates
+# TODO - Update Action + Warning: Path Validation Error: Path(s) specified in the action for caching do(es) not exist, hence no cache is being saved.
 
-docs_dir: text/ru
-use_directory_urls: true
 nav:
   - 'Вводная':
     - index.md
@@ -51,6 +54,8 @@ theme:
   logo: img/logo-dark.svg
   favicon: img/favicon.ico
   language: ru
+  # Check the base.html for templating understanding
+  # https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/base.html
   custom_dir: mkdocs/overrides
   features:
     - navigation.tracking
@@ -97,7 +102,24 @@ theme:
 
 plugins:
   - search
-  # - macros
+  - git-revision-date-localized:
+      enabled: true
+      locale: ru_RU
+      type: custom
+      custom_format: "%d.%m.%Y"
+      enable_creation_date: true
+      enable_git_follow: true
+      fallback_to_build_date: true
+      # exclude:
+      #     - index.md
+      # strict: true
+      # ignored_commits_file: .git-blame-ignore-revs
+  - git-committers:
+      repository: bongiozzo/whattodo
+      branch: master
+      docs_path: text/ru/
+
+    # - macros
   # - privacy # fix for discussion
   # - social: # TODO configure later
   #     # cards_layout_options:
@@ -146,6 +168,10 @@ markdown_extensions:
   - pymdownx.tilde
 
 extra:
+  social:
+    - icon: fontawesome/brands/telegram
+      name: bongiozzo в Telegram
+      link: https://t.me/bongiozzo_public
   analytics:
     provider: google
     property: G-DD5EPVVX1K
@@ -169,10 +195,7 @@ extra:
     #   - name: Русский
     #     link: /ru/
     #     lang: ru
-  social:
-    - icon: fontawesome/brands/telegram
-      name: bongiozzo в Telegram
-      link: https://t.me/bongiozzo_public
+
   consent:
     title: Согласие на использование cookie
     description: >- 
@@ -185,5 +208,3 @@ extra_css:
 
 hooks:
   - mkdocs/hooks/nobr_emoticons.py
-
-site_dir: public/ru

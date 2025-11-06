@@ -2,7 +2,6 @@
 comments: true
 created: 03.08.2023
 published: 24.11.2023
-# updated: 09.09.2025
 description: Представление соавторов в начале практической части Текста.
 ---
 
