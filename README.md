@@ -1,6 +1,6 @@
 # Что мне делать? :-)
 
-[Текст](https://text.sharedgoals.ru/) в [концепции Open Source](https://text.sharedgoals.ru/ru/p2-170-opensource) о том, что можно делать, чтобы [моментов счастья](https://text.sharedgoals.ru/ru/p1-010-happiness#moments_of_happiness) было больше.
+[Текст](https://text.sharedgoals.ru/) в [концепции Open Source](https://text.sharedgoals.ru/ru/p2-170-opensource), основной целью которого является планирование деятельности, приносящей радость и [моменты счастья](https://text.sharedgoals.ru/ru/p1-010-happiness#moments_of_happiness).
 
 ## Инструкция по созданию собственного Текста
 

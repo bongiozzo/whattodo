@@ -28,6 +28,7 @@ description: Наш Текст — это сборка смыслов, взят�
 - Про поиск Веры: [Итальянские маршруты Андрея Тарковского](https://www.livelib.ru/review/5073775-italyanskie-marshruty-andreya-tarkovskogo-lev-naumov)
 - Про следование Призванию с точки зрения психолога: [Поток](https://www.livelib.ru/review/3879424-potok-psihologiya-optimalnogo-perezhivaniya-mihaj-chiksentmihaji)
 - Про экономику и Россию: [Русская модель управления](https://www.livelib.ru/review/3093508-russkaya-model-upravleniya-aleksandr-prohorov)
+- Про ситуацию и перспективы Запада: [Поражение Запада](https://www.livelib.ru/review/5545582-porazhenie-zapada-emmanyuel-todd)
 - База целеполагания и личностного роста: [7 навыков](https://www.livelib.ru/review/3792199-sem-navykov-vysokoeffektivnyh-lyudej)
 - Практическая инструкция к изменению мира: [От нуля к единице](https://www.livelib.ru/review/4639619-ot-nulya-k-edinitse-kak-sozdat-startap-kotoryj-izmenit-buduschee)
 - Фокусировка и цифра в управлении: [Цель. Процесс непрерывного улучшения](https://www.livelib.ru/review/3908812-tsel-protsess-nepreryvnogo-uluchsheniya)

@@ -583,7 +583,7 @@ Many things are easier to explain if there is than if there isn't.
 
 [Воля](#psychology_of_will) и [Разум](#psychology_of_mind) необходимы, чтобы двигаться к созидательным Идеалам.
 
-[Счастье ощущается в этом движении](p1-010-happiness.md#happiness_in_action).
+[Радость ощущается в этом движении](p1-010-happiness.md#happiness_in_action).
 
 Развитые [навыки Чувств](#psychology_of_unconscious) дают возможность испытывать его в полной мере и в [широком спектре наших эмоций](p1-020-call.md#sense_of_awe).
 
