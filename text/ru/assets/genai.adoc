@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 ++++
 
-image::https://text.sharedgoals.ru/ru/_images/qrchimpX256.png[]
+image::https://text.sharedgoals.ru/ru/img/qrchimpX256.png[]
 
 [.notes]
 --
@@ -357,7 +357,7 @@ image::https://s1.livelib.ru/boocover/1005482422/o/c756/Viktor_Frankl__Skazat_zh
 
 == Человеку Нужен Человек
 
-image::https://text.sharedgoals.ru/ru/_images/solaris.jpg[link=https://text.sharedgoals.ru/ru/p2-110-system#larger_than_life,width=50%]
+image::https://text.sharedgoals.ru/ru/img/solaris.jpg[link=https://text.sharedgoals.ru/ru/p2-110-system#larger_than_life,width=50%]
 
 [.notes]
 --
