@@ -1,3 +1,8 @@
+# --- Roadmap tasks ---
+# TODO: separate scripts and content into different repos
+# TODO: create copilot-instrucions.md with instructions for using GitHub Copilot
+# TODO: try to remove generated genai.html html
+
 # --- MkDocs to EPUB Conversion Pipeline ---
 # This Makefile orchestrates a 4-stage pipeline:
 # 1. Extract nav structure from mkdocs.yml

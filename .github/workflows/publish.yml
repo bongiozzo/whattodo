@@ -1,0 +1,44 @@
+name: publish
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shared-goals/text-forge@v1
+        with:
+          mkdocs_config: mkdocs.yml
+          docs_dir: text/ru
+          site_dir: public/ru
+          cover_image: epub/cover.jpg
+
+      # Build verification artifact (works on any branch)
+      - uses: actions/upload-artifact@v4
+        with:
+          name: site-public
+          path: public
+
+      # Deploy only from master (prevents branch tests from overwriting prod Pages)
+      - if: github.ref == 'refs/heads/master'
+        uses: actions/configure-pages@v5
+      - if: github.ref == 'refs/heads/master'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+      - if: github.ref == 'refs/heads/master'
+        uses: actions/deploy-pages@v4
