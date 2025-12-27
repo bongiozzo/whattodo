@@ -726,10 +726,6 @@
     ],
     "cSpell.language": "en,ru",
     "accessibility.voice.speechLanguage": "ru-RU",
-    "asciidoc.preview.asciidoctorAttributes": {
-        
-        "imagesdir": "../images"
-    },
     // "editor.unicodeHighlight.nonBasicASCII": false,
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "cSpell.enabled": true,
