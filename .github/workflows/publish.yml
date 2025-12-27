@@ -29,7 +29,7 @@ jobs:
           mkdocs_config: mkdocs.yml
           docs_dir: text/ru
           site_dir: public/ru
-          cover_image: epub/cover.jpg
+          cover_image: text/ru/img/cover.jpg
 
       # Build verification artifact (works on any branch)
       - uses: actions/upload-artifact@v4

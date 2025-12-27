@@ -1,0 +1,3 @@
+[submodule "tooling/text-forge"]
+	path = tooling/text-forge
+	url = https://github.com/shared-goals/text-forge.git

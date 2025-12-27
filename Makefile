@@ -1,9 +1,3 @@
-# --- Roadmap tasks ---
-# TODO: separate scripts and content into different repos
-# TODO: create copilot-instrucions.md with instructions for using GitHub Copilot
-# TODO: try to remove generated genai.html html
-
-# --- MkDocs to EPUB Conversion Pipeline ---
 # This Makefile orchestrates a 4-stage pipeline:
 # 1. Extract nav structure from mkdocs.yml
 # 2. Combine markdown files
@@ -15,9 +9,9 @@ PYTHON := python3
 PANDOC := pandoc
 MKDOCS := mkdocs
 DOCS_DIR := text/ru
-SCRIPTS_DIR := scripts
+SCRIPTS_DIR := tooling/text-forge/scripts
 BUILD_DIR := build
-EPUB_DIR := epub
+EPUB_DIR := tooling/text-forge/epub
 PUBLIC_DIR := public
 SITE_DIR := $(PUBLIC_DIR)/ru
 ASSETS_DIR := $(SITE_DIR)/assets
@@ -28,7 +22,8 @@ COMBINE_SCRIPT := $(SCRIPTS_DIR)/mkdocs-combine.py
 LUA_FILTER := $(SCRIPTS_DIR)/pymdown-pandoc.lua
 BOOK_META := $(EPUB_DIR)/book_meta.yml
 CSS_FILE := $(EPUB_DIR)/epub.css
-COVER_IMAGE := $(EPUB_DIR)/cover.jpg
+# Cover is content-owned; keep it inside docs tree.
+COVER_IMAGE := $(DOCS_DIR)/img/cover.jpg
 
 # Build targets
 COMBINED_MD := $(BUILD_DIR)/text_combined.txt
@@ -85,7 +80,8 @@ $(BOOK_META_PROCESSED): $(BOOK_META)
 	@echo "==> Processing book metadata..."
 	@mkdir -p $(BUILD_DIR)
 	@GIT_TAG=$$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.1.0"); \
-	GIT_DATE=$$(git log -1 --format=%cd --date=format:%Y-%m-%d); \
+	GIT_DATE=$$(git log -1 --format=%cs 2>/dev/null || true); \
+	if [ -z "$$GIT_DATE" ]; then GIT_DATE=$$(date -u +%Y-%m-%d); fi; \
 	GIT_DATE_DISPLAY=$$(echo "$$GIT_DATE" | $(PYTHON) -c "import sys, datetime; d = datetime.datetime.strptime(sys.stdin.read().strip(), '%Y-%m-%d'); print(d.strftime('%d %B %Y').replace('January', 'января').replace('February', 'февраля').replace('March', 'марта').replace('April', 'апреля').replace('May', 'мая').replace('June', 'июня').replace('July', 'июля').replace('August', 'августа').replace('September', 'сентября').replace('October', 'октября').replace('November', 'ноября').replace('December', 'декабря'))"); \
 	EDITION="$$GIT_TAG, $$GIT_DATE_DISPLAY"; \
 	sed -e "s/\[edition\]/$$EDITION/" \
@@ -123,6 +119,9 @@ test: $(EPUB_OUT)
 # Help target
 help:
 	@echo "MkDocs + EPUB Build Pipeline"
+	@echo ""
+	@echo "Prerequisites:"
+	@echo "  git submodule update --init --recursive"
 	@echo ""
 	@echo "Targets:"
 	@echo "  make all           Build EPUB + MkDocs site (default)"
