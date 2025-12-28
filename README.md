@@ -35,7 +35,7 @@ git push
 Локальная сборка нужна, если хотите проверить сайт/EPUB перед публикацией.
 Это требует чуть больше настроек, чем публикация.
 
-Инструменты вынесены в отдельный git модуль (submodule): `tooling/text-forge`.
+Инструменты вынесены в отдельный git модуль (submodule): `text-forge`.
 
 ### Подготовка
 
@@ -46,7 +46,8 @@ git submodule update --init --recursive
 Зависимости:
 
 - `uv` (управляет Python-зависимостями проекта из `pyproject.toml`)
-- `pandoc` (внешняя утилита, ставится отдельно)
+- `mkdocs` (устанавливается как Python-зависимость проекта; нужен для сайта/serve)
+- `pandoc` (внешняя утилита, ставится отдельно; нужен только для EPUB)
 
 Дальше (один раз на машину / после обновления зависимостей):
 
@@ -57,13 +58,16 @@ uv sync
 ### Команды
 
 ```bash
+make MKDOCS='uv run mkdocs' serve                           # быстрый локальный предпросмотр (без EPUB и без pandoc)
+
 make PYTHON='uv run python' MKDOCS='uv run mkdocs'          # EPUB + сайт (как в CI)
 make PYTHON='uv run python' MKDOCS='uv run mkdocs' epub     # только EPUB
-make PYTHON='uv run python' MKDOCS='uv run mkdocs' mkdocs   # собрать сайт (EPUB будет построен автоматически)
+make PYTHON='uv run python' MKDOCS='uv run mkdocs' site     # собрать сайт (EPUB будет построен автоматически)
 make PYTHON='uv run python' test                            # прогон проверок (expects build artifacts)
 ```
 
-Если submodule не инициализирован, команды `make` не найдут скрипты сборки.
+`make serve` не использует `text-forge` и не требует `pandoc`; он отключает `git-committers` плагин через `MKDOCS_GIT_COMMITTERS_ENABLED=false`, чтобы упростить локальный вывод.
+Если submodule не инициализирован, команды сборки (`make`, `make epub`, `make site`) не найдут скрипты.
 
 [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 
