@@ -1,25 +1,28 @@
+# -----------------
+# Метаданные сайта
+# -----------------
 site_name: 'Общие цели'
+site_description: 'Что мне делать? :-) Текст в концепции «Общие Цели»'
 site_url: https://text.sharedgoals.ru/ru/
 site_author: Serge Polyakov
-copyright: Shared Goals, 2020-2025
-site_description: 'Что мне делать? :-) Текст в концепции «Общие Цели»'
+copyright: Shared Goals, 2020-....
+
+# Интеграция с репозиторием (кнопки Edit/View).
+# NOTE: намеренно закреплено за названием default branch.
 repo_url: https://github.com/bongiozzo/whattodo
 repo_name: bongiozzo/whattodo
 edit_uri: blob/master/text/ru/
 
-site_dir: public/ru
+# -----------------
+# Пути
+# -----------------
 docs_dir: text/ru
+site_dir: public/ru
 use_directory_urls: true
 
-# TODO ???? optimize size of images with git-filter-repo
-# TODO -- remove .html assets from text
-# TODO -- write mkdocs story
-# TODO -- epub nobr in smiles
-# TODO -- mobile view - gigantic logo on top left corner
-# TODO -- epub center images for non-Apple
-# TODO -- check updates
-# TODO - Update Action + Warning: Path Validation Error: Path(s) specified in the action for caching do(es) not exist, hence no cache is being saved.
-
+# -----------------
+# Навигация
+# -----------------
 nav:
   - 'Вводная':
     - index.md
@@ -49,25 +52,26 @@ nav:
     - 'DeepWiki ↗': https://deepwiki.com/bongiozzo/whattodo
     - 'DZhechko ↗': https://dzhechko.github.io/theory-of-wellbeing-analysis/
 
+# -----------------
+# Тема (Material)
+# -----------------
 theme:
   name: material
   logo: img/logo-dark.svg
   favicon: img/favicon.ico
   language: ru
-  # Check the base.html for templating understanding
-  # https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/base.html
-  custom_dir: mkdocs/overrides
+
+  # Переопределениятемы берём из submodule `text-forge/`.
+  # Как переопределить/кастомизировать в контент-репозитории (без symlink):
+  # 1) Создайте `mkdocs/overrides/partials/`.
+  # 2) Скопируйте туда нужный partial из `text-forge/mkdocs/overrides/partials/` и измените.
+  # 3) Поменяйте `custom_dir` на `mkdocs/overrides`.
+  custom_dir: text-forge/mkdocs/overrides
   features:
     - navigation.tracking
     - navigation.top
     - navigation.footer
-    # - navigation.tabs
-    # - navigation.tabs.sticky
-    # - navigation.sections
-    # - navigation.expand
-    # - navigation.prune
     - toc.follow
-    # - toc.integrate
     - search.highlight
     - search.suggest
     - search.share
@@ -77,61 +81,35 @@ theme:
     text: Tahoma, Verdana, sans-serif
 
   palette:
-    # - primary: indigo
-    # - accent: indigo
 
-    # Palette toggle for automatic mode
+    # Палитра для авто режима
     - media: "(prefers-color-scheme)"
       toggle:
         icon: material/brightness-auto
         name: Switch to light mode
 
-    # Palette toggle for light mode
+    # Палитра для светлой темы
     - media: "(prefers-color-scheme: light)"
       scheme: default 
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
 
-    # Palette toggle for dark mode
+    # Палитра для тёмной темы
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
 
-plugins:
-  - search
-  - git-revision-date-localized:
-      enabled: true
-      locale: ru_RU
-      type: custom
-      custom_format: "%d.%m.%Y"
-      enable_creation_date: true
-      enable_git_follow: true
-      fallback_to_build_date: true
-      # exclude:
-      #     - index.md
-      # strict: true
-      # ignored_commits_file: .git-blame-ignore-revs
-  - git-committers:
-      repository: bongiozzo/whattodo
-      branch: master
-      docs_path: text/ru/
-
-    # - macros
-  # - privacy # fix for discussion
-  # - social: # TODO configure later
-  #     # cards_layout_options:
-  #     # background_image: layouts/background.png
-  #       # background_color: transparent
-
+# -----------------
+# Расширения Markdown
+# -----------------
 markdown_extensions:
   - tables
 
   # Python Markdown
   - abbr
-  # - admonition # use new pymdownx.blocks.admonition
   - attr_list
   - def_list
   - footnotes
@@ -139,7 +117,7 @@ markdown_extensions:
   - toc:
       permalink: true
 
-  # Python Markdown Extensions
+  # PyMdown Extensions
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.blocks.admonition:
@@ -148,10 +126,6 @@ markdown_extensions:
   - pymdownx.blocks.caption
   - pymdownx.blocks.details
   - pymdownx.caret
-  # - pymdownx.details # use new pymdownx.blocks.details
-  # - pymdownx.emoji: # prefer old school :-)
-  #     emoji_index: !!python/name:material.extensions.emoji.twemoji
-  #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
@@ -167,7 +141,48 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
+
+# -----------------
+# Plugins
+# -----------------
+plugins:
+  - search
+  - git-revision-date-localized:
+      enabled: true
+      locale: ru_RU
+      type: custom
+      custom_format: "%d.%m.%Y"
+      enable_creation_date: true
+      enable_git_follow: true
+      fallback_to_build_date: true
+  - git-committers:
+      repository: bongiozzo/whattodo
+      branch: master
+      docs_path: text/ru/
+      enabled: !ENV ["MKDOCS_GIT_COMMITTERS_ENABLED", true]
+
 extra:
+  # EPUB metadata (repo-specific).
+  # Эти значения попадают в `text-forge/epub/book_meta.yml` через placeholders.
+  epub:
+    title: Что мне делать? :-)
+    subtitle: Текст в концепции «Общие Цели»
+    author: Сергей Поляков
+    identifier: https://text.sharedgoals.ru
+    publisher: Shared Goals
+    rights: "<a href=\"https://text.sharedgoals.ru\">text.sharedgoals.ru</a>"
+
+  # Комментарии Giscus.
+  giscus:
+    repo: bongiozzo/whattodo
+    repo_id: R_kgDOKiRfkg
+    category: Announcements
+    category_id: DIC_kwDOKiRfks4CaUvR
+
+  # Метка для даты публикации (source-file.html).
+  source_file:
+    published_title: "Опубликовано"
+
   social:
     - icon: fontawesome/brands/telegram
       name: bongiozzo в Telegram
@@ -175,26 +190,6 @@ extra:
   analytics:
     provider: google
     property: G-DD5EPVVX1K
-    # feedback: # fix feedback later
-    #   title: Страница полезна?
-    #   ratings:
-    #     - icon: material/heart
-    #       name: Всё понятно
-    #       data: 1
-    #       note: >-
-    #         Спасибо!
-    #     - icon: material/heart-broken
-    #       name: Этот текст можно улучшить
-    #       data: 0
-    #       note: >-
-    #         Спасибо за отзыв! Помогите нам <a href="https://github.com/bongiozzo/whattodo/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">доработать страницу</a>.
-  # alternate: # TODO configure languages if needed ?
-    #   - name: English
-    #     link: /en/ 
-    #     lang: en
-    #   - name: Русский
-    #     link: /ru/
-    #     lang: ru
 
   consent:
     title: Согласие на использование cookie
@@ -203,8 +198,18 @@ extra:
       а также, чтобы понять – находите ли Вы то, что ищете?
       Спасибо, что делаете наш Текст лучше!
 
+# -----------------
+# Переопределения
+# -----------------
+
 extra_css:
   - assets/css/extra.css
 
 hooks:
-  - mkdocs/hooks/nobr_emoticons.py
+  # Общий hook живёт в submodule `text-forge/`.
+  #
+  # Как переопределить/кастомизировать поведение в контент-репозитории:
+  # 1) Скопируйте hook в `mkdocs/hooks/nobr_emoticons.py` и поменяйте путь ниже.
+  # 2) Или сделайте "обёртку" (wrapper), которая импортирует общий hook и
+  #    добавляет/меняет логику до/после вызова.
+  - text-forge/mkdocs/hooks/nobr_emoticons.py

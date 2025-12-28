@@ -1,0 +1,3 @@
+[submodule "text-forge"]
+	path = text-forge
+	url = https://github.com/shared-goals/text-forge.git
