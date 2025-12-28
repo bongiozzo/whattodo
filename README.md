@@ -45,29 +45,34 @@ git submodule update --init --recursive
 
 Зависимости:
 
-- `uv` (управляет Python-зависимостями проекта из `pyproject.toml`)
-- `mkdocs` (устанавливается как Python-зависимость проекта; нужен для сайта/serve)
+- `git` (нужен для submodule)
+- `uv` (Python tooling ставится внутри `text-forge/`)
 - `pandoc` (внешняя утилита, ставится отдельно; нужен только для EPUB)
 
 Дальше (один раз на машину / после обновления зависимостей):
 
 ```bash
-uv sync
+make install
 ```
 
 ### Команды
 
 ```bash
-make MKDOCS='uv run mkdocs' serve                           # быстрый локальный предпросмотр (без EPUB и без pandoc)
+make serve          # быстрый локальный предпросмотр (без EPUB и без pandoc)
 
-make PYTHON='uv run python' MKDOCS='uv run mkdocs'          # EPUB + сайт (как в CI)
-make PYTHON='uv run python' MKDOCS='uv run mkdocs' epub     # только EPUB
-make PYTHON='uv run python' MKDOCS='uv run mkdocs' site     # собрать сайт (EPUB будет построен автоматически)
-make PYTHON='uv run python' test                            # прогон проверок (expects build artifacts)
+make                # EPUB + сайт (как в CI)
+make epub           # только EPUB
+make site           # собрать сайт (EPUB будет построен автоматически)
 ```
 
-`make serve` не использует `text-forge` и не требует `pandoc`; он отключает `git-committers` плагин через `MKDOCS_GIT_COMMITTERS_ENABLED=false`, чтобы упростить локальный вывод.
-Если submodule не инициализирован, команды сборки (`make`, `make epub`, `make site`) не найдут скрипты.
+Проверки (остаются в `text-forge`):
+
+```bash
+make -C text-forge CONTENT_ROOT=$PWD test
+```
+
+`make serve` не строит EPUB и не требует `pandoc`; он также отключает `git-committers` плагин через `MKDOCS_GIT_COMMITTERS_ENABLED=false`, чтобы упростить локальный вывод.
+Если submodule не инициализирован, команды сборки не найдут tooling (`text-forge`).
 
 [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 

@@ -1,20 +1,19 @@
 # Copilot instructions (whattodo)
 
 ## Big picture
-- This repo is a **MkDocs site** (`mkdocs.yml`, docs in `text/ru/`) plus an **EPUB build pipeline** orchestrated by `Makefile`.
-- The EPUB pipeline is intentionally staged:
+- This repo is a **content repo**: `mkdocs.yml` + docs in `text/ru/`.
+- All tooling (Python deps, scripts, build logic) lives in the `text-forge/` git submodule.
+- The build pipeline is intentionally staged (implemented in `text-forge/`):
   1) **Combine** chapters from `mkdocs.yml` nav → `build/text_combined.txt` via `text-forge/scripts/mkdocs-combine.py`
   2) **Normalize PyMdown syntax** → Pandoc-compatible markdown via `text-forge/scripts/pymdown-pandoc.lua` → `build/pandoc.md`
   3) **Render EPUB** via `pandoc` using `text-forge/epub/book_meta.yml` (+ placeholders filled by git) and `text-forge/epub/epub.css` → `build/text_book.epub`
   4) **Publish site**: copy EPUB + combined text into `text/ru/assets/`, then `mkdocs build` into `public/ru/`
 
-Note: pipeline scripts and EPUB template files are now sourced from the `shared-goals/text-forge` submodule at `text-forge/`.
-
 ## Common workflows (use these commands)
 - Build everything (EPUB + site): `make` or `make all`
+- Fast local preview (no EPUB/pandoc): `make serve`
 - Build EPUB only: `make epub`
-- Build site (also generates EPUB first): `make mkdocs` (alias: `make site`)
-- Run validation tests (expects build artifacts): `make test`
+- Build site (also generates EPUB first): `make site`
 - Clean outputs: `make clean`
 
 ## Project conventions that matter
@@ -31,10 +30,13 @@ Note: pipeline scripts and EPUB template files are now sourced from the `shared-
 - **Emoticon no-break**: MkDocs hook `mkdocs/hooks/nobr_emoticons.py` wraps `:-)`/`;-)` etc into `<span class="md-nobr">…</span>`.
 
 ## Dependencies / environment assumptions
-- Python project config is in `pyproject.toml` (requires Python `>=3.11`).
-- External tools required by the Makefile: `pandoc`, `mkdocs`.
+- Required locally:
+  - `git` (for submodule)
+  - `uv` (Python tooling is installed inside `text-forge/`)
+  - `pandoc` (only needed for EPUB; `make serve` does not need it)
 - `make` uses git metadata to fill `[edition]` and `[date]` placeholders in `text-forge/epub/book_meta.yml`.
 
 ## When changing the build pipeline
-- If you change `text-forge/scripts/mkdocs-combine.py` or `text-forge/scripts/pymdown-pandoc.lua`, update/extend fixtures in `text-forge/scripts/fixtures/` and run `make test`.
+- If you change `text-forge/scripts/mkdocs-combine.py` or `text-forge/scripts/pymdown-pandoc.lua`, update/extend fixtures in `text-forge/scripts/fixtures/` and run tests from the submodule:
+  - `make -C text-forge CONTENT_ROOT=$PWD test`
 - Keep behavior compatible with existing `/// ... ///` blocks used across `text/ru/*.md`.

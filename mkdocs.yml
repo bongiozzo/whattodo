@@ -60,7 +60,13 @@ theme:
   logo: img/logo-dark.svg
   favicon: img/favicon.ico
   language: ru
-  custom_dir: mkdocs/overrides
+  # Переопределения темы берём из submodule `text-forge/`.
+  #
+  # Как переопределить/кастомизировать в контент-репозитории (без symlink):
+  # 1) Создайте `mkdocs/overrides/partials/`.
+  # 2) Скопируйте туда нужный partial из `text-forge/mkdocs/overrides/partials/` и измените.
+  # 3) Поменяйте `custom_dir` на `mkdocs/overrides`.
+  custom_dir: text-forge/mkdocs/overrides
   features:
     - navigation.tracking
     - navigation.top
@@ -156,6 +162,18 @@ plugins:
       enabled: !ENV ["MKDOCS_GIT_COMMITTERS_ENABLED", true]
 
 extra:
+  # Giscus comments (repo-specific).
+  # При желании можно переопределить через переменные окружения.
+  giscus:
+    repo: !ENV [GISCUS_REPO, "bongiozzo/whattodo"]
+    repo_id: !ENV [GISCUS_REPO_ID, "R_kgDOKiRfkg"]
+    category: !ENV [GISCUS_CATEGORY, "Announcements"]
+    category_id: !ENV [GISCUS_CATEGORY_ID, "DIC_kwDOKiRfks4CaUvR"]
+
+  # Labels for shared theme partials (source-file.html) used from text-forge.
+  source_file:
+    published_title: !ENV [SOURCE_FILE_PUBLISHED_TITLE, "Опубликовано"]
+
   social:
     - icon: fontawesome/brands/telegram
       name: bongiozzo в Telegram
@@ -179,4 +197,10 @@ extra_css:
   - assets/css/extra.css
 
 hooks:
-  - mkdocs/hooks/nobr_emoticons.py
+  # Общий hook живёт в submodule `text-forge/`.
+  #
+  # Как переопределить/кастомизировать поведение в контент-репозитории:
+  # 1) Скопируйте hook в `mkdocs/hooks/nobr_emoticons.py` и поменяйте путь ниже.
+  # 2) Или сделайте "обёртку" (wrapper), которая импортирует общий hook и
+  #    добавляет/меняет логику до/после вызова.
+  - text-forge/mkdocs/hooks/nobr_emoticons.py
