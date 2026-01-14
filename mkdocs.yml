@@ -61,7 +61,7 @@ theme:
   favicon: img/favicon.ico
   language: ru
 
-  # Переопределениятемы берём из submodule `text-forge/`.
+  # Переопределения темы берём из submodule `text-forge/`.
   # Как переопределить/кастомизировать в контент-репозитории (без symlink):
   # 1) Создайте `mkdocs/overrides/partials/`.
   # 2) Скопируйте туда нужный partial из `text-forge/mkdocs/overrides/partials/` и измените.
@@ -141,7 +141,6 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
-
 # -----------------
 # Plugins
 # -----------------
@@ -155,6 +154,7 @@ plugins:
       enable_creation_date: true
       enable_git_follow: true
       fallback_to_build_date: true
+  # Можно закомментировать на первый период
   - git-committers:
       repository: bongiozzo/whattodo
       branch: master
@@ -163,7 +163,7 @@ plugins:
 
 extra:
   # EPUB metadata (repo-specific).
-  # Эти значения попадают в `text-forge/epub/book_meta.yml` через placeholders.
+  # Эти значения попадут в `text-forge/epub/book_meta.yml`.
   epub:
     title: Что мне делать? :-)
     subtitle: Текст в концепции «Общие Цели»
@@ -173,6 +173,7 @@ extra:
     rights: "<a href=\"https://text.sharedgoals.ru\">text.sharedgoals.ru</a>"
 
   # Комментарии Giscus.
+  # Можно закомментировать на первый период
   giscus:
     repo: bongiozzo/whattodo
     repo_id: R_kgDOKiRfkg
@@ -187,6 +188,7 @@ extra:
     - icon: fontawesome/brands/telegram
       name: bongiozzo в Telegram
       link: https://t.me/bongiozzo_public
+  # Можно закомментировать на первый период
   analytics:
     provider: google
     property: G-DD5EPVVX1K
@@ -206,10 +208,7 @@ extra_css:
   - assets/css/extra.css
 
 hooks:
-  # Общий hook живёт в submodule `text-forge/`.
-  #
-  # Как переопределить/кастомизировать поведение в контент-репозитории:
-  # 1) Скопируйте hook в `mkdocs/hooks/nobr_emoticons.py` и поменяйте путь ниже.
-  # 2) Или сделайте "обёртку" (wrapper), которая импортирует общий hook и
-  #    добавляет/меняет логику до/после вызова.
+  # Пример преобразования текста из `text-forge/`.
+  # Предотвращает переносы строк для смайликов в тексте.
+
   - text-forge/mkdocs/hooks/nobr_emoticons.py
