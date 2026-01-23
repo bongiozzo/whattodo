@@ -13,7 +13,7 @@ description: Сжатый пересказ предыдущей главы и в
 Во всяком случае, так мне видилось на момент её написания в июне 2024 года.
 
 Текстовые связи поддержаны [визуальным рядом](p1-010-happiness.md#moment_for_vision) – слайдами.
-Презентация сделана в Figma и доступна по адресу [sharedgoals.ru](https://sharedgoals.ru).
+Презентация [сделана в Figma](https://www.figma.com/proto/eSMyOIH0NZUg7abrm6wUar/%C2%AB%D0%9E%D0%B1%D1%89%D0%B8%D0%B5-%D1%86%D0%B5%D0%BB%D0%B8-%D0%B8-%D0%A1%D0%BE%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%BA%D0%B0%D0%BF%D0%B8%D1%82%D0%B0%D0%BB%C2%BB?node-id=1-3&p=f&t=sialEOTraoIkSxuv-1&scaling=contain&content-scaling=fixed&page-id=0%3A1).
 
 ## 1. Время перемен — Время возможностей {#time_possibilities style="page-break-before: always;"}
 
