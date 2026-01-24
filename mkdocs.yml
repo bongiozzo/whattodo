@@ -14,15 +14,15 @@ repo_name: bongiozzo/whattodo
 edit_uri: blob/master/text/ru/
 
 # -----------------
-# Пути
+# Пути и формат URL
 # -----------------
 docs_dir: text/ru
 site_dir: public/ru
 use_directory_urls: true
 
-# -----------------
-# Навигация
-# -----------------
+# ---------------------
+# Навигация и структура
+# ---------------------
 nav:
   - 'Вводная':
     - index.md
@@ -52,9 +52,9 @@ nav:
     - 'DeepWiki ↗': https://deepwiki.com/bongiozzo/whattodo
     - 'DZhechko ↗': https://dzhechko.github.io/theory-of-wellbeing-analysis/
 
-# -----------------
-# Тема (Material)
-# -----------------
+# ----------------------------------
+# Базовая тема оформления (Material)
+# ----------------------------------
 theme:
   name: material
   logo: img/logo-dark.svg
@@ -79,7 +79,6 @@ theme:
     - content.action.edit
   font: 
     text: Tahoma, Verdana, sans-serif
-
   palette:
 
     # Палитра для авто режима
@@ -102,9 +101,18 @@ theme:
         icon: material/brightness-4
         name: Switch to system preference
 
-# -----------------
-# Расширения Markdown
-# -----------------
+# Настройка отображения поверх базовой версии CSS
+# Берётся по умолчанию из text-forge/mkdocs/assets/css/extra.css
+extra_css:
+  - assets/css/extra.css
+
+hooks:
+  # Скрипт предотвращения переносов строк для смайликов в тексте
+  - text-forge/mkdocs/hooks/nobr_emoticons.py
+
+# ------------------------------------
+# Расширения формата разметки Markdown
+# ------------------------------------
 markdown_extensions:
   - tables
 
@@ -120,10 +128,28 @@ markdown_extensions:
   # PyMdown Extensions
   - pymdownx.betterem:
       smart_enable: all
-  - pymdownx.blocks.admonition:
-      types: ['note', 'quote', 'music', 'abstract', 'tip', 'warning', 'success']
-  - pymdownx.blocks.definition
+  # /// caption используется для подписей к изображениям
   - pymdownx.blocks.caption
+  # /// для форматирования определений терминов и понятий (define)
+  - pymdownx.blocks.definition
+  # /// определение стандартных и собственных смысловых блоков текста 
+  - pymdownx.blocks.admonition:
+      types:
+        - abstract                # для примеров, анекдотов, притч и т.п.
+        - name: note              # для дополнений, комментариев и т.п.
+          title: Дополнение       # подпись по умолчанию
+        - name: quote             # для цитат
+          title: Цитата           # подпись по умолчанию
+        - name: situation         # для ситуаций из жизни
+          class: tip              # наследует стиль оформления tip
+          title: Ситуация         # подпись по умолчанию
+        - name: rule              # для правил и принципов
+          class: success          # наследует стиль оформления success  
+          title: Правило          # подпись по умолчанию 
+        - name: music             # для музыкальных вставок
+          class: danger           # наследует стиль оформления danger
+          title: Музыка           # подпись по умолчанию
+  # /// для сворачиваемых блоков с примерами кода (details)
   - pymdownx.blocks.details
   - pymdownx.caret
   - pymdownx.highlight
@@ -142,10 +168,13 @@ markdown_extensions:
   - pymdownx.tilde
 
 # -----------------
-# Plugins
+# Plugins MkDocs
 # -----------------
 plugins:
+  # Поиск с возможность делиться ссылками на результаты
   - search
+
+  # Отображение дат создания и изменения файлов из git-репозитория
   - git-revision-date-localized:
       enabled: true
       locale: ru_RU
@@ -154,7 +183,9 @@ plugins:
       enable_creation_date: true
       enable_git_follow: true
       fallback_to_build_date: true
-  # Можно закомментировать на первый период
+
+  # Отображение авторов изменений файлов
+  # Можно закомментировать по началу
   - git-committers:
       repository: bongiozzo/whattodo
       branch: master
@@ -162,8 +193,10 @@ plugins:
       enabled: !ENV ["MKDOCS_GIT_COMMITTERS_ENABLED", true]
 
 extra:
-  # EPUB metadata (repo-specific).
-  # Эти значения попадут в `text-forge/epub/book_meta.yml`.
+
+  # Данные для EPUB книги
+  # Обложка книги должна быть расположена и названа как `text/ru/img/cover.jpg`
+  # Остальные значения попадут в `text-forge/epub/book_meta.yml` для сборки EPUB
   epub:
     title: Что мне делать? :-)
     subtitle: Текст в концепции «Общие Цели»
@@ -172,43 +205,35 @@ extra:
     publisher: Shared Goals
     rights: "<a href=\"https://text.sharedgoals.ru\">text.sharedgoals.ru</a>"
 
-  # Комментарии Giscus.
-  # Можно закомментировать на первый период
+  # Возможность дискуссий на страницах от Giscus
+  # Заменить на свою или закомментировать
   giscus:
     repo: bongiozzo/whattodo
     repo_id: R_kgDOKiRfkg
     category: Announcements
     category_id: DIC_kwDOKiRfks4CaUvR
 
-  # Метка для даты публикации (source-file.html).
-  source_file:
-    published_title: "Опубликовано"
-
+  # Отображение ссылок на свой канал
+  # Заменить на свою или закомментировать
   social:
     - icon: fontawesome/brands/telegram
       name: bongiozzo в Telegram
       link: https://t.me/bongiozzo_public
-  # Можно закомментировать на первый период
+
+  # Аналитика посещаемости сайта
+  # Заменить на свою или закомментировать
   analytics:
     provider: google
     property: G-DD5EPVVX1K
 
+  # Подпись к дате публикации (source-file.html).
+  source_file:
+    published_title: "Опубликовано"
+  
+  # Текст для cookie-баннера.
   consent:
     title: Согласие на использование cookie
     description: >- 
       Мы используем cookie для распознавания повторных посещений,
       а также, чтобы понять – находите ли Вы то, что ищете?
       Спасибо, что делаете наш Текст лучше!
-
-# -----------------
-# Переопределения
-# -----------------
-
-extra_css:
-  - assets/css/extra.css
-
-hooks:
-  # Пример преобразования текста из `text-forge/`.
-  # Предотвращает переносы строк для смайликов в тексте.
-
-  - text-forge/mkdocs/hooks/nobr_emoticons.py

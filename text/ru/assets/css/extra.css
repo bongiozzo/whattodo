@@ -1,16 +1,6 @@
 /* 
 Reference of mkdocs-material types and corresponding colors used for mappings note, music, quote blocks
 
-Admonition flavours, Markdown classes and corresponding styles from mkdocs-material:
-
-Ситуация - abstract
-Пример / История / Анекдот / Притча - tip
-Цитата - quote
-Дополнение - warning
-Определение / Правило / define - success
-Исходник / details - example
-Музыка / music - danger
-
 Admonition flavours sheet from parent mkdocs-material theme
 https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types
 https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/assets/stylesheets/main/extensions/markdown/_admonition.scss 
@@ -118,7 +108,6 @@ https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/assets/st
   line-height: 1.2;
  }
 
-
 .md-typeset .admonition > :not(.admonition-title) {
   margin: 0;
   padding: 0.5rem 1.5rem;      /* match admonition body padding */
@@ -140,14 +129,16 @@ https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/assets/st
 
 /*
  * Custom icon for music admonition (SVG as CSS var)
- */
-:root {
+
+Replaced with danger type in mkdocs.yml
+
+ :root {
   --md-admonition-icon--music: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 18V7c0-1.1.9-2 2-2h0c1.1 0 2 .9 2 2v8"/><path d="M14 15v-1c0-1.1.9-2 2-2h0c1.1 0 2 .9 2 2v1"/><path d="M18 15v-1c0-1.1.9-2 2-2h0c1.1 0 2 .9 2 2v1"/><path d="M22 15V9c0-1.1.9-2 2-2h0c1.1 0 2 .9 2 2v11"/><path d="M10 16v4.6l-1.5-1.8c-.8-.9-2.2-1-3.1-.1l0 0c-.8.8-.8 2-.1 2.9l3.2 3.6c1.6 1.9 4 2.9 6.4 2.9h2.5H18h.6c4.1 0 7.4-3.3 7.4-7.4V16"/></svg>');
 }
+ */
 
 /*
  * Music variant: red border and icon, light red title bg
- */
 .md-typeset .music {
   border-color: rgb(194, 29, 29);
 }
@@ -159,6 +150,7 @@ https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/assets/st
   -webkit-mask-image: var(--md-admonition-icon--music);
           mask-image: var(--md-admonition-icon--music);
 }
+*/
 
 /* Definition lists styled like success admonition */
 .md-typeset dl {

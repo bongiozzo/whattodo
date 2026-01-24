@@ -24,7 +24,7 @@
   - Links like `(file.md)` become `(#file-md)` and `(file.md#anchor)` becomes `(#anchor)`.
 - **Details blocks are rewritten for EPUB**: inside `/// details ... ///` blocks, the combiner replaces inner content with a source URL (built from `site_url` + file + nearest heading anchor).
 - **Custom block syntax**: the text uses PyMdown “block” markers like:
-  - `/// tip | Caption ... ///`, `/// warning ... ///`, `/// quote ... ///`, etc.
+  - `/// abstract | Caption ... ///`, `/// note ... ///`, `/// quote ... ///`, etc.
   - The Lua filter converts them to Pandoc `Div`s with matching classes, and captions become an `h6.block-caption`.
 - **Images in EPUB**: the Lua filter extracts markdown image attributes `{ width="75%" ... }` but keeps only `width`/`height` for EPUB friendliness.
 - **Emoticon no-break**: MkDocs hook `mkdocs/hooks/nobr_emoticons.py` wraps `:-)`/`;-)` etc into `<span class="md-nobr">…</span>`.
