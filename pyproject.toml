@@ -1,0 +1,15 @@
+[project]
+name = "whattodo"
+version = "0.1.0"
+description = "Что мне делать? :-) Текст в концепции «Общие Цели»"
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = [
+    # text-forge plugin (local editable during development)
+    "text-forge",
+]
+
+# uv configuration
+[tool.uv.sources]
+text-forge = { path = "../text-forge", editable = true }

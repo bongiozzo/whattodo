@@ -142,9 +142,6 @@ Actions эти уже настроены, работают в нашем про�
 
 1. [**.github/workflows/publish.yml**](.github/workflows/publish.yml) — сборка и публикация сайта на сервере GitHub с помощью Actions (так называемые CI/CD – Continuous Integration/Continuous Deployment).
 
-1. [**text/ru/assets/css/extra.css**](text/ru/assets/css/extra.css) — определение стилей (CSS – Cascading Style Sheets) оформления блоков и элементов текста.
-Если файл стилей отсутствует, при первой сборке он скопируется из [text-forge/mkdocs/assets/css/extra.css](text-forge/mkdocs/assets/css/extra.css).
-
 На этом всё!
 
 [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)

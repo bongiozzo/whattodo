@@ -2,9 +2,7 @@
 #
 # Этот репозиторий задуман как хранилище Текста + mkdocs.yml.
 # mkdocs.yml описывает структуру Текста, которая определяет сайт и сборку EPUB.
-# Вся сборочная «машинерия» находится в submodule `text-forge/`.
-
-TEXT_FORGE_DIR := text-forge
+# Сборочная «машинерия» находится в плагине text-forge (../text-forge/).
 
 .PHONY: all epub site serve clean help info install
 
@@ -12,10 +10,10 @@ help:
 	@echo "whattodo (content repo)"
 	@echo ""
 	@echo "Prerequisites:"
-	@echo "  git submodule update --init --recursive"
+	@echo "  uv sync    # Install dependencies including text-forge plugin"
 	@echo ""
 	@echo "Targets:"
-	@echo "  make install       Install tooling deps (uv sync in text-forge)"
+	@echo "  make install       Install dependencies (uv sync)"
 	@echo "  make serve         Fast local preview (no EPUB; git-committers disabled)"
 	@echo "  make epub          Build EPUB only"
 	@echo "  make site          Build MkDocs site + copy artifacts"
@@ -24,10 +22,10 @@ help:
 	@echo "  make info          Show resolved paths"
 
 install:
-	@$(MAKE) -C $(TEXT_FORGE_DIR) CONTENT_ROOT=$(CURDIR) install
+	uv sync
 
 serve:
-	@MKDOCS_GIT_COMMITTERS_ENABLED=false $(MAKE) -C $(TEXT_FORGE_DIR) CONTENT_ROOT=$(CURDIR) serve
+	cd $(CURDIR) && MKDOCS_GIT_COMMITTERS_ENABLED=false uv run mkdocs serve --config-file=$(CURDIR)/mkdocs.yml
 
 epub:
 	@$(MAKE) -C $(TEXT_FORGE_DIR) CONTENT_ROOT=$(CURDIR) epub
