@@ -12,4 +12,6 @@ dependencies = [
 
 # uv configuration
 [tool.uv.sources]
-text-forge = { path = "../text-forge", editable = true }
+# In the standalone whattodo repo, `text-forge` is typically a submodule at `./text-forge`.
+# In this workspace, whattodo is mounted inside the text-forge repo, so the package lives at `..`.
+text-forge = { path = "..", editable = true }

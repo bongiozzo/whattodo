@@ -560,7 +560,7 @@ wheels = [
 [[package]]
 name = "text-forge"
 version = "0.0.0"
-source = { editable = "../text-forge" }
+source = { editable = "../" }
 dependencies = [
     { name = "click" },
     { name = "livereload" },
@@ -658,4 +658,4 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "text-forge", editable = "../text-forge" }]
+requires-dist = [{ name = "text-forge", editable = "../" }]

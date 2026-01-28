@@ -2,42 +2,32 @@
 #
 # Этот репозиторий задуман как хранилище Текста + mkdocs.yml.
 # mkdocs.yml описывает структуру Текста, которая определяет сайт и сборку EPUB.
-# Сборочная «машинерия» находится в плагине text-forge (../text-forge/).
+# Сборочная «машинерия» находится в плагине text-forge.
 
 .PHONY: all epub site serve clean help info install
 
-help:
-	@echo "whattodo (content repo)"
-	@echo ""
-	@echo "Prerequisites:"
-	@echo "  uv sync    # Install dependencies including text-forge plugin"
-	@echo ""
-	@echo "Targets:"
-	@echo "  make install       Install dependencies (uv sync)"
-	@echo "  make serve         Fast local preview (no EPUB; git-committers disabled)"
-	@echo "  make epub          Build EPUB only"
-	@echo "  make site          Build MkDocs site + copy artifacts"
-	@echo "  make all           Build EPUB + MkDocs site (default)"
-	@echo "  make clean         Remove build artifacts"
-	@echo "  make info          Show resolved paths"
+help: ## Show available make targets
+	@awk 'BEGIN {FS=":.*##"; printf "\nTargets:\n"} /^[a-zA-Z0-9_-]+:.*##/ {printf "  make %-15s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
-install:
+install: ## Install dependencies (uv sync)
 	uv sync
 
-serve:
-	cd $(CURDIR) && MKDOCS_GIT_COMMITTERS_ENABLED=false uv run mkdocs serve --config-file=$(CURDIR)/mkdocs.yml
+serve: ## Run local preview server (fast, no EPUB)
+	cd $(CURDIR) && MKDOCS_GIT_COMMITTERS_ENABLED=false uv run python -m mkdocs serve --config-file=$(CURDIR)/mkdocs.yml
 
-epub:
-	@$(MAKE) -C $(TEXT_FORGE_DIR) CONTENT_ROOT=$(CURDIR) epub
+epub: ## Build EPUB only
+	uv run text-forge epub --config mkdocs.yml
 
-site:
-	@$(MAKE) -C $(TEXT_FORGE_DIR) CONTENT_ROOT=$(CURDIR) site
+site: ## Build MkDocs site + EPUB
+	uv run text-forge build --config mkdocs.yml
 
-all:
-	@$(MAKE) -C $(TEXT_FORGE_DIR) CONTENT_ROOT=$(CURDIR) all
+all: ## Build everything (EPUB + site)
+	uv run text-forge build --config mkdocs.yml
 
-clean:
-	@$(MAKE) -C $(TEXT_FORGE_DIR) CONTENT_ROOT=$(CURDIR) clean
+clean: ## Remove build artifacts
+	rm -rf build/ public/
 
-info:
-	@$(MAKE) -C $(TEXT_FORGE_DIR) CONTENT_ROOT=$(CURDIR) info
+info: ## Show project info
+	@uv run text-forge info
+	@echo "Content root: $(CURDIR)"
+	@echo "Config file: mkdocs.yml"

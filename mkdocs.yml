@@ -48,7 +48,7 @@ nav:
     - p2-999-death.md
   - p3-links.md
   - p3-references.md
-  - 'РазумИЙ':
+  - 'РазумИЙ': # TODO REMOVE ИИШНАЯ
     - 'DeepWiki ↗': https://deepwiki.com/bongiozzo/whattodo
     - 'DZhechko ↗': https://dzhechko.github.io/theory-of-wellbeing-analysis/
 
@@ -60,9 +60,6 @@ theme:
   logo: img/logo-dark.svg
   favicon: img/favicon.ico
   language: ru
-
-  # Theme overrides are automatically configured by text-forge plugin
-  # (no need to set custom_dir manually)
   features:
     - navigation.tracking
     - navigation.top
