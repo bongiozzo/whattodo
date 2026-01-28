@@ -13,6 +13,11 @@ install: ## Install dependencies (uv sync)
 	uv sync
 
 serve: ## Run local preview server (fast, no EPUB)
+	@echo "==> Reinstalling text-forge to update shared-data (templates/JS/CSS)..."
+	@uv pip install -e .. --force-reinstall --no-deps --quiet
+	@echo "==> Checking for existing mkdocs process..."
+	@pkill -f "mkdocs serve" || true
+	@sleep 0.5
 	cd $(CURDIR) && MKDOCS_GIT_COMMITTERS_ENABLED=false uv run python -m mkdocs serve --config-file=$(CURDIR)/mkdocs.yml
 
 epub: ## Build EPUB only
