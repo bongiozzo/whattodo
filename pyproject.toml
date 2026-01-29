@@ -6,11 +6,11 @@ readme = "README.md"
 requires-python = ">=3.11"
 
 dependencies = [
-    # text-forge plugin (local editable during development)
-    "text-forge",
+    # text-forge plugin from PyPI (local editable during development)
+    "sg-text-forge>=0.1.0",
 ]
 
 # uv configuration
 [tool.uv.sources]
 # In this workspace, whattodo is mounted inside the text-forge repo, so the package lives at `..`.
-text-forge = { path = "..", editable = true }
+sg-text-forge = { path = "..", editable = true }
