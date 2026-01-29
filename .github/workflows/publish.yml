@@ -24,7 +24,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: shared-goals/text-forge@main
+      - uses: shared-goals/text-forge@plugin
         with:
           mkdocs_config: mkdocs.yml
           docs_dir: text/ru
