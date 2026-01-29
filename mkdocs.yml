@@ -48,7 +48,7 @@ nav:
     - p2-999-death.md
   - p3-links.md
   - p3-references.md
-  - 'РазумИЙ':
+  - 'РазумИЙ': # TODO REMOVE ИИШНАЯ
     - 'DeepWiki ↗': https://deepwiki.com/bongiozzo/whattodo
     - 'DZhechko ↗': https://dzhechko.github.io/theory-of-wellbeing-analysis/
 
@@ -60,13 +60,6 @@ theme:
   logo: img/logo-dark.svg
   favicon: img/favicon.ico
   language: ru
-
-  # Переопределения темы берём из submodule `text-forge/`.
-  # Как переопределить/кастомизировать в контент-репозитории (без symlink):
-  # 1) Создайте `mkdocs/overrides/partials/`.
-  # 2) Скопируйте туда нужный partial из `text-forge/mkdocs/overrides/partials/` и измените.
-  # 3) Поменяйте `custom_dir` на `mkdocs/overrides`.
-  custom_dir: text-forge/mkdocs/overrides
   features:
     - navigation.tracking
     - navigation.top
@@ -100,15 +93,6 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
-
-# Настройка отображения поверх базовой версии CSS
-# Берётся по умолчанию из text-forge/mkdocs/assets/css/extra.css
-extra_css:
-  - assets/css/extra.css
-
-hooks:
-  # Скрипт предотвращения переносов строк для смайликов в тексте
-  - text-forge/mkdocs/hooks/nobr_emoticons.py
 
 # ------------------------------------
 # Расширения формата разметки Markdown
@@ -171,6 +155,20 @@ markdown_extensions:
 # Plugins MkDocs
 # -----------------
 plugins:
+  # text-forge plugin for theme overrides and hooks
+  - text-forge:
+      editor_enabled: true
+      nobr_emoticons_enabled: true
+      # Данные для EPUB книги
+      epub_title: Что мне делать? :-)
+      epub_subtitle: Текст в концепции «Общие Цели»
+      epub_author: Сергей Поляков
+      epub_identifier: https://text.sharedgoals.ru
+      epub_publisher: Shared Goals
+      epub_rights: "<a href=\"https://text.sharedgoals.ru\">text.sharedgoals.ru</a>"
+      # Подпись к дате публикации (source-file.html)
+      source_file_published_title: "Опубликовано"
+
   # Поиск с возможность делиться ссылками на результаты
   - search
 
@@ -194,17 +192,6 @@ plugins:
 
 extra:
 
-  # Данные для EPUB книги
-  # Обложка книги должна быть расположена и названа как `text/ru/img/cover.jpg`
-  # Остальные значения попадут в `text-forge/epub/book_meta.yml` для сборки EPUB
-  epub:
-    title: Что мне делать? :-)
-    subtitle: Текст в концепции «Общие Цели»
-    author: Сергей Поляков
-    identifier: https://text.sharedgoals.ru
-    publisher: Shared Goals
-    rights: "<a href=\"https://text.sharedgoals.ru\">text.sharedgoals.ru</a>"
-
   # Возможность дискуссий на страницах от Giscus
   # Заменить на свою или закомментировать
   giscus:
@@ -226,10 +213,6 @@ extra:
     provider: google
     property: G-DD5EPVVX1K
 
-  # Подпись к дате публикации (source-file.html).
-  source_file:
-    published_title: "Опубликовано"
-  
   # Текст для cookie-баннера.
   consent:
     title: Согласие на использование cookie
