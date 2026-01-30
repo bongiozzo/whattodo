@@ -157,6 +157,7 @@ plugins:
   - text-forge:
       editor_enabled: true
       nobr_emoticons_enabled: true
+      downloads_enabled: true
       # Данные для EPUB книги
       epub_title: Что мне делать? :-)
       epub_subtitle: Текст в концепции «Общие Цели»

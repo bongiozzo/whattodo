@@ -24,10 +24,10 @@ epub: ## Build EPUB only
 	uv run text-forge epub --config mkdocs.yml
 
 site: ## Build MkDocs site + EPUB
-	uv run text-forge build --config mkdocs.yml
+	MKDOCS_GIT_COMMITTERS_ENABLED=false uv run text-forge build --config mkdocs.yml
 
 all: ## Build everything (EPUB + site)
-	uv run text-forge build --config mkdocs.yml
+	MKDOCS_GIT_COMMITTERS_ENABLED=false uv run text-forge build --config mkdocs.yml
 
 clean: ## Remove build artifacts
 	rm -rf build/ public/
