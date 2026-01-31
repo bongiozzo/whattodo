@@ -158,7 +158,7 @@ plugins:
       # Shared Perplexity URL - создайте поисковый запрос вида:
       # "https://www.perplexity.ai/search/new?q=Прочти https://text.sharedgoals.ru/ru/assets/whattodo_full.md и ответь на вопросы"
       # Затем нажмите "Share" и скопируйте ссылку сюда
-      ai_readable_perplexity_query: "https://www.perplexity.ai/search/read-from-https-text-sharedgoals-Abc123Example"
+      ai_readable_perplexity_query: "https://www.perplexity.ai/search/new?q=Прочти https://text.sharedgoals.ru/ru/whattodo_full.md и ответь на вопросы"
       # Данные для EPUB книги
       epub_title: Что мне делать? :-)
       epub_subtitle: Текст в концепции «Общие Цели»
@@ -210,16 +210,16 @@ extra:
       name: bongiozzo в Telegram
       link: https://t.me/bongiozzo_public
 
-  # Аналитика посещаемости сайта
-  # Заменить на свою или закомментировать
-  analytics:
-    provider: google
-    property: G-DD5EPVVX1K
+  # # Аналитика посещаемости сайта
+  # # Заменить на свою или закомментировать
+  # analytics:
+  #   provider: google
+  #   property: G-DD5EPVVX1K
 
-  # Текст для cookie-баннера.
-  consent:
-    title: Согласие на использование cookie
-    description: >- 
-      Мы используем cookie для распознавания повторных посещений,
-      а также, чтобы понять – находите ли Вы то, что ищете?
-      Спасибо, что делаете наш Текст лучше!
+  # # Текст для cookie-баннера.
+  # consent:
+  #   title: Согласие на использование cookie
+  #   description: >- 
+  #     Мы используем cookie для распознавания повторных посещений,
+  #     а также, чтобы понять – находите ли Вы то, что ищете?
+  #     Спасибо, что делаете наш Текст лучше!
