@@ -7,16 +7,6 @@ description: Скачиваемые форматы Текста и ссылки 
 
 # Ссылки
 
-## Форматы Текста {#text_formats}
-
-- [EPub](assets/text_book.epub)
-- [Markdown](assets/text_combined.txt)
-
-## ИИ компаньоны – РазумИЙ {#text_ai_companions}
-
-- [DeepWiki](https://deepwiki.com/bongiozzo/whattodo)
-- [DZhechko](https://dzhechko.github.io/theory-of-wellbeing-analysis/)
-
 ## Друзья {#text_friends}
 
 Другие Тексты, на которые повлиял наш:

@@ -48,9 +48,6 @@ nav:
     - p2-999-death.md
   - p3-links.md
   - p3-references.md
-  - 'РазумИЙ': # TODO REMOVE ИИШНАЯ
-    - 'DeepWiki ↗': https://deepwiki.com/bongiozzo/whattodo
-    - 'DZhechko ↗': https://dzhechko.github.io/theory-of-wellbeing-analysis/
 
 # ----------------------------------
 # Базовая тема оформления (Material)
@@ -158,6 +155,10 @@ plugins:
       editor_enabled: true
       nobr_emoticons_enabled: true
       downloads_enabled: true
+      # Shared Perplexity URL - создайте поисковый запрос вида:
+      # "https://www.perplexity.ai/search/new?q=Прочти https://text.sharedgoals.ru/ru/assets/whattodo_full.md и ответь на вопросы"
+      # Затем нажмите "Share" и скопируйте ссылку сюда
+      ai_readable_perplexity_query: "https://www.perplexity.ai/search/read-from-https-text-sharedgoals-Abc123Example"
       # Данные для EPUB книги
       epub_title: Что мне делать? :-)
       epub_subtitle: Текст в концепции «Общие Цели»
@@ -165,6 +166,9 @@ plugins:
       epub_identifier: https://text.sharedgoals.ru
       epub_publisher: Shared Goals
       epub_rights: "<a href=\"https://text.sharedgoals.ru\">text.sharedgoals.ru</a>"
+      # Имена файлов для скачивания
+      epub_filename: "whattodo_book.epub"
+      combined_filename: "whattodo_full.md"
       # Подпись к дате публикации (source-file.html)
       source_file_published_title: "Опубликовано"
 
