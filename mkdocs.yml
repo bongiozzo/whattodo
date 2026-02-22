@@ -46,7 +46,9 @@ nav:
     - p2-190-presentation.md
     - p2-200-text.md
     - p2-999-death.md
-  - p3-links.md
+  - 'ИИшная':
+    - p2-121-dialog.md
+    - p3-summary.md
   - p3-references.md
 
 # ----------------------------------
@@ -155,10 +157,9 @@ plugins:
       editor_enabled: true
       nobr_emoticons_enabled: true
       downloads_enabled: true
-      # Shared Perplexity URL - создайте поисковый запрос вида:
-      # "https://www.perplexity.ai/search/new?q=Прочти https://text.sharedgoals.ru/whattodo_full.md и ответь на вопросы"
-      # Затем нажмите "Share" и скопируйте ссылку сюда
-      ai_readable_perplexity_query: "https://www.perplexity.ai/search/new?q=Прочти https://text.sharedgoals.ru/whattodo_full.md и ответь на вопросы"
+      # Prompt template for per-page Perplexity link.
+      # {url} is replaced with the raw GitHub URL of the current chapter.
+      ai_readable_prompt: "Прочти {url} и ответь на вопросы"
       # Данные для EPUB книги
       epub_title: Что мне делать? :-)
       epub_subtitle: Текст в концепции «Общие Цели»

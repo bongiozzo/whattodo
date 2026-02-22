@@ -32,6 +32,16 @@ all: ## Build everything (EPUB + site)
 clean: ## Remove build artifacts
 	rm -rf build/ public/
 
+summary: ## Prepare summary source (then run summarize prompt)
+	@mkdir -p build
+	uv run python ../scripts/mkdocs-combine.py mkdocs.yml \
+		--mode summary \
+		--exclude p3-summary.md \
+		--index-output build/heading_index.json \
+		> build/summary_source.md
+	@echo "✓ Source prepared: build/summary_source.md + build/heading_index.json"
+	@echo "→ Run summarize prompt to generate text/p3-summary.md"
+
 info: ## Show project info
 	@uv run text-forge info
 	@echo "Content root: $(CURDIR)"
