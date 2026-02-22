@@ -827,7 +827,7 @@ Many things are easier to explain if there is than if there isn't.
 Эти же навыки помогут в моменте противостоять манипуляциям, которые будет всё легче запускать в цифровом обществе с лавинообразным развитием технологий генеративного искусственного интеллекта.
 Есть практики такой защиты от внешнего вмешательства через повышение осознанности.
 
-[Учить защищаться необходимо уже с детских лет, о чём писали эксперты практически 20 лет назад](https://www.livelib.ru/quote/47052949-strategicheskaya-psihologiya-globalizatsii-psihologiya-chelovecheskogo-kapitala):
+[Учить защищаться стоит уже с детских лет, о чём писали эксперты практически 20 лет назад](https://www.livelib.ru/quote/47052949-strategicheskaya-psihologiya-globalizatsii-psihologiya-chelovecheskogo-kapitala):
 
 /// quote
 

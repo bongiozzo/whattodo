@@ -4,7 +4,7 @@
 # mkdocs.yml описывает структуру Текста, которая определяет сайт и сборку EPUB.
 # Сборочная «машинерия» находится в плагине text-forge.
 
-.PHONY: all epub site serve clean help info install
+.PHONY: all epub site serve clean help info install publish
 
 help: ## Show available make targets
 	@awk 'BEGIN {FS=":.*##"; printf "\nTargets:\n"} /^[a-zA-Z0-9_-]+:.*##/ {printf "  make %-15s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
@@ -46,3 +46,39 @@ info: ## Show project info
 	@uv run text-forge info
 	@echo "Content root: $(CURDIR)"
 	@echo "Config file: mkdocs.yml"
+
+publish: ## Bump version tag and push to GitHub (triggers CI/CD)
+	@if ! git diff --quiet --ignore-submodules=all || ! git diff --cached --quiet --ignore-submodules=all; then \
+		echo "Error: You have uncommitted changes. Please commit or stash them before publishing:"; \
+		git status --short --ignore-submodules=all; \
+		exit 1; \
+	fi
+	@LATEST=$$(git tag --sort=-version:refname | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$$' | head -1); \
+	if [ -z "$$LATEST" ]; then \
+		echo "Error: No existing version tag found (expected vMAJOR.MINOR.PATCH)"; \
+		exit 1; \
+	fi; \
+	echo "Current: $$LATEST"; \
+	MAJOR=$$(echo "$$LATEST" | sed 's/^v\([0-9]*\)\..*/\1/'); \
+	MINOR=$$(echo "$$LATEST" | sed 's/^v[0-9]*\.\([0-9]*\)\..*/\1/'); \
+	PATCH=$$(echo "$$LATEST" | sed 's/^v[0-9]*\.[0-9]*\.\([0-9]*\)$$/\1/'); \
+	echo "Bump [major/minor/patch] (default: patch):"; \
+	read -r BUMP; \
+	BUMP=$${BUMP:-patch}; \
+	case "$$BUMP" in \
+		patch) NEW="v$$MAJOR.$$MINOR.$$((PATCH + 1))" ;; \
+		minor) NEW="v$$MAJOR.$$((MINOR + 1)).0" ;; \
+		major) NEW="v$$((MAJOR + 1)).0.0" ;; \
+		*) echo "Error: use major, minor, or patch"; exit 1 ;; \
+	esac; \
+	echo "New:     $$NEW"; \
+	echo "Push tag $$NEW? [y/N]"; \
+	read -r CONFIRM; \
+	if [ "$$CONFIRM" != "y" ] && [ "$$CONFIRM" != "Y" ]; then \
+		echo "Cancelled"; \
+		exit 1; \
+	fi; \
+	git tag -a "$$NEW" -m "Release $$NEW"; \
+	git push origin master "$$NEW"; \
+	echo "✓ Published $$NEW"; \
+	echo "→ https://github.com/bongiozzo/whattodo/releases/tag/$$NEW"
