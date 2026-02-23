@@ -80,5 +80,12 @@ publish: ## Bump version tag and push to GitHub (triggers CI/CD)
 	fi; \
 	git tag -a "$$NEW" -m "Release $$NEW"; \
 	git push origin master "$$NEW"; \
-	echo "✓ Published $$NEW"; \
-	echo "→ https://github.com/bongiozzo/whattodo/releases/tag/$$NEW"
+	echo "✓ Tag pushed: $$NEW"; \
+	if command -v gh >/dev/null 2>&1; then \
+		gh release create "$$NEW" --title "$$NEW" --generate-notes; \
+		echo "✓ GitHub release created"; \
+		echo "→ https://github.com/bongiozzo/whattodo/releases/tag/$$NEW"; \
+	else \
+		echo "⚠ gh CLI not found — skipping GitHub release creation"; \
+		echo "→ https://github.com/bongiozzo/whattodo/releases/tag/$$NEW"; \
+	fi
