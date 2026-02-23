@@ -13,8 +13,10 @@ install: ## Install dependencies (uv sync)
 	uv sync
 
 serve: ## Run local preview server (fast, no EPUB)
-	@echo "==> Reinstalling text-forge to update shared-data (templates/JS/CSS)..."
-	@uv pip install -e .. --force-reinstall --no-deps --quiet
+	@if [ -f ../text_forge/plugin.py ]; then \
+		echo "==> text-forge source detected, reinstalling to pick up local changes..."; \
+		uv pip install -e .. --force-reinstall --no-deps --quiet; \
+	fi
 	@echo "==> Checking for existing mkdocs process..."
 	@pkill -f "mkdocs serve" || true
 	@sleep 0.5
