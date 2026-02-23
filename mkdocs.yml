@@ -152,14 +152,14 @@ markdown_extensions:
 # Plugins MkDocs
 # -----------------
 plugins:
-  # text-forge plugin for theme overrides and hooks
+  # text-forge plugin для расширенных возможностей работы с текстом, включая генерацию EPUB книги и AI-инструменты для анализа текста.
   - text-forge:
       editor_enabled: true
       nobr_emoticons_enabled: true
       downloads_enabled: true
-      # Prompt template for per-page Perplexity link.
-      # {url} is replaced with the raw GitHub URL of the current chapter.
-      ai_readable_prompt: "Прочитай {url} полностью и опиши основную идею платформы Общие Цели. Отвечай по тексту, без экстраполяций, усиления тона, домыслов и добавления идей, которых нет в оригинале"
+      # Промпт для внешнего сервиса AI-анализа текста.
+      # ai_readable_base_url: "https://grok.com/?q="
+      # ai_readable_prompt: "Прочитай {url} полностью и передай основную суть с вопросами для продолжения обсуждения. Отвечай по тексту, с точным цитированием, без усиления тона, домыслов и идей, которых нет в оригинале."
       # Данные для EPUB книги
       epub_title: Что мне делать? :-)
       epub_subtitle: Текст в концепции «Общие Цели»
