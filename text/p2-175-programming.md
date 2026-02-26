@@ -24,15 +24,30 @@ Photo
 
 ## Поиск - университет
 
-### Mustdie, Lightning Strike
 
 ## Понимание - работа
+
+### Samara-Internet
 
 Соединять людей – наша работа
 
 ![[img/connect_people.jpg]]
 
+### Webzavod
+
 ### Samara Pub
+
+### Mustdie, Lightning Strike
+
+## Microsoft
+
+### IT Consulting
+
+### Evangelism
+
+### Sales as Helping
+
+## School of Digital Age
 
 ## Отойти от IT
 
