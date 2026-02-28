@@ -1,0 +1,1 @@
+<% tp.user.insert_image(tp) %>
