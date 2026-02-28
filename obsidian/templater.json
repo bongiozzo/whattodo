@@ -1,0 +1,23 @@
+{
+  "command_timeout": 5,
+  "templates_folder": "obsidian/templates",
+  "templates_pairs": [["", ""]],
+  "trigger_on_file_creation": false,
+  "auto_jump_to_cursor": false,
+  "enable_system_commands": false,
+  "shell_path": "",
+  "user_scripts_folder": "obsidian/scripts",
+  "enable_folder_templates": true,
+  "folder_templates": [{"folder": "", "template": ""}],
+  "enable_file_templates": false,
+  "file_templates": [{"regex": ".*", "template": ""}],
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
+  "enabled_templates_hotkeys": [
+    "obsidian/templates/insert_block.md",
+    "obsidian/templates/insert_link.md",
+    "obsidian/templates/insert_image.md"
+  ],
+  "startup_templates": [""],
+  "intellisense_render": 1
+}

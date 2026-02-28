@@ -4,4 +4,4 @@ build/
 .DS_Store
 # Build artifacts - generated files, not source
 *.epub
-.obsidian
+.obsidian/

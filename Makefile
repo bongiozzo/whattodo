@@ -4,7 +4,7 @@
 # mkdocs.yml описывает структуру Текста, которая определяет сайт и сборку EPUB.
 # Сборочная «машинерия» находится в плагине text-forge.
 
-.PHONY: all epub site serve clean help info install publish
+.PHONY: all epub site serve clean help info install publish obsidian
 
 help: ## Show available make targets
 	@awk 'BEGIN {FS=":.*##"; printf "\nTargets:\n"} /^[a-zA-Z0-9_-]+:.*##/ {printf "  make %-15s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
@@ -43,6 +43,53 @@ summary: ## Prepare summary source (then run summarize prompt)
 		> build/summary_source.md
 	@echo "✓ Source prepared: build/summary_source.md + build/heading_index.json"
 	@echo "→ Run summarize prompt to generate text/p3-summary.md"
+
+obsidian: ## Set up Obsidian: install Templater plugin, configure templates/scripts/hotkeys
+	@mkdir -p .obsidian/plugins/templater-obsidian
+	@if [ -f .obsidian/plugins/templater-obsidian/main.js ]; then \
+		echo "  skip  Templater plugin already installed (.obsidian/plugins/templater-obsidian/main.js exists)"; \
+	else \
+		echo "==> Downloading Templater plugin (latest release)..."; \
+		curl -fsSL https://api.github.com/repos/SilentVoid13/Templater/releases/latest \
+			| python3 -c "\
+import sys, json, urllib.request; \
+assets = {a['name']: a['browser_download_url'] for a in json.load(sys.stdin)['assets']}; \
+[(open('.obsidian/plugins/templater-obsidian/' + n, 'wb').write(urllib.request.urlopen(assets[n]).read()), print('  Downloaded', n)) \
+  for n in ('main.js', 'manifest.json', 'styles.css') if n in assets]"; \
+	fi
+	@if [ -f .obsidian/plugins/templater-obsidian/data.json ]; then \
+		echo "  skip  Templater settings already exist (.obsidian/plugins/templater-obsidian/data.json)"; \
+	else \
+		echo "==> Writing Templater settings (templates: obsidian/templates, scripts: obsidian/scripts)..."; \
+		cp obsidian/templater.json .obsidian/plugins/templater-obsidian/data.json; \
+	fi
+	@if [ -f .obsidian/community-plugins.json ]; then \
+		if python3 -c "import sys,json; p=json.load(open('.obsidian/community-plugins.json')); sys.exit(0 if 'templater-obsidian' in p else 1)" 2>/dev/null; then \
+			echo "  skip  Templater already listed in .obsidian/community-plugins.json"; \
+		else \
+			echo "==> Adding Templater to community plugins..."; \
+			python3 -c "import json; f='.obsidian/community-plugins.json'; p=json.load(open(f)); p.append('templater-obsidian'); open(f,'w').write(json.dumps(p, indent=2))"; \
+		fi \
+	else \
+		echo "==> Creating .obsidian/community-plugins.json..."; \
+		echo '["templater-obsidian"]' > .obsidian/community-plugins.json; \
+	fi
+	@if [ -f .obsidian/hotkeys.json ]; then \
+		echo "==> Merging hotkeys (adding any missing entries)..."; \
+		python3 -c "\
+import json, sys; \
+src = json.load(open('obsidian/hotkeys.json')); \
+dst_file = '.obsidian/hotkeys.json'; \
+dst = json.load(open(dst_file)); \
+added = [k for k in src if k not in dst]; \
+[dst.update({k: src[k]}) for k in added]; \
+open(dst_file, 'w').write(json.dumps(dst, indent=2, ensure_ascii=False)); \
+print('  added:', ', '.join(added) if added else '(none, all present)')"; \
+	else \
+		echo "==> Copying hotkeys (Mod+Shift+B/I/L → insert_block/insert_image/insert_link)..."; \
+		cp obsidian/hotkeys.json .obsidian/hotkeys.json; \
+	fi
+	@echo "✓ Obsidian setup complete. Restart Obsidian (or reload plugins) to apply."
 
 info: ## Show project info
 	@uv run text-forge info
