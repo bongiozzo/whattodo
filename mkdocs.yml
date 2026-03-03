@@ -67,6 +67,8 @@ theme:
     - search.highlight
     - search.suggest
     - search.share
+    - content.action.view
+    - content.action.edit
   font: 
     text: Tahoma, Verdana, sans-serif
   palette:

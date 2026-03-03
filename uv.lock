@@ -542,7 +542,7 @@ wheels = [
 [[package]]
 name = "sg-text-forge"
 version = "0.1.9"
-source = { editable = "../" }
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
     { name = "livereload" },
@@ -552,20 +552,10 @@ dependencies = [
     { name = "mkdocs-material" },
     { name = "pyyaml" },
 ]
-
-[package.metadata]
-requires-dist = [
-    { name = "click", specifier = ">=8.1.7,<8.2.2" },
-    { name = "livereload", specifier = ">=2.7.1" },
-    { name = "mkdocs", specifier = ">=1.6.1" },
-    { name = "mkdocs-git-committers-plugin-2", specifier = ">=2.5.0" },
-    { name = "mkdocs-git-revision-date-localized-plugin", specifier = ">=1.5.0" },
-    { name = "mkdocs-material", specifier = ">=9.6.22" },
-    { name = "pyyaml", specifier = ">=6.0.3" },
+sdist = { url = "https://files.pythonhosted.org/packages/64/3c/1a7a9494fa558c2d2aaddb6bd428a72b74311ff2bb9f265b900a0b207edc/sg_text_forge-0.1.9.tar.gz", hash = "sha256:d22771876c556b1b5c0c9f18a6a3bdc9a02f1dd22702895232c1bab452677b10", size = 86626, upload-time = "2026-02-23T07:26:12.518Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/19/13/3029ae4088bb3b17ebef4a7993cf622ac9dea6cc0d2576808a328e22ec45/sg_text_forge-0.1.9-py3-none-any.whl", hash = "sha256:b8abdc368133bce47cb8e8bcfde582db6c55ae8a4b57afe889666ddb4f99c04a", size = 50517, upload-time = "2026-02-23T07:26:11.018Z" },
 ]
-
-[package.metadata.requires-dev]
-dev = [{ name = "pytest", specifier = ">=8.4.2" }]
 
 [[package]]
 name = "six"
@@ -658,4 +648,4 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "sg-text-forge", editable = "../" }]
+requires-dist = [{ name = "sg-text-forge", specifier = ">=0.1.0" }]
