@@ -72,7 +72,17 @@ assets = {a['name']: a['browser_download_url'] for a in json.load(sys.stdin)['as
 		fi \
 	else \
 		echo "==> Creating .obsidian/community-plugins.json..."; \
-		echo '["templater-obsidian"]' > .obsidian/community-plugins.json; \
+		echo '["templater-obsidian", "text-forge"]' > .obsidian/community-plugins.json; \
+	fi
+	@echo "==> Installing text-forge plugin (local)..."
+	@mkdir -p .obsidian/plugins/text-forge
+	@cp obsidian/plugins/text-forge/main.js .obsidian/plugins/text-forge/main.js
+	@cp obsidian/plugins/text-forge/manifest.json .obsidian/plugins/text-forge/manifest.json
+	@if python3 -c "import sys,json; p=json.load(open('.obsidian/community-plugins.json')); sys.exit(0 if 'text-forge' in p else 1)" 2>/dev/null; then \
+		echo "  skip  text-forge already listed in .obsidian/community-plugins.json"; \
+	else \
+		echo "==> Adding text-forge to community plugins..."; \
+		python3 -c "import json; f='.obsidian/community-plugins.json'; p=json.load(open(f)); p.append('text-forge'); open(f,'w').write(json.dumps(p, indent=2))"; \
 	fi
 	@if [ -f .obsidian/hotkeys.json ]; then \
 		echo "==> Merging hotkeys (adding any missing entries)..."; \

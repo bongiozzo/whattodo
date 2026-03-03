@@ -1,0 +1,9 @@
+{
+  "id": "text-forge",
+  "name": "text-forge",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Resolves {#anchor-id} heading anchors in wiki links so that navigating to a section scrolls correctly in both Live Preview and Reading view.",
+  "author": "bongiozzo",
+  "isDesktopOnly": false
+}

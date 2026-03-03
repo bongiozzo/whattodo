@@ -1,5 +1,7 @@
 module.exports = async function (tp) {
 
+  const selection = tp.file.selection();
+
   const files = app.vault.getMarkdownFiles().filter(f => f.path.startsWith('text/'));
   
   const entries = [];
@@ -23,7 +25,8 @@ module.exports = async function (tp) {
   );
   
   if (choice) {
-    return `[${choice.title}](${choice.file}.md#${choice.id})`;
+    const title = selection || choice.title;
+    return `[${title}](${choice.file}.md#${choice.id})`;
   }
   return '';
 };
