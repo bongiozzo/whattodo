@@ -1,1 +1,0 @@
-<% tp.user.insert_link(tp) %>

@@ -5,3 +5,4 @@ build/
 # Build artifacts - generated files, not source
 *.epub
 .obsidian/
+obsidian/

@@ -44,7 +44,7 @@ summary: ## Prepare summary source (then run summarize prompt)
 	@echo "✓ Source prepared: build/summary_source.md + build/heading_index.json"
 	@echo "→ Run summarize prompt to generate text/p3-summary.md"
 
-obsidian: ## Set up Obsidian: install Templater plugin, configure templates/scripts/hotkeys
+obsidian: ## Set up Obsidian: install Templater plugin, text-forge plugin, scripts and hotkeys
 	@mkdir -p .obsidian/plugins/templater-obsidian
 	@if [ -f .obsidian/plugins/templater-obsidian/main.js ]; then \
 		echo "  skip  Templater plugin already installed (.obsidian/plugins/templater-obsidian/main.js exists)"; \
@@ -57,12 +57,6 @@ assets = {a['name']: a['browser_download_url'] for a in json.load(sys.stdin)['as
 [(open('.obsidian/plugins/templater-obsidian/' + n, 'wb').write(urllib.request.urlopen(assets[n]).read()), print('  Downloaded', n)) \
   for n in ('main.js', 'manifest.json', 'styles.css') if n in assets]"; \
 	fi
-	@if [ -f .obsidian/plugins/templater-obsidian/data.json ]; then \
-		echo "  skip  Templater settings already exist (.obsidian/plugins/templater-obsidian/data.json)"; \
-	else \
-		echo "==> Writing Templater settings (templates: obsidian/templates, scripts: obsidian/scripts)..."; \
-		cp obsidian/templater.json .obsidian/plugins/templater-obsidian/data.json; \
-	fi
 	@if [ -f .obsidian/community-plugins.json ]; then \
 		if python3 -c "import sys,json; p=json.load(open('.obsidian/community-plugins.json')); sys.exit(0 if 'templater-obsidian' in p else 1)" 2>/dev/null; then \
 			echo "  skip  Templater already listed in .obsidian/community-plugins.json"; \
@@ -72,34 +66,9 @@ assets = {a['name']: a['browser_download_url'] for a in json.load(sys.stdin)['as
 		fi \
 	else \
 		echo "==> Creating .obsidian/community-plugins.json..."; \
-		echo '["templater-obsidian", "text-forge"]' > .obsidian/community-plugins.json; \
+		echo '["templater-obsidian"]' > .obsidian/community-plugins.json; \
 	fi
-	@echo "==> Installing text-forge plugin (local)..."
-	@mkdir -p .obsidian/plugins/text-forge
-	@cp obsidian/plugins/text-forge/main.js .obsidian/plugins/text-forge/main.js
-	@cp obsidian/plugins/text-forge/manifest.json .obsidian/plugins/text-forge/manifest.json
-	@if python3 -c "import sys,json; p=json.load(open('.obsidian/community-plugins.json')); sys.exit(0 if 'text-forge' in p else 1)" 2>/dev/null; then \
-		echo "  skip  text-forge already listed in .obsidian/community-plugins.json"; \
-	else \
-		echo "==> Adding text-forge to community plugins..."; \
-		python3 -c "import json; f='.obsidian/community-plugins.json'; p=json.load(open(f)); p.append('text-forge'); open(f,'w').write(json.dumps(p, indent=2))"; \
-	fi
-	@if [ -f .obsidian/hotkeys.json ]; then \
-		echo "==> Merging hotkeys (adding any missing entries)..."; \
-		python3 -c "\
-import json, sys; \
-src = json.load(open('obsidian/hotkeys.json')); \
-dst_file = '.obsidian/hotkeys.json'; \
-dst = json.load(open(dst_file)); \
-added = [k for k in src if k not in dst]; \
-[dst.update({k: src[k]}) for k in added]; \
-open(dst_file, 'w').write(json.dumps(dst, indent=2, ensure_ascii=False)); \
-print('  added:', ', '.join(added) if added else '(none, all present)')"; \
-	else \
-		echo "==> Copying hotkeys (Mod+Shift+B/I/L → insert_block/insert_image/insert_link)..."; \
-		cp obsidian/hotkeys.json .obsidian/hotkeys.json; \
-	fi
-	@echo "✓ Obsidian setup complete. Restart Obsidian (or reload plugins) to apply."
+	@uv run text-forge obsidian install
 
 info: ## Show project info
 	@uv run text-forge info
