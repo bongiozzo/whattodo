@@ -9,7 +9,34 @@
 help: ## Show available make targets
 	@awk 'BEGIN {FS=":.*##"; printf "\nTargets:\n"} /^[a-zA-Z0-9_-]+:.*##/ {printf "  make %-15s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
-install: ## Install dependencies (uv sync)
+install: ## Bootstrap: install uv + pandoc (if missing), then uv sync
+	@# --- uv ---
+	@if command -v uv >/dev/null 2>&1; then \
+		echo "  ok    uv $$(uv --version)"; \
+	else \
+		echo "==> Installing uv..."; \
+		curl -LsSf https://astral.sh/uv/install.sh | sh; \
+		echo "  warn  Restart your shell or run: source $$HOME/.local/bin/env"; \
+	fi
+	@# --- pandoc ---
+	@if command -v pandoc >/dev/null 2>&1; then \
+		echo "  ok    $$(pandoc --version | head -n1)"; \
+	elif [ "$$(uname -s)" = "Darwin" ]; then \
+		echo "==> Installing pandoc via Homebrew..."; \
+		brew install pandoc; \
+	elif command -v apt-get >/dev/null 2>&1; then \
+		echo "==> Installing pandoc via apt-get..."; \
+		sudo apt-get update && sudo apt-get install -y pandoc; \
+	elif command -v dnf >/dev/null 2>&1; then \
+		echo "==> Installing pandoc via dnf..."; \
+		sudo dnf install -y pandoc; \
+	elif command -v pacman >/dev/null 2>&1; then \
+		echo "==> Installing pandoc via pacman..."; \
+		sudo pacman -S --noconfirm pandoc; \
+	else \
+		echo "  warn  pandoc not found. Install from https://pandoc.org/installing.html"; \
+	fi
+	@# --- Python deps ---
 	uv sync
 
 serve: ## Run local preview server (fast, no EPUB)

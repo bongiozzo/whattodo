@@ -12,6 +12,24 @@
 
 Библиотека этих программных компонентов является частью [инициативы «Shared Goals» (или «Общие Цели»)](https://text.sharedgoals.ru/p2-180-sharedgoals/#use_case).
 
+## Требования
+
+Для локальной сборки потребуются:
+
+| Инструмент | Назначение | Установка |
+|---|---|---|
+| `make` | Запуск команд сборки | macOS/Linux: встроен. Windows: сначала установите [WSL](https://learn.microsoft.com/ru-ru/windows/wsl/install) |
+| `pandoc` | Сборка EPUB | macOS: `brew install pandoc` · Linux/WSL: `apt install pandoc` |
+| `uv` | Менеджер Python-пакетов | Устанавливается автоматически через `make install` |
+
+**Windows** — стандартный путь: установить [WSL (Windows Subsystem for Linux)](https://learn.microsoft.com/ru-ru/windows/wsl/install), после чего выполнять все команды в терминале WSL — они будут работать так же, как на Linux.
+
+После установки зависимостей запустите:
+
+```bash
+make install   # установит uv и pandoc (если нужно), затем зависимости проекта
+```
+
 ## Инструкция создания собственного Текста
 
 Если у Вас ещё нет учётной записи GitHub, её потребуется создать.
