@@ -37,7 +37,7 @@ install: ## Bootstrap: install uv + pandoc (if missing), then uv sync
 		echo "  warn  pandoc not found. Install from https://pandoc.org/installing.html"; \
 	fi
 	@# --- Python deps ---
-	uv sync
+	uv sync --upgrade-package sg-text-forge
 
 serve: ## Run local preview server (fast, no EPUB)
 	@if [ -f ../text_forge/plugin.py ]; then \
@@ -71,7 +71,7 @@ summary: ## Prepare summary source (then run summarize prompt)
 	@echo "✓ Source prepared: build/summary_source.md + build/heading_index.json"
 	@echo "→ Run summarize prompt to generate text/p3-summary.md"
 
-obsidian: ## Set up Obsidian: install Templater plugin, text-forge plugin, scripts and hotkeys
+obsidian: install ## Set up Obsidian: install Templater plugin, text-forge plugin, scripts and hotkeys
 	@mkdir -p .obsidian/plugins/templater-obsidian
 	@if [ -f .obsidian/plugins/templater-obsidian/main.js ]; then \
 		echo "  skip  Templater plugin already installed (.obsidian/plugins/templater-obsidian/main.js exists)"; \
@@ -96,6 +96,12 @@ assets = {a['name']: a['browser_download_url'] for a in json.load(sys.stdin)['as
 		echo '["templater-obsidian"]' > .obsidian/community-plugins.json; \
 	fi
 	@uv run text-forge obsidian install
+	@echo "==> Force-updating Templater scripts from text-forge package..."
+	@uv run python3 -c "\
+import importlib.resources, shutil; \
+src = importlib.resources.files('text_forge.obsidian') / 'scripts'; \
+[(shutil.copy2(str(src / n), f'obsidian/scripts/{n}'), print(f'  updated obsidian/scripts/{n}')) \
+  for n in ('insert_block.js', 'insert_image.js', 'insert_link.js')]"
 
 info: ## Show project info
 	@uv run text-forge info
