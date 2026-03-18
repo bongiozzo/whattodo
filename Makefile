@@ -37,7 +37,7 @@ install: ## Bootstrap: install uv + pandoc (if missing), then uv sync
 		echo "  warn  pandoc not found. Install from https://pandoc.org/installing.html"; \
 	fi
 	@# --- Python deps ---
-	uv sync --upgrade-package sg-text-forge
+	uv sync --upgrade
 
 serve: ## Run local preview server (fast, no EPUB)
 	@if [ -f ../text_forge/plugin.py ]; then \
