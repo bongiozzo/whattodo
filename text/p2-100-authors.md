@@ -95,7 +95,17 @@ IT-юрист с филологическими корнями.
 
 *[INFJ «Заступник» (Advocate)](https://www.16personalities.com/ru/lichnost-infj)*
 
-## Антон Лукашин {#gnezim}
+## Антон Лукашев {#gnezim}
+
+/// quote
+
+Anton is a **systems engineer** who values clarity, automation, and understanding over convenience.
+He's pragmatic, fast-moving when informed, and deeply invested in making his brain scale.
+Not flashy, not political — just _competent_.
+
+[Chez](https://github.com/chezim){ .author }
+
+///
 
 *[ISTJ-A «Логист» (Logistician)](https://www.16personalities.com/profiles/961275744aa94)*
 
