@@ -48,6 +48,7 @@ nav:
     - p2-200-text.md
     - p2-999-death.md
   - 'ИИшная':
+    - 'Shared Goals PRD': 'https://github.com/shared-goals/prd'
     - p2-121-dialog.md
     - p3-summary.md
   - p3-references.md
