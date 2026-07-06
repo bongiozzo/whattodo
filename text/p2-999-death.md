@@ -4,11 +4,9 @@ created: 29.08.2023
 published: Черновик
 description: Незавершённая глава.
 ---
-
 # Memento Mori
 
 Незавершённая глава.
-
 ## Неудобные вопросы {#uncomfortable_questions}
 
 Получил от [Шага](p2-200-text.md#shag) неожиданный вопрос: 
