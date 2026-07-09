@@ -130,7 +130,7 @@ hindsight-preview: ## Preview WTD -> Hindsight payload generation (no writes)
 	if [ -n "$(HINDSIGHT_SECTION)" ]; then ARGS="$$ARGS --section $(HINDSIGHT_SECTION)"; fi; \
 	if [ -n "$(HINDSIGHT_LIMIT)" ]; then ARGS="$$ARGS --limit $(HINDSIGHT_LIMIT)"; fi; \
 	echo "==> Hindsight preview"; \
-	uv run python "$(HINDSIGHT_WRAPPER)" $$ARGS $(HINDSIGHT_EXTRA_ARGS)
+	env -u VIRTUAL_ENV uv run python "$(HINDSIGHT_WRAPPER)" $$ARGS $(HINDSIGHT_EXTRA_ARGS)
 
 hindsight-ingest: ## Run live WTD -> Hindsight ingest
 	@if [ ! -f "$(HINDSIGHT_WRAPPER)" ]; then \
@@ -142,7 +142,7 @@ hindsight-ingest: ## Run live WTD -> Hindsight ingest
 	if [ -n "$(HINDSIGHT_SECTION)" ]; then ARGS="$$ARGS --section $(HINDSIGHT_SECTION)"; fi; \
 	if [ -n "$(HINDSIGHT_LIMIT)" ]; then ARGS="$$ARGS --limit $(HINDSIGHT_LIMIT)"; fi; \
 	echo "==> Hindsight live ingest"; \
-	uv run python "$(HINDSIGHT_WRAPPER)" $$ARGS $(HINDSIGHT_EXTRA_ARGS)
+	env -u VIRTUAL_ENV uv run python "$(HINDSIGHT_WRAPPER)" $$ARGS $(HINDSIGHT_EXTRA_ARGS)
 
 publish: ## Bump version tag and push to GitHub (triggers CI/CD)
 	@if ! git diff --quiet --ignore-submodules=all || ! git diff --cached --quiet --ignore-submodules=all; then \
