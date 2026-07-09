@@ -4,7 +4,18 @@
 # mkdocs.yml описывает структуру Текста, которая определяет сайт и сборку EPUB.
 # Сборочная «машинерия» находится в плагине text-forge.
 
-.PHONY: all epub site serve clean help info install publish obsidian
+.PHONY: all epub site serve clean help info install publish obsidian hindsight-preview hindsight-ingest
+
+HINDSIGHT_WRAPPER ?= ../scripts/hindsight-wtd-ingest-wrapper.py
+HINDSIGHT_API_URL ?= http://localhost:8889
+HINDSIGHT_BANK ?= hermes
+HINDSIGHT_STRATEGY ?= wtd-primary
+HINDSIGHT_BATCH_SIZE ?= 25
+HINDSIGHT_UPDATE_MODE ?= replace
+HINDSIGHT_CHAPTER ?=
+HINDSIGHT_SECTION ?=
+HINDSIGHT_LIMIT ?=
+HINDSIGHT_EXTRA_ARGS ?=
 
 help: ## Show available make targets
 	@awk 'BEGIN {FS=":.*##"; printf "\nTargets:\n"} /^[a-zA-Z0-9_-]+:.*##/ {printf "  make %-15s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
@@ -107,6 +118,30 @@ info: ## Show project info
 	@uv run text-forge info
 	@echo "Content root: $(CURDIR)"
 	@echo "Config file: mkdocs.yml"
+
+hindsight-preview: ## Preview WTD -> Hindsight payload generation (no writes)
+	@if [ ! -f "$(HINDSIGHT_WRAPPER)" ]; then \
+		echo "Error: canonical wrapper not found: $(HINDSIGHT_WRAPPER)"; \
+		exit 1; \
+	fi
+	@ARGS="--root $(CURDIR) --api-url $(HINDSIGHT_API_URL) --bank $(HINDSIGHT_BANK) --strategy $(HINDSIGHT_STRATEGY) --batch-size $(HINDSIGHT_BATCH_SIZE) --update-mode $(HINDSIGHT_UPDATE_MODE)"; \
+	if [ -n "$(HINDSIGHT_CHAPTER)" ]; then ARGS="$$ARGS --chapter $(HINDSIGHT_CHAPTER)"; fi; \
+	if [ -n "$(HINDSIGHT_SECTION)" ]; then ARGS="$$ARGS --section $(HINDSIGHT_SECTION)"; fi; \
+	if [ -n "$(HINDSIGHT_LIMIT)" ]; then ARGS="$$ARGS --limit $(HINDSIGHT_LIMIT)"; fi; \
+	echo "==> Hindsight preview"; \
+	uv run python "$(HINDSIGHT_WRAPPER)" $$ARGS $(HINDSIGHT_EXTRA_ARGS)
+
+hindsight-ingest: ## Run live WTD -> Hindsight ingest
+	@if [ ! -f "$(HINDSIGHT_WRAPPER)" ]; then \
+		echo "Error: canonical wrapper not found: $(HINDSIGHT_WRAPPER)"; \
+		exit 1; \
+	fi
+	@ARGS="--root $(CURDIR) --api-url $(HINDSIGHT_API_URL) --bank $(HINDSIGHT_BANK) --strategy $(HINDSIGHT_STRATEGY) --batch-size $(HINDSIGHT_BATCH_SIZE) --update-mode $(HINDSIGHT_UPDATE_MODE) --yes"; \
+	if [ -n "$(HINDSIGHT_CHAPTER)" ]; then ARGS="$$ARGS --chapter $(HINDSIGHT_CHAPTER)"; fi; \
+	if [ -n "$(HINDSIGHT_SECTION)" ]; then ARGS="$$ARGS --section $(HINDSIGHT_SECTION)"; fi; \
+	if [ -n "$(HINDSIGHT_LIMIT)" ]; then ARGS="$$ARGS --limit $(HINDSIGHT_LIMIT)"; fi; \
+	echo "==> Hindsight live ingest"; \
+	uv run python "$(HINDSIGHT_WRAPPER)" $$ARGS $(HINDSIGHT_EXTRA_ARGS)
 
 publish: ## Bump version tag and push to GitHub (triggers CI/CD)
 	@if ! git diff --quiet --ignore-submodules=all || ! git diff --cached --quiet --ignore-submodules=all; then \
