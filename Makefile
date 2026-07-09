@@ -6,7 +6,8 @@
 
 .PHONY: all epub site serve clean help info install publish obsidian hindsight-preview hindsight-ingest
 
-HINDSIGHT_WRAPPER ?= ../scripts/hindsight-wtd-ingest-wrapper.py
+TEXT_FORGE_DIR ?= ../text-forge
+HINDSIGHT_WRAPPER ?= $(TEXT_FORGE_DIR)/scripts/hindsight-wtd-ingest-wrapper.py
 HINDSIGHT_API_URL ?= http://localhost:8889
 HINDSIGHT_BANK ?= hermes
 HINDSIGHT_STRATEGY ?= wtd-primary
@@ -51,9 +52,9 @@ install: ## Bootstrap: install uv + pandoc (if missing), then uv sync
 	uv sync --upgrade
 
 serve: ## Run local preview server (fast, no EPUB)
-	@if [ -f ../text_forge/plugin.py ]; then \
+	@if [ -f $(TEXT_FORGE_DIR)/text_forge/plugin.py ]; then \
 		echo "==> text-forge source detected, reinstalling to pick up local changes..."; \
-		uv pip install -e .. --force-reinstall --no-deps --quiet; \
+		uv pip install -e $(TEXT_FORGE_DIR) --force-reinstall --no-deps --quiet; \
 	fi
 	@echo "==> Checking for existing mkdocs process..."
 	@pkill -f "mkdocs serve" || true
@@ -74,7 +75,7 @@ clean: ## Remove build artifacts
 
 summary: ## Prepare summary source (then run summarize prompt)
 	@mkdir -p build
-	uv run python ../scripts/mkdocs-combine.py mkdocs.yml \
+	uv run python $(TEXT_FORGE_DIR)/scripts/mkdocs-combine.py mkdocs.yml \
 		--mode summary \
 		--exclude p3-summary.md \
 		--index-output build/heading_index.json \
