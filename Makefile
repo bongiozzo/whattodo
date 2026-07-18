@@ -4,7 +4,7 @@
 # mkdocs.yml описывает структуру Текста, которая определяет сайт и сборку EPUB.
 # Сборочная «машинерия» находится в плагине text-forge.
 
-.PHONY: all epub site serve clean help info install publish obsidian hindsight-preview hindsight-ingest
+.PHONY: all epub site serve clean help info install publish obsidian hindsight hindsight-wipe-by-tag
 
 TEXT_FORGE_DIR ?= ../text-forge
 HINDSIGHT_WRAPPER ?= $(TEXT_FORGE_DIR)/scripts/hindsight-wtd-ingest-wrapper.py
@@ -13,10 +13,18 @@ HINDSIGHT_BANK ?= hermes
 HINDSIGHT_STRATEGY ?= wtd-primary
 HINDSIGHT_BATCH_SIZE ?= 25
 HINDSIGHT_UPDATE_MODE ?= replace
+HINDSIGHT_APPLY ?= no
 HINDSIGHT_CHAPTER ?=
 HINDSIGHT_SECTION ?=
 HINDSIGHT_LIMIT ?=
 HINDSIGHT_EXTRA_ARGS ?=
+HINDSIGHT_WIPE_SCRIPT ?= $(TEXT_FORGE_DIR)/scripts/hindsight-wipe-documents-by-tag.py
+HINDSIGHT_WIPE_TAGS ?=
+HINDSIGHT_WIPE_LIMIT ?=
+HINDSIGHT_WIPE_PAGE_SIZE ?= 100
+HINDSIGHT_WIPE_SHOW ?= 50
+HINDSIGHT_WIPE_DELAY ?= 0.1
+HINDSIGHT_WIPE_APPLY ?=
 
 help: ## Show available make targets
 	@awk 'BEGIN {FS=":.*##"; printf "\nTargets:\n"} /^[a-zA-Z0-9_-]+:.*##/ {printf "  make %-15s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
@@ -120,29 +128,49 @@ info: ## Show project info
 	@echo "Content root: $(CURDIR)"
 	@echo "Config file: mkdocs.yml"
 
-hindsight-preview: ## Preview WTD -> Hindsight payload generation (no writes)
+hindsight: ## WTD -> Hindsight (set HINDSIGHT_APPLY=yes to write; default no)
 	@if [ ! -f "$(HINDSIGHT_WRAPPER)" ]; then \
 		echo "Error: canonical wrapper not found: $(HINDSIGHT_WRAPPER)"; \
 		exit 1; \
 	fi
 	@ARGS="--root $(CURDIR) --api-url $(HINDSIGHT_API_URL) --bank $(HINDSIGHT_BANK) --strategy $(HINDSIGHT_STRATEGY) --batch-size $(HINDSIGHT_BATCH_SIZE) --update-mode $(HINDSIGHT_UPDATE_MODE)"; \
+	if [ "$(HINDSIGHT_APPLY)" = "yes" ]; then ARGS="$$ARGS --yes"; MODE="live ingest"; else MODE="preview"; fi; \
 	if [ -n "$(HINDSIGHT_CHAPTER)" ]; then ARGS="$$ARGS --chapter $(HINDSIGHT_CHAPTER)"; fi; \
 	if [ -n "$(HINDSIGHT_SECTION)" ]; then ARGS="$$ARGS --section $(HINDSIGHT_SECTION)"; fi; \
 	if [ -n "$(HINDSIGHT_LIMIT)" ]; then ARGS="$$ARGS --limit $(HINDSIGHT_LIMIT)"; fi; \
-	echo "==> Hindsight preview"; \
+	echo "==> Hindsight $$MODE"; \
 	env -u VIRTUAL_ENV uv run python "$(HINDSIGHT_WRAPPER)" $$ARGS $(HINDSIGHT_EXTRA_ARGS)
 
-hindsight-ingest: ## Run live WTD -> Hindsight ingest
-	@if [ ! -f "$(HINDSIGHT_WRAPPER)" ]; then \
-		echo "Error: canonical wrapper not found: $(HINDSIGHT_WRAPPER)"; \
+hindsight-wipe-by-tag: ## Dry-run wipe by tags, then prompt to apply (default no)
+	@if [ ! -f "$(HINDSIGHT_WIPE_SCRIPT)" ]; then \
+		echo "Error: wipe script not found: $(HINDSIGHT_WIPE_SCRIPT)"; \
 		exit 1; \
 	fi
-	@ARGS="--root $(CURDIR) --api-url $(HINDSIGHT_API_URL) --bank $(HINDSIGHT_BANK) --strategy $(HINDSIGHT_STRATEGY) --batch-size $(HINDSIGHT_BATCH_SIZE) --update-mode $(HINDSIGHT_UPDATE_MODE) --yes"; \
-	if [ -n "$(HINDSIGHT_CHAPTER)" ]; then ARGS="$$ARGS --chapter $(HINDSIGHT_CHAPTER)"; fi; \
-	if [ -n "$(HINDSIGHT_SECTION)" ]; then ARGS="$$ARGS --section $(HINDSIGHT_SECTION)"; fi; \
-	if [ -n "$(HINDSIGHT_LIMIT)" ]; then ARGS="$$ARGS --limit $(HINDSIGHT_LIMIT)"; fi; \
-	echo "==> Hindsight live ingest"; \
-	env -u VIRTUAL_ENV uv run python "$(HINDSIGHT_WRAPPER)" $$ARGS $(HINDSIGHT_EXTRA_ARGS)
+	@if [ -z "$(HINDSIGHT_WIPE_TAGS)" ]; then \
+		echo "Error: set HINDSIGHT_WIPE_TAGS (space-separated), e.g. HINDSIGHT_WIPE_TAGS='wtd current'"; \
+		exit 1; \
+	fi
+	@BASE_ARGS="--api-url $(HINDSIGHT_API_URL) --bank $(HINDSIGHT_BANK) --page-size $(HINDSIGHT_WIPE_PAGE_SIZE) --show $(HINDSIGHT_WIPE_SHOW) --delay $(HINDSIGHT_WIPE_DELAY)"; \
+	for tag in $(HINDSIGHT_WIPE_TAGS); do BASE_ARGS="$$BASE_ARGS --tag $$tag"; done; \
+	if [ -n "$(HINDSIGHT_WIPE_LIMIT)" ]; then BASE_ARGS="$$BASE_ARGS --limit $(HINDSIGHT_WIPE_LIMIT)"; fi; \
+	echo "==> Hindsight wipe dry-run"; \
+	env -u VIRTUAL_ENV uv run python "$(HINDSIGHT_WIPE_SCRIPT)" $$BASE_ARGS; \
+	DO_APPLY="no"; \
+	if [ "$(HINDSIGHT_WIPE_APPLY)" = "yes" ]; then \
+		DO_APPLY="yes"; \
+	elif [ -z "$(HINDSIGHT_WIPE_APPLY)" ]; then \
+		if [ -t 0 ]; then \
+			printf "Apply deletes now? [y/N] "; \
+			read -r answer; \
+			case "$$answer" in y|Y|yes|YES) DO_APPLY="yes" ;; *) DO_APPLY="no" ;; esac; \
+		fi; \
+	fi; \
+	if [ "$$DO_APPLY" = "yes" ]; then \
+		echo "==> Hindsight wipe APPLY"; \
+		env -u VIRTUAL_ENV uv run python "$(HINDSIGHT_WIPE_SCRIPT)" $$BASE_ARGS --yes; \
+	else \
+		echo "No deletes performed."; \
+	fi
 
 publish: ## Bump version tag and push to GitHub (triggers CI/CD)
 	@if ! git diff --quiet --ignore-submodules=all || ! git diff --cached --quiet --ignore-submodules=all; then \
