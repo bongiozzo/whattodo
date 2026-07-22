@@ -172,45 +172,78 @@ hindsight-wipe-by-tag: ## Dry-run wipe by tags, then prompt to apply (default no
 		echo "No deletes performed."; \
 	fi
 
-publish: ## Bump version tag and push to GitHub (triggers CI/CD)
-	@if ! git diff --quiet --ignore-submodules=all || ! git diff --cached --quiet --ignore-submodules=all; then \
-		echo "Error: You have uncommitted changes. Please commit or stash them before publishing:"; \
+publish: ## Interactive publish: optional commit, optional tag, optional push
+	@TAG_CREATED="no"; \
+	NEW_TAG=""; \
+	BRANCH=$$(git rev-parse --abbrev-ref HEAD); \
+	if ! git diff --quiet --ignore-submodules=all || ! git diff --cached --quiet --ignore-submodules=all; then \
+		echo "Working tree is dirty:"; \
 		git status --short --ignore-submodules=all; \
-		exit 1; \
-	fi
-	@LATEST=$$(git tag --sort=-version:refname | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$$' | head -1); \
-	if [ -z "$$LATEST" ]; then \
-		echo "Error: No existing version tag found (expected vMAJOR.MINOR.PATCH)"; \
-		exit 1; \
+		echo "Enter commit message (type 'no' to abort publish):"; \
+		read -r COMMIT_MSG; \
+		if [ "$$COMMIT_MSG" = "no" ] || [ "$$COMMIT_MSG" = "NO" ] || [ "$$COMMIT_MSG" = "No" ]; then \
+			echo "Publish aborted."; \
+			exit 1; \
+		fi; \
+		if [ -z "$$COMMIT_MSG" ]; then \
+			echo "Error: commit message cannot be empty"; \
+			exit 1; \
+		fi; \
+		git add -A; \
+		git commit -m "$$COMMIT_MSG"; \
 	fi; \
-	echo "Current: $$LATEST"; \
-	MAJOR=$$(echo "$$LATEST" | sed 's/^v\([0-9]*\)\..*/\1/'); \
-	MINOR=$$(echo "$$LATEST" | sed 's/^v[0-9]*\.\([0-9]*\)\..*/\1/'); \
-	PATCH=$$(echo "$$LATEST" | sed 's/^v[0-9]*\.[0-9]*\.\([0-9]*\)$$/\1/'); \
-	echo "Bump [major/minor/patch] (default: patch):"; \
-	read -r BUMP; \
-	BUMP=$${BUMP:-patch}; \
-	case "$$BUMP" in \
-		patch) NEW="v$$MAJOR.$$MINOR.$$((PATCH + 1))" ;; \
-		minor) NEW="v$$MAJOR.$$((MINOR + 1)).0" ;; \
-		major) NEW="v$$((MAJOR + 1)).0.0" ;; \
-		*) echo "Error: use major, minor, or patch"; exit 1 ;; \
+	echo "Create and push a version tag? [y/N]"; \
+	read -r DO_TAG; \
+	case "$$DO_TAG" in \
+		y|Y|yes|YES) \
+			LATEST=$$(git tag --sort=-version:refname | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$$' | head -1); \
+			if [ -z "$$LATEST" ]; then \
+				LATEST="v0.0.0"; \
+			fi; \
+			echo "Current: $$LATEST"; \
+			MAJOR=$$(echo "$$LATEST" | sed 's/^v\([0-9]*\)\..*/\1/'); \
+			MINOR=$$(echo "$$LATEST" | sed 's/^v[0-9]*\.\([0-9]*\)\..*/\1/'); \
+			PATCH=$$(echo "$$LATEST" | sed 's/^v[0-9]*\.[0-9]*\.\([0-9]*\)$$/\1/'); \
+			echo "Version bump [major/minor/patch] (default: patch):"; \
+			read -r BUMP; \
+			BUMP=$${BUMP:-patch}; \
+			case "$$BUMP" in \
+				patch) NEW_TAG="v$$MAJOR.$$MINOR.$$((PATCH + 1))" ;; \
+				minor) NEW_TAG="v$$MAJOR.$$((MINOR + 1)).0" ;; \
+				major) NEW_TAG="v$$((MAJOR + 1)).0.0" ;; \
+				*) echo "Error: use major, minor, or patch"; exit 1 ;; \
+			esac; \
+			echo "New tag: $$NEW_TAG"; \
+			if git rev-parse -q --verify "refs/tags/$$NEW_TAG" >/dev/null; then \
+				echo "Error: tag $$NEW_TAG already exists"; \
+				exit 1; \
+			fi; \
+			git tag -a "$$NEW_TAG" -m "Release $$NEW_TAG"; \
+			TAG_CREATED="yes"; \
+			;; \
+		*) \
+			echo "Skipping tag creation."; \
+			;; \
 	esac; \
-	echo "New:     $$NEW"; \
-	echo "Push tag $$NEW? [y/N]"; \
-	read -r CONFIRM; \
-	if [ "$$CONFIRM" != "y" ] && [ "$$CONFIRM" != "Y" ]; then \
-		echo "Cancelled"; \
-		exit 1; \
-	fi; \
-	git tag -a "$$NEW" -m "Release $$NEW"; \
-	git push origin master "$$NEW"; \
-	echo "✓ Tag pushed: $$NEW"; \
-	if command -v gh >/dev/null 2>&1; then \
-		gh release create "$$NEW" --title "$$NEW" --generate-notes; \
-		echo "✓ GitHub release created"; \
-		echo "→ https://github.com/bongiozzo/whattodo/releases/tag/$$NEW"; \
-	else \
-		echo "⚠ gh CLI not found — skipping GitHub release creation"; \
-		echo "→ https://github.com/bongiozzo/whattodo/releases/tag/$$NEW"; \
-	fi
+	echo "Push branch $$BRANCH to origin? [y/N]"; \
+	read -r DO_PUSH; \
+	case "$$DO_PUSH" in \
+		y|Y|yes|YES) \
+			if [ "$$TAG_CREATED" = "yes" ]; then \
+				git push origin "$$BRANCH" "$$NEW_TAG"; \
+				echo "Tag pushed: $$NEW_TAG"; \
+				if command -v gh >/dev/null 2>&1; then \
+					gh release create "$$NEW_TAG" --title "$$NEW_TAG" --generate-notes; \
+					echo "GitHub release created: https://github.com/bongiozzo/whattodo/releases/tag/$$NEW_TAG"; \
+				else \
+					echo "gh CLI not found; skipped GitHub release creation"; \
+				fi; \
+			else \
+				git push origin "$$BRANCH"; \
+			fi; \
+			echo "Publish completed."; \
+			;; \
+		*) \
+			echo "Push skipped."; \
+			;; \
+	esac
