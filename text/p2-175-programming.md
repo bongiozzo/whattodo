@@ -151,6 +151,8 @@ Yamaha MSX
 
 ### Sales as Helping
 
+[Open Heart as Sales Principle](p2-170-opensource.md#it_consulting)
+
 ## School of Digital Age
 
 ## Отойти от IT
