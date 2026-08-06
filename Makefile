@@ -16,6 +16,7 @@ HINDSIGHT_UPDATE_MODE ?= replace
 HINDSIGHT_APPLY ?= no
 HINDSIGHT_CHAPTER ?=
 HINDSIGHT_SECTION ?=
+HINDSIGHT_COMMIT ?=
 HINDSIGHT_LIMIT ?=
 HINDSIGHT_EXTRA_ARGS ?=
 HINDSIGHT_WIPE_SCRIPT ?= $(TEXT_FORGE_DIR)/scripts/hindsight-wipe-documents-by-tag.py
@@ -135,8 +136,13 @@ hindsight: ## WTD -> Hindsight (set HINDSIGHT_APPLY=yes to write; default no)
 	fi
 	@ARGS="--root $(CURDIR) --api-url $(HINDSIGHT_API_URL) --bank $(HINDSIGHT_BANK) --strategy $(HINDSIGHT_STRATEGY) --batch-size $(HINDSIGHT_BATCH_SIZE) --update-mode $(HINDSIGHT_UPDATE_MODE)"; \
 	if [ "$(HINDSIGHT_APPLY)" = "yes" ]; then ARGS="$$ARGS --yes"; MODE="live ingest"; else MODE="preview"; fi; \
+	if [ -n "$(HINDSIGHT_COMMIT)" ]; then ARGS="$$ARGS --from-commit $(HINDSIGHT_COMMIT)"; fi; \
 	if [ -n "$(HINDSIGHT_CHAPTER)" ]; then ARGS="$$ARGS --chapter $(HINDSIGHT_CHAPTER)"; fi; \
 	if [ -n "$(HINDSIGHT_SECTION)" ]; then ARGS="$$ARGS --section $(HINDSIGHT_SECTION)"; fi; \
+	if [ -n "$(HINDSIGHT_COMMIT)" ] && { [ -n "$(HINDSIGHT_CHAPTER)" ] || [ -n "$(HINDSIGHT_SECTION)" ]; }; then \
+		echo "Error: do not combine commit/diff mode with chapter/section filters"; \
+		exit 1; \
+	fi; \
 	if [ -n "$(HINDSIGHT_LIMIT)" ]; then ARGS="$$ARGS --limit $(HINDSIGHT_LIMIT)"; fi; \
 	echo "==> Hindsight $$MODE"; \
 	env -u VIRTUAL_ENV uv run python "$(HINDSIGHT_WRAPPER)" $$ARGS $(HINDSIGHT_EXTRA_ARGS)
