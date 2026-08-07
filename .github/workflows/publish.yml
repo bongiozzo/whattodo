@@ -20,7 +20,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
@@ -32,20 +32,20 @@ jobs:
           cover_image: text/img/cover.jpg
 
       # Build verification artifact (works on any branch)
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: site-public
           path: public
 
       # Deploy only from master (prevents branch tests from overwriting prod Pages)
       - if: github.ref == 'refs/heads/master'
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - if: github.ref == 'refs/heads/master'
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: public
       - if: github.ref == 'refs/heads/master'
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
         id: deploy
 
       - name: Published site URL
