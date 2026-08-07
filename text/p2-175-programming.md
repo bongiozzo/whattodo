@@ -7,7 +7,8 @@ description: Написание кода как нахождение в Пото
 # Программирование — созидательный поток
 
 Незавершённая глава.
-## Мечты о компьютерах
+
+## Мечты о компьютерах {#computer_in_dreams}
 
 Радость от возможности формулировать мысли в виде чётких, цифровых процессов, на мой взгляд, сродни восторгам математиков от красоты любимой науки.
 
@@ -71,7 +72,7 @@ description: Написание кода как нахождение в Пото
 В то время откладывал статьи из журналов «Техника Молодежи» и «Радио» о самостоятельной сборке ПК, искал в продаже процессоры, выяснял возможность создания материнской платы, но денег и  навыков радиотехники было недостаточно.
 До 8-го класса мысли о персональном компьютере оставались преимущественно мечтами.
 
-## Yamaha MSX
+## Yamaha MSX {#yamaha_msx}
 
 Прорывом стало [поступление в школу Наяновой](p1-040-unhappiness.md#money_in_school) — там мы-школьники встретились с преподавателями из ВУЗов.
 
@@ -131,31 +132,31 @@ Yamaha MSX
 
 Я потерял ощущение развития и с компьютеров переключился преимущественно на эмоции и человеческое общение — [занырнул в музыку](p2-150-absurd.md#lightning_strike_studio). 
 
-## Понимание - работа
-
-### Samara-Internet
+### Samara-Internet {#samara_internet}
 
 Соединять людей — наша работа (майка из прошлой жизни)
 
-### Webzavod
+### Webzavod {#webzavod}
 
-### Samara Pub
+### Samara Pub {#samara_pub}
 
-### Mustdie, Lightning Strike
+### Mustdie, Lightning Strike {#mustdie}
 
-## Microsoft
+## Microsoft {#microsoft}
 
-### IT Consulting
+### IT Consulting {#microsoft_consulting_services}
 
-### Evangelism
+### Evangelism {#evangelism}
 
-### Sales as Helping
+### Sales as Helping {#microsoft_sales}
 
-## School of Digital Age
+[Open Heart as Sales Principle](p2-170-opensource.md#it_consulting).
 
-## Отойти от IT
+## School of Digital Age {#school_of_digital_age}
 
-## Цифровой Петербург
+## Отойти от IT {#exit_from_it}
+
+## Цифровой Петербург {#digital_spb}
 
 ## Программирование вместе с ИИ {#vibe_coding}
 
@@ -192,7 +193,8 @@ Yamaha MSX
 Заметки я теперь наговариваю в voice memo на телефоне по горячей кнопке, а [Шаг](p2-200-text.md#shag) их подхватывает, разбирает и складывает в obsidian для дальнейшей обработки.
 
 Много всякого. 
-### Programming and Psychology
+
+### Программирование и Психология {#programming_and_psychology}
 
 Спустя два месяца общения с компаньоном через обвязку (harness) OpenClaw переключился на [Hermes](https://hermes-agent.nousresearch.com).
 
