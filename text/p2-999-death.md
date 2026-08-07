@@ -1,7 +1,7 @@
 ---
 comments: true
 created: 29.08.2023
-published: Черновик
+published: Draft
 description: Незавершённая глава.
 ---
 # Memento Mori

@@ -1,7 +1,7 @@
 ---
 comments: true
 created: 26.02.2026
-published: Черновик
+published: Draft
 description: Написание кода как нахождение в Потоке...
 ---
 # Программирование — созидательный поток
@@ -150,7 +150,7 @@ Yamaha MSX
 
 ### Sales as Helping {#microsoft_sales}
 
-[Open Heart as Sales Principle](p2-170-opensource.md#it_consulting).
+[Open Heart as Sales Principle](p2-170-opensource.md#it_consulting)
 
 ## School of Digital Age {#school_of_digital_age}
 
