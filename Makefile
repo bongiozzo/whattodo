@@ -4,7 +4,7 @@
 # mkdocs.yml описывает структуру Текста, которая определяет сайт и сборку EPUB.
 # Сборочная «машинерия» находится в плагине text-forge.
 
-.PHONY: all epub site serve clean help info install publish obsidian hindsight hindsight-wipe-by-tag
+.PHONY: all epub site serve clean help info install publish obsidian hindsight hindsight-wipe-by-tag changelog grammar
 
 TEXT_FORGE_DIR ?= ../text-forge
 HINDSIGHT_WRAPPER ?= $(TEXT_FORGE_DIR)/scripts/hindsight-wtd-ingest-wrapper.py
@@ -26,6 +26,38 @@ HINDSIGHT_WIPE_PAGE_SIZE ?= 100
 HINDSIGHT_WIPE_SHOW ?= 50
 HINDSIGHT_WIPE_DELAY ?= 0.1
 HINDSIGHT_WIPE_APPLY ?=
+
+OPENCODE ?= opencode
+CHANGELOG_SINCE ?=
+GRAMMAR_SINCE ?=
+
+# Allow `make changelog <ref>` / `make grammar <ref>` as a shortcut for CHANGELOG_SINCE=/GRAMMAR_SINCE=
+# (an explicit VAR=value on the command line still takes precedence).
+ifeq (changelog,$(firstword $(MAKECMDGOALS)))
+  CHANGELOG_ARG := $(wordlist 2,$(words $(MAKECMDGOALS)),$(MAKECMDGOALS))
+  ifneq ($(CHANGELOG_ARG),)
+    $(eval $(CHANGELOG_ARG):;@:)
+    CHANGELOG_SINCE := $(CHANGELOG_ARG)
+  endif
+endif
+ifeq (grammar,$(firstword $(MAKECMDGOALS)))
+  GRAMMAR_ARG := $(wordlist 2,$(words $(MAKECMDGOALS)),$(MAKECMDGOALS))
+  ifneq ($(GRAMMAR_ARG),)
+    $(eval $(GRAMMAR_ARG):;@:)
+    GRAMMAR_SINCE := $(GRAMMAR_ARG)
+  endif
+endif
+
+# Resolve a tag/commit/date (YYYY-MM-DD) to a base ref for diffing since it.
+define RESOLVE_SINCE_REF
+if git rev-parse --verify --quiet "$(1)^{commit}" >/dev/null 2>&1; then \
+	BASE="$(1)"; \
+else \
+	BASE=$$(git log --oneline --after="$(1)" --reverse -- 'text/*.md' | head -n1 | cut -d' ' -f1); \
+	if [ -z "$$BASE" ]; then echo "No commits found after $(1)"; exit 1; fi; \
+	BASE="$$BASE^"; \
+fi
+endef
 
 help: ## Show available make targets
 	@awk 'BEGIN {FS=":.*##"; printf "\nTargets:\n"} /^[a-zA-Z0-9_-]+:.*##/ {printf "  make %-15s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
@@ -91,6 +123,36 @@ summary: ## Prepare summary source (then run summarize prompt)
 		> build/summary_source.md
 	@echo "✓ Source prepared: build/summary_source.md + build/heading_index.json"
 	@echo "→ Run summarize prompt to generate text/p3-summary.md"
+
+changelog: ## Russian changelog post since a ref (make changelog <ref>, or CHANGELOG_SINCE=<tag|commit|YYYY-MM-DD>)
+	@if [ -z "$(CHANGELOG_SINCE)" ]; then \
+		echo "Error: set CHANGELOG_SINCE=<tag|commit|date> or run: make changelog <ref>"; \
+		exit 1; \
+	fi
+	@$(call RESOLVE_SINCE_REF,$(CHANGELOG_SINCE)); \
+	DIFF=$$(git diff "$$BASE"..HEAD -- 'text/*.md'); \
+	if [ -z "$$DIFF" ]; then echo "No changes in text/*.md since $(CHANGELOG_SINCE)"; exit 0; fi; \
+	mkdir -p build; \
+	echo "$$DIFF" > build/changelog.diff; \
+	echo "==> Running opencode changelog prompt (since $(CHANGELOG_SINCE))..."; \
+	$(OPENCODE) run \
+		"Follow the attached changelog.prompt.md instructions and generate the Telegram post from the attached diff (build/changelog.diff)." \
+		-f .github/prompts/changelog.prompt.md -f build/changelog.diff
+
+grammar: ## Grammar check for text/*.md (default: uncommitted diff; or make grammar <ref> / GRAMMAR_SINCE=<tag|commit|YYYY-MM-DD>)
+	@if [ -n "$(GRAMMAR_SINCE)" ]; then \
+		$(call RESOLVE_SINCE_REF,$(GRAMMAR_SINCE)); \
+		DIFF=$$(git diff "$$BASE"..HEAD -- 'text/*.md' | grep '^+' | grep -v '^+++' | sed 's/^+//'); \
+	else \
+		DIFF=$$(git diff HEAD -- 'text/*.md' | grep '^+' | grep -v '^+++' | sed 's/^+//'); \
+	fi; \
+	if [ -z "$$DIFF" ]; then echo "No added lines to check."; exit 0; fi; \
+	mkdir -p build; \
+	echo "$$DIFF" > build/grammar_diff.txt; \
+	echo "==> Running opencode grammar check..."; \
+	$(OPENCODE) run \
+		"Follow the attached grammar.prompt.md instructions and review the added lines in the attached diff (build/grammar_diff.txt)." \
+		-f .github/prompts/grammar.prompt.md -f build/grammar_diff.txt
 
 obsidian: install ## Set up Obsidian: install Templater plugin, text-forge plugin, scripts and hotkeys
 	@mkdir -p .obsidian/plugins/templater-obsidian
