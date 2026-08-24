@@ -17,6 +17,7 @@ CHAPTER ?=
 SECTION ?=
 COMMIT ?=
 SINCE_COMMIT ?=
+AFTER_COMMIT ?=
 LIMIT ?=
 FULL ?= no
 INGEST_EXTRA_ARGS ?=
@@ -185,7 +186,7 @@ info: ## Show project info
 	@echo "Content root: $(CURDIR)"
 	@echo "Config file: mkdocs.yml"
 
-ingest: ## WTD -> Hindsight status/ingest (scope: COMMIT/SINCE_COMMIT/CHAPTER/FULL; APPLY=yes to write)
+ingest: ## WTD -> Hindsight status/ingest (scope: COMMIT/SINCE_COMMIT/AFTER_COMMIT/CHAPTER/FULL; APPLY=yes to write)
 	@if [ ! -f "$(HINDSIGHT_WRAPPER)" ]; then \
 		echo "Error: canonical wrapper not found: $(HINDSIGHT_WRAPPER)"; \
 		exit 1; \
@@ -194,30 +195,28 @@ ingest: ## WTD -> Hindsight status/ingest (scope: COMMIT/SINCE_COMMIT/CHAPTER/FU
 	if [ "$(APPLY)" = "yes" ]; then ARGS="$$ARGS --yes"; MODE="live ingest"; else MODE="preview"; fi; \
 	if [ -n "$(COMMIT)" ]; then ARGS="$$ARGS --from-commit $(COMMIT)"; fi; \
 	if [ -n "$(SINCE_COMMIT)" ]; then ARGS="$$ARGS --since-commit $(SINCE_COMMIT)"; fi; \
+	if [ -n "$(AFTER_COMMIT)" ]; then ARGS="$$ARGS --after-commit $(AFTER_COMMIT)"; fi; \
 	if [ -n "$(CHAPTER)" ]; then ARGS="$$ARGS --chapter $(CHAPTER)"; fi; \
 	if [ -n "$(SECTION)" ]; then ARGS="$$ARGS --section $(SECTION)"; fi; \
 	if [ "$(FULL)" = "yes" ]; then \
-		if [ -n "$(COMMIT)$(SINCE_COMMIT)$(CHAPTER)$(SECTION)" ]; then \
-			echo "Error: FULL=yes cannot be combined with COMMIT/SINCE_COMMIT/CHAPTER/SECTION"; \
+		if [ -n "$(COMMIT)$(SINCE_COMMIT)$(AFTER_COMMIT)$(CHAPTER)$(SECTION)" ]; then \
+			echo "Error: FULL=yes cannot be combined with COMMIT/SINCE_COMMIT/AFTER_COMMIT/CHAPTER/SECTION"; \
 			exit 1; \
 		fi; \
 		ARGS="$$ARGS --all"; \
 	fi; \
-	if [ -n "$(COMMIT)" ] && [ -n "$(SINCE_COMMIT)" ]; then \
-		echo "Error: use either COMMIT or SINCE_COMMIT, not both"; \
-		exit 1; \
-	fi; \
-	if [ -n "$(COMMIT)$(SINCE_COMMIT)" ] && [ -n "$(CHAPTER)$(SECTION)" ]; then \
+	if [ -n "$(COMMIT)$(SINCE_COMMIT)$(AFTER_COMMIT)" ] && [ -n "$(CHAPTER)$(SECTION)" ]; then \
 		echo "Error: do not combine commit/diff mode with CHAPTER/SECTION filters"; \
 		exit 1; \
 	fi; \
 	if [ -n "$(LIMIT)" ]; then ARGS="$$ARGS --limit $(LIMIT)"; fi; \
 	echo "==> Hindsight $$MODE"; \
 	env -u VIRTUAL_ENV uv run python "$(HINDSIGHT_WRAPPER)" $$ARGS $(INGEST_EXTRA_ARGS); \
-	if [ -z "$(COMMIT)$(SINCE_COMMIT)$(CHAPTER)$(SECTION)" ] && [ "$(FULL)" != "yes" ]; then \
+	if [ -z "$(COMMIT)$(SINCE_COMMIT)$(AFTER_COMMIT)$(CHAPTER)$(SECTION)" ] && [ "$(FULL)" != "yes" ]; then \
 		printf '\nNothing selected. Choose a scope:\n'; \
+		printf '  make ingest AFTER_COMMIT=<sha>        # commits after <sha> (use last ingested commit)\n'; \
+		printf '  make ingest SINCE_COMMIT=<sha>        # <sha> and everything after it\n'; \
 		printf '  make ingest COMMIT=<sha>              # changes of one commit\n'; \
-		printf '  make ingest SINCE_COMMIT=<sha>        # that commit through HEAD\n'; \
 		printf '  make ingest CHAPTER=<slug>            # one chapter\n'; \
 		printf '  make ingest CHAPTER=<slug> SECTION=<anchor>  # one section\n'; \
 		printf '  make ingest FULL=yes                  # whole corpus (rare)\n'; \
