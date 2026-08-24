@@ -4,7 +4,7 @@
 # mkdocs.yml описывает структуру Текста, которая определяет сайт и сборку EPUB.
 # Сборочная «машинерия» находится в плагине text-forge.
 
-.PHONY: all epub site serve clean help info install publish obsidian hindsight hindsight-wipe-by-tag changelog grammar
+.PHONY: all epub site serve clean help info install publish obsidian ingest changelog grammar
 
 TEXT_FORGE_DIR ?= ../text-forge
 HINDSIGHT_WRAPPER ?= $(TEXT_FORGE_DIR)/scripts/hindsight-wtd-ingest-wrapper.py
@@ -12,20 +12,14 @@ HINDSIGHT_API_URL ?= http://localhost:8889
 HINDSIGHT_BANK ?= hermes
 HINDSIGHT_STRATEGY ?= wtd-primary
 HINDSIGHT_BATCH_SIZE ?= 25
-HINDSIGHT_UPDATE_MODE ?= replace
-HINDSIGHT_APPLY ?= no
-HINDSIGHT_CHAPTER ?=
-HINDSIGHT_SECTION ?=
-HINDSIGHT_COMMIT ?=
-HINDSIGHT_LIMIT ?=
-HINDSIGHT_EXTRA_ARGS ?=
-HINDSIGHT_WIPE_SCRIPT ?= $(TEXT_FORGE_DIR)/scripts/hindsight-wipe-documents-by-tag.py
-HINDSIGHT_WIPE_TAGS ?=
-HINDSIGHT_WIPE_LIMIT ?=
-HINDSIGHT_WIPE_PAGE_SIZE ?= 100
-HINDSIGHT_WIPE_SHOW ?= 50
-HINDSIGHT_WIPE_DELAY ?= 0.1
-HINDSIGHT_WIPE_APPLY ?=
+APPLY ?= no
+CHAPTER ?=
+SECTION ?=
+COMMIT ?=
+SINCE_COMMIT ?=
+LIMIT ?=
+FULL ?= no
+INGEST_EXTRA_ARGS ?=
 
 OPENCODE ?= opencode
 CHANGELOG_SINCE ?=
@@ -191,53 +185,49 @@ info: ## Show project info
 	@echo "Content root: $(CURDIR)"
 	@echo "Config file: mkdocs.yml"
 
-hindsight: ## WTD -> Hindsight (set HINDSIGHT_APPLY=yes to write; default no)
+ingest: ## WTD -> Hindsight status/ingest (scope: COMMIT/SINCE_COMMIT/CHAPTER/FULL; APPLY=yes to write)
 	@if [ ! -f "$(HINDSIGHT_WRAPPER)" ]; then \
 		echo "Error: canonical wrapper not found: $(HINDSIGHT_WRAPPER)"; \
 		exit 1; \
 	fi
-	@ARGS="--root $(CURDIR) --api-url $(HINDSIGHT_API_URL) --bank $(HINDSIGHT_BANK) --strategy $(HINDSIGHT_STRATEGY) --batch-size $(HINDSIGHT_BATCH_SIZE) --update-mode $(HINDSIGHT_UPDATE_MODE)"; \
-	if [ "$(HINDSIGHT_APPLY)" = "yes" ]; then ARGS="$$ARGS --yes"; MODE="live ingest"; else MODE="preview"; fi; \
-	if [ -n "$(HINDSIGHT_COMMIT)" ]; then ARGS="$$ARGS --from-commit $(HINDSIGHT_COMMIT)"; fi; \
-	if [ -n "$(HINDSIGHT_CHAPTER)" ]; then ARGS="$$ARGS --chapter $(HINDSIGHT_CHAPTER)"; fi; \
-	if [ -n "$(HINDSIGHT_SECTION)" ]; then ARGS="$$ARGS --section $(HINDSIGHT_SECTION)"; fi; \
-	if [ -n "$(HINDSIGHT_COMMIT)" ] && { [ -n "$(HINDSIGHT_CHAPTER)" ] || [ -n "$(HINDSIGHT_SECTION)" ]; }; then \
-		echo "Error: do not combine commit/diff mode with chapter/section filters"; \
-		exit 1; \
-	fi; \
-	if [ -n "$(HINDSIGHT_LIMIT)" ]; then ARGS="$$ARGS --limit $(HINDSIGHT_LIMIT)"; fi; \
-	echo "==> Hindsight $$MODE"; \
-	env -u VIRTUAL_ENV uv run python "$(HINDSIGHT_WRAPPER)" $$ARGS $(HINDSIGHT_EXTRA_ARGS)
-
-hindsight-wipe-by-tag: ## Dry-run wipe by tags, then prompt to apply (default no)
-	@if [ ! -f "$(HINDSIGHT_WIPE_SCRIPT)" ]; then \
-		echo "Error: wipe script not found: $(HINDSIGHT_WIPE_SCRIPT)"; \
-		exit 1; \
-	fi
-	@if [ -z "$(HINDSIGHT_WIPE_TAGS)" ]; then \
-		echo "Error: set HINDSIGHT_WIPE_TAGS (space-separated), e.g. HINDSIGHT_WIPE_TAGS='wtd current'"; \
-		exit 1; \
-	fi
-	@BASE_ARGS="--api-url $(HINDSIGHT_API_URL) --bank $(HINDSIGHT_BANK) --page-size $(HINDSIGHT_WIPE_PAGE_SIZE) --show $(HINDSIGHT_WIPE_SHOW) --delay $(HINDSIGHT_WIPE_DELAY)"; \
-	for tag in $(HINDSIGHT_WIPE_TAGS); do BASE_ARGS="$$BASE_ARGS --tag $$tag"; done; \
-	if [ -n "$(HINDSIGHT_WIPE_LIMIT)" ]; then BASE_ARGS="$$BASE_ARGS --limit $(HINDSIGHT_WIPE_LIMIT)"; fi; \
-	echo "==> Hindsight wipe dry-run"; \
-	env -u VIRTUAL_ENV uv run python "$(HINDSIGHT_WIPE_SCRIPT)" $$BASE_ARGS; \
-	DO_APPLY="no"; \
-	if [ "$(HINDSIGHT_WIPE_APPLY)" = "yes" ]; then \
-		DO_APPLY="yes"; \
-	elif [ -z "$(HINDSIGHT_WIPE_APPLY)" ]; then \
-		if [ -t 0 ]; then \
-			printf "Apply deletes now? [y/N] "; \
-			read -r answer; \
-			case "$$answer" in y|Y|yes|YES) DO_APPLY="yes" ;; *) DO_APPLY="no" ;; esac; \
+	@ARGS="--root $(CURDIR) --api-url $(HINDSIGHT_API_URL) --bank $(HINDSIGHT_BANK) --strategy $(HINDSIGHT_STRATEGY) --batch-size $(HINDSIGHT_BATCH_SIZE)"; \
+	if [ "$(APPLY)" = "yes" ]; then ARGS="$$ARGS --yes"; MODE="live ingest"; else MODE="preview"; fi; \
+	if [ -n "$(COMMIT)" ]; then ARGS="$$ARGS --from-commit $(COMMIT)"; fi; \
+	if [ -n "$(SINCE_COMMIT)" ]; then ARGS="$$ARGS --since-commit $(SINCE_COMMIT)"; fi; \
+	if [ -n "$(CHAPTER)" ]; then ARGS="$$ARGS --chapter $(CHAPTER)"; fi; \
+	if [ -n "$(SECTION)" ]; then ARGS="$$ARGS --section $(SECTION)"; fi; \
+	if [ "$(FULL)" = "yes" ]; then \
+		if [ -n "$(COMMIT)$(SINCE_COMMIT)$(CHAPTER)$(SECTION)" ]; then \
+			echo "Error: FULL=yes cannot be combined with COMMIT/SINCE_COMMIT/CHAPTER/SECTION"; \
+			exit 1; \
 		fi; \
+		ARGS="$$ARGS --all"; \
 	fi; \
-	if [ "$$DO_APPLY" = "yes" ]; then \
-		echo "==> Hindsight wipe APPLY"; \
-		env -u VIRTUAL_ENV uv run python "$(HINDSIGHT_WIPE_SCRIPT)" $$BASE_ARGS --yes; \
-	else \
-		echo "No deletes performed."; \
+	if [ -n "$(COMMIT)" ] && [ -n "$(SINCE_COMMIT)" ]; then \
+		echo "Error: use either COMMIT or SINCE_COMMIT, not both"; \
+		exit 1; \
+	fi; \
+	if [ -n "$(COMMIT)$(SINCE_COMMIT)" ] && [ -n "$(CHAPTER)$(SECTION)" ]; then \
+		echo "Error: do not combine commit/diff mode with CHAPTER/SECTION filters"; \
+		exit 1; \
+	fi; \
+	if [ -n "$(LIMIT)" ]; then ARGS="$$ARGS --limit $(LIMIT)"; fi; \
+	echo "==> Hindsight $$MODE"; \
+	env -u VIRTUAL_ENV uv run python "$(HINDSIGHT_WRAPPER)" $$ARGS $(INGEST_EXTRA_ARGS); \
+	if [ -z "$(COMMIT)$(SINCE_COMMIT)$(CHAPTER)$(SECTION)" ] && [ "$(FULL)" != "yes" ]; then \
+		printf '\nNothing selected. Choose a scope:\n'; \
+		printf '  make ingest COMMIT=<sha>              # changes of one commit\n'; \
+		printf '  make ingest SINCE_COMMIT=<sha>        # that commit through HEAD\n'; \
+		printf '  make ingest CHAPTER=<slug>            # one chapter\n'; \
+		printf '  make ingest CHAPTER=<slug> SECTION=<anchor>  # one section\n'; \
+		printf '  make ingest FULL=yes                  # whole corpus (rare)\n'; \
+		printf '\nModifiers:\n'; \
+		printf '  APPLY=yes   write to Hindsight (default: preview)\n'; \
+		printf '  LIMIT=N     cap processed chunks\n'; \
+		printf '\nRemove ingested data (direct script, dry-run without --yes):\n'; \
+		printf '  uv run python $(TEXT_FORGE_DIR)/scripts/hindsight-wipe-documents-by-tag.py \\\n'; \
+		printf '    --api-url $(HINDSIGHT_API_URL) --bank $(HINDSIGHT_BANK) --tag wtd --tag current\n'; \
+		printf '  add --tag chapter:<slug> to narrow, --yes to delete\n'; \
 	fi
 
 publish: ## Interactive publish: optional commit, optional tag, optional push
