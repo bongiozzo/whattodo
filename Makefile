@@ -3,8 +3,11 @@
 # Этот репозиторий задуман как хранилище Текста + mkdocs.yml.
 # mkdocs.yml описывает структуру Текста, которая определяет сайт и сборку EPUB.
 # Сборочная «машинерия» находится в плагине text-forge.
+#
+# Running `make` with no target shows this help (see `help` target below).
 
-.PHONY: all epub site serve clean help info install publish obsidian ingest changelog grammar
+.PHONY: all epub site serve clean help install publish obsidian ingest changelog grammar
+.DEFAULT_GOAL := help
 
 TEXT_FORGE_DIR ?= ../text-forge
 HINDSIGHT_WRAPPER ?= $(TEXT_FORGE_DIR)/scripts/hindsight-wtd-ingest-wrapper.py
@@ -15,7 +18,7 @@ HINDSIGHT_BATCH_SIZE ?= 25
 APPLY ?= no
 CHAPTER ?=
 SECTION ?=
-COMMIT ?=
+FROM_COMMIT ?=
 SINCE_COMMIT ?=
 AFTER_COMMIT ?=
 LIMIT ?=
@@ -55,9 +58,17 @@ fi
 endef
 
 help: ## Show available make targets
-	@awk 'BEGIN {FS=":.*##"; printf "\nTargets:\n"} /^[a-zA-Z0-9_-]+:.*##/ {printf "  make %-15s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
+	@awk 'BEGIN {FS = ":.*?## "}; \
+		/^##@/ { printf "\n%s\n", substr($$0, 5); next } \
+		/^[a-zA-Z0-9_-]+:.*?##/ { \
+			n = split($$2, parts, " \\| "); \
+			printf "  make %-12s %s\n", $$1, parts[1]; \
+			for (i = 2; i <= n; i++) printf "%20s%s\n", "", parts[i]; \
+		}' $(MAKEFILE_LIST)
 
-install: ## Bootstrap: install uv + pandoc (if missing), then uv sync
+##@ Environment
+
+install: ## Bootstrap: uv, pandoc, text-forge (clone/update), uv sync
 	@# --- uv ---
 	@if command -v uv >/dev/null 2>&1; then \
 		echo "  ok    uv $$(uv --version)"; \
@@ -84,72 +95,20 @@ install: ## Bootstrap: install uv + pandoc (if missing), then uv sync
 	else \
 		echo "  warn  pandoc not found. Install from https://pandoc.org/installing.html"; \
 	fi
+	@# --- text-forge (sibling repo) ---
+	@if [ -d "$(TEXT_FORGE_DIR)/.git" ]; then \
+		echo "==> Updating text-forge ($(TEXT_FORGE_DIR))..."; \
+		git -C "$(TEXT_FORGE_DIR)" pull --ff-only; \
+	elif [ -d "$(TEXT_FORGE_DIR)" ]; then \
+		echo "  warn  $(TEXT_FORGE_DIR) exists but is not a git repo; skipping update"; \
+	else \
+		echo "==> Cloning text-forge into $(TEXT_FORGE_DIR)..."; \
+		git clone https://github.com/shared-goals/text-forge.git "$(TEXT_FORGE_DIR)"; \
+	fi
 	@# --- Python deps ---
 	uv sync --upgrade
 
-serve: ## Run local preview server (fast, no EPUB)
-	@if [ -f $(TEXT_FORGE_DIR)/text_forge/plugin.py ]; then \
-		echo "==> text-forge source detected, reinstalling to pick up local changes..."; \
-		uv pip install -e $(TEXT_FORGE_DIR) --force-reinstall --no-deps --quiet; \
-	fi
-	@echo "==> Checking for existing mkdocs process..."
-	@pkill -f "mkdocs serve" || true
-	@sleep 0.5
-	cd $(CURDIR) && MKDOCS_GIT_COMMITTERS_ENABLED=false uv run python -m mkdocs serve --config-file=$(CURDIR)/mkdocs.yml
-
-epub: ## Build EPUB only
-	uv run text-forge epub --config mkdocs.yml
-
-site: ## Build MkDocs site + EPUB
-	MKDOCS_GIT_COMMITTERS_ENABLED=false uv run text-forge build --config mkdocs.yml
-
-all: ## Build everything (EPUB + site)
-	MKDOCS_GIT_COMMITTERS_ENABLED=false uv run text-forge build --config mkdocs.yml
-
-clean: ## Remove build artifacts
-	rm -rf build/ public/
-
-summary: ## Prepare summary source (then run summarize prompt)
-	@mkdir -p build
-	uv run python $(TEXT_FORGE_DIR)/scripts/mkdocs-combine.py mkdocs.yml \
-		--mode summary \
-		--exclude p3-summary.md \
-		--index-output build/heading_index.json \
-		> build/summary_source.md
-	@echo "✓ Source prepared: build/summary_source.md + build/heading_index.json"
-	@echo "→ Run summarize prompt to generate text/p3-summary.md"
-
-changelog: ## Russian changelog post since a ref (make changelog <ref>, or CHANGELOG_SINCE=<tag|commit|YYYY-MM-DD>)
-	@if [ -z "$(CHANGELOG_SINCE)" ]; then \
-		echo "Error: set CHANGELOG_SINCE=<tag|commit|date> or run: make changelog <ref>"; \
-		exit 1; \
-	fi
-	@$(call RESOLVE_SINCE_REF,$(CHANGELOG_SINCE)); \
-	DIFF=$$(git diff "$$BASE"..HEAD -- 'text/*.md'); \
-	if [ -z "$$DIFF" ]; then echo "No changes in text/*.md since $(CHANGELOG_SINCE)"; exit 0; fi; \
-	mkdir -p build; \
-	echo "$$DIFF" > build/changelog.diff; \
-	echo "==> Running opencode changelog prompt (since $(CHANGELOG_SINCE))..."; \
-	$(OPENCODE) run \
-		"Follow the attached changelog.prompt.md instructions and generate the Telegram post from the attached diff (build/changelog.diff)." \
-		-f .github/prompts/changelog.prompt.md -f build/changelog.diff
-
-grammar: ## Grammar check for text/*.md (default: uncommitted diff; or make grammar <ref> / GRAMMAR_SINCE=<tag|commit|YYYY-MM-DD>)
-	@if [ -n "$(GRAMMAR_SINCE)" ]; then \
-		$(call RESOLVE_SINCE_REF,$(GRAMMAR_SINCE)); \
-		DIFF=$$(git diff "$$BASE"..HEAD -- 'text/*.md' | grep '^+' | grep -v '^+++' | sed 's/^+//'); \
-	else \
-		DIFF=$$(git diff HEAD -- 'text/*.md' | grep '^+' | grep -v '^+++' | sed 's/^+//'); \
-	fi; \
-	if [ -z "$$DIFF" ]; then echo "No added lines to check."; exit 0; fi; \
-	mkdir -p build; \
-	echo "$$DIFF" > build/grammar_diff.txt; \
-	echo "==> Running opencode grammar check..."; \
-	$(OPENCODE) run \
-		"Follow the attached grammar.prompt.md instructions and review the added lines in the attached diff (build/grammar_diff.txt)." \
-		-f .github/prompts/grammar.prompt.md -f build/grammar_diff.txt
-
-obsidian: install ## Set up Obsidian: install Templater plugin, text-forge plugin, scripts and hotkeys
+obsidian: install ## Set up Obsidian: Templater plugin, scripts, hotkeys
 	@mkdir -p .obsidian/plugins/templater-obsidian
 	@if [ -f .obsidian/plugins/templater-obsidian/main.js ]; then \
 		echo "  skip  Templater plugin already installed (.obsidian/plugins/templater-obsidian/main.js exists)"; \
@@ -181,42 +140,105 @@ src = importlib.resources.files('text_forge.obsidian') / 'scripts'; \
 [(shutil.copy2(str(src / n), f'obsidian/scripts/{n}'), print(f'  updated obsidian/scripts/{n}')) \
   for n in ('insert_block.js', 'insert_image.js', 'insert_link.js')]"
 
-info: ## Show project info
-	@uv run text-forge info
-	@echo "Content root: $(CURDIR)"
-	@echo "Config file: mkdocs.yml"
+##@ Build
 
-ingest: ## WTD -> Hindsight status/ingest (scope: COMMIT/SINCE_COMMIT/AFTER_COMMIT/CHAPTER/FULL; APPLY=yes to write)
+serve: ## Run local preview server (fast, no EPUB)
+	@if [ -f $(TEXT_FORGE_DIR)/text_forge/plugin.py ]; then \
+		echo "==> text-forge source detected, reinstalling to pick up local changes..."; \
+		uv pip install -e $(TEXT_FORGE_DIR) --force-reinstall --no-deps --quiet; \
+	fi
+	@echo "==> Checking for existing mkdocs process..."
+	@pkill -f "mkdocs serve" || true
+	@sleep 0.5
+	cd $(CURDIR) && MKDOCS_GIT_COMMITTERS_ENABLED=false uv run python -m mkdocs serve --config-file=$(CURDIR)/mkdocs.yml
+
+epub: ## Build EPUB only
+	uv run text-forge epub --config mkdocs.yml
+
+site: ## Build MkDocs site + EPUB
+	MKDOCS_GIT_COMMITTERS_ENABLED=false uv run text-forge build --config mkdocs.yml
+
+all: ## Build everything (EPUB + site)
+	MKDOCS_GIT_COMMITTERS_ENABLED=false uv run text-forge build --config mkdocs.yml
+
+clean: ## Remove build artifacts
+	rm -rf build/ public/
+
+##@ Content workflows
+
+summary: ## Prepare summary source (then run summarize prompt)
+	@mkdir -p build
+	uv run python $(TEXT_FORGE_DIR)/scripts/mkdocs-combine.py mkdocs.yml \
+		--mode summary \
+		--exclude p3-summary.md \
+		--index-output build/heading_index.json \
+		> build/summary_source.md
+	@echo "✓ Source prepared: build/summary_source.md + build/heading_index.json"
+	@echo "→ Run summarize prompt to generate text/p3-summary.md"
+
+changelog: ## Russian changelog post since a ref | vars: CHANGELOG_SINCE=<ref> or make changelog <ref>
+	@if [ -z "$(CHANGELOG_SINCE)" ]; then \
+		echo "Error: set CHANGELOG_SINCE=<tag|commit|date> or run: make changelog <ref>"; \
+		exit 1; \
+	fi
+	@$(call RESOLVE_SINCE_REF,$(CHANGELOG_SINCE)); \
+	DIFF=$$(git diff "$$BASE"..HEAD -- 'text/*.md'); \
+	if [ -z "$$DIFF" ]; then echo "No changes in text/*.md since $(CHANGELOG_SINCE)"; exit 0; fi; \
+	mkdir -p build; \
+	echo "$$DIFF" > build/changelog.diff; \
+	echo "==> Running opencode changelog prompt (since $(CHANGELOG_SINCE))..."; \
+	$(OPENCODE) run \
+		"Follow the attached changelog.prompt.md instructions and generate the Telegram post from the attached diff (build/changelog.diff)." \
+		-f .github/prompts/changelog.prompt.md -f build/changelog.diff
+
+grammar: ## Grammar check for text/*.md (default: uncommitted diff) | vars: GRAMMAR_SINCE=<ref> or make grammar <ref>
+	@if [ -n "$(GRAMMAR_SINCE)" ]; then \
+		$(call RESOLVE_SINCE_REF,$(GRAMMAR_SINCE)); \
+		DIFF=$$(git diff "$$BASE"..HEAD -- 'text/*.md' | grep '^+' | grep -v '^+++' | sed 's/^+//'); \
+	else \
+		DIFF=$$(git diff HEAD -- 'text/*.md' | grep '^+' | grep -v '^+++' | sed 's/^+//'); \
+	fi; \
+	if [ -z "$$DIFF" ]; then echo "No added lines to check."; exit 0; fi; \
+	mkdir -p build; \
+	echo "$$DIFF" > build/grammar_diff.txt; \
+	echo "==> Running opencode grammar check..."; \
+	$(OPENCODE) run \
+		"Follow the attached grammar.prompt.md instructions and review the added lines in the attached diff (build/grammar_diff.txt)." \
+		-f .github/prompts/grammar.prompt.md -f build/grammar_diff.txt
+
+##@ Publishing
+
+ingest: ## WTD -> Hindsight status/ingest | vars: FROM_COMMIT / SINCE_COMMIT / AFTER_COMMIT=<ref> | vars: CHAPTER=<slug> [SECTION=<anchor>] or FULL=yes | vars: APPLY=yes to write (default: preview)
 	@if [ ! -f "$(HINDSIGHT_WRAPPER)" ]; then \
 		echo "Error: canonical wrapper not found: $(HINDSIGHT_WRAPPER)"; \
 		exit 1; \
 	fi
 	@ARGS="--root $(CURDIR) --api-url $(HINDSIGHT_API_URL) --bank $(HINDSIGHT_BANK) --strategy $(HINDSIGHT_STRATEGY) --batch-size $(HINDSIGHT_BATCH_SIZE)"; \
 	if [ "$(APPLY)" = "yes" ]; then ARGS="$$ARGS --yes"; MODE="live ingest"; else MODE="preview"; fi; \
-	if [ -n "$(COMMIT)" ]; then ARGS="$$ARGS --from-commit $(COMMIT)"; fi; \
+	if [ -n "$(FROM_COMMIT)" ]; then ARGS="$$ARGS --from-commit $(FROM_COMMIT)"; fi; \
 	if [ -n "$(SINCE_COMMIT)" ]; then ARGS="$$ARGS --since-commit $(SINCE_COMMIT)"; fi; \
 	if [ -n "$(AFTER_COMMIT)" ]; then ARGS="$$ARGS --after-commit $(AFTER_COMMIT)"; fi; \
 	if [ -n "$(CHAPTER)" ]; then ARGS="$$ARGS --chapter $(CHAPTER)"; fi; \
 	if [ -n "$(SECTION)" ]; then ARGS="$$ARGS --section $(SECTION)"; fi; \
 	if [ "$(FULL)" = "yes" ]; then \
-		if [ -n "$(COMMIT)$(SINCE_COMMIT)$(AFTER_COMMIT)$(CHAPTER)$(SECTION)" ]; then \
-			echo "Error: FULL=yes cannot be combined with COMMIT/SINCE_COMMIT/AFTER_COMMIT/CHAPTER/SECTION"; \
+		if [ -n "$(FROM_COMMIT)$(SINCE_COMMIT)$(AFTER_COMMIT)$(CHAPTER)$(SECTION)" ]; then \
+			echo "Error: FULL=yes cannot be combined with FROM_COMMIT/SINCE_COMMIT/AFTER_COMMIT/CHAPTER/SECTION"; \
 			exit 1; \
 		fi; \
 		ARGS="$$ARGS --all"; \
 	fi; \
-	if [ -n "$(COMMIT)$(SINCE_COMMIT)$(AFTER_COMMIT)" ] && [ -n "$(CHAPTER)$(SECTION)" ]; then \
+	if [ -n "$(FROM_COMMIT)$(SINCE_COMMIT)$(AFTER_COMMIT)" ] && [ -n "$(CHAPTER)$(SECTION)" ]; then \
 		echo "Error: do not combine commit/diff mode with CHAPTER/SECTION filters"; \
 		exit 1; \
 	fi; \
 	if [ -n "$(LIMIT)" ]; then ARGS="$$ARGS --limit $(LIMIT)"; fi; \
 	echo "==> Hindsight $$MODE"; \
 	env -u VIRTUAL_ENV uv run python "$(HINDSIGHT_WRAPPER)" $$ARGS $(INGEST_EXTRA_ARGS); \
-	if [ -z "$(COMMIT)$(SINCE_COMMIT)$(AFTER_COMMIT)$(CHAPTER)$(SECTION)" ] && [ "$(FULL)" != "yes" ]; then \
+	if [ -z "$(FROM_COMMIT)$(SINCE_COMMIT)$(AFTER_COMMIT)$(CHAPTER)$(SECTION)" ] && [ "$(FULL)" != "yes" ]; then \
 		printf '\nNothing selected. Choose a scope:\n'; \
-		printf '  make ingest AFTER_COMMIT=<sha>        # commits after <sha> (use last ingested commit)\n'; \
-		printf '  make ingest SINCE_COMMIT=<sha>        # <sha> and everything after it\n'; \
-		printf '  make ingest COMMIT=<sha>              # changes of one commit\n'; \
+		printf '  make ingest AFTER_COMMIT=<ref>        # commits after <ref> (use last ingested commit)\n'; \
+		printf '  make ingest SINCE_COMMIT=<ref>        # <ref> and everything after it\n'; \
+		printf '  make ingest FROM_COMMIT=<ref>         # changes of one commit\n'; \
 		printf '  make ingest CHAPTER=<slug>            # one chapter\n'; \
 		printf '  make ingest CHAPTER=<slug> SECTION=<anchor>  # one section\n'; \
 		printf '  make ingest FULL=yes                  # whole corpus (rare)\n'; \
@@ -229,7 +251,7 @@ ingest: ## WTD -> Hindsight status/ingest (scope: COMMIT/SINCE_COMMIT/AFTER_COMM
 		printf '  add --tag chapter:<slug> to narrow, --yes to delete\n'; \
 	fi
 
-publish: ## Interactive publish: optional commit, optional tag, optional push
+publish: ## Interactive publish: optional commit, tag, push
 	@TAG_CREATED="no"; \
 	NEW_TAG=""; \
 	BRANCH=$$(git rev-parse --abbrev-ref HEAD); \

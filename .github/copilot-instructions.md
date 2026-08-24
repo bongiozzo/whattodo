@@ -10,7 +10,8 @@
   4) **Publish site**: `mkdocs build` into `public/`, then copy EPUB + combined text to `public/` root
 
 ## Common workflows (use these commands)
-- Build everything (EPUB + site): `make` or `make all`
+- Show all available targets (grouped by category): `make` or `make help`
+- Build everything (EPUB + site): `make all`
 - Fast local preview (no EPUB/pandoc): `make serve`
 - Build EPUB only: `make epub`
 - Build site (also generates EPUB first): `make site`
