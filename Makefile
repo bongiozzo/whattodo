@@ -6,10 +6,16 @@
 #
 # Running `make` with no target shows this help (see `help` target below).
 
-.PHONY: all epub site serve clean help install publish obsidian ingest changelog grammar
+.PHONY: all epub site serve clean help install publish obsidian ingest compass-update changelog grammar
 .DEFAULT_GOAL := help
 
 TEXT_FORGE_DIR ?= ../text-forge
+SHARED_GOALS_SKILL_DIR ?= ../shared-goals-skill
+COMPASS_SCRIPTS ?= $(SHARED_GOALS_SKILL_DIR)/shared-goals/scripts
+SHARED_GOALS_ENV_FILE ?= $(CURDIR)/.env
+COMPASS_BUILD_DIR ?= build
+COMPASS_LOGOS_REMOTE ?=
+COMPASS_LOGOS_CONTEXT_PATH ?= $(HOME)/.hermes/skills/shared-goals/shared-goals/state/daily-compass-context.json
 HINDSIGHT_WRAPPER ?= $(TEXT_FORGE_DIR)/scripts/hindsight-wtd-ingest-wrapper.py
 HINDSIGHT_API_URL ?= http://localhost:8889
 HINDSIGHT_BANK ?= hermes
@@ -57,6 +63,18 @@ else \
 fi
 endef
 
+define ensure_shared_goals_env
+set -a; \
+if [ -f "$(SHARED_GOALS_ENV_FILE)" ]; then \
+	. "$(SHARED_GOALS_ENV_FILE)"; \
+fi; \
+set +a; \
+if [ -z "$${SHARED_GOALS_API_BASE_URL:-}" ] || [ -z "$${SHARED_GOALS_AGENT_KEY_ID:-}" ]; then \
+	echo "Set SHARED_GOALS_API_BASE_URL and SHARED_GOALS_AGENT_KEY_ID in $(SHARED_GOALS_ENV_FILE) or export them in shell."; \
+	exit 1; \
+fi;
+endef
+
 help: ## Show available make targets
 	@awk 'BEGIN {FS = ":.*?## "}; \
 		/^##@/ { printf "\n%s\n", substr($$0, 5); next } \
@@ -68,7 +86,7 @@ help: ## Show available make targets
 
 ##@ Environment
 
-install: ## Bootstrap: uv, pandoc, text-forge (clone/update), uv sync
+install: ## Bootstrap: uv, pandoc, text-forge + shared-goals/skill, uv sync
 	@# --- uv ---
 	@if command -v uv >/dev/null 2>&1; then \
 		echo "  ok    uv $$(uv --version)"; \
@@ -104,6 +122,16 @@ install: ## Bootstrap: uv, pandoc, text-forge (clone/update), uv sync
 	else \
 		echo "==> Cloning text-forge into $(TEXT_FORGE_DIR)..."; \
 		git clone https://github.com/shared-goals/text-forge.git "$(TEXT_FORGE_DIR)"; \
+	fi
+	@# --- shared-goals/skill (sibling repo) ---
+	@if [ -d "$(SHARED_GOALS_SKILL_DIR)/.git" ]; then \
+		echo "==> Updating shared-goals/skill ($(SHARED_GOALS_SKILL_DIR))..."; \
+		git -C "$(SHARED_GOALS_SKILL_DIR)" pull --ff-only; \
+	elif [ -d "$(SHARED_GOALS_SKILL_DIR)" ]; then \
+		echo "  warn  $(SHARED_GOALS_SKILL_DIR) exists but is not a git repo; skipping update"; \
+	else \
+		echo "==> Cloning shared-goals/skill into $(SHARED_GOALS_SKILL_DIR)..."; \
+		git clone https://github.com/shared-goals/skill.git "$(SHARED_GOALS_SKILL_DIR)"; \
 	fi
 	@# --- Python deps ---
 	uv sync --upgrade
@@ -249,6 +277,32 @@ ingest: ## WTD -> Hindsight status/ingest | vars: FROM_COMMIT / SINCE_COMMIT / A
 		printf '  uv run python $(TEXT_FORGE_DIR)/scripts/hindsight-wipe-documents-by-tag.py \\\n'; \
 		printf '    --api-url $(HINDSIGHT_API_URL) --bank $(HINDSIGHT_BANK) --tag wtd --tag current\n'; \
 		printf '  add --tag chapter:<slug> to narrow, --yes to delete\n'; \
+	fi
+
+compass-update: ## Compass.md -> Shared Goals status/update | uses .env: SHARED_GOALS_API_BASE_URL, SHARED_GOALS_AGENT_KEY_ID, OBSIDIAN_VAULT_PATH
+	@if [ ! -f "$(COMPASS_SCRIPTS)/compass-update.py" ]; then \
+		echo "Error: Shared Goals skill script not found: $(COMPASS_SCRIPTS)/compass-update.py"; \
+		echo "Run: make install"; \
+		exit 1; \
+	fi
+	@set -e; \
+	$(ensure_shared_goals_env) \
+	mkdir -p "$(COMPASS_BUILD_DIR)"; \
+	COMPASS_MD="$${OBSIDIAN_VAULT_PATH:-$(HOME)}/Compass.md"; \
+	LOGOS_REMOTE="$${COMPASS_LOGOS_REMOTE:-$(COMPASS_LOGOS_REMOTE)}"; \
+	LOGOS_ARGS=""; \
+	if [ -n "$$LOGOS_REMOTE" ]; then \
+		if ssh "$$LOGOS_REMOTE" 'test -f "$${HOME}/.hermes/skills/shared-goals/shared-goals/state/daily-compass-context.json"'; then \
+			ssh "$$LOGOS_REMOTE" 'cat "$${HOME}/.hermes/skills/shared-goals/shared-goals/state/daily-compass-context.json"' > "$(COMPASS_BUILD_DIR)/daily-compass-context.json"; \
+			LOGOS_ARGS="--logos-context $(COMPASS_BUILD_DIR)/daily-compass-context.json"; \
+		fi; \
+	elif [ -f "$(COMPASS_LOGOS_CONTEXT_PATH)" ]; then \
+		LOGOS_ARGS="--logos-context $(COMPASS_LOGOS_CONTEXT_PATH)"; \
+	fi; \
+	if command -v uv >/dev/null 2>&1; then \
+		uv --project "$(SHARED_GOALS_SKILL_DIR)" run python "$(COMPASS_SCRIPTS)/compass-update.py" --compass-path "$$COMPASS_MD" $$LOGOS_ARGS; \
+	else \
+		python3 "$(COMPASS_SCRIPTS)/compass-update.py" --compass-path "$$COMPASS_MD" $$LOGOS_ARGS; \
 	fi
 
 publish: ## Interactive publish: optional commit, tag, push

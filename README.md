@@ -2,6 +2,18 @@
 
 Основная цель [нашего Текста](https://text.sharedgoals.ru/) — анализ и планирование деятельности, приносящей [радость и моменты счастья](https://text.sharedgoals.ru/p1-010-happiness#moments_of_happiness).
 
+## Shared Goals Repository Map
+
+Read the repositories in this order when you need the whole system context:
+
+1. [shared-goals/prd](https://github.com/shared-goals/prd) — product decisions, acceptance criteria, implementation contract, history, and research.
+2. [shared-goals/instance](https://github.com/shared-goals/instance) — platform API, persistence, authentication, and backend tests.
+3. [shared-goals/skill](https://github.com/shared-goals/skill) — Hermes skill set and local client connector for agents.
+4. [shared-goals/text-forge](https://github.com/shared-goals/text-forge) — Markdown tooling, Obsidian helpers, publishing, inventory, and Hindsight projection.
+5. [bongiozzo/whattodo](https://github.com/bongiozzo/whattodo) — public WTD Markdown text and laptop operator workflow.
+
+This repository owns the public WTD Markdown text and the laptop operator workflow around it. The canonical component map lives in `shared-goals/prd`.
+
 История его появления приведена в [самом начале](https://text.sharedgoals.ru/), а описание формата и процесса, который сложился в результате, в главе [«Жизнь как Текст»](https://text.sharedgoals.ru/p2-200-text#word).
 
 Текст создаётся в [концепции Open Source](https://text.sharedgoals.ru/p2-170-opensource) и это означает, что любой желающий может создать свою версию, взяв за основу то, что уже сделано и описано.
@@ -9,6 +21,10 @@
 Инструкция «Как запустить собственный Текст» с помощью [вспомогательной библиотеки text-forge](https://github.com/shared-goals/text-forge) приведена ниже.
 
 `text-forge` — набор скриптов, которые преобразовывают Текст в разные форматы для веб сайта и электронной книги, а также подготавливает для агентов-помощников ИИ.
+
+В локальной работе рядом с публичным Текстом может использоваться приватный файл `Compass.md`.
+`Compass.md` — это личная Obsidian-заметка пользователя Shared Goals Platform: она остаётся локальной и служит рабочим контекстом для следующих шагов и коммитов Shared Goals.
+Публичный WTD-текст помогает ИИ-агенту лучше понимать ценности и направления пользователя через `text-forge`, Hindsight и Hermes, а `Compass.md` связывает это понимание с текущими действиями.
 
 Библиотека этих программных компонентов является частью [инициативы «Shared Goals» (или «Общие Цели»)](https://text.sharedgoals.ru/p2-180-sharedgoals/#us#e_case).
 
@@ -32,16 +48,18 @@ make install   # установит uv и pandoc (если нужно), скло
 
 ## Локальное размещение репозиториев
 
-По умолчанию `Makefile` в этом проекте ожидает соседний репозиторий `text-forge`:
+По умолчанию `Makefile` в этом проекте ожидает соседние репозитории `text-forge` и `shared-goals/skill`:
 
 ```text
 ../text-forge
+../shared-goals-skill
 ```
 
 Это задаётся переменной:
 
 ```makefile
 TEXT_FORGE_DIR ?= ../text-forge
+SHARED_GOALS_SKILL_DIR ?= ../shared-goals-skill
 ```
 
 Если `text-forge` расположен в другом месте, можно переопределить путь при запуске:
@@ -52,7 +70,7 @@ make summary TEXT_FORGE_DIR=/path/to/text-forge
 
 Тот же паттерн используется для задачи `make ingest` (предпросмотр по умолчанию, `APPLY=yes` — реальная запись в Hindsight).
 
-`make install` сам клонирует `text-forge` в `../text-forge`, если его там ещё нет, и обновляет (`git pull --ff-only`), если уже склонирован — так что после обновлений достаточно повторно выполнить `make install`, вручную делать `cd ../text-forge && git pull` не требуется.
+`make install` сам клонирует `text-forge` в `../text-forge` и `shared-goals/skill` в `../shared-goals-skill`, если их там ещё нет, и обновляет (`git pull --ff-only`), если они уже склонированы — так что после обновлений достаточно повторно выполнить `make install`, вручную делать `git pull` в соседних репозиториях не требуется.
 
 ## Инструкция создания собственного Текста
 
@@ -208,6 +226,41 @@ make obsidian
 > `Mod` — это `Cmd` на macOS и `Ctrl` на Windows/Linux.
 
 Если перед вызовом команды выделен текст, он будет подставлен в поле содержимого блока по умолчанию.
+
+## Shared Goals Compass
+
+Публичный репозиторий WTD и приватный `Compass.md` работают как две Markdown-заметки одного пользователя:
+
+- WTD (`text/`) — публичный рефлексивный Текст, который публикуется и проецируется в Hindsight через `make ingest`.
+- `Compass.md` — приватная локальная заметка Obsidian для текущих задач, следующих шагов и коммитов Shared Goals.
+
+Настройте локальное подключение к Shared Goals Platform:
+
+```bash
+cp .env.example .env
+# затем отредактируйте .env под свой ноутбук и Obsidian vault
+```
+
+Минимальные переменные:
+
+```dotenv
+SHARED_GOALS_API_BASE_URL=http://localhost:8016
+SHARED_GOALS_AGENT_KEY_ID=example-agent-key
+OBSIDIAN_VAULT_PATH="/Users/example/Library/Mobile Documents/iCloud~md~obsidian/Documents/Internal"
+
+# optional: fetch or generate Logos on an always-on Hermes host
+COMPASS_LOGOS_REMOTE=hermes@host
+```
+
+После этого можно обновить приватный `Compass.md` из платформы:
+
+```bash
+make compass-update
+```
+
+Команда вызывает коннектор из `shared-goals/skill`, обновляет Shared Goals-секцию в `Compass.md`, а отмеченные выполненными пункты может предложить записать как коммиты. Создание коммитов остаётся интерактивным и требует подтверждения пользователя.
+
+`make compass-update` берёт `## Logos` из уже созданного `daily-compass-context.json`. Для удалённого Hermes-хоста настройте passwordless SSH и укажите `COMPASS_LOGOS_REMOTE=hermes@host`; команда скопирует JSON-контекст и отрендерит Logos локально.
 
 На этом всё!
 
