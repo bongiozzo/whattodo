@@ -193,7 +193,7 @@ Actions эти уже настроены, работают в нашем про�
 
 ## Редактирование в Obsidian
 
-[Obsidian](https://obsidian.md) — пожалуй, самый распространённый редактор для Markdown.
+[Obsidian](https://obsidian.md) — самый известный редактор для Markdown.
 С помощью плагина [Templater](https://github.com/SilentVoid13/Templater) можно настроить быструю вставку блоков и ссылок и горячие клавиши.
 
 ![Редактирование в Obsidian](https://text.sharedgoals.ru/img/obsidian.gif)
