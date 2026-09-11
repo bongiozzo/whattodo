@@ -7,3 +7,4 @@ build/
 *.epub
 .obsidian/
 obsidian/
+*.code-workspace

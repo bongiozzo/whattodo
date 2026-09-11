@@ -24,9 +24,9 @@ HINDSIGHT_BATCH_SIZE ?= 25
 APPLY ?= no
 CHAPTER ?=
 SECTION ?=
-FROM_COMMIT ?=
-SINCE_COMMIT ?=
-AFTER_COMMIT ?=
+COMMIT ?=
+SINCE ?=
+AFTER ?=
 LIMIT ?=
 FULL ?= no
 INGEST_EXTRA_ARGS ?=
@@ -236,48 +236,35 @@ grammar: ## Grammar check for text/*.md (default: uncommitted diff) | vars: GRAM
 
 ##@ Publishing
 
-ingest: ## WTD -> Hindsight status/ingest | vars: FROM_COMMIT / SINCE_COMMIT / AFTER_COMMIT=<ref> | vars: CHAPTER=<slug> [SECTION=<anchor>] or FULL=yes | vars: APPLY=yes to write (default: preview)
+# Wipe ingested data (dry-run without --yes):
+#   uv run python $(TEXT_FORGE_DIR)/scripts/hindsight-wipe-documents-by-tag.py \
+#     --api-url $(HINDSIGHT_API_URL) --bank $(HINDSIGHT_BANK) --tag wtd --tag current [--tag chapter:<slug>] [--yes]
+ingest: ## WTD -> Hindsight: delta after last ingest | vars: AFTER=<ref> / SINCE=<ref> / COMMIT=<ref> | vars: CHAPTER=<slug> [SECTION=<anchor>] or FULL=yes | vars: APPLY=yes to write (default: preview)
 	@if [ ! -f "$(HINDSIGHT_WRAPPER)" ]; then \
 		echo "Error: canonical wrapper not found: $(HINDSIGHT_WRAPPER)"; \
 		exit 1; \
 	fi
 	@ARGS="--root $(CURDIR) --api-url $(HINDSIGHT_API_URL) --bank $(HINDSIGHT_BANK) --strategy $(HINDSIGHT_STRATEGY) --batch-size $(HINDSIGHT_BATCH_SIZE)"; \
 	if [ "$(APPLY)" = "yes" ]; then ARGS="$$ARGS --yes"; MODE="live ingest"; else MODE="preview"; fi; \
-	if [ -n "$(FROM_COMMIT)" ]; then ARGS="$$ARGS --from-commit $(FROM_COMMIT)"; fi; \
-	if [ -n "$(SINCE_COMMIT)" ]; then ARGS="$$ARGS --since-commit $(SINCE_COMMIT)"; fi; \
-	if [ -n "$(AFTER_COMMIT)" ]; then ARGS="$$ARGS --after-commit $(AFTER_COMMIT)"; fi; \
+	if [ -n "$(COMMIT)" ]; then ARGS="$$ARGS --commit $(COMMIT)"; fi; \
+	if [ -n "$(SINCE)" ]; then ARGS="$$ARGS --since $(SINCE)"; fi; \
+	if [ -n "$(AFTER)" ]; then ARGS="$$ARGS --after $(AFTER)"; fi; \
 	if [ -n "$(CHAPTER)" ]; then ARGS="$$ARGS --chapter $(CHAPTER)"; fi; \
 	if [ -n "$(SECTION)" ]; then ARGS="$$ARGS --section $(SECTION)"; fi; \
 	if [ "$(FULL)" = "yes" ]; then \
-		if [ -n "$(FROM_COMMIT)$(SINCE_COMMIT)$(AFTER_COMMIT)$(CHAPTER)$(SECTION)" ]; then \
-			echo "Error: FULL=yes cannot be combined with FROM_COMMIT/SINCE_COMMIT/AFTER_COMMIT/CHAPTER/SECTION"; \
+		if [ -n "$(COMMIT)$(SINCE)$(AFTER)$(CHAPTER)$(SECTION)" ]; then \
+			echo "Error: FULL=yes cannot be combined with COMMIT/SINCE/AFTER/CHAPTER/SECTION"; \
 			exit 1; \
 		fi; \
 		ARGS="$$ARGS --all"; \
 	fi; \
-	if [ -n "$(FROM_COMMIT)$(SINCE_COMMIT)$(AFTER_COMMIT)" ] && [ -n "$(CHAPTER)$(SECTION)" ]; then \
-		echo "Error: do not combine commit/diff mode with CHAPTER/SECTION filters"; \
+	if [ -n "$(COMMIT)$(SINCE)$(AFTER)" ] && [ -n "$(CHAPTER)$(SECTION)" ]; then \
+		echo "Error: do not combine commit scope with CHAPTER/SECTION filters"; \
 		exit 1; \
 	fi; \
 	if [ -n "$(LIMIT)" ]; then ARGS="$$ARGS --limit $(LIMIT)"; fi; \
 	echo "==> Hindsight $$MODE"; \
-	env -u VIRTUAL_ENV uv run python "$(HINDSIGHT_WRAPPER)" $$ARGS $(INGEST_EXTRA_ARGS); \
-	if [ -z "$(FROM_COMMIT)$(SINCE_COMMIT)$(AFTER_COMMIT)$(CHAPTER)$(SECTION)" ] && [ "$(FULL)" != "yes" ]; then \
-		printf '\nNothing selected. Choose a scope:\n'; \
-		printf '  make ingest AFTER_COMMIT=<ref>        # commits after <ref> (use last ingested commit)\n'; \
-		printf '  make ingest SINCE_COMMIT=<ref>        # <ref> and everything after it\n'; \
-		printf '  make ingest FROM_COMMIT=<ref>         # changes of one commit\n'; \
-		printf '  make ingest CHAPTER=<slug>            # one chapter\n'; \
-		printf '  make ingest CHAPTER=<slug> SECTION=<anchor>  # one section\n'; \
-		printf '  make ingest FULL=yes                  # whole corpus (rare)\n'; \
-		printf '\nModifiers:\n'; \
-		printf '  APPLY=yes   write to Hindsight (default: preview)\n'; \
-		printf '  LIMIT=N     cap processed chunks\n'; \
-		printf '\nRemove ingested data (direct script, dry-run without --yes):\n'; \
-		printf '  uv run python $(TEXT_FORGE_DIR)/scripts/hindsight-wipe-documents-by-tag.py \\\n'; \
-		printf '    --api-url $(HINDSIGHT_API_URL) --bank $(HINDSIGHT_BANK) --tag wtd --tag current\n'; \
-		printf '  add --tag chapter:<slug> to narrow, --yes to delete\n'; \
-	fi
+	env -u VIRTUAL_ENV uv run python "$(HINDSIGHT_WRAPPER)" $$ARGS $(INGEST_EXTRA_ARGS)
 
 compass-update: ## Compass.md -> Shared Goals status/update | uses .env: SHARED_GOALS_API_BASE_URL, SHARED_GOALS_AGENT_KEY_ID, OBSIDIAN_VAULT_PATH
 	@if [ ! -f "$(COMPASS_SCRIPTS)/compass-update.py" ]; then \
