@@ -29,4 +29,4 @@ livelib_review: "https://www.livelib.ru/review/3575245-momenty-schastya-aleks-du
 > – Куда угодно, ведь в этой деревне убивают детей.
 > – Ты все неверно понял. Дело в том, что в наших краях считается, что по-настоящему мы живем только тогда, когда мы счастливы. И то, что тебя так напугало, это – не время существования человека. Это – подлинное время его жизни. ^quote_1
 
-livelib: https://www.livelib.ru/quote/47123888-momenty-schastya-aleks-dubas
+livelib: https://www.livelib.ru/quote/47123888

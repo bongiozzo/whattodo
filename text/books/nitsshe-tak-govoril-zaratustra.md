@@ -8,4 +8,4 @@ livelib_book: "https://www.livelib.ru/book/1000570043-tak-govoril-zaratustra-fri
 
 > Любите, пожалуй, своего ближнего, как себя — но прежде всего будьте такими, которые любят самих себя ^quote_1
 
-livelib: https://www.livelib.ru/quote/701053-tak-govoril-zaratustra-fridrih-nitsshe
+livelib: https://www.livelib.ru/quote/701053

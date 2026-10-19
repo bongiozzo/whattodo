@@ -8,4 +8,4 @@ livelib_book: "https://www.livelib.ru/work/1000927144-sdajotsya-vnajom-dzhon-gol
 
 > Деньги со всем, что можно на них купить, не приносят счастья. Его приносит только любовь. ^quote_1
 
-livelib: https://www.livelib.ru/quote/875563-sdajotsya-vnajom-dzhon-golsuorsi
+livelib: https://www.livelib.ru/quote/875563

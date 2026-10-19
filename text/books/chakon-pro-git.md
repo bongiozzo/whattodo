@@ -47,7 +47,7 @@ livelib_review: "https://www.livelib.ru/review/5457061-pro-git-skott-chakon"
 >
 > If you don’t, people will hate you, and you’ll be scorned by friends and family. ^quote_1
 
-livelib: https://www.livelib.ru/quote/48505159-pro-git-skott-chakon
+livelib: https://www.livelib.ru/quote/48505159
 
 > One point of view on this is that your repository’s commit history is a record of what actually happened.
 >
@@ -75,4 +75,4 @@ livelib: https://www.livelib.ru/quote/48505159-pro-git-skott-chakon
 >
 > When you’re working on a project, you may need a record of all your missteps and dead-end paths, but when it’s time to show your work to the world, you may want to tell a more coherent story of how to get from A to B. ^quote_2
 
-livelib: https://www.livelib.ru/quote/48505165-pro-git-skott-chakon
+livelib: https://www.livelib.ru/quote/48505165

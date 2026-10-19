@@ -6,6 +6,8 @@ tags:
 status: read
 my_mark: 5
 livelib_book: "https://www.livelib.ru/book/1000225484"
+livelib_editions:
+  - "https://www.livelib.ru/book/1005482422"
 livelib_review: "https://www.livelib.ru/review/4226059-skazat-zhizni-da-psiholog-v-kontslagere-viktor-frankl"
 ---
 
@@ -29,23 +31,23 @@ https://www.youtube.com/watch?v=VEsQPMbqXHw
 
 > «В конце концов, – говорил он в своей московской лекции, – Богу, если он есть, важнее, хороший ли Вы человек, чем то, верите Вы в него или нет». ^quote_1
 
-livelib: https://www.livelib.ru/quote/42861677-skazat-zhizni-da-psiholog-v-kontslagere-viktor-frankl
+livelib: https://www.livelib.ru/quote/42861677
 
 > «Я благодарна судьбе за то, что она обошлась со мной так сурово, потому что в прежней своей жизни я была слишком избалована, а духовные мои притязания не были серьезны» ^quote_2
 
-livelib: https://www.livelib.ru/quote/42880347-skazat-zhizni-da-psiholog-v-kontslagere-viktor-frankl
+livelib: https://www.livelib.ru/quote/42880347
 
 > «Я часто разговариваю с этим деревом». Эти ее слова меня смутили, я не знал, как их понять. Может быть, это уже бред, галлюцинации? Я спросил, отвечает ли ей дерево и что оно говорит, и услышал в ответ: «Оно мне сказало: "Я здесь, я здесь, я – здесь, я – жизнь, вечная жизнь"». ^quote_3
 
-livelib: https://www.livelib.ru/quote/47009839-skazat-zhizni-da-psiholog-v-kontslagere-viktor-frankl
+livelib: https://www.livelib.ru/quote/47009839
 
 > Мы уже говорили о том, что каждая попытка духовно восстановить, «выпрямить» человека снова и снова убеждала, что это возможно сделать, лишь сориентировав его на какую-то цель в будущем. ^quote_4
 
-livelib: https://www.livelib.ru/quote/43331500-skazat-zhizni-da-psiholog-v-kontslagere-viktor-frankl
+livelib: https://www.livelib.ru/quote/43331500
 
 > Вся сложность в том, что вопрос о смысле жизни должен быть поставлен иначе. Надо выучить самим и объяснить сомневающимся, что дело не в том, чего мы ждем от жизни, а в том, чего она ждет от нас. Говоря философски, тут необходим своего рода коперниканский переворот: мы должны не спрашивать о смысле жизни, а понять, что этот вопрос обращен к нам – ежедневно и ежечасно жизнь ставит вопросы, и мы должны на них отвечать – не разговорами или размышлениями, а действием, правильным поведением. Ведь жить – в конечном счете значит нести ответственность за правильное выполнение тех задач, которые жизнь ставит перед каждым, за выполнение требований дня и часа. ^quote_5
 
-livelib: https://www.livelib.ru/quote/42820041-skazat-zhizni-da-psiholog-v-kontslagere-viktor-frankl
+livelib: https://www.livelib.ru/quote/42820041
 
 > СОКРАТ (подчеркнуто). Искусство! Они сказали, что только искусство может повлиять на людей там, внизу?
 >
@@ -75,4 +77,4 @@ livelib: https://www.livelib.ru/quote/42820041-skazat-zhizni-da-psiholog-v-konts
 >
 > КАНТ. Повторяю – на это не будет согласия, вот увидите! ^quote_6
 
-livelib: https://www.livelib.ru/quote/47015722-skazat-zhizni-da-psiholog-v-kontslagere-viktor-frankl
+livelib: https://www.livelib.ru/quote/47015722

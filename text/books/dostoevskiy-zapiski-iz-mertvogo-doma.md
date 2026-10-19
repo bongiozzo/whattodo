@@ -8,4 +8,4 @@ livelib_book: "https://www.livelib.ru/book/1000713088-zapiski-iz-mertvogo-doma-f
 
 > Мне пришло раз на мысль, что если б захотели вполне раздавить, уничтожить человека, наказать его самым ужасным наказанием, так что самый страшный убийца содрогнулся бы от этого наказания и пугался его заранее, то стоило бы только придать работе характер совершенной, полнейшей бесполезности и бессмыслицы. ^quote_1
 
-livelib: https://www.livelib.ru/quote/44040049-zapiski-iz-mertvogo-doma-fjodor-dostoevskij
+livelib: https://www.livelib.ru/quote/44040049

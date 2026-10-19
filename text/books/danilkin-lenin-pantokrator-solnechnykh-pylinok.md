@@ -34,4 +34,4 @@ livelib_review: "https://www.livelib.ru/review/3272614-lenin-pantokrator-solnech
 
 > Русские товарищи, проницательно замечал социалист Раппопорт, спорят в двух случаях: во-первых, когда они не согласны, а во-вторых,  когда они согласны. ^quote_1
 
-livelib: https://www.livelib.ru/quote/45618664-lenin-pantokrator-solnechnyh-pylinok-lev-danilkin
+livelib: https://www.livelib.ru/quote/45618664

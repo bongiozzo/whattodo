@@ -31,4 +31,4 @@ livelib_review: "https://www.livelib.ru/review/3021487-upryamyj-gorod-blokada-19
 >
 > А. Болдырев ^quote_1
 
-livelib: https://www.livelib.ru/quote/45415936-upryamyj-gorod-blokada-19411944-sostavitel-aleksandr-veselov
+livelib: https://www.livelib.ru/quote/45415936

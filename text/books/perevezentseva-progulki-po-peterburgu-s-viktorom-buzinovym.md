@@ -10,4 +10,4 @@ livelib_book: "https://www.livelib.ru/book/1000977005"
 
 > Основной девиз масонства – «memento mori». ^quote_1
 
-livelib: https://www.livelib.ru/quote/47358155-progulki-po-peterburgu-s-viktorom-buzinovym-36-uvlekatelnyh-puteshestvij-po-severnoj-stolitse-natalya-perevezentseva
+livelib: https://www.livelib.ru/quote/47358155

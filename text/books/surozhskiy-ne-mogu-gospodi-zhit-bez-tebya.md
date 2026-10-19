@@ -29,4 +29,4 @@ https://azbyka.ru/otechnik/Antonij_Surozhskij/
 
 > Выберите какую-нибудь молитву и сделайте её программой жизни — и вы увидите, что эта молитва никогда не наскучит, никогда не потускнеет, потому что изо дня в день она будет оттачиваться, сама жизнь будет придавать ей остроту. ^quote_1
 
-livelib: https://www.livelib.ru/quote/48970867-ne-mogu-gospodi-zhit-bez-tebya-kniga-o-molitve-mitropolit-antonij-surozhskij
+livelib: https://www.livelib.ru/quote/48970867

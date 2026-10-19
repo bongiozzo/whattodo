@@ -8,4 +8,4 @@ livelib_book: "https://www.livelib.ru/book/1000333925-shlyapa-volshebnika-tuve-y
 
 > “Всяк должен иногда остаться наедине с собой” ^quote_1
 
-livelib: https://www.livelib.ru/quote/853304-shlyapa-volshebnika-tuve-yansson
+livelib: https://www.livelib.ru/quote/853304

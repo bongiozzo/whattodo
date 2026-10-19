@@ -59,4 +59,4 @@ livelib_book: "https://www.livelib.ru/book/1000447429-skazki-pro-mumitrollya-kni
 > 49. Ваши планы не обязательно должны быть необычайными, чтобы сделать вас необычайно счастливыми.
 > 50. В большинстве случаев конец - это начало! ^quote_1
 
-livelib: https://www.livelib.ru/quote/887133-skazki-pro-mumitrollya-kniga-vtoraya-tuve-yansson
+livelib: https://www.livelib.ru/quote/887133

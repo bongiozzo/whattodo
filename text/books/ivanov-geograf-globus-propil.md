@@ -43,11 +43,11 @@ livelib_review: "https://www.livelib.ru/review/3387328-geograf-globus-propil-ale
 
 > Мы никогда не ошибаемся, если рассчитываем на человеческое свинство, - сказал Служкин. - Ошибаемся, лишь когда рассчитываем на порядочность. Что значит "исправить свои ошибки"? Изжить в себе веру в людей?.. Самые большие наши ошибки - это самые большие наши победы. ^quote_1
 
-livelib: https://www.livelib.ru/quote/42785025-geograf-globus-propil-aleksej-ivanov
+livelib: https://www.livelib.ru/quote/42785025
 
 > Видишь ли, Маша, в чём парадокс… Находишь только тогда, когда не знаешь, чего ищешь. А понимаешь, что нашёл, чаще всего только тогда, когда уже потерял. ^quote_2
 
-livelib: https://www.livelib.ru/quote/42808992-geograf-globus-propil-aleksej-ivanov
+livelib: https://www.livelib.ru/quote/42808992
 
 > Ну, Наденька, не плачь, – попросил он. – Ну перетерпи… Я ведь тоже разрываюсь от любви…
 >
@@ -55,7 +55,7 @@ livelib: https://www.livelib.ru/quote/42808992-geograf-globus-propil-aleksej-iva
 >
 > – Почему же к себе?.. К тебе… К Таточке… К Будкину… К Пушкину… ^quote_3
 
-livelib: https://www.livelib.ru/quote/45937333-geograf-globus-propil-aleksej-ivanov
+livelib: https://www.livelib.ru/quote/45937333
 
 > – Что-то у тебя как ни история, так анекдот, и везде ты придурком выглядишь.
 >
@@ -63,4 +63,4 @@ livelib: https://www.livelib.ru/quote/45937333-geograf-globus-propil-aleksej-iva
 >
 > – Любой анекдот – это драма. Или даже трагедия. Только рассказанная мужественным человеком. ^quote_4
 
-livelib: https://www.livelib.ru/quote/43555837-geograf-globus-propil-aleksej-ivanov
+livelib: https://www.livelib.ru/quote/43555837

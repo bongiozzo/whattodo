@@ -13,4 +13,4 @@ livelib_book: "https://www.livelib.ru/book/1000742797-zhizn-v-vetrenuyu-pogodu-a
 > И чтобы все это было — правда.
 > Чтобы все — искренне. ^quote_1
 
-livelib: https://www.livelib.ru/quote/47589023-zhizn-v-vetrenuyu-pogodu-andrej-bitov
+livelib: https://www.livelib.ru/quote/47589023

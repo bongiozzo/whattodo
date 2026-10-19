@@ -8,11 +8,11 @@ livelib_book: "https://www.livelib.ru/book/1002593173-morozovy-dinastiya-metsena
 
 > У Морозовых всё же был девиз – Любовь к России ^quote_1
 
-livelib: https://www.livelib.ru/quote/48372424-morozovy-dinastiya-metsenatov-lira-muhovitskaya
+livelib: https://www.livelib.ru/quote/48372424
 
 > История семьи Морозовых – это история превращения крепостных крестьян, самоучек в высокообразованных бизнесменов, настоящих русских интеллигентов и тонких ценителей искусства. ^quote_2
 
-livelib: https://www.livelib.ru/quote/48372436-morozovy-dinastiya-metsenatov-lira-muhovitskaya
+livelib: https://www.livelib.ru/quote/48372436
 
 > В одной лишь Москве больше 70 зданий было построено на средства Морозовых.
 >
@@ -20,8 +20,8 @@ livelib: https://www.livelib.ru/quote/48372436-morozovy-dinastiya-metsenatov-lir
 >
 > Большая же их часть – свыше 40 домов – была отдана под нужды города. ^quote_3
 
-livelib: https://www.livelib.ru/quote/48372457-morozovy-dinastiya-metsenatov-lira-muhovitskaya
+livelib: https://www.livelib.ru/quote/48372457
 
 > Ведя строгий счёт каждому рублю, Савва Тимофеевич легко шёл на тысячные расходы ради хорошего, как он считал, дела ^quote_4
 
-livelib: https://www.livelib.ru/quote/48372460-morozovy-dinastiya-metsenatov-lira-muhovitskaya
+livelib: https://www.livelib.ru/quote/48372460

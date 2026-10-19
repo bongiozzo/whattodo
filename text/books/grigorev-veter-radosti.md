@@ -23,7 +23,7 @@ livelib_review: "https://www.livelib.ru/review/5065204-veter-radosti-tri-dnya-v-
 
 > В передачи «Очевидное – Невероятное» на тему «Мышление и язык» академик Сергей Капица спросил профессора Татьяну Черниговскую о том, что такое сознание. И получил крайне неожиданный для доктора биологических наук ответ. Лучшим определением сознания, по её мнению, является образ ветра. Потому что сознание, как и ветер, мы можем видеть лишь в его проявлениях. ^quote_1
 
-livelib: https://www.livelib.ru/quote/48054208-veter-radosti-tri-dnya-v-lunnom-svete-grigorij-grigorev
+livelib: https://www.livelib.ru/quote/48054208
 
 > Много веков за каждой литургией звучат в храмах слова Символа Веры: «Верую... во Единого Господа Иисуса Христа, Сына Божьего Единородного ... распятого при Понтийском Пилате».
 >
@@ -33,4 +33,4 @@ livelib: https://www.livelib.ru/quote/48054208-veter-radosti-tri-dnya-v-lunnom-s
 >
 > Он называет Воланда софистом, потому что прекрасно знает, что лукавый Разум использует лишь часть правды и потому способен доказывать всё что угодно. ^quote_3
 
-livelib: https://www.livelib.ru/quote/48054457-veter-radosti-tri-dnya-v-lunnom-svete-grigorij-grigorev
+livelib: https://www.livelib.ru/quote/48054457

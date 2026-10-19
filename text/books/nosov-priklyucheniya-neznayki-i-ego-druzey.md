@@ -1,8 +1,9 @@
 ---
-title: Приключения Незнайки и его друзей. Незнайка в Солнечном городе. Незнайка на Луне
+title: Приключения Незнайки и его друзей
+author: Николай Носов
 tags:
   - book
 status: read
-my_mark: 5
-livelib_book: "https://www.livelib.ru/book/1000442474"
+my_mark: 4
+livelib_book: "https://www.livelib.ru/book/1005648457"
 ---

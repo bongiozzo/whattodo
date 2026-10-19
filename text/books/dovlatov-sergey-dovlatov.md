@@ -8,4 +8,4 @@ livelib_book: "https://www.livelib.ru/book/1000031047-sergej-dovlatov-izbrannoe-
 
 > Притом, чем безнадёжнее цель, тем глубже эмоции. ^quote_1
 
-livelib: https://www.livelib.ru/quote/42395907-sergej-dovlatov-izbrannoe-sergej-dovlatov
+livelib: https://www.livelib.ru/quote/42395907

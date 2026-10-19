@@ -8,8 +8,8 @@ livelib_book: "https://www.livelib.ru/book/1009268587-obrazy-peterburga-andrej-b
 
 > Ученые московско-тартусской семиотической школы последовательно рассматривали все объекты материальной культуры как Тексты. Чтобы понять, что происходит с людьми в Петербурге, надо изучить его Текст. ^quote_1
 
-livelib: https://www.livelib.ru/quote/46861756-obrazy-peterburga-burovskij-andrej-mihajlovich
+livelib: https://www.livelib.ru/quote/46861756
 
 > Я не говорю уже о поразительной склонности петербуржцев ко всевозможной фронде, их постоянному дистанцированию от властей, нелюбви ко всяческому начальству. Черта, объяснимая у жителей «Ленинграда» в СССР, но решительно непостижимая для жителей столицы Российской империи. А в XIX веке она тоже была. ^quote_2
 
-livelib: https://www.livelib.ru/quote/46862377-obrazy-peterburga-burovskij-andrej-mihajlovich
+livelib: https://www.livelib.ru/quote/46862377

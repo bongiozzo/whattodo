@@ -6,6 +6,8 @@ tags:
 status: read
 my_mark: 5
 livelib_book: "https://www.livelib.ru/book/1003212127"
+livelib_editions:
+  - "https://www.livelib.ru/book/1000777860"
 livelib_review: "https://www.livelib.ru/review/4201003-chto-delat-esli-2-prodolzhenie-polyubivshejsya-i-ochen-poleznoj-knigi-lyudmila-petranovskaya"
 ---
 
