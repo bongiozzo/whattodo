@@ -1,0 +1,18 @@
+---
+title: Ключевые идеи книги: Умри по нулям. Как получить максимум от своих денег и жизни. Билл Перкинс
+author: Bill Perkins
+tags:
+  - book
+status: read
+livelib_book: "https://www.livelib.ru/book/1007548783"
+livelib_review: "https://www.livelib.ru/review/3640978-klyuchevye-idei-knigi-umri-po-nulyam-kak-poluchit-maksimum-ot-svoih-deneg-i-zhizni-bill-perkins-smart-reading"
+---
+
+## Рецензия
+
+Книга может быть полезна людям, для которых Успешность человека прежде всего оценивается его Финансовым Капиталом.
+
+В целом все выводы оправданы и скорее очевидны.
+Хотелось бы большего, но за этим, пожалуй, стоит обратиться к другой литературе.
+
+Ознакомиться в сжатом виде - отличный вариант.

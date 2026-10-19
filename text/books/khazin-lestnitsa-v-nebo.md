@@ -1,0 +1,21 @@
+---
+title: Лестница в небо. Диалоги о власти, карьере и мировой элите
+author: Михаил Хазин, Сергей Щеглов
+tags:
+  - book
+livelib_book: "https://www.livelib.ru/book/1005994780-lestnitsa-v-nebo-dialogi-o-vlasti-karere-i-mirovoj-elite-sergej-scheglov"
+---
+
+> К несчастью, чем умнее человек, тем скучнее ему с большинством окружающих, тем сложнее проявлять к ним искренее внимание (не говоря уже о том, чтобы предугадывать малейшие желания), а значит, и тем труднее стать для кого-то из них "своим". ^quote_1
+
+livelib: https://www.livelib.ru/quote/42621823-lestnitsa-v-nebo-dialogi-o-vlasti-karere-i-mirovoj-elite
+
+> Философу всегда интереснее мысли других философов, чем предмет их философствования ^quote_2
+
+livelib: https://www.livelib.ru/quote/43626340-lestnitsa-v-nebo-dialogi-o-vlasti-karere-i-mirovoj-elite
+
+> Власть не берут, власть дают.
+>
+> Единственный способ приобрести власть – это получить ее от других людей; король тот, кому подчиняются, а не тот, на кого надета корона. ^quote_3
+
+livelib: https://www.livelib.ru/quote/45346033-lestnitsa-v-nebo-dialogi-o-vlasti-karere-i-mirovoj-elite

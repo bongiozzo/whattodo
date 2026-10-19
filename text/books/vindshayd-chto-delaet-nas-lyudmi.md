@@ -1,0 +1,27 @@
+---
+title: Что делает нас людьми. Как понимать свои эмоции и принимать их
+author: Леон Виндшайд
+tags:
+  - book
+livelib_book: "https://www.livelib.ru/book/1007502808-chto-delaet-nas-lyudmi-kak-ponimat-svoi-emotsii-i-prinimat-ih-leon-vindshajd"
+---
+
+> Сделать что-то для других — высшее проявление эгоизма. ^quote_1
+
+livelib: https://www.livelib.ru/quote/45759439-chto-delaet-nas-lyudmi-kak-ponimat-svoi-emotsii-i-prinimat-ih-leon-vindshajd
+
+> Самый надежный способ обменять чувство удовлетворенности на деньги — купить что-то для другого. ^quote_2
+
+livelib: https://www.livelib.ru/quote/45759436-chto-delaet-nas-lyudmi-kak-ponimat-svoi-emotsii-i-prinimat-ih-leon-vindshajd
+
+> «Сравнение — это конец счастья и начало недовольства», — писал Сёрен Кьеркегор. ^quote_3
+
+livelib: https://www.livelib.ru/quote/45759415-chto-delaet-nas-lyudmi-kak-ponimat-svoi-emotsii-i-prinimat-ih-leon-vindshajd
+
+> Тот, кто всю жизнь обрушивается на себя с беспощадной самокритикой, предполагая, что так он продвинется в жизни, на самом деле закапывает глубже собственную силу. ^quote_4
+
+livelib: https://www.livelib.ru/quote/45636688-chto-delaet-nas-lyudmi-kak-ponimat-svoi-emotsii-i-prinimat-ih-leon-vindshajd
+
+> Скука - это сигнал, призванный вернуть нас на правильный путь. Она действует как корректор в голове, помогая нам осознать, когда наши действия не способствуют продвижению вперед ^quote_5
+
+livelib: https://www.livelib.ru/quote/47841139-chto-delaet-nas-lyudmi-kak-ponimat-svoi-emotsii-i-prinimat-ih-leon-vindshajd

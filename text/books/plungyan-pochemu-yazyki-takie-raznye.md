@@ -1,0 +1,19 @@
+---
+title: Почему языки такие разные
+author: Владимир Плунгян
+tags:
+  - book
+livelib_book: "https://www.livelib.ru/book/1000465750-pochemu-yazyki-takie-raznye-vladimir-plungyan"
+---
+
+> Вежливость — это как раз такой замечательный способ общения, где всегда лучше пересолить, чем недосолить. ^quote_1
+
+livelib: https://www.livelib.ru/quote/1197814-pochemu-yazyki-takie-raznye-vladimir-plungyan
+
+> Чем легче читать — тем труднее писать. О сложных вещах обычно и пишут сложно, а писать о них просто — очень непросто. Кто пробовал — тот меня поймёт. ^quote_2
+
+livelib: https://www.livelib.ru/quote/1055309-pochemu-yazyki-takie-raznye-vladimir-plungyan
+
+> Язык — это своего рода зеркало, которое стоит между нами и миром; оно отражает не все свойства мира, а только те, которые нашим далеким предкам почему-то казались особенно важными. ^quote_3
+
+livelib: https://www.livelib.ru/quote/1205950-pochemu-yazyki-takie-raznye-vladimir-plungyan

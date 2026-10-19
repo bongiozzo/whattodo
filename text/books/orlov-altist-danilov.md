@@ -1,0 +1,15 @@
+---
+title: Альтист Данилов
+author: Владимир Орлов
+tags:
+  - book
+livelib_book: "https://www.livelib.ru/book/1002729950-altist-danilov-vladimir-orlov"
+---
+
+> У них во всех бумагах и разговорах Земля так и называлась – Тот Свет, а иногда и – Тот Ещё Свет. ^quote_1
+
+livelib: https://www.livelib.ru/quote/34418-altist-danilov-vladimir-orlov
+
+> А преподаватель труда тот даже пригрозил Данилову отправить его на практику в столовые города Саранска вместе с юными тугоухими демонами портить там салаты и вторые блюда. ^quote_2
+
+livelib: https://www.livelib.ru/quote/47015947-altist-danilov-vladimir-orlov

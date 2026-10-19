@@ -1,0 +1,18 @@
+---
+title: Понятная философия с Петером Экбергом и Свеном Нурдквистом
+author: Петер Экберг
+tags:
+  - book
+status: read
+my_mark: 5
+livelib_book: "https://www.livelib.ru/book/1002968521"
+livelib_review: "https://www.livelib.ru/review/4050400-ponyatnaya-filosofiya-s-peterom-ekbergom-i-svenom-nurdkvistom-peter-ekberg"
+---
+
+## Рецензия
+
+Прекрасная возможность порассуждать с ребёнком на разные жизненные вопросы вместе.
+
+Сын 11 лет прочитал залпом и продолжил беседу по прочтённому материалу.
+
+Рекомендую.

@@ -1,0 +1,15 @@
+---
+title: Моя жизнь. Мои достижения. С современными комментариями
+author: Генри Форд
+tags:
+  - book
+livelib_book: "https://www.livelib.ru/book/1009172287-moya-zhizn-moi-dostizheniya-s-sovremennymi-kommentariyami-genri-ford"
+---
+
+> Самая хорошая работа - это высокооплачиваемое хобби. ^quote_1
+
+livelib: https://www.livelib.ru/quote/47208539-moya-zhizn-moi-dostizheniya-s-sovremennymi-kommentariyami-genri-ford
+
+> Человек умирает тогда, когда перестаёт меняться, а похороны - просто формальность. ^quote_2
+
+livelib: https://www.livelib.ru/quote/47208530-moya-zhizn-moi-dostizheniya-s-sovremennymi-kommentariyami-genri-ford

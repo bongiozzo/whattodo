@@ -1,0 +1,13 @@
+---
+title: "Несвятые святые" и другие рассказы
+author: Архимандрит Тихон
+tags:
+  - book
+status: read
+my_mark: 5
+livelib_book: "https://www.livelib.ru/book/1003089869"
+---
+
+> Нам дана от Господа заповедь любви к людям, к нашим ближним. Но любят ли они нас или нет - нам об этом нечего беспокоиться! Надо лишь о том заботиться, чтобы нам их полюбить! ^quote_1
+
+livelib: https://www.livelib.ru/quote/256078-nesvyatye-svyatye-i-drugie-rasskazy-arhimandrit-tihon
