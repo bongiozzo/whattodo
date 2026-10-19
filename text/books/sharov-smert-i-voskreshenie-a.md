@@ -3,7 +3,7 @@ title: Смерть и воскрешение А. М. Бутова (Происш
 author: Александр Шаров
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1000931499"
 ---

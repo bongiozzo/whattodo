@@ -3,8 +3,8 @@ title: Лекции по истории древней церкви. В 4 том
 author: Василий Болотов
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1000540454"
 livelib_review: "https://www.livelib.ru/review/5043412-lektsii-po-istorii-drevnej-tserkvi-v-4-tomah-tom-12-vasilij-bolotov"
 ---

@@ -3,8 +3,8 @@ title: Лев Толстой. Свободный человек
 author: Павел Басинский
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1010116129"
 livelib_review: "https://www.livelib.ru/review/5304760-lev-tolstoj-svobodnyj-chelovek-pavel-basinskij"
 ---

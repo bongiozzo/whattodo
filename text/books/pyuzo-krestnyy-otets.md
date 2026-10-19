@@ -3,7 +3,7 @@ title: Крестный отец
 author: Марио Пьюзо
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1000494281"
 ---

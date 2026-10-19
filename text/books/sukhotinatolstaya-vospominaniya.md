@@ -1,9 +1,10 @@
 ---
 title: Воспоминания
-author: Т. Л. Сухотина-Толстая
+author: Т.Л. Сухотина-Толстая
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1000327220-vospominaniya-t-l-suhotinatolstaya"
+status: none
+livelib_book: "https://www.livelib.ru/book/1000107117"
 ---
 
 > Жизнь должна быть прекрасна.

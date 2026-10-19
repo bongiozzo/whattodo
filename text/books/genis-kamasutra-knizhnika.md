@@ -3,7 +3,8 @@ title: Камасутра книжника
 author: Александр Генис
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1003527545-kamasutra-knizhnika-aleksandr-genis"
+status: none
+livelib_book: "https://www.livelib.ru/book/1003527545"
 ---
 
 > Тот же Довлатов уверял, что пунктуацию каждый автор придумывает сам, и бесился, когда ему ее исправляли. Я тоже считаю, что пунктуация не подчиняется корректорам. ^quote_1

@@ -3,12 +3,12 @@ title: Теория невероятностей
 author: Виктория Ледерман
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1008965101"
 livelib_editions:
-  - "https://www.livelib.ru/book/1005003613"
   - "https://www.livelib.ru/book/1011326237"
+  - "https://www.livelib.ru/book/1005003613"
 livelib_review: "https://www.livelib.ru/review/4526516-teoriya-neveroyatnostej-viktoriya-lederman"
 ---
 

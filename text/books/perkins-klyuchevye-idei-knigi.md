@@ -3,6 +3,7 @@ title: Ключевые идеи книги: Умри по нулям. Как п
 author: Bill Perkins
 tags:
   - book
+my_mark: 4
 status: read
 livelib_book: "https://www.livelib.ru/book/1007548783"
 livelib_review: "https://www.livelib.ru/review/3640978-klyuchevye-idei-knigi-umri-po-nulyam-kak-poluchit-maksimum-ot-svoih-deneg-i-zhizni-bill-perkins-smart-reading"

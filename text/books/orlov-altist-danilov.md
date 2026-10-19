@@ -3,7 +3,8 @@ title: Альтист Данилов
 author: Владимир Орлов
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1002729950-altist-danilov-vladimir-orlov"
+status: unread
+livelib_book: "https://www.livelib.ru/book/1002729950"
 ---
 
 > У них во всех бумагах и разговорах Земля так и называлась – Тот Свет, а иногда и – Тот Ещё Свет. ^quote_1

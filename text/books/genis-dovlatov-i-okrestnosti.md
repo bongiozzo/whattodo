@@ -3,8 +3,8 @@ title: Довлатов и окрестности
 author: Александр Генис
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1001651792"
 livelib_review: "https://www.livelib.ru/review/4338980-dovlatov-i-okrestnosti-aleksandr-genis"
 ---

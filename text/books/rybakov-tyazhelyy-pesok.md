@@ -3,7 +3,8 @@ title: Тяжелый песок
 author: Анатолий Рыбаков
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1000485071-tyazhelyj-pesok-anatolij-rybakov"
+status: none
+livelib_book: "https://www.livelib.ru/book/1000443129"
 ---
 
 > … чем больше у людей квартира, тем меньше находится места, чтобы переночевать постороннему человеку. ^quote_1

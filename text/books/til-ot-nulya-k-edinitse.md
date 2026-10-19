@@ -3,8 +3,8 @@ title: От нуля к единице. Как создать стартап, к
 author: Питер Тиль, Блейк Мастерс
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1001008859"
 livelib_review: "https://www.livelib.ru/review/4639619-ot-nulya-k-edinitse-kak-sozdat-startap-kotoryj-izmenit-buduschee-piter-til-blejk-masters-peter-thiel-koos-blake-mastersiga"
 ---

@@ -3,8 +3,8 @@ title: Чагин
 author: Евгений Водолазкин
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1007537842"
 livelib_review: "https://www.livelib.ru/review/4403090-chagin-evgenij-vodolazkin"
 ---

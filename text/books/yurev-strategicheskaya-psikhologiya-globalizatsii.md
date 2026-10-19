@@ -3,6 +3,7 @@ title: Стратегическая психология глобализаци�
 author: Александр Юрьев
 tags:
   - book
+my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1001128870"
 livelib_review: "https://www.livelib.ru/review/4165063-strategicheskaya-psihologiya-globalizatsii-psihologiya-chelovecheskogo-kapitala"

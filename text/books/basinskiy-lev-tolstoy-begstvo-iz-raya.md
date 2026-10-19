@@ -3,8 +3,8 @@ title: Лев Толстой: Бегство из рая
 author: Павел Басинский
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1007290363"
 livelib_review: "https://www.livelib.ru/review/5304772-lev-tolstoj-begstvo-iz-raya-pavel-basinskij"
 ---

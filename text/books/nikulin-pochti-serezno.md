@@ -3,8 +3,8 @@ title: Почти серьезно
 author: Юрий Никулин
 tags:
   - book
-status: read
 my_mark: 4
+status: read
 livelib_book: "https://www.livelib.ru/book/1003208154"
 livelib_review: "https://www.livelib.ru/review/2997154-pochti-serezno-yurij-nikulin"
 ---

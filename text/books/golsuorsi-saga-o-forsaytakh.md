@@ -3,7 +3,8 @@ title: Сага о Форсайтах
 author: Джон Голсуорси
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1000262338-saga-o-forsajtah-dzhon-golsuorsi"
+status: none
+livelib_book: "https://www.livelib.ru/book/1000410280"
 ---
 
 > - Откройте ваш секрет молодости, Ирэн.

@@ -3,8 +3,8 @@ title: Искусство любить
 author: Эрих Фромм
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1002524734"
 livelib_review: "https://www.livelib.ru/review/2985526-iskusstvo-lyubit-erih-fromm"
 ---

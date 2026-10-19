@@ -3,8 +3,8 @@ title: Письма Баламута. Баламут предлагает тос
 author: Клайв Стейплз Льюис
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1008888709"
 livelib_review: "https://www.livelib.ru/review/5738980-pisma-balamuta-balamut-predlagaet-tost-sbornik-klajv-stejplz-lyuis"
 ---

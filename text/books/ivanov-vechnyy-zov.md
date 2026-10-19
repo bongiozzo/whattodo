@@ -3,7 +3,8 @@ title: Вечный зов
 author: Анатолий Иванов
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1000524641-vechnyj-zov-anatolij-ivanov"
+status: none
+livelib_book: "https://www.livelib.ru/book/1000524641"
 ---
 
 > Все люди вместе живут. Да поврозь часто думают. В этом все и горюшко на земле. Весь корень тут. ^quote_1

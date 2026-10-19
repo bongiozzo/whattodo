@@ -3,8 +3,8 @@ title: The Samarsky Yard. Самарский двор
 author: Шиманн Йорн, Вейрс Отто, Рэнд Лариса Арарипе
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1007902828"
 livelib_review: "https://www.livelib.ru/review/3871987-the-samarsky-yard-samarskij-dvor-shimann-jorn-vejrs-otto-rend-larisa-araripe"
 ---

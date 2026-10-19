@@ -1,10 +1,10 @@
 ---
-title: Что делать если… 2. Продолжение полюбившейся и очень полезной книги
+title: Что делать если… 2\. Продолжение полюбившейся и очень полезной книги
 author: Людмила Петрановская
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1003212127"
 livelib_editions:
   - "https://www.livelib.ru/book/1000777860"

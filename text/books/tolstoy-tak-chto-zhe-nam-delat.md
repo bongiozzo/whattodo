@@ -3,8 +3,9 @@ title: Так что же нам делать?
 author: Лев Толстой
 tags:
   - book
-status: not-on-shelf
-livelib_book: "https://www.livelib.ru/book/1010848910-tak-chto-zhe-nam-delat-lev-tolstoj"
+my_mark: 3
+status: unread
+livelib_book: "https://www.livelib.ru/book/1010848910"
 livelib_review: "https://www.livelib.ru/review/5240326-tak-chto-zhe-nam-delat-lev-tolstoj"
 ---
 

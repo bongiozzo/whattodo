@@ -3,8 +3,9 @@ title: Что нам делать, чтобы жить счастливо
 author: Геральд Иванович Мацепура
 tags:
   - book
-status: not-on-shelf
-livelib_book: "https://www.livelib.ru/book/1011652508-chto-nam-delat-chtoby-zhit-schastlivo-gerald-ivanovich-matsepura"
+my_mark: 4
+status: unread
+livelib_book: "https://www.livelib.ru/book/1011652508"
 livelib_review: "https://www.livelib.ru/review/5241073-chto-nam-delat-chtoby-zhit-schastlivo-gerald-ivanovich-matsepura"
 ---
 

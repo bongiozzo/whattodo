@@ -3,8 +3,8 @@ title: Как писать книги
 author: Стивен Кинг
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1006930180"
 livelib_review: "https://www.livelib.ru/review/4452449-kak-pisat-knigi-stiven-king"
 ---

@@ -3,8 +3,8 @@ title: Воспоминания о войне
 author: Николай Никулин
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1002095486"
 livelib_editions:
   - "https://www.livelib.ru/book/1001564201"

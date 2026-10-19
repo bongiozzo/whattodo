@@ -3,7 +3,8 @@ title: Волшебная зима
 author: Туве Янссон
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1000390417-volshebnaya-zima-tuve-yansson"
+status: none
+livelib_book: "https://www.livelib.ru/book/1000038942"
 ---
 
 > быть может, добрые намерения - важнее результата ^quote_1

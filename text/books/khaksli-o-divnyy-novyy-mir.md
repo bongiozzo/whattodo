@@ -3,8 +3,8 @@ title: О дивный новый мир
 author: Олдос Хаксли
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1004995033"
 ---
 

@@ -3,8 +3,8 @@ title: Блокада в моей судьбе
 author: Борис Тарасов, Борис Тарасов
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1000603596"
 livelib_review: "https://www.livelib.ru/review/3007177-blokada-v-moej-sudbe-boris-tarasov"
 ---

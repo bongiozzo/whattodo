@@ -1,3 +1,5 @@
 [
-  {"into": "vayl-rodnaya-rech", "remove": "petr-rodnaya-rech"}
+  {"into": "vayl-rodnaya-rech", "remove": "petr-rodnaya-rech"},
+  {"into": "danilkin-lenin-pantokrator-solnechnykh-pylinok", "remove": "danilkin-lenin"},
+  {"into": "ford-moya-zhizn-moi-dostizheniya", "remove": "ford-moya-zhizn"}
 ]

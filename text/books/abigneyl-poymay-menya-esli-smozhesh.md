@@ -3,7 +3,7 @@ title: Поймай меня, если сможешь. Реальная исто
 author: Фрэнк Уильям Абигнейл, Стэн Реддинг
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1002106176"
 ---

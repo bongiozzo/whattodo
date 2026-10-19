@@ -3,16 +3,16 @@ title: Мастер и Маргарита
 author: Михаил Булгаков
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1000750969"
 livelib_editions:
-  - "https://www.livelib.ru/book/1000269075"
   - "https://www.livelib.ru/book/1000458433"
-  - "https://www.livelib.ru/book/1000485837"
-  - "https://www.livelib.ru/book/1000736563"
   - "https://www.livelib.ru/book/1006171915"
+  - "https://www.livelib.ru/book/1000485837"
+  - "https://www.livelib.ru/book/1000269075"
   - "https://www.livelib.ru/book/1010075938"
+  - "https://www.livelib.ru/book/1000736563"
 livelib_review: "https://www.livelib.ru/review/4002646-master-i-margarita-mihail-bulgakov-boulgakov-mikhail"
 ---
 

@@ -3,7 +3,8 @@ title: Люди, которые всегда со мной
 author: Наринэ Абгарян
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1002143646-lyudi-kotorye-vsegda-so-mnoj-narine-abgaryan"
+status: none
+livelib_book: "https://www.livelib.ru/book/1000889391"
 ---
 
 > “детство – самое совершенное состояние души – всех любишь, ни на кого не держишь зла.” ^quote_1

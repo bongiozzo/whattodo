@@ -3,8 +3,8 @@ title: Оправдание Острова
 author: Евгений Водолазкин
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1005497029"
 ---
 

@@ -3,7 +3,8 @@ title: Что делает нас людьми. Как понимать свои
 author: Леон Виндшайд
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1007502808-chto-delaet-nas-lyudmi-kak-ponimat-svoi-emotsii-i-prinimat-ih-leon-vindshajd"
+status: none
+livelib_book: "https://www.livelib.ru/book/1007502808"
 ---
 
 > Сделать что-то для других — высшее проявление эгоизма. ^quote_1

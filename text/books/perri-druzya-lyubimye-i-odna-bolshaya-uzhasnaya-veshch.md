@@ -3,8 +3,8 @@ title: Друзья, любимые и одна большая ужасная в
 author: Мэттью Перри
 tags:
   - book
-status: read
 my_mark: 4
+status: read
 livelib_book: "https://www.livelib.ru/book/1008883819"
 livelib_review: "https://www.livelib.ru/review/3780112-druzya-lyubimye-i-odna-bolshaya-uzhasnaya-vesch-avtobiografiya-mettyu-perri"
 ---

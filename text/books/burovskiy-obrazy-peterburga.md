@@ -3,7 +3,8 @@ title: Образы Петербурга
 author: Андрей Буровский
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1009268587-obrazy-peterburga-andrej-burovskij"
+status: unread
+livelib_book: "https://www.livelib.ru/book/1009268587"
 ---
 
 > Ученые московско-тартусской семиотической школы последовательно рассматривали все объекты материальной культуры как Тексты. Чтобы понять, что происходит с людьми в Петербурге, надо изучить его Текст. ^quote_1

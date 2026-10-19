@@ -3,7 +3,8 @@ title: Все о муми-троллях
 author: Туве Янссон
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1000298626-vse-o-mumitrollyah-tuve-yansson"
+status: none
+livelib_book: "https://www.livelib.ru/book/1000015451"
 ---
 
 > Можно лежать на мосту и смотреть, как течет вода. Или бегать, или бродить по болоту в красных сапожках, или же свернуться клубочком и слушать, как дождь стучит по крыше.

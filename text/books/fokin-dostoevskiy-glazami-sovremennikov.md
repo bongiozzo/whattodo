@@ -3,8 +3,8 @@ title: Достоевский глазами современников
 author: Павел Фокин
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1001534213"
 livelib_review: "https://www.livelib.ru/review/3593419-dostoevskij-glazami-sovremennikov"
 ---

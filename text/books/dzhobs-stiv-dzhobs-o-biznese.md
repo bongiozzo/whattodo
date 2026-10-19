@@ -3,7 +3,8 @@ title: Стив Джобс о бизнесе. 250 высказываний че�
 author: Стив Джобс
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1000716658-stiv-dzhobs-o-biznese-250-vyskazyvanij-cheloveka-izmenivshego-mir-stiv-dzhobs"
+status: none
+livelib_book: "https://www.livelib.ru/book/1000716658"
 ---
 
 > Смерть, похоже, лучшее изобретение жизни. ^quote_1

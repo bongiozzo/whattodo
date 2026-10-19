@@ -3,8 +3,8 @@ title: Ягоды
 author: Роман Михайлов
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1003527531"
 livelib_review: "https://www.livelib.ru/review/4208659-yagody-roman-mihajlov"
 ---

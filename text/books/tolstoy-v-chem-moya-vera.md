@@ -3,8 +3,9 @@ title: В чем моя вера?
 author: Лев Толстой
 tags:
   - book
-status: not-on-shelf
-livelib_book: "https://www.livelib.ru/book/1009161802-v-chem-moya-vera-lev-tolstoj"
+my_mark: 5
+status: unread
+livelib_book: "https://www.livelib.ru/book/1009161802"
 livelib_review: "https://www.livelib.ru/review/5301010-v-chem-moya-vera-lev-tolstoj"
 ---
 

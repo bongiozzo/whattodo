@@ -3,8 +3,8 @@ title: Искусственный интеллект. Возможные пут�
 author: Ник Бостром
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1001459912"
 livelib_review: "https://www.livelib.ru/review/4606844-iskusstvennyj-intellekt-vozmozhnye-puti-opasnosti-i-strategii-nik-bostrom"
 ---

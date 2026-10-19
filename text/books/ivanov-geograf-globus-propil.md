@@ -3,8 +3,8 @@ title: Географ глобус пропил
 author: Алексей Иванов
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1001559581"
 livelib_review: "https://www.livelib.ru/review/3387328-geograf-globus-propil-aleksej-ivanov"
 ---

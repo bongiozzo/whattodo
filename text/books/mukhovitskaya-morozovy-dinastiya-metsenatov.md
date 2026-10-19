@@ -3,7 +3,8 @@ title: Морозовы. Династия меценатов
 author: Лира Муховицкая
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1002593173-morozovy-dinastiya-metsenatov-lira-muhovitskaya"
+status: wish
+livelib_book: "https://www.livelib.ru/book/1002593173"
 ---
 
 > У Морозовых всё же был девиз – Любовь к России ^quote_1

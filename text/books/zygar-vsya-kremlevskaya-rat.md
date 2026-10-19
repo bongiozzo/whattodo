@@ -3,7 +3,7 @@ title: Вся кремлевская рать. Краткая история с�
 author: Михаил Зыгарь
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1001436043"
 ---

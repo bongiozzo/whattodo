@@ -3,7 +3,8 @@ title: Стив Джобс
 author: Уолтер Айзексон
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1000507201-stiv-dzhobs-uolter-ajzekson"
+status: none
+livelib_book: "https://www.livelib.ru/book/1000507201"
 ---
 
 > Мне кажется, все религии — это лишь разные двери в один и тот же дом. ^quote_1

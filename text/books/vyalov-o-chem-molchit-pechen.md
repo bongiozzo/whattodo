@@ -3,8 +3,8 @@ title: О чем молчит печень. Как уловить сигналы
 author: Сергей Вялов
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1003965301"
 ---
 

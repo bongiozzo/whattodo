@@ -3,8 +3,8 @@ title: Сестра печали
 author: Вадим Шефнер
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1003165146"
 livelib_editions:
   - "https://www.livelib.ru/book/1006147069-sestra-pechali-vadim-shefner"

@@ -3,7 +3,8 @@ title: Уроки чтения. Камасутра книжника
 author: Александр Генис
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1000714937-uroki-chteniya-kamasutra-knizhnika-aleksandr-genis"
+status: none
+livelib_book: "https://www.livelib.ru/book/1000714937"
 ---
 
 > Неправда, что Достоевский и Толстой дополняют друг друга, они внеположны и асимметричны. Их объединяет только недоверие к литературе как к искусству слов. ^quote_1

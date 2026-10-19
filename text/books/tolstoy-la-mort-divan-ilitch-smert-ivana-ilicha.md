@@ -3,8 +3,8 @@ title: La Mort d'Ivan Ilitch / Смерть Ивана Ильича
 author: Лев Толстой
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1001315413"
 livelib_review: "https://www.livelib.ru/review/5308714-la-mort-divan-ilitch-smert-ivana-ilicha-lev-tolstoj"
 ---

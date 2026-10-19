@@ -3,7 +3,8 @@ title: Тётя дяди Фёдора
 author: Эдуард Успенский
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1001000090-tjotya-dyadi-fjodora-eduard-uspenskij"
+status: none
+livelib_book: "https://www.livelib.ru/book/1001000090"
 ---
 
 > В детстве она много читала. Поэтому не вышла замуж. ^quote_1

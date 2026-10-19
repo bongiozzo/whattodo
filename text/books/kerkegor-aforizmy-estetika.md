@@ -3,7 +3,8 @@ title: Афоризмы эстетика
 author: Сёрен Кьеркегор
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1000326091-aforizmy-estetika-sjoren-kerkegor"
+status: none
+livelib_book: "https://www.livelib.ru/book/1000326091"
 ---
 
 > Двери счастья отворяются, к сожалению, не внутрь тогда их можно было бы растворить бурным напором, а изнутри, и потому ничего не поделаешь! ^quote_1

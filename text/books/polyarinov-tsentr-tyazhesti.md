@@ -3,8 +3,8 @@ title: Центр тяжести
 author: Алексей Поляринов
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1005526645"
 ---
 

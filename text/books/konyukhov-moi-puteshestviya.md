@@ -3,8 +3,8 @@ title: Мои путешествия
 author: Федор Конюхов
 tags:
   - book
-status: read
 my_mark: 4
+status: read
 livelib_book: "https://www.livelib.ru/book/1001111195"
 livelib_review: "https://www.livelib.ru/review/3060793-moi-puteshestviya-fedor-konyuhov"
 ---

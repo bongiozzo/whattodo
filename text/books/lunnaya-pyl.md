@@ -2,6 +2,7 @@
 title: Лунная пыль. Я, робот. Стальные пещеры
 tags:
   - book
+my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1000507758"
 livelib_review: "https://www.livelib.ru/review/5189677-lunnaya-pyl-ya-robot-stalnye-peschery-ajzek-azimov-artur-klark"

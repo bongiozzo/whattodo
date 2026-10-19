@@ -3,8 +3,8 @@ title: Шум времени
 author: Джулиан Барнс
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1002275302"
 livelib_review: "https://www.livelib.ru/review/4473476-shum-vremeni-dzhulian-barns"
 ---

@@ -3,7 +3,8 @@ title: Родная речь
 author: Петр Вайль, Александр Генис
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1010123266-rodnaya-rech-petr-vajl-aleksandr-genis"
+status: none
+livelib_book: "https://www.livelib.ru/book/1010123266"
 livelib_editions:
   - "https://www.livelib.ru/book/1000204927"
 ---

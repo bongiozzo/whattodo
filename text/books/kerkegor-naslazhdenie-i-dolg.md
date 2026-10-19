@@ -3,7 +3,8 @@ title: Наслаждение и долг
 author: Сёрен Кьеркегор
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1000470367-naslazhdenie-i-dolg-sjoren-kerkegor"
+status: none
+livelib_book: "https://www.livelib.ru/book/1000470367"
 ---
 
 > Двери счастья отворяются, к сожалению, не внутрь - тогда их можно было бы растворить бурным напором, - а изнутри, и потому ничего не поделаешь! ^quote_1

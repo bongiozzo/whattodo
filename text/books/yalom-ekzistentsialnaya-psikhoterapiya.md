@@ -3,7 +3,8 @@ title: Экзистенциальная психотерапия
 author: Ирвин Ялом
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1001108276-ekzistentsialnaya-psihoterapiya-irvin-yalom"
+status: none
+livelib_book: "https://www.livelib.ru/book/1001108276"
 ---
 
 > Физически смерть разрушает человека, но идея смерти спасает его. ^quote_1

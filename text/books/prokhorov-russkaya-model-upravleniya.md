@@ -3,8 +3,8 @@ title: Русская модель управления
 author: Александр Прохоров
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1001118351"
 livelib_review: "https://www.livelib.ru/review/3093508-russkaya-model-upravleniya-aleksandr-prohorov"
 ---

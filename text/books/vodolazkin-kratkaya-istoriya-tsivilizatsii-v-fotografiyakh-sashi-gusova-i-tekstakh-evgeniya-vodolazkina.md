@@ -3,7 +3,7 @@ title: Краткая история цивилизации в фотограф�
 author: Евгений Водолазкин, Саша Гусов
 tags:
   - book
-status: read
 my_mark: 2
+status: read
 livelib_book: "https://www.livelib.ru/book/1007095369"
 ---

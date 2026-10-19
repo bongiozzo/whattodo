@@ -3,7 +3,8 @@ title: Жизнь в ветреную погоду
 author: Андрей Битов
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1000742797-zhizn-v-vetrenuyu-pogodu-andrej-bitov"
+status: unread
+livelib_book: "https://www.livelib.ru/book/1000742797"
 ---
 
 > Хорошо бы начать книгу, которую надо писать всю жизнь…

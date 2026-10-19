@@ -3,8 +3,8 @@ title: Знакомьтесь, литература! От античности �
 author: Константин Образцов
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1012482743"
 livelib_review: "https://www.livelib.ru/review/4822360-znakomtes-literatura-ot-antichnosti-do-shekspira-konstantin-obraztsov"
 ---

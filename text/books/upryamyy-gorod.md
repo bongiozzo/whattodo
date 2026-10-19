@@ -2,6 +2,7 @@
 title: Упрямый город. Блокада 1941–1944
 tags:
   - book
+my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1003022554"
 livelib_review: "https://www.livelib.ru/review/3021487-upryamyj-gorod-blokada-19411944-sostavitel-aleksandr-veselov"

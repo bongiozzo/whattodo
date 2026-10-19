@@ -3,7 +3,7 @@ title: Идти бестрепетно. Между литературой и ж�
 author: Евгений Водолазкин
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1003567466"
 ---

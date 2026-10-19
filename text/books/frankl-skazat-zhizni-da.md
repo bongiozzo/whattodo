@@ -3,8 +3,8 @@ title: Сказать жизни «Да»: психолог в концлаге�
 author: Виктор Франкл
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1000225484"
 livelib_editions:
   - "https://www.livelib.ru/book/1005482422"

@@ -3,8 +3,8 @@ title: Повседневная жизнь Петербурга на рубеж�
 author: Д. А. Засосов, В. И. Пызин
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1000443661"
 livelib_review: "https://www.livelib.ru/review/4088782-povsednevnaya-zhizn-peterburga-na-rubezhe-xix-xx-vekov-zapiski-ochevidtsev"
 ---

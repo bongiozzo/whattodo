@@ -3,7 +3,8 @@ title: Интерлюдия: Последнее лето Форсайта
 author: Джон Голсуорси
 tags:
   - book
-livelib_book: "https://www.livelib.ru/work/1000897281-interlyudiya-poslednee-leto-forsajta-dzhon-golsuorsi"
+status: none
+livelib_book: "https://www.livelib.ru/book/1000897281"
 ---
 
 > У любви нет возраста, нет предела, нет смерти. ^quote_1

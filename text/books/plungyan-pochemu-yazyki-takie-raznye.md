@@ -3,7 +3,8 @@ title: Почему языки такие разные
 author: Владимир Плунгян
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1000465750-pochemu-yazyki-takie-raznye-vladimir-plungyan"
+status: none
+livelib_book: "https://www.livelib.ru/book/1000465750"
 ---
 
 > Вежливость — это как раз такой замечательный способ общения, где всегда лучше пересолить, чем недосолить. ^quote_1

@@ -3,8 +3,8 @@ title: Не оторваться! Почему наш мозг любит всё
 author: Адам Алтер
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1002986342"
 livelib_review: "https://www.livelib.ru/review/3938821-ne-otorvatsya-pochemu-nash-mozg-lyubit-vsjo-novoe-i-tak-li-eto-horosho-v-epohu-interneta-adam-alter"
 ---

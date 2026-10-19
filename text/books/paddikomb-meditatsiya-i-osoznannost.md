@@ -3,7 +3,7 @@ title: Медитация и осознанность. 10 минут в день
 author: Энди Паддикомб
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1001507738"
 ---

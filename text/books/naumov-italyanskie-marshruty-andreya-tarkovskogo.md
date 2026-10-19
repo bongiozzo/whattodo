@@ -3,8 +3,8 @@ title: Итальянские маршруты Андрея Тарковског
 author: Лев Наумов
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1007442097"
 livelib_review: "https://www.livelib.ru/review/5073775-italyanskie-marshruty-andreya-tarkovskogo-lev-naumov"
 ---

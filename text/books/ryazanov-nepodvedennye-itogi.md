@@ -3,8 +3,8 @@ title: Неподведенные итоги
 author: Эльдар Рязанов
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1000356027"
 livelib_review: "https://www.livelib.ru/review/5220355-nepodvedennye-itogi-eldar-ryazanov"
 ---

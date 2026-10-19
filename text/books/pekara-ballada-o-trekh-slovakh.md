@@ -3,8 +3,8 @@ title: Баллада о трех словах
 author: Яцек Пекара
 tags:
   - book
-status: read
 my_mark: 4
+status: read
 livelib_book: "https://www.livelib.ru/book/1002745327"
 livelib_review: "https://www.livelib.ru/review/5726422-ballada-o-treh-slovah-yatsek-pekara"
 ---

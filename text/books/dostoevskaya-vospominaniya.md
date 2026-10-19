@@ -3,7 +3,8 @@ title: Воспоминания
 author: А. Г. Достоевская
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1000108016-vospominaniya-a-g-dostoevskaya"
+status: none
+livelib_book: "https://www.livelib.ru/book/1000108016"
 ---
 
 > "Ах, зачем вы не женаты, и зачем у вас нет ребенка, многоуважаемый Николай Николаевич. Клянусь вам, что в этом 3/4 счастья жизненного, а в остальном разве одна четверть".

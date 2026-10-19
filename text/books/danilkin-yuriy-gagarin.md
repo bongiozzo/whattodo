@@ -3,8 +3,8 @@ title: Юрий Гагарин
 author: Лев Данилкин
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1000470444"
 livelib_review: "https://www.livelib.ru/review/3384303-yurij-gagarin-lev-danilkin"
 ---

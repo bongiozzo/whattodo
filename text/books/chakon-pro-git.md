@@ -3,8 +3,8 @@ title: Pro Git
 author: Скотт Чакон, Бен Штрауб
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1001502890"
 livelib_review: "https://www.livelib.ru/review/5457061-pro-git-skott-chakon"
 ---

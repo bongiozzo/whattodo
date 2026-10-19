@@ -3,7 +3,8 @@ title: Московская сага. В 3 книгах. Книга 1. Поко�
 author: Василий Аксёнов
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1000444845-moskovskaya-saga-v-3-knigah-kniga-1-pokolenie-zimy-vasilij-aksjonov"
+status: none
+livelib_book: "https://www.livelib.ru/book/1000444845"
 ---
 
 > Однако сколько голов, столько и разных путей для скорейшего достижения счастья человечества. ^quote_1

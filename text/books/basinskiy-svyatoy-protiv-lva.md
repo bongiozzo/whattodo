@@ -3,8 +3,8 @@ title: Святой против Льва. Иоанн Кронштадтский
 author: Павел Басинский
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1007434216"
 livelib_review: "https://www.livelib.ru/review/5304733-svyatoj-protiv-lva-ioann-kronshtadtskij-i-lev-tolstoj-istoriya-odnoj-vrazhdy-pavel-basinskij"
 ---

@@ -3,8 +3,8 @@ title: Ветер Радости. Три дня в лунном свете
 author: Григорий Григорьев
 tags:
   - book
-status: read
 my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1009919548"
 livelib_review: "https://www.livelib.ru/review/5065204-veter-radosti-tri-dnya-v-lunnom-svete-grigorij-grigorev"
 ---

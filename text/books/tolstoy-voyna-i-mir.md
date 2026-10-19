@@ -1,9 +1,10 @@
 ---
-title: Война и мир. В 4 томах
+title: Война и мир
 author: Лев Толстой
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1000396345-vojna-i-mir-v-4-tomah-lev-tolstoj"
+status: unread
+livelib_book: "https://www.livelib.ru/book/1012705174"
 ---
 
 > Нет величия там, где нет простоты, добра и правды. ^quote_1

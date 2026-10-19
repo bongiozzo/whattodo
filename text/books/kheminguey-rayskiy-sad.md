@@ -3,7 +3,8 @@ title: Райский сад. Рассказы
 author: Эрнест Хемингуэй
 tags:
   - book
-livelib_book: "https://www.livelib.ru/book/1000417324-rajskij-sad-rasskazy-ernest-heminguej"
+status: none
+livelib_book: "https://www.livelib.ru/book/1000417324"
 ---
 
 > Умные люди чрезвычайно редко бывают счастливы. ^quote_1
