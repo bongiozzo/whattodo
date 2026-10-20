@@ -14,7 +14,7 @@ description: Наш Текст — это сборка смыслов, взят�
 - Про человеческий капитал: [Стратегическая психология глобализации. Психология человеческого капитала](https://www.livelib.ru/review/4165063-strategicheskaya-psihologiya-globalizatsii-psihologiya-chelovecheskogo-kapitala)
 - В поисках ключей от Счастья: [Перед восходом солнца](https://www.livelib.ru/review/5058298-pered-voshodom-solntsa-mihail-zoschenko)
 - Важность ответа на вопрос о Смысле Жизни: [Сказать жизни «Да»](https://www.livelib.ru/review/4226059-skazat-zhizni-da-psiholog-v-kontslagere-sbornik-viktor-frankl)
-- Ликбез по антропологии: [Sapiens. Краткая история человечества](https://www.livelib.ru/work/1015122040)
+- Ликбез по антропологии: [Sapiens. Краткая история человечества](https://www.livelib.ru/review/6391126)
 - Ликбез по русской литературе и истории: [Уроки изящной словесности](https://www.livelib.ru/review/6390886)
 - Литература как отражение общественного настроя эпохи: [Знакомьтесь, Литература!](https://www.livelib.ru/review/4822360-znakomtes-literatura-ot-antichnosti-do-shekspira-konstantin-obraztsov)
 - Примеры рассуждений о важных вопросах вместе с детьми: [Понятная Философия](https://www.livelib.ru/review/4050400-ponyatnaya-filosofiya-s-peterom-ekbergom-i-svenom-nurdkvistom-peter-ekberg)
