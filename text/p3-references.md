@@ -26,7 +26,7 @@ description: Наш Текст — это сборка смыслов, взят�
 - Художественно про центричность — Бог или Я: [Лавр](https://www.livelib.ru/review/3923053-lavr-evgenij-vodolazkin), [Оправдание острова](https://www.livelib.ru/book/1005497029-opravdanie-ostrova-evgenij-vodolazkin), [Чагин](https://www.livelib.ru/review/4403090-chagin-evgenij-vodolazkin)
 - Анализ чувства Любви: [Искусство любить](https://www.livelib.ru/review/2985526-iskusstvo-lyubit-erih-fromm)
 - Разные способы проявления Любви: [Пять языков любви](https://www.livelib.ru/review/3720607-pyat-yazykov-lyubvi-geri-chepmen)
-- Про следование своему Призванию в жизнеописании: [Театр отчаяния. Отчаянный театр](https://www.livelib.ru/review/3730660-teatr-otchayaniya-otchayannyj-teatr-evgenij-grishkovets)
+- Про следование своему Призванию: [Театр отчаяния. Отчаянный театр](https://www.livelib.ru/review/3730660-teatr-otchayaniya-otchayannyj-teatr-evgenij-grishkovets)
 - Про поиск Веры: [Итальянские маршруты Андрея Тарковского](https://www.livelib.ru/review/5073775-italyanskie-marshruty-andreya-tarkovskogo-lev-naumov)
 - Про следование Призванию с точки зрения психолога: [Поток](https://www.livelib.ru/review/3879424-potok-psihologiya-optimalnogo-perezhivaniya-mihaj-chiksentmihaji)
 - Про экономику и Россию: [Русская модель управления](https://www.livelib.ru/review/3093508-russkaya-model-upravleniya-aleksandr-prohorov)
