@@ -1,0 +1,25 @@
+views:
+  - type: kanban
+    name: View
+    filters:
+      and:
+        - file.folder == "text/books"
+    groupBy:
+      property: status
+      direction: ASC
+    groupOrder:
+      - reading
+      - wish
+      - read
+      - unread
+      - none
+    order:
+      - file.name
+      - author
+      - title
+      - livelib_review
+      - my_mark
+      - livelib_book
+    sort:
+      - property: author
+        direction: ASC
