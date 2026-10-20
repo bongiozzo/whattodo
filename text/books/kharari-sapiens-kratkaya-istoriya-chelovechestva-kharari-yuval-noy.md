@@ -3,6 +3,12 @@ title: "Sapiens. Краткая история человечества Хара
 author: Юваль Ной Харари
 tags:
   - book
+my_mark: 4
 status: unread
 livelib_book: "https://www.livelib.ru/book/1015122040"
+livelib_review: "https://www.livelib.ru/review/6391126"
 ---
+
+## Рецензия
+
+Слушали в машине первую часть аудиокниги — полезные мыслительные процессы в голове текст запускает.
