@@ -10,7 +10,7 @@ livelib_editions:
   - "https://www.livelib.ru/book/1002801640"
   - "https://www.livelib.ru/book/1000667382"
   - "https://www.livelib.ru/book/1001482955"
-livelib_review: "https://www.livelib.ru/review/2977069-deniskiny-rasskazy-o-tom-kak-vsjo-bylo-na-samom-dele"
+livelib_review: "https://www.livelib.ru/review/2977069"
 ---
 
 ## Рецензия

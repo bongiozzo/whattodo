@@ -6,7 +6,7 @@ tags:
 my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1002802989"
-livelib_review: "https://www.livelib.ru/review/3730660-teatr-otchayaniya-otchayannyj-teatr-evgenij-grishkovets"
+livelib_review: "https://www.livelib.ru/review/3730660"
 ---
 
 ## Рецензия
@@ -14,6 +14,7 @@ livelib_review: "https://www.livelib.ru/review/3730660-teatr-otchayaniya-otchaya
 Уже и не помню, что первое увидел или прочитал у Гришковца. Наверное, "Как я съел собаку?"
 
 Поразил меня наповал, с самого начала, этот, так называемый, эффект узнавания.
+
 Перечитал и пересмотрел все его произведения.
 
 Но история с Домодедово стоит особняком. Дело в том, что со мной там же произошла ооочень похожая история и когда читал эту главу - аж в ушах звенело от этого узнавания. Настолько сильные были впечатления, что решил их тоже описать, как минимум для себя.

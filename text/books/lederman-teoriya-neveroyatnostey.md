@@ -9,7 +9,7 @@ livelib_book: "https://www.livelib.ru/book/1008965101"
 livelib_editions:
   - "https://www.livelib.ru/book/1011326237"
   - "https://www.livelib.ru/book/1005003613"
-livelib_review: "https://www.livelib.ru/review/4526516-teoriya-neveroyatnostej-viktoriya-lederman"
+livelib_review: "https://www.livelib.ru/review/4526516"
 ---
 
 ## Рецензия

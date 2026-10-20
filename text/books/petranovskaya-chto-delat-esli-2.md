@@ -1,5 +1,5 @@
 ---
-title: "Что делать если… 2\\. Продолжение полюбившейся и очень полезной книги"
+title: "Что делать если… 2. Продолжение полюбившейся и очень полезной книги"
 author: Людмила Петрановская
 tags:
   - book
@@ -8,7 +8,7 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1003212127"
 livelib_editions:
   - "https://www.livelib.ru/book/1000777860"
-livelib_review: "https://www.livelib.ru/review/4201003-chto-delat-esli-2-prodolzhenie-polyubivshejsya-i-ochen-poleznoj-knigi-lyudmila-petranovskaya"
+livelib_review: "https://www.livelib.ru/review/4201003"
 ---
 
 ## Рецензия

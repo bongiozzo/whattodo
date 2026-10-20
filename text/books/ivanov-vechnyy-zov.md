@@ -9,32 +9,32 @@ livelib_book: "https://www.livelib.ru/book/1000524641"
 
 > Все люди вместе живут. Да поврозь часто думают. В этом все и горюшко на земле. Весь корень тут. ^quote_1
 
-livelib: https://www.livelib.ru/quote/639319
+— [LiveLib](https://www.livelib.ru/quote/639319)
 
 > Чего боюсь? Только одного - своей совести. ^quote_2
 
-livelib: https://www.livelib.ru/quote/629809
+— [LiveLib](https://www.livelib.ru/quote/629809)
 
 > Деньги вещь серьезная. За нее и глупость купить можно. ^quote_3
 
-livelib: https://www.livelib.ru/quote/668845
+— [LiveLib](https://www.livelib.ru/quote/668845)
 
 > Строя самое высоконравственное общество, мы допускаем самые безнравственные вещи... ^quote_4
 
-livelib: https://www.livelib.ru/quote/638128
+— [LiveLib](https://www.livelib.ru/quote/638128)
 
 > Постепенно, шаг за шагом, мы вытравим историческую память у всех людей. А с народом, лишенным такой памяти, можно делать что угодно. Народ, переставший гордиться прошлым, забывший прошлое, не будет понимать и настоящего. ^quote_5
 
-livelib: https://www.livelib.ru/quote/640653
+— [LiveLib](https://www.livelib.ru/quote/640653)
 
 > Эта толпа сделала то, что они называют революцией... ^quote_6
 
-livelib: https://www.livelib.ru/quote/640651
+— [LiveLib](https://www.livelib.ru/quote/640651)
 
 > Туда ведь, за край жизни, заглядывать страшно, там можно многое увидеть. ^quote_7
 
-livelib: https://www.livelib.ru/quote/614777
+— [LiveLib](https://www.livelib.ru/quote/614777)
 
 > Кто духом слаб, тот выше задирает нос - он носом тянется туда, куда душою не дорос... ^quote_8
 
-livelib: https://www.livelib.ru/quote/42320353
+— [LiveLib](https://www.livelib.ru/quote/42320353)

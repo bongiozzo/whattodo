@@ -29,8 +29,9 @@ from pathlib import Path
 
 BULLET = re.compile(r"^- (?P<body>.*\S)\s*$")
 LINK = re.compile(r"\[(?P<name>[^\]]*)\]\((https?://(?:www\.)?livelib\.ru/(?P<kind>book|work|review)/(?P<id>\d+)[^)]*)\)")
-# /work/ ids that live in no book note: they are the note of a whole work
 WORK_ID_TO_SLUG = {
+    # /work/<id> -> slug заметки: только те work-id, которых нет в frontmatter
+    # (ссылка библиографии ведёт на страницу сочинения, а заметка — на издание)
     "1008288064": "andreev-model-kolichestvennoy-otsenki-urovnya-schastya",
     "1001474484": "vayl-rodnaya-rech",
 }
@@ -99,19 +100,26 @@ def note_index(books_dir: Path) -> tuple[dict, dict]:
 
 
 def resolve(link: dict, books_dir: Path) -> str | None:
-    """Ссылка строки -> slug заметки: mapping, затем review/, затем book/work id."""
+    """Ссылка строки -> slug заметки: mapping, затем review/, затем book/work id.
+
+    Ссылки вида /review/<id> разрешаются ПО ID ОТЗЫВА: отзыв принадлежит
+    определённому изданию, поэтому такой id надёжнее — он находит заметку даже
+    когда ссылка ведёт на сборник/другое издание. Вещественные ссылки
+    (/book/, /work/) разрешаются по id издания, work-lias — по таблице.
+    """
     if link.get("slug"):
         return link["slug"]
     books, reviews = note_index(Path(books_dir))
     if link["review_id"] and link["review_id"] in reviews:
         return reviews[link["review_id"]][0]
-    if link["book_id"]:
-        if link["book_id"] in books:
-            return books[link["book_id"]][0]
-        if link["kind"] == "work" and link["book_id"] in WORK_ID_TO_SLUG:
-            return WORK_ID_TO_SLUG[link["book_id"]]
-    if link["kind"] == "work" and link["review_id"] in WORK_ID_TO_SLUG:
-        return WORK_ID_TO_SLUG[link["review_id"]]
+    if link["book_id"] and link["book_id"] in books:
+        return books[link["book_id"]][0]
+    # id ссылки не живёт ни в одной заметке: единственный честный способ
+    # связать /work/<id> с заметкой — явная таблица (её отсутствие = не разрешено)
+    if link["kind"] == "work":
+        for candidate in (link["book_id"], link["review_id"]):
+            if candidate in WORK_ID_TO_SLUG:
+                return WORK_ID_TO_SLUG[candidate]
     return None
 
 

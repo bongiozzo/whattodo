@@ -6,7 +6,7 @@ tags:
 my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1002524734"
-livelib_review: "https://www.livelib.ru/review/2985526-iskusstvo-lyubit-erih-fromm"
+livelib_review: "https://www.livelib.ru/review/2985526"
 ---
 
 ## Рецензия

@@ -10,44 +10,44 @@ livelib_book: "https://www.livelib.ru/book/1000410280"
 > - Откройте ваш секрет молодости, Ирэн.
 > - Люди, которые не живут, прекрасно сохраняются. ^quote_1
 
-livelib: https://www.livelib.ru/quote/100018
+— [LiveLib](https://www.livelib.ru/quote/100018)
 
 > От единственных детей ждут слишком многого. Пока переделаешь все, чего от тебя ждут, успеешь умереть. ^quote_2
 
-livelib: https://www.livelib.ru/quote/102038
+— [LiveLib](https://www.livelib.ru/quote/102038)
 
 > Смотреть сверу вниз — явный признак того, что ты ниже других. ^quote_3
 
-livelib: https://www.livelib.ru/quote/126233
+— [LiveLib](https://www.livelib.ru/quote/126233)
 
 > Вернейший способ заставить человека выведать худшее - это держать его в неведении. ^quote_4
 
-livelib: https://www.livelib.ru/quote/166876
+— [LiveLib](https://www.livelib.ru/quote/166876)
 
 > Смерть чем плоха? Уходишь, а то, что любил, остаётся. ^quote_5
 
-livelib: https://www.livelib.ru/quote/138426
+— [LiveLib](https://www.livelib.ru/quote/138426)
 
 > По тому, какие человек курит сигары и каких композиторов любит, можно узнать, из чего соткана его душа. ^quote_6
 
-livelib: https://www.livelib.ru/quote/97120
+— [LiveLib](https://www.livelib.ru/quote/97120)
 
 > Чувства гибнут, когда швыряешься ими на ветер. ^quote_7
 
-livelib: https://www.livelib.ru/quote/126230
+— [LiveLib](https://www.livelib.ru/quote/126230)
 
 > «Жизнь никогда не складывается, как в книжках» ^quote_8
 
-livelib: https://www.livelib.ru/quote/807784
+— [LiveLib](https://www.livelib.ru/quote/807784)
 
 > До чего непонятная книга — человеческое лицо! Целые страницы заполнены какими-то личными мыслями, интересами, планами, фантазиями, страстями, надеждами и страхами. И вдруг бац! Налетает смерть и смахивает человека, как муху со стены, и никто не узнает, как работал этот маленький скрытый механизм, для чего он был создан, чему служил. Никто не скажет, хорош или плох был этот механизм. ^quote_9
 
-livelib: https://www.livelib.ru/quote/126228
+— [LiveLib](https://www.livelib.ru/quote/126228)
 
 > Женщины - даже самые лучшие - всегда как-то действуют на нервы, если только, конечно, ими не восхищаешься. ^quote_10
 
-livelib: https://www.livelib.ru/quote/69882
+— [LiveLib](https://www.livelib.ru/quote/69882)
 
 > Какой же смысл в [вашей] работе, если вы в нее не верите? ^quote_11
 
-livelib: https://www.livelib.ru/quote/266821
+— [LiveLib](https://www.livelib.ru/quote/266821)

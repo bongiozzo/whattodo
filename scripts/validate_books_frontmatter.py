@@ -8,6 +8,10 @@ Contract:
   line when it contains ':', '#', leading/trailing spaces, or starts with
   a special YAML char; inner double quotes must be escaped
 - `title` values must ALWAYS be double-quoted (uniform rule)
+- `livelib_book` / `livelib_review` values must be the SHORT canonical form
+  https://www.livelib.ru/book/<digits> and
+  https://www.livelib.ru/review/<digits>: a slug tail changes with the title
+  while the numeric id redirects forever
 
 Usage: python3 scripts/validate_books_frontmatter.py [books_dir]
 Exit code 0 = all pass; prints FAIL lines otherwise.
@@ -20,6 +24,11 @@ from pathlib import Path
 import yaml
 
 SPECIAL_START = set("!&*?|>%@`{}[]>,\"'")
+
+# frontmatter livelib links must be the short canonical /kind/<digits> form
+LINK_KINDS = {"livelib_book": "book", "livelib_review": "review"}
+CANONICAL = {k: re.compile(rf"^https://www\.livelib\.ru/{v}/\d+$")
+             for k, v in LINK_KINDS.items()}
 
 FAILS = []
 
@@ -55,6 +64,15 @@ def check_quoting(path, key, raw, must_quote_always):
         fail(path, f"{key}: invalid quoting/escapes in {raw!r}")
 
 
+def check_link_form(path, key, value):
+    """livelib_book/livelib_review must be https://www.livelib.ru/<kind>/<digits>."""
+    if key not in LINK_KINDS or not isinstance(value, str):
+        return
+    if not CANONICAL[key].match(value):
+        fail(path, f"{key}: must be the short canonical form "
+                  f"https://www.livelib.ru/{LINK_KINDS[key]}/<digits>, got {value!r}")
+
+
 def validate_file(path: Path) -> dict:
     text = path.read_text(encoding="utf-8")
     lines = text.split("\n")
@@ -81,6 +99,9 @@ def validate_file(path: Path) -> dict:
             continue
         key = line.split(":", 1)[0].strip()
         check_quoting(path, key, raw, must_quote_always=(key == "title"))
+    for key in LINK_KINDS:
+        if key in data:
+            check_link_form(path, key, data[key])
     return data
 
 

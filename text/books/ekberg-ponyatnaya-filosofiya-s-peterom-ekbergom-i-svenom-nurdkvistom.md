@@ -6,7 +6,7 @@ tags:
 my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1002968521"
-livelib_review: "https://www.livelib.ru/review/4050400-ponyatnaya-filosofiya-s-peterom-ekbergom-i-svenom-nurdkvistom-peter-ekberg"
+livelib_review: "https://www.livelib.ru/review/4050400"
 ---
 
 ## Рецензия

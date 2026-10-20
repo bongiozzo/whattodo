@@ -9,20 +9,20 @@ livelib_book: "https://www.livelib.ru/book/1007502808"
 
 > Сделать что-то для других — высшее проявление эгоизма. ^quote_1
 
-livelib: https://www.livelib.ru/quote/45759439
+— [LiveLib](https://www.livelib.ru/quote/45759439)
 
 > Самый надежный способ обменять чувство удовлетворенности на деньги — купить что-то для другого. ^quote_2
 
-livelib: https://www.livelib.ru/quote/45759436
+— [LiveLib](https://www.livelib.ru/quote/45759436)
 
 > «Сравнение — это конец счастья и начало недовольства», — писал Сёрен Кьеркегор. ^quote_3
 
-livelib: https://www.livelib.ru/quote/45759415
+— [LiveLib](https://www.livelib.ru/quote/45759415)
 
 > Тот, кто всю жизнь обрушивается на себя с беспощадной самокритикой, предполагая, что так он продвинется в жизни, на самом деле закапывает глубже собственную силу. ^quote_4
 
-livelib: https://www.livelib.ru/quote/45636688
+— [LiveLib](https://www.livelib.ru/quote/45636688)
 
 > Скука - это сигнал, призванный вернуть нас на правильный путь. Она действует как корректор в голове, помогая нам осознать, когда наши действия не способствуют продвижению вперед ^quote_5
 
-livelib: https://www.livelib.ru/quote/47841139
+— [LiveLib](https://www.livelib.ru/quote/47841139)

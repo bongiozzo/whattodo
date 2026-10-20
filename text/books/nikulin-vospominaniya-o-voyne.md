@@ -8,7 +8,7 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1002095486"
 livelib_editions:
   - "https://www.livelib.ru/book/1001564201"
-livelib_review: "https://www.livelib.ru/review/2998678-vospominaniya-o-vojne-nikolaj-nikulin"
+livelib_review: "https://www.livelib.ru/review/2998678"
 ---
 
 ## Рецензия
@@ -31,8 +31,8 @@ livelib_review: "https://www.livelib.ru/review/2998678-vospominaniya-o-vojne-nik
 
 > Если бы немцы заполнили наши штабы шпионами, а войска диверсантами, если бы было массовое предательство и враги разработали бы детальный план развала нашей армии, они не достигли бы того эффекта, который был результатом идиотизма, тупости, безответственности начальства и беспомощной покорности солдат. ^quote_1
 
-livelib: https://www.livelib.ru/quote/44063515
+— [LiveLib](https://www.livelib.ru/quote/44063515)
 
 > Пройдя через город, мы вышли на Труворово городище, поглядели с холма от Никольской церкви и ахнули! Весь мир расстилался перед нами. После гнилых погостьинских болот, после трехлетнего ползания по траншейной грязи здесь открылась такая ширь, такие просторы, что дух захватывало. До сих пор не могу забыть это первое знакомство с Изборском… ^quote_2
 
-livelib: https://www.livelib.ru/quote/45396796
+— [LiveLib](https://www.livelib.ru/quote/45396796)

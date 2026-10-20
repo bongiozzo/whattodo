@@ -6,7 +6,7 @@ tags:
 my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1007575387"
-livelib_review: "https://www.livelib.ru/review/3035584-doroga-georgij-babat"
+livelib_review: "https://www.livelib.ru/review/3035584"
 ---
 
 ## Рецензия

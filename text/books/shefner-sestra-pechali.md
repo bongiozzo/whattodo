@@ -12,4 +12,4 @@ livelib_editions:
 
 > Хорошо бы сразу за все отбояться, чтобы потом уже ничего не бояться. А лучше — с самого начала ничего не бояться. ^quote_1
 
-livelib: https://www.livelib.ru/quote/42447638
+— [LiveLib](https://www.livelib.ru/quote/42447638)

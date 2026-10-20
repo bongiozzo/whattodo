@@ -10,15 +10,15 @@ livelib_book: "https://www.livelib.ru/book/1007684998"
 
 > Лучшие книги, понял он, говорят тебе то, что ты уже сам знаешь. ^quote_1
 
-livelib: https://www.livelib.ru/quote/101556
+— [LiveLib](https://www.livelib.ru/quote/101556)
 
 > Кто управляет прошлом, – гласит партийный лозунг, – тот управляет будущем; кто управляет настоящим, тот управляет прошлом. ^quote_2
 
-livelib: https://www.livelib.ru/quote/46667539
+— [LiveLib](https://www.livelib.ru/quote/46667539)
 
 > Свобода — это возможность сказать, что дважды два — четыре. ^quote_3
 
-livelib: https://www.livelib.ru/quote/111717
+— [LiveLib](https://www.livelib.ru/quote/111717)
 
 > Кто управляет прошлым, тот управляет будущим; кто управляет настоящим, тот управляет прошлым.
 >
@@ -27,13 +27,13 @@ livelib: https://www.livelib.ru/quote/111717
 >
 > Лучшие книги говорят тебе то, что ты уже сам знаешь. ^quote_4
 
-livelib: https://www.livelib.ru/quote/127675
+— [LiveLib](https://www.livelib.ru/quote/127675)
 
 > Кто управляет прошлым, тот управляет будущим;
 > кто управляет настоящим, тот управляет прошлым... ^quote_5
 
-livelib: https://www.livelib.ru/quote/451719
+— [LiveLib](https://www.livelib.ru/quote/451719)
 
 > "Люди могут быть счастливы лишь при условии, что они не считают счастье целью жизни". ^quote_6
 
-livelib: https://www.livelib.ru/quote/42434395
+— [LiveLib](https://www.livelib.ru/quote/42434395)

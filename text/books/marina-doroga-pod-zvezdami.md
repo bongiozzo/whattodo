@@ -6,7 +6,7 @@ tags:
 my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1008703420"
-livelib_review: "https://www.livelib.ru/review/3603013-doroga-pod-zvezdami-o-chem-mne-povedal-malenkij-prints-kazarina-marina"
+livelib_review: "https://www.livelib.ru/review/3603013"
 ---
 
 ## Рецензия

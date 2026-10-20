@@ -6,7 +6,7 @@ tags:
 my_mark: 4
 status: read
 livelib_book: "https://www.livelib.ru/book/1002605124"
-livelib_review: "https://www.livelib.ru/review/3316993-priklyucheniya-majora-zvyagina-mihail-veller"
+livelib_review: "https://www.livelib.ru/review/3316993"
 ---
 
 ## Рецензия

@@ -6,7 +6,7 @@ tags:
 my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1008653314"
-livelib_review: "https://www.livelib.ru/review/5900392-ne-mogu-gospodi-zhit-bez-tebya-kniga-o-molitve-mitropolit-antonij-surozhskij"
+livelib_review: "https://www.livelib.ru/review/5900392"
 ---
 
 ## Рецензия
@@ -29,4 +29,4 @@ https://azbyka.ru/otechnik/Antonij_Surozhskij/
 
 > Выберите какую-нибудь молитву и сделайте её программой жизни — и вы увидите, что эта молитва никогда не наскучит, никогда не потускнеет, потому что изо дня в день она будет оттачиваться, сама жизнь будет придавать ей остроту. ^quote_1
 
-livelib: https://www.livelib.ru/quote/48970867
+— [LiveLib](https://www.livelib.ru/quote/48970867)

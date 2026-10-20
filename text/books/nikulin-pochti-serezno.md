@@ -6,7 +6,7 @@ tags:
 my_mark: 4
 status: read
 livelib_book: "https://www.livelib.ru/book/1003208154"
-livelib_review: "https://www.livelib.ru/review/2997154-pochti-serezno-yurij-nikulin"
+livelib_review: "https://www.livelib.ru/review/2997154"
 ---
 
 ## Рецензия
@@ -31,4 +31,4 @@ livelib_review: "https://www.livelib.ru/review/2997154-pochti-serezno-yurij-niku
 
 > Летом 1944 года мы остановились в городе Изборске. Под этим городом мы с группой разведчиков чуть не по-гибли. А получилось так. Ефим Лейбович, я и еще трое наших разведчиков ехали на полуторке. В машине — катушки с кабелем для связи и остальное наше боевое имущество. Немцы, как нам сказали, отсюда драпанули, и мы спокойно ехали по дороге. Правда, мы видели, что по обочинам лежат люди и усиленно машут нам руками. Мы на них не обратили особого внимания. Въехали в одну деревню, остановились в центре и тут поняли: в деревне-то стоят немцы. ^quote_1
 
-livelib: https://www.livelib.ru/quote/45396811
+— [LiveLib](https://www.livelib.ru/quote/45396811)

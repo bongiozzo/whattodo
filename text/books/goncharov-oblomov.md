@@ -10,4 +10,4 @@ livelib_book: "https://www.livelib.ru/book/1010783591"
 
 > - Глядишь, кажется, нельзя и жить на белом свете, а выпьешь - можно жить! - утешался он. ^quote_1
 
-livelib: https://www.livelib.ru/quote/1257170
+— [LiveLib](https://www.livelib.ru/quote/1257170)

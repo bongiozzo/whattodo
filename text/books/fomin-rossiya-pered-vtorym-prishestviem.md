@@ -5,7 +5,7 @@ tags:
   - book
 status: unread
 livelib_book: "https://www.livelib.ru/book/1000194594"
-livelib_review: "https://www.livelib.ru/review/3060850-rossiya-pered-vtorym-prishestviem-prorochestva-russkih-svyatyh-sergej-fomin"
+livelib_review: "https://www.livelib.ru/review/3060850"
 ---
 
 ## Рецензия
@@ -38,8 +38,8 @@ livelib_review: "https://www.livelib.ru/review/3060850-rossiya-pered-vtorym-pris
 
 > «Обыкновенный народ, желая похвалить свою национальность, в самой этой похвале выражает свой национальный идеал, то, что для него лучше всего, чего он более всего желает. Так, француз говорит о прекрасной Франции и о французской славе (la belle France, la gloire du nom Francais); англичанин с любовью говорит: старая Англия (old England); немец поднимается выше и, придавая этический характер своему национальному идеалу, с гордостью говорит: die deutche Treue. Что же говорит в подобных случаях русский народ, чем он хвалит Россию? Называет ли он ее прекрасной или старой, говорит ли о русской славе или о русской честности и верности? Вы знаете, что ничего такого он не говорит, и, желая выразить свои лучшие чувства к родине, говорит о «святой Руси». Вот идеал: и не либеральный, не политический, не эстетический, даже не формально-эстетический, а идеал нравственно-религиозный» ^quote_1
 
-livelib: https://www.livelib.ru/quote/45475072
+— [LiveLib](https://www.livelib.ru/quote/45475072)
 
 > Две крайности, две пропасти погибельные — неверие и суеверие! ^quote_2
 
-livelib: https://www.livelib.ru/quote/45475090
+— [LiveLib](https://www.livelib.ru/quote/45475090)

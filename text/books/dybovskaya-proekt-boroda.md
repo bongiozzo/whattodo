@@ -6,7 +6,7 @@ tags:
 my_mark: 4
 status: read
 livelib_book: "https://www.livelib.ru/book/1017962035"
-livelib_review: "https://www.livelib.ru/review/6372058-proekt-boroda-tatyana-dybovskaya"
+livelib_review: "https://www.livelib.ru/review/6372058"
 ---
 
 ## Рецензия

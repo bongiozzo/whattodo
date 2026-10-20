@@ -14,4 +14,4 @@ livelib_book: "https://www.livelib.ru/book/1001506810"
 > В нормальных же случаях, как я убедился, добро и зло — произвольны.
 > Так что, упаси нас Бог от пространственно-временной ситуации, располагающей ко злу… ^quote_1
 
-livelib: https://www.livelib.ru/quote/1285671
+— [LiveLib](https://www.livelib.ru/quote/1285671)

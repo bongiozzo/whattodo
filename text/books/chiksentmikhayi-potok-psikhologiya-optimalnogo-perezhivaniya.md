@@ -6,17 +6,13 @@ tags:
 my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1000898799"
-livelib_review: "https://www.livelib.ru/review/3879424-potok-psihologiya-optimalnogo-perezhivaniya-mihaj-chiksentmihaji"
+livelib_review: "https://www.livelib.ru/review/3879424"
 ---
 
 ## Рецензия
 
 Книга прочитана очень давно. Настолько давно, что даже забылась важность этой книги, вошедшей в привычку и набор принципов.
 
-
-
 Стараться тратить время на созидательные занятия, вводящие в Поток.
-
-
 
 Очень желательно связать с такими занятиями свою жизнь и сделать профессией. Кажется, что по другому это можно назвать Следование Призванию.

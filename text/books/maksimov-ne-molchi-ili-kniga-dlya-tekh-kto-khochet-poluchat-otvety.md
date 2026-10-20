@@ -6,7 +6,7 @@ tags:
 my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1000323269"
-livelib_review: "https://www.livelib.ru/review/2964769-ne-molchi-ili-kniga-dlya-teh-kto-hochet-poluchat-otvety-maksimov-a"
+livelib_review: "https://www.livelib.ru/review/2964769"
 ---
 
 ## Рецензия

@@ -6,7 +6,7 @@ tags:
 my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1002908599"
-livelib_review: "https://www.livelib.ru/review/3937348-izmeryajte-samoe-vazhnoe-kak-google-intel-i-drugie-kompanii-dobivayutsya-rosta-s-pomoschyu-okr-bez-avtora"
+livelib_review: "https://www.livelib.ru/review/3937348"
 ---
 
 ## Рецензия

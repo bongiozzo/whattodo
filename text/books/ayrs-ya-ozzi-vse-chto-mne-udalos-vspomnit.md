@@ -1,12 +1,12 @@
 ---
-title: "Я \\- Оззи. Всё, что мне удалось вспомнить"
+title: "Я - Оззи. Всё, что мне удалось вспомнить"
 author: Крис Айрс, Оззи Осборн
 tags:
   - book
 my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1002797200"
-livelib_review: "https://www.livelib.ru/review/3752326-ya-ozzi-vsjo-chto-mne-udalos-vspomnit-ozzi-osborn-kris-ajrs"
+livelib_review: "https://www.livelib.ru/review/3752326"
 ---
 
 ## Рецензия

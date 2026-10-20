@@ -6,7 +6,7 @@ tags:
 my_mark: 4
 status: read
 livelib_book: "https://www.livelib.ru/book/1002692169"
-livelib_review: "https://www.livelib.ru/review/2960671-hozyain-zemli-russkoj-samoderzhavie-i-byurokratiya-v-epohu-moderna-kirill-andreevich-solovev"
+livelib_review: "https://www.livelib.ru/review/2960671"
 ---
 
 ## Рецензия
@@ -17,4 +17,4 @@ livelib_review: "https://www.livelib.ru/review/2960671-hozyain-zemli-russkoj-sam
 
 > На протяжении XIX столетия жалованье чиновничества постепенно повышалось. В первой половине XIX в. расходы на содержание государственного аппарата были на удивление малы. Например, по Министерству юстиции они приблизительно в два раза уступали французским, в три раза прусским и в четыре раза австрийским. По Министерству внутренних дел они были более чем в два раза меньше австрийских, приблизительно в четыре раза меньше французских и в пять раз меньше прусских. ^quote_1
 
-livelib: https://www.livelib.ru/quote/45998923
+— [LiveLib](https://www.livelib.ru/quote/45998923)

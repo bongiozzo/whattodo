@@ -13,8 +13,8 @@ livelib_editions:
 
 > Самая хорошая работа - это высокооплачиваемое хобби. ^quote_1
 
-livelib: https://www.livelib.ru/quote/47208539
+— [LiveLib](https://www.livelib.ru/quote/47208539)
 
 > Человек умирает тогда, когда перестаёт меняться, а похороны - просто формальность. ^quote_2
 
-livelib: https://www.livelib.ru/quote/47208530
+— [LiveLib](https://www.livelib.ru/quote/47208530)

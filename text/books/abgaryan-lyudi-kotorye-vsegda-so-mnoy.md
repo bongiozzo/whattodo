@@ -9,24 +9,24 @@ livelib_book: "https://www.livelib.ru/book/1000889391"
 
 > “детство – самое совершенное состояние души – всех любишь, ни на кого не держишь зла.” ^quote_1
 
-livelib: https://www.livelib.ru/quote/799961
+— [LiveLib](https://www.livelib.ru/quote/799961)
 
 > “Ты во всем ищешь правду, дочка. Отпусти. Есть вещи, которые нужно воспринимать как данность. Проще смириться.” ^quote_2
 
-livelib: https://www.livelib.ru/quote/715396
+— [LiveLib](https://www.livelib.ru/quote/715396)
 
 > Дома не любят одиночества и, оставшись без людского тепла, стремительно дряхлеют и разрушаются. ^quote_3
 
-livelib: https://www.livelib.ru/quote/878548
+— [LiveLib](https://www.livelib.ru/quote/878548)
 
 > “Кофе – это удовольствие, Тамар. А пить нужно с удовольствием. Чтобы было потом что вспоминать.” ^quote_4
 
-livelib: https://www.livelib.ru/quote/799606
+— [LiveLib](https://www.livelib.ru/quote/799606)
 
 > По молодости и по глупости никто в Бога не верит, и лишь к старости люди понимают, что всю жизнь, даже не зная того, постоянно вели внутренние разговоры с Ним. ^quote_5
 
-livelib: https://www.livelib.ru/quote/746565
+— [LiveLib](https://www.livelib.ru/quote/746565)
 
 > Ты ведь знаешь, когда я тебя обнимаю, у меня продлевается жизнь. ^quote_6
 
-livelib: https://www.livelib.ru/quote/43929688
+— [LiveLib](https://www.livelib.ru/quote/43929688)

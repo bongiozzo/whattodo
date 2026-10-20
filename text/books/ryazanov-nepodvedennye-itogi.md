@@ -6,7 +6,7 @@ tags:
 my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1000356027"
-livelib_review: "https://www.livelib.ru/review/5220355-nepodvedennye-itogi-eldar-ryazanov"
+livelib_review: "https://www.livelib.ru/review/5220355"
 ---
 
 ## Рецензия
