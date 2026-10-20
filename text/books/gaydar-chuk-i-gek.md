@@ -1,5 +1,5 @@
 ---
-title: Чук и Гек
+title: "Чук и Гек"
 author: Аркадий Гайдар
 tags:
   - book

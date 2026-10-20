@@ -1,5 +1,5 @@
 ---
-title: Морфий
+title: "Морфий"
 author: Михаил Булгаков
 tags:
   - book

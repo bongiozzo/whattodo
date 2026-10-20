@@ -1,5 +1,5 @@
 ---
-title: Лунная пыль
+title: "Лунная пыль"
 author: Артур Кларк
 tags:
   - book

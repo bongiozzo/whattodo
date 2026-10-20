@@ -1,6 +1,6 @@
 ---
-title: Политика
-author: Аристотель 
+title: "Политика"
+author: "Аристотель"
 tags:
   - book
 status: none

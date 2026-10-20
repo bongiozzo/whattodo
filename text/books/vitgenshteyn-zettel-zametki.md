@@ -1,5 +1,5 @@
 ---
-title: Zettel. Заметки
+title: "Zettel. Заметки"
 author: Людвиг Витгенштейн
 tags:
   - book

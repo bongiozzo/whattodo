@@ -1,5 +1,5 @@
 ---
-title: Маугли
+title: "Маугли"
 author: Редьярд Киплинг
 tags:
   - book

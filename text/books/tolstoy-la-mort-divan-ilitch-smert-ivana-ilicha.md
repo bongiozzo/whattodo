@@ -1,5 +1,5 @@
 ---
-title: La Mort d'Ivan Ilitch / Смерть Ивана Ильича
+title: "La Mort d'Ivan Ilitch / Смерть Ивана Ильича"
 author: Лев Толстой
 tags:
   - book

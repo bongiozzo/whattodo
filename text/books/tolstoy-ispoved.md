@@ -1,5 +1,5 @@
 ---
-title: Исповедь
+title: "Исповедь"
 author: Лев Толстой
 tags:
   - book

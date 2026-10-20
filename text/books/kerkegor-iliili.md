@@ -1,5 +1,5 @@
 ---
-title: Или-или
+title: "Или-или"
 author: Сёрен Кьеркегор
 tags:
   - book

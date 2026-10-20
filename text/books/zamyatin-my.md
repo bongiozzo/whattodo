@@ -1,5 +1,5 @@
 ---
-title: Мы
+title: "Мы"
 author: Евгений Замятин
 tags:
   - book

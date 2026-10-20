@@ -1,5 +1,5 @@
 ---
-title: Лавр
+title: "Лавр"
 author: Евгений Водолазкин
 tags:
   - book

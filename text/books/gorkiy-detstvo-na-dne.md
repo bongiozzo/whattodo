@@ -1,5 +1,5 @@
 ---
-title: Детство. На дне
+title: "Детство. На дне"
 tags:
   - book
 my_mark: 4

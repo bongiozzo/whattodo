@@ -1,5 +1,5 @@
 ---
-title: The Samarsky Yard. Самарский двор
+title: "The Samarsky Yard. Самарский двор"
 author: Шиманн Йорн, Вейрс Отто, Рэнд Лариса Арарипе
 tags:
   - book

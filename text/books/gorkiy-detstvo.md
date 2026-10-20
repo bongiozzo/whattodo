@@ -1,5 +1,5 @@
 ---
-title: Детство
+title: "Детство"
 author: Максим Горький
 tags:
   - book

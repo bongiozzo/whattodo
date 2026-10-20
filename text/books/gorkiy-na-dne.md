@@ -1,5 +1,5 @@
 ---
-title: На дне
+title: "На дне"
 author: Максим Горький
 tags:
   - book

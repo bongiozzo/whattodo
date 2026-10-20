@@ -1,5 +1,5 @@
 ---
-title: 1984
+title: "1984"
 author: Джордж Оруэлл
 tags:
   - book

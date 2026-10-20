@@ -1,5 +1,5 @@
 ---
-title: Зона
+title: "Зона"
 author: Сергей Довлатов
 tags:
   - book

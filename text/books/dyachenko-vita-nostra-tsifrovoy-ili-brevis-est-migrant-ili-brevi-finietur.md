@@ -1,5 +1,5 @@
 ---
-title: Vita nostra. Цифровой, или Brevis est. Мигрант, или Brevi finietur
+title: "Vita nostra. Цифровой, или Brevis est. Мигрант, или Brevi finietur"
 author: Марина и Сергей Дяченко
 tags:
   - book

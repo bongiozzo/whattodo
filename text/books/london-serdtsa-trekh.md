@@ -1,5 +1,5 @@
 ---
-title: Сердца трех
+title: "Сердца трех"
 author: Джек Лондон
 tags:
   - book

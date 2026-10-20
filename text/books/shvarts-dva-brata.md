@@ -1,5 +1,5 @@
 ---
-title: Два брата
+title: "Два брата"
 author: Е. Л. Шварц
 tags:
   - book

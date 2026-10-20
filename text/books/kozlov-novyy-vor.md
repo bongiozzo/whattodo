@@ -1,5 +1,5 @@
 ---
-title: Новый вор
+title: "Новый вор"
 author: Юрий Козлов
 tags:
   - book

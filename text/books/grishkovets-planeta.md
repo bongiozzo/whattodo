@@ -1,5 +1,5 @@
 ---
-title: Планета
+title: "Планета"
 author: Евгений Гришковец
 tags:
   - book

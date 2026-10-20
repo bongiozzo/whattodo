@@ -1,5 +1,5 @@
 ---
-title: За что?
+title: "За что?"
 author: Лев Толстой
 tags:
   - book

@@ -1,5 +1,5 @@
 ---
-title: Айболит
+title: "Айболит"
 author: Корней Чуковский
 tags:
   - book

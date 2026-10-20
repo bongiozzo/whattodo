@@ -1,5 +1,5 @@
 ---
-title: Обломов
+title: "Обломов"
 author: Иван Гончаров
 tags:
   - book

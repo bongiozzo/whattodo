@@ -1,5 +1,5 @@
 ---
-title: Белый клык
+title: "Белый клык"
 author: Джек Лондон
 tags:
   - book

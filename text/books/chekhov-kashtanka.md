@@ -1,5 +1,5 @@
 ---
-title: Каштанка
+title: "Каштанка"
 author: Антон Чехов
 tags:
   - book

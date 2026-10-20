@@ -1,5 +1,5 @@
 ---
-title: Азазель
+title: "Азазель"
 author: Борис Акунин
 tags:
   - book

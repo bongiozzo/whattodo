@@ -1,5 +1,5 @@
 ---
-title: Я, робот
+title: "Я, робот"
 author: Айзек Азимов
 tags:
   - book

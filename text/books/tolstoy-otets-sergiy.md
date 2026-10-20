@@ -1,5 +1,5 @@
 ---
-title: Отец Сергий
+title: "Отец Сергий"
 author: Лев Толстой
 tags:
   - book

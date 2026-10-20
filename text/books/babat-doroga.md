@@ -1,5 +1,5 @@
 ---
-title: Дорога
+title: "Дорога"
 author: Георгий Бабат
 tags:
   - book

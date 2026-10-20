@@ -1,5 +1,5 @@
 ---
-title: Обитель
+title: "Обитель"
 author: Захар Прилепин
 tags:
   - book

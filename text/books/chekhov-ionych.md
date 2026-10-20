@@ -1,5 +1,5 @@
 ---
-title: Ионыч
+title: "Ионыч"
 author: Антон Чехов
 tags:
   - book

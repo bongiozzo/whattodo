@@ -1,5 +1,5 @@
 ---
-title: Рассказы
+title: "Рассказы"
 author: Эдгар По
 tags:
   - book

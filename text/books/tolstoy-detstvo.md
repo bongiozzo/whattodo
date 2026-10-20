@@ -1,5 +1,5 @@
 ---
-title: Детство
+title: "Детство"
 author: Лев Толстой
 tags:
   - book

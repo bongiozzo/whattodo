@@ -1,5 +1,5 @@
 ---
-title: Pro Git
+title: "Pro Git"
 author: Скотт Чакон, Бен Штрауб
 tags:
   - book

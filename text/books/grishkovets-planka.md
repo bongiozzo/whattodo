@@ -1,5 +1,5 @@
 ---
-title: Планка
+title: "Планка"
 author: Евгений Гришковец
 tags:
   - book

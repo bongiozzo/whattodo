@@ -1,5 +1,5 @@
 ---
-title: Vita Nostra
+title: "Vita Nostra"
 author: Марина и Сергей Дяченко
 tags:
   - book

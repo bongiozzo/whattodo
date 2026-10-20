@@ -1,5 +1,5 @@
 ---
-title: Война и мир
+title: "Война и мир"
 author: Лев Толстой
 tags:
   - book

@@ -1,5 +1,5 @@
 ---
-title: Идиот
+title: "Идиот"
 author: Фёдор Достоевский
 tags:
   - book

@@ -1,5 +1,5 @@
 ---
-title: Папа и море
+title: "Папа и море"
 author: Туве Янссон
 tags:
   - book

@@ -1,5 +1,5 @@
 ---
-title: Гений места
+title: "Гений места"
 author: Петр Вайль
 tags:
   - book
