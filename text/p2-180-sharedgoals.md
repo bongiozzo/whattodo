@@ -1093,7 +1093,7 @@ Harness — это обвязка и ограничения (guardrails), кот
 
 ///
 
-В январе 2026 года [open source](p2-170-opensource.md) обвязка для агента-компаньона [OpenClaw](github.com/openclaw/openclaw) становится особенно популярной.
+В январе 2026 года [open source](p2-170-opensource.md) обвязка для агента-компаньона [OpenClaw](https://github.com/openclaw/openclaw) становится особенно популярной.
 Появился прототип обвязки для целой компании, состоящей из ИИ агентов — [PaperClip](https://github.com/paperclipai/paperclip).
 Спустя пару месяцев harness Openclaw уходит на второй план и в лидеры выходит агент [Hermes](https://hermes-agent.nousresearch.com).
 
