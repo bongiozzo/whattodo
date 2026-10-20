@@ -266,7 +266,7 @@ description: Количественная модель Счастья повыш
 
 *Автор текста: [Сергей Поляков](p2-100-authors.md#bongiozzo)*
 
-Подробнее ознакомиться с моделью можно в одноимённой [книге Владимира Андреева](https://www.livelib.ru/work/1008288064-model-kolichestvennoj-otsenki-urovnya-schastya-vladimir-andreev).
+Подробнее ознакомиться с моделью можно в одноимённой [книге Владимира Андреева](https://www.livelib.ru/review/6390790).
 Она бесплатная и общедоступная.
 Автору можно задать [уточняющие вопросы в Telegram группе](https://t.me/bongiozzo_discussion).
 
