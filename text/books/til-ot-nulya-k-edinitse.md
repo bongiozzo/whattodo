@@ -7,6 +7,8 @@ my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1001008859"
 livelib_review: "https://www.livelib.ru/review/4639619"
+important: true
+weight: 25
 ---
 
 ## Рецензия

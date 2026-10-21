@@ -9,6 +9,8 @@ livelib_book: "https://www.livelib.ru/book/1000225484"
 livelib_editions:
   - "https://www.livelib.ru/book/1005482422"
 livelib_review: "https://www.livelib.ru/review/4226059"
+important: true
+weight: 5
 ---
 
 ## Рецензия

@@ -6,6 +6,8 @@ tags:
 status: reading
 livelib_book: "https://www.livelib.ru/book/1003047920"
 livelib_review: "https://www.livelib.ru/review/3575245"
+important: true
+weight: 1
 ---
 
 ## Рецензия
