@@ -5,10 +5,10 @@ tags:
   - book
 my_mark: 5
 status: read
-livelib_book: "https://www.livelib.ru/book/1002986342"
-livelib_review: "https://www.livelib.ru/review/3938821"
 important: true
 weight: 36
+livelib_book: "https://www.livelib.ru/book/1002986342"
+livelib_review: "https://www.livelib.ru/review/3938821"
 ---
 
 ## Рецензия

@@ -4,9 +4,9 @@ author: Клайв Льюис
 tags:
   - book
 status: none
-livelib_book: "https://www.livelib.ru/book/1000327729"
 important: true
 weight: 13
+livelib_book: "https://www.livelib.ru/book/1000327729"
 ---
 
 > Поистине, самая верная дорога в ад - та, по которой спускаются постепенно, дорога пологая, мягкая, без внезапных поворотов, без указательных столбов. ^quote_1

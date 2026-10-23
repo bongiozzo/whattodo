@@ -5,6 +5,8 @@ tags:
   - book
 my_mark: 5
 status: read
+important: true
+weight: 11
 livelib_book: "https://www.livelib.ru/book/1000750969"
 livelib_editions:
   - "https://www.livelib.ru/book/1000458433"
@@ -14,8 +16,6 @@ livelib_editions:
   - "https://www.livelib.ru/book/1010075938"
   - "https://www.livelib.ru/book/1000736563"
 livelib_review: "https://www.livelib.ru/review/4002646"
-important: true
-weight: 11
 ---
 
 ## Рецензия
