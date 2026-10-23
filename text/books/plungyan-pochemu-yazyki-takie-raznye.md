@@ -3,7 +3,7 @@ title: "Почему языки такие разные"
 author: Владимир Плунгян
 tags:
   - book
-status: none
+status: wish
 livelib_book: "https://www.livelib.ru/book/1000465750"
 ---
 

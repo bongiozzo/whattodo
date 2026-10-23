@@ -3,7 +3,7 @@ title: "Тяжелый песок"
 author: Анатолий Рыбаков
 tags:
   - book
-status: none
+status: wish
 livelib_book: "https://www.livelib.ru/book/1000443129"
 ---
 

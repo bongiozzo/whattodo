@@ -3,7 +3,7 @@ title: "Что делает нас людьми. Как понимать сво�
 author: Леон Виндшайд
 tags:
   - book
-status: none
+status: wish
 livelib_book: "https://www.livelib.ru/book/1007502808"
 ---
 

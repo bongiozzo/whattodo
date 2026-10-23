@@ -3,7 +3,7 @@ title: "Критика практического разума"
 author: Иммануил Кант
 tags:
   - book
-status: none
+status: unread
 livelib_book: "https://www.livelib.ru/book/1000395079"
 ---
 

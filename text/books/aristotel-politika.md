@@ -3,7 +3,7 @@ title: "Политика"
 author: "Аристотель"
 tags:
   - book
-status: none
+status: wish
 livelib_book: "https://www.livelib.ru/book/1000019230"
 ---
 

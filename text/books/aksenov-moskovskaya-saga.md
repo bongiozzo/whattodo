@@ -3,7 +3,7 @@ title: "Московская сага. В 3 книгах. Книга 1. Поко
 author: Василий Аксёнов
 tags:
   - book
-status: none
+status: wish
 livelib_book: "https://www.livelib.ru/book/1000444845"
 ---
 

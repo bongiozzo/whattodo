@@ -3,7 +3,7 @@ title: "Мартиролог"
 author: Андрей Тарковский
 tags:
   - book
-status: none
+status: unread
 livelib_book: "https://www.livelib.ru/book/1000328886"
 ---
 

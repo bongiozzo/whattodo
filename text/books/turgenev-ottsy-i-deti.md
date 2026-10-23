@@ -3,7 +3,7 @@ title: "Отцы и дети"
 author: Иван Тургенев
 tags:
   - book
-status: none
+status: unread
 livelib_book: "https://www.livelib.ru/book/1012480325"
 ---
 

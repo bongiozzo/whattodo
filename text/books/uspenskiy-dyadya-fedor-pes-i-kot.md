@@ -3,7 +3,7 @@ title: "Дядя Федор, Пес и Кот"
 author: Эдуард Успенский
 tags:
   - book
-status: none
+status: read
 livelib_book: "https://www.livelib.ru/book/1000479622"
 ---
 

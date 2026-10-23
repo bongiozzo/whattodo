@@ -3,7 +3,7 @@ title: "Сдаётся внаём"
 author: Джон Голсуорси
 tags:
   - book
-status: none
+status: unread
 livelib_book: "https://www.livelib.ru/book/1000927144"
 ---
 

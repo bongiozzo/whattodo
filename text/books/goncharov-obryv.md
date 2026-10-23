@@ -3,7 +3,7 @@ title: "Обрыв"
 author: И. А. Гончаров
 tags:
   - book
-status: none
+status: unread
 livelib_book: "https://www.livelib.ru/book/1000120822"
 ---
 

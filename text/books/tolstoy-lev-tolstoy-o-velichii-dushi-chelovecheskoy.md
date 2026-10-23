@@ -3,7 +3,7 @@ title: "Лев Толстой о величии души человеческо�
 author: Лев Толстой, Михаил Орлов
 tags:
   - book
-status: none
+status: unread
 livelib_book: "https://www.livelib.ru/book/1002600387"
 ---
 

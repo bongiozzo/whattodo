@@ -3,7 +3,7 @@ title: "Вечный зов"
 author: Анатолий Иванов
 tags:
   - book
-status: none
+status: wish
 livelib_book: "https://www.livelib.ru/book/1000524641"
 ---
 

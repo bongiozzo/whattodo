@@ -3,7 +3,7 @@ title: "Афоризмы эстетика"
 author: Сёрен Кьеркегор
 tags:
   - book
-status: none
+status: unread
 livelib_book: "https://www.livelib.ru/book/1000326091"
 ---
 

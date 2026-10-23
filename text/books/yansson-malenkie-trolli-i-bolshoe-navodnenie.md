@@ -3,7 +3,7 @@ title: "Маленькие тролли и большое наводнение"
 author: Туве Янссон
 tags:
   - book
-status: none
+status: read
 livelib_book: "https://www.livelib.ru/book/1000327045"
 ---
 

@@ -3,7 +3,7 @@ title: "Мысли на каждый день"
 author: Лев Толстой
 tags:
   - book
-status: none
+status: unread
 livelib_book: "https://www.livelib.ru/book/1002611070"
 ---
 

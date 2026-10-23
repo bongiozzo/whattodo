@@ -3,7 +3,7 @@ title: "Воспоминания"
 author: А. Г. Достоевская
 tags:
   - book
-status: none
+status: unread
 livelib_book: "https://www.livelib.ru/book/1000108016"
 ---
 

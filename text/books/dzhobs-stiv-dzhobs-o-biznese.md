@@ -3,7 +3,7 @@ title: "Стив Джобс о бизнесе. 250 высказываний че
 author: Стив Джобс
 tags:
   - book
-status: none
+status: unread
 livelib_book: "https://www.livelib.ru/book/1000716658"
 ---
 

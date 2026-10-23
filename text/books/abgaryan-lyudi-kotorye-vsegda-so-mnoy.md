@@ -3,7 +3,7 @@ title: "Люди, которые всегда со мной"
 author: Наринэ Абгарян
 tags:
   - book
-status: none
+status: wish
 livelib_book: "https://www.livelib.ru/book/1000889391"
 ---
 

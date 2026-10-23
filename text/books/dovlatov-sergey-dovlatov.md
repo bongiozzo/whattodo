@@ -3,7 +3,7 @@ title: "Сергей Довлатов. Избранное"
 author: Сергей Довлатов
 tags:
   - book
-status: none
+status: read
 livelib_book: "https://www.livelib.ru/book/1000031047"
 ---
 

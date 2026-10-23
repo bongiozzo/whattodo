@@ -3,7 +3,7 @@ title: "Райский сад. Рассказы"
 author: Эрнест Хемингуэй
 tags:
   - book
-status: none
+status: unread
 livelib_book: "https://www.livelib.ru/book/1000417324"
 ---
 

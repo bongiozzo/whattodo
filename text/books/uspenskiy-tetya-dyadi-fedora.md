@@ -3,7 +3,7 @@ title: "Тётя дяди Фёдора"
 author: Эдуард Успенский
 tags:
   - book
-status: none
+status: read
 livelib_book: "https://www.livelib.ru/book/1001000090"
 ---
 

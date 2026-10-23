@@ -3,7 +3,7 @@ title: "Наслаждение и долг"
 author: Сёрен Кьеркегор
 tags:
   - book
-status: none
+status: unread
 livelib_book: "https://www.livelib.ru/book/1000470367"
 ---
 

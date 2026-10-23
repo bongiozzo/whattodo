@@ -7,7 +7,7 @@ my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1005497029"
 important: true
-weight: 15
+weight: 17
 ---
 
 > Я не собираюсь ни с кем спорить, ибо в споре рождается не истина, но гнев и томление духа ^quote_1

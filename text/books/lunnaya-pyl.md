@@ -7,7 +7,7 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000507758"
 livelib_review: "https://www.livelib.ru/review/5189677"
 important: true
-weight: 29
+weight: 32
 ---
 
 ## Рецензия
