@@ -8,5 +8,6 @@ build/
 .obsidian/
 obsidian/
 *.code-workspace
+livelib-export/
 __pycache__/
 *.pyc
