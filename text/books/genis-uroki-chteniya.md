@@ -3,7 +3,7 @@ title: "Уроки чтения. Камасутра книжника"
 author: Александр Генис
 tags:
   - book
-status: none
+status: unread
 livelib_book: "https://www.livelib.ru/book/1000714937"
 ---
 

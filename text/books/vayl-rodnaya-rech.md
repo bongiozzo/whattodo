@@ -3,7 +3,8 @@ title: "Родная речь"
 author: Петр Вайль, Александр Генис
 tags:
   - book
-status: none
+my_mark: 5
+status: read
 livelib_book: "https://www.livelib.ru/book/1010123266"
 livelib_editions:
   - "https://www.livelib.ru/book/1000204927"
