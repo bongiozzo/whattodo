@@ -1,9 +1,11 @@
 ---
-title: "Волшебник Изумрудного города"
+title: "Волшебник Изумрудного города. Все сказочные повести"
 author: Александр Волков
 tags:
   - book
-my_mark: 4
+my_mark: 5
 status: read
-livelib_book: "https://www.livelib.ru/book/1005396508"
+livelib_book: "https://www.livelib.ru/book/1006164937"
+livelib_editions:
+  - "https://www.livelib.ru/book/1005396508"
 ---

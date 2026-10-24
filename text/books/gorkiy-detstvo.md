@@ -6,4 +6,6 @@ tags:
 my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1008780553"
+livelib_editions:
+  - "https://www.livelib.ru/book/1009879834"
 ---

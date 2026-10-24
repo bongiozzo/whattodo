@@ -12,6 +12,7 @@ livelib_editions:
   - "https://www.livelib.ru/book/1000458433"
   - "https://www.livelib.ru/book/1006171915"
   - "https://www.livelib.ru/book/1000485837"
+  - "https://www.livelib.ru/book/1000738209"
   - "https://www.livelib.ru/book/1000269075"
   - "https://www.livelib.ru/book/1010075938"
   - "https://www.livelib.ru/book/1000736563"

@@ -1,11 +1,12 @@
 ---
-title: "О дивный новый мир"
+title: "О дивный новый мир. Остров"
 author: Олдос Хаксли
 tags:
   - book
-my_mark: 5
 status: read
-livelib_book: "https://www.livelib.ru/book/1004995033"
+livelib_book: "https://www.livelib.ru/book/1001267999"
+livelib_editions:
+  - "https://www.livelib.ru/book/1004995033"
 ---
 
 > — Все равно «Отелло» — хорошая вещь, «Отелло» лучше ощущальных фильмов.

@@ -8,6 +8,8 @@ status: read
 important: true
 weight: 7
 livelib_book: "https://www.livelib.ru/book/1001474484"
+livelib_editions:
+  - "https://www.livelib.ru/book/1000204927"
 livelib_review: "https://www.livelib.ru/review/6390886"
 ---
 

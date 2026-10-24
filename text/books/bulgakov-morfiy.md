@@ -8,4 +8,5 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1009033897"
 livelib_editions:
   - "https://www.livelib.ru/book/1001553077"
+  - "https://www.livelib.ru/book/1000591866"
 ---
