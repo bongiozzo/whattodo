@@ -5,12 +5,20 @@
 //                    my_mark?, author?, url? (long edition url the export
 //                    cannot supply). The // line above each entry is that
 //                    edition's title, for reading the file by eye.
-// merges          — {removed note slug: canonical note slug or id}.
-// links           — {livelib url: note slug} for urls that resolve by id
-//                    in no note.
+// merges          — {removed note slug: canonical note slug or id}. Only for a
+//                    duplicate the work relation does NOT reach (the two ids live
+//                    in separate, unrelated work components).
+// links           — {livelib url: note slug} for urls whose id no note declares:
+//                    an id the texts link but livelib files nowhere in our corpus.
+//                    An id a note declares (book, review, or livelib_editions)
+//                    needs no entry — the build maps it from the note itself.
 // external        — livelib urls that are not books (old quote pages).
 // reference-books — {edition id: {}} ; title/author come from the livelib
 //                    search API at build time (cached, offline-repeatable).
+//                    Only works that are in NO shelf list need an entry: a shelf
+//                    book already makes its own note. `url` stays where the id is
+//                    reachable only in its slug-suffixed form (off-shelf ids) —
+//                    dropping it would rewrite the edition line the note declares.
 {
   "books": {
     // Белые ночи. Бедные люди. Преступление и наказание
@@ -117,13 +125,10 @@
     "1015122040": {"weight": 6}
   },
   "merges": {
-    "petr-rodnaya-rech": "vayl-rodnaya-rech",
     "danilkin-lenin": "danilkin-lenin-pantokrator-solnechnykh-pylinok",
     "ford-moya-zhizn": "ford-moya-zhizn-moi-dostizheniya"
   },
   "links": {
-    "https://www.livelib.ru/book/1002920757": "kharari-sapiens-kratkaya-istoriya-chelovechestva",
-    "https://www.livelib.ru/book/1001474484": "vayl-rodnaya-rech",
     "https://www.livelib.ru/review/5738980": "lyuis-pisma-balamuta",
     "https://www.livelib.ru/review/5033995": "tolstoy-ispoved",
     "https://www.livelib.ru/book/1010788457": "tolstoy-detstvo",
@@ -137,10 +142,6 @@
   "reference-books": {
     // Путешествие из Петербурга в Москву
     "1002971633": {},
-    // Отцы и дети
-    "1012480325": {},
-    // Кому на Руси жить хорошо
-    "1009917349": {},
     // Что делать?
     "1007344816": {"url": "https://www.livelib.ru/book/1007344816-chto-delat-nikolaj-chernyshevskij"},
     // Сестра печали
