@@ -7,7 +7,7 @@ my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1003248852"
 livelib_editions:
-  - "https://www.livelib.ru/book/1010727563-lenin-lev-danilkin"
+  - "https://www.livelib.ru/book/1010727563"
 livelib_review: "https://www.livelib.ru/review/3272614"
 ---
 

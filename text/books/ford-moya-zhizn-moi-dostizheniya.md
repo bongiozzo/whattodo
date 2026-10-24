@@ -8,7 +8,7 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1001447196"
 livelib_editions:
   - "https://www.livelib.ru/book/1000671792"
-  - "https://www.livelib.ru/book/1009172287-moya-zhizn-moi-dostizheniya-s-sovremennymi-kommentariyami-genri-ford"
+  - "https://www.livelib.ru/book/1009172287"
 ---
 
 > Самая хорошая работа - это высокооплачиваемое хобби. ^quote_1
