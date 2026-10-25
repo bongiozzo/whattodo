@@ -3,7 +3,7 @@ title: "Моя жизнь. Мои достижения. С современны�
 author: Генри Форд
 tags:
   - book
-status: none
+status: unread
 livelib_book: "https://www.livelib.ru/book/1009172287"
 ---
 

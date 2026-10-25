@@ -186,6 +186,10 @@ epub: ## Build EPUB only
 books: ## Regenerate text/books/*.md from livelib (fresh export + curation)
 	uv run --project $(TEXT_FORGE_DIR) python -m text_forge.wtd_books_build $(CURDIR)
 
+clean-cache: ## Drop livelib crawl caches (editions/works) — next build re-reads pages from livelib
+	rm -f livelib-export/editions-cache.json livelib-export/works-cache.json
+	@echo "caches dropped — next make books re-reads edition cards/contents"
+
 site: ## Build MkDocs site + EPUB
 	MKDOCS_GIT_COMMITTERS_ENABLED=false uv run text-forge build --config mkdocs.yml
 
