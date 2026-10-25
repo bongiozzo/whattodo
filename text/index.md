@@ -112,7 +112,7 @@ DRY.
 
 Дело в том, как человек выходит из этой ситуации, — это всегда зависит только от него.
 
-[Анатолий Рыбаков](https://www.livelib.ru/quote/251353-tyazhelyj-pesok-anatolij-rybakov){ .author }
+	[Анатолий Рыбаков](https://www.livelib.ru/quote/48956314){ .author }
 
 ///
 
