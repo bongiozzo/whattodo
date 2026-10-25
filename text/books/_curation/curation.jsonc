@@ -1,154 +1,197 @@
 // Curation for text/books — one entry per livelib edition id.
 // JSONC: // and /* */ comments are stripped by load_curation() before parse.
 //
-// books            — per-edition curation: omnibus?, weight?, status?,
-//                    my_mark?, author?, url? (long edition url the export
-//                    cannot supply). The // line above each entry is that
-//                    edition's title, for reading the file by eye.
-// merges          — {removed note slug: canonical note slug or id}. Only for a
-//                    duplicate the work relation does NOT reach (the two ids live
-//                    in separate, unrelated work components).
-// links           — {livelib url: note slug} for urls whose id no note declares:
-//                    an id the texts link but livelib files nowhere in our corpus.
-//                    An id a note declares (book, review, or livelib_editions)
-//                    needs no entry — the build maps it from the note itself.
-// external        — livelib urls that are not books (old quote pages).
-// reference-books — {edition id: {}} ; title/author come from the livelib
-//                    search API at build time (cached, offline-repeatable).
-//                    Only works that are in NO shelf list need an entry: a shelf
-//                    book already makes its own note. `url` stays where the id is
-//                    reachable only in its slug-suffixed form (off-shelf ids) —
-//                    dropping it would rewrite the edition line the note declares.
+// books — per-edition curation: weight?, status?, my_mark?, author?,
+//         merges? [other edition id] — that edition's quotes/review belong to
+//         THIS note (only where livelib lists no shared work).
+// The // lines above each entry (and above each merges member) are that
+// edition's title and url, for reading the file by eye; the build reads none.
+//
+// Nothing else is stored. A work the TEXTS cite but no shelf holds needs no
+// entry: the build scans text/*.md for livelib ids and takes title/author from
+// the edition card JSON (/art-editions/{id}), cached in livelib-export/.
 {
   "books": {
-    // Белые ночи. Бедные люди. Преступление и наказание // @url:`https://www.livelib.ru/book/1000018782`
-    "1000018782": {"omnibus": true},
-    // Собачье сердце. Записки юного врача. Роковые яйца. Дьяволиада. Записки на манжетах // @url:`https://www.livelib.ru/book/1000191786`
-    "1000191786": {"omnibus": true, "author": "Михаил Булгаков"},
-    // Сказать жизни «Да»: психолог в концлагере // @url:`https://www.livelib.ru/book/1000225484`
+    // Белые ночи. Бедные люди. Преступление и наказание
+    // @url:`https://www.livelib.ru/book/1000018782`
+    "1000018782": {},
+    // Собачье сердце. Записки юного врача. Роковые яйца. Дьяволиада. Записки на манжетах
+    // @url:`https://www.livelib.ru/book/1000191786`
+    "1000191786": {"author": "Михаил Булгаков"},
+    // Сказать жизни «Да»: психолог в концлагере
+    // @url:`https://www.livelib.ru/book/1000225484`
     "1000225484": {"weight": 5},
-    // Достоевский без глянца // @url:`https://www.livelib.ru/book/1000284779`
+    // Достоевский без глянца
+    // @url:`https://www.livelib.ru/book/1000284779`
     "1000284779": {"status": "read"},
-    // Записки из Мертвого дома. Записки // @url:`https://www.livelib.ru/book/1000290230`
-    "1000290230": {"omnibus": true},
-    // Одиссея капитана Блада. Хроника капитана Блада. // @url:`https://www.livelib.ru/book/1000317489`
-    "1000317489": {"omnibus": true},
-    // Письма Баламута // @url:`https://www.livelib.ru/book/1000327729`
-    "1000327729": {"weight": 13, "status": "read", "my_mark": 5},
-    // Ленин. Пантократор солнечных пылинок // @url:`https://www.livelib.ru/book/1003248852`
+    // Записки из Мертвого дома. Записки
+    // @url:`https://www.livelib.ru/book/1000290230`
+    "1000290230": {},
+    // Одиссея капитана Блада. Хроника капитана Блада.
+    // @url:`https://www.livelib.ru/book/1000317489`
+    "1000317489": {},
+    // Письма Баламута
+    // @url:`https://www.livelib.ru/book/1000327729`
+    "1000327729": {"weight": 13, "status": "read", "my_mark": 5,
+                   // Письма Баламута. Баламут предлагает тост (сборник)
+                   // @url:`https://www.livelib.ru/book/1008888709`
+                   "merges": [1008888709]},
+    // Ленин. Пантократор солнечных пылинок
+    // @url:`https://www.livelib.ru/book/1003248852`
+    // Ленин
+    // @url:`https://www.livelib.ru/book/1010727563`
     "1003248852": {"merges": [1010727563]},
-    // Моя жизнь, мои достижения // @url:`https://www.livelib.ru/book/1001447196`
+    // Моя жизнь, мои достижения
+    // @url:`https://www.livelib.ru/book/1001447196`
+    // Моя жизнь
+    // @url:`https://www.livelib.ru/book/1009172287`
     "1001447196": {"merges": [1009172287]},
-    // Пять языков любви // @url:`https://www.livelib.ru/book/1000440333`
+    // Пять языков любви
+    // @url:`https://www.livelib.ru/book/1000440333`
     "1000440333": {"weight": 20},
-    // Приключения Незнайки и его друзей. Незнайка в Солнечном городе. Незнайка на Луне // @url:`https://www.livelib.ru/book/1000442474`
-    "1000442474": {"omnibus": true},
-    // Лунная пыль. Я, робот. Стальные пещеры // @url:`https://www.livelib.ru/book/1000507758`
-    "1000507758": {"omnibus": true, "weight": 32},
-    // Лекции по истории древней церкви. В 4 томах. Том 1-2 // @url:`https://www.livelib.ru/book/1000540454`
+    // Приключения Незнайки и его друзей. Незнайка в Солнечном городе. Незнайка на Луне
+    // @url:`https://www.livelib.ru/book/1000442474`
+    "1000442474": {},
+    // Лунная пыль. Я, робот. Стальные пещеры
+    // @url:`https://www.livelib.ru/book/1000507758`
+    "1000507758": {"weight": 32},
+    // Лекции по истории древней церкви. В 4 томах. Том 1-2
+    // @url:`https://www.livelib.ru/book/1000540454`
     "1000540454": {"weight": 25},
-    // Машина времени. Война миров // @url:`https://www.livelib.ru/book/1000574030`
-    "1000574030": {"omnibus": true},
-    // Морфий. Записки юного врача // @url:`https://www.livelib.ru/book/1000591866`
-    "1000591866": {"omnibus": true},
-    // Уроки чтения. Камасутра книжника // @url:`https://www.livelib.ru/book/1000714937`
+    // Машина времени. Война миров
+    // @url:`https://www.livelib.ru/book/1000574030`
+    "1000574030": {},
+    // Морфий. Записки юного врача
+    // @url:`https://www.livelib.ru/book/1000591866`
+    "1000591866": {},
+    // Уроки чтения. Камасутра книжника
+    // @url:`https://www.livelib.ru/book/1000714937`
     "1000714937": {"status": "unread"},
-    // Мастер и Маргарита // @url:`https://www.livelib.ru/book/1000750969`
+    // Мастер и Маргарита
+    // @url:`https://www.livelib.ru/book/1000750969`
     "1000750969": {"weight": 11},
-    // Занимательная наркология // @url:`https://www.livelib.ru/book/1000820821`
+    // Занимательная наркология
+    // @url:`https://www.livelib.ru/book/1000820821`
     "1000820821": {"weight": 35},
-    // Поток. Психология оптимального переживания // @url:`https://www.livelib.ru/book/1000898799`
+    // Поток. Психология оптимального переживания
+    // @url:`https://www.livelib.ru/book/1000898799`
     "1000898799": {"weight": 23},
-    // От нуля к единице. Как создать стартап, который изменит будущее // @url:`https://www.livelib.ru/book/1001008859`
+    // От нуля к единице. Как создать стартап, который изменит будущее
+    // @url:`https://www.livelib.ru/book/1001008859`
     "1001008859": {"weight": 28},
-    // Русская модель управления // @url:`https://www.livelib.ru/book/1001118351`
+    // Русская модель управления
+    // @url:`https://www.livelib.ru/book/1001118351`
     "1001118351": {"weight": 24},
-    // Стратегическая психология глобализации. Психология человеческого капитала // @url:`https://www.livelib.ru/book/1001128870`
+    // Стратегическая психология глобализации. Психология человеческого капитала
+    // @url:`https://www.livelib.ru/book/1001128870`
     "1001128870": {"weight": 3, "author": "Александр Юрьев"},
-    // Искусственный интеллект. Возможные пути, опасности и стратегии // @url:`https://www.livelib.ru/book/1001459912`
+    // Искусственный интеллект. Возможные пути, опасности и стратегии
+    // @url:`https://www.livelib.ru/book/1001459912`
     "1001459912": {"weight": 33},
-    // Родная речь. Уроки изящной словесности // @url:`https://www.livelib.ru/book/1001474484`
+    // Родная речь. Уроки изящной словесности
+    // @url:`https://www.livelib.ru/book/1001474484`
     "1001474484": {"weight": 7},
-    // Белый клык. Сказание о Кише // @url:`https://www.livelib.ru/book/1001477191`
-    "1001477191": {"omnibus": true},
-    // Сила Настоящего. Руководство к духовному пробуждению // @url:`https://www.livelib.ru/book/1001530607`
+    // Белый клык. Сказание о Кише
+    // @url:`https://www.livelib.ru/book/1001477191`
+    "1001477191": {},
+    // Сила Настоящего. Руководство к духовному пробуждению
+    // @url:`https://www.livelib.ru/book/1001530607`
     "1001530607": {"weight": 31},
-    // Искусство любить // @url:`https://www.livelib.ru/book/1002524734`
+    // Искусство любить
+    // @url:`https://www.livelib.ru/book/1002524734`
     "1002524734": {"weight": 19},
-    // Театр отчаяния. Отчаянный театр // @url:`https://www.livelib.ru/book/1002802989`
+    // Театр отчаяния. Отчаянный театр
+    // @url:`https://www.livelib.ru/book/1002802989`
     "1002802989": {"weight": 21},
-    // Цель. Процесс непрерывного улучшения // @url:`https://www.livelib.ru/book/1002805092`
+    // Цель. Процесс непрерывного улучшения
+    // @url:`https://www.livelib.ru/book/1002805092`
     "1002805092": {"weight": 29},
-    // Измеряйте самое важное. Как Google, Intel и другие компании добиваются роста с помощью OKR // @url:`https://www.livelib.ru/book/1002908599`
+    // Измеряйте самое важное. Как Google, Intel и другие компании добиваются роста с помощью OKR
+    // @url:`https://www.livelib.ru/book/1002908599`
     "1002908599": {"weight": 30},
-    // Перед восходом солнца // @url:`https://www.livelib.ru/book/1002954997`
+    // Перед восходом солнца
+    // @url:`https://www.livelib.ru/book/1002954997`
     "1002954997": {"weight": 4},
-    // Понятная философия с Петером Экбергом и Свеном Нурдквистом // @url:`https://www.livelib.ru/book/1002968521`
+    // Понятная философия с Петером Экбергом и Свеном Нурдквистом
+    // @url:`https://www.livelib.ru/book/1002968521`
     "1002968521": {"weight": 9},
-    // Не оторваться! Почему наш мозг любит всё новое и так ли это хорошо в эпоху интернета // @url:`https://www.livelib.ru/book/1002986342`
+    // Не оторваться! Почему наш мозг любит всё новое и так ли это хорошо в эпоху интернета
+    // @url:`https://www.livelib.ru/book/1002986342`
     "1002986342": {"weight": 36},
-    // Моменты счастья // @url:`https://www.livelib.ru/book/1003047920`
+    // Моменты счастья
+    // @url:`https://www.livelib.ru/book/1003047920`
     "1003047920": {"weight": 1},
-    // Семь навыков высокоэффективных людей // @url:`https://www.livelib.ru/book/1003055575`
+    // Семь навыков высокоэффективных людей
+    // @url:`https://www.livelib.ru/book/1003055575`
     "1003055575": {"weight": 27},
-    // \"Несвятые святые\" и другие рассказы // @url:`https://www.livelib.ru/book/1003089869`
+    // \"Несвятые святые\" и другие рассказы
+    // @url:`https://www.livelib.ru/book/1003089869`
     "1003089869": {"weight": 14},
-    // Что делать если… 2. Продолжение полюбившейся и очень полезной книги // @url:`https://www.livelib.ru/book/1003212127`
+    // Что делать если… 2. Продолжение полюбившейся и очень полезной книги
+    // @url:`https://www.livelib.ru/book/1003212127`
     "1003212127": {"weight": 10},
-    // Письма к молодому поэту. Письма о Сезанне // @url:`https://www.livelib.ru/book/1003633686`
-    "1003633686": {"omnibus": true},
-    // Лавр // @url:`https://www.livelib.ru/book/1003814566`
+    // Письма к молодому поэту. Письма о Сезанне
+    // @url:`https://www.livelib.ru/book/1003633686`
+    "1003633686": {},
+    // Лавр
+    // @url:`https://www.livelib.ru/book/1003814566`
     "1003814566": {"weight": 16},
-    // Оправдание Острова // @url:`https://www.livelib.ru/book/1005497029`
+    // Оправдание Острова
+    // @url:`https://www.livelib.ru/book/1005497029`
     "1005497029": {"weight": 17},
-    // Я чувствую… Что? Гид по эмоциональному интеллекту в инфографике // @url:`https://www.livelib.ru/book/1007109778`
+    // Я чувствую… Что? Гид по эмоциональному интеллекту в инфографике
+    // @url:`https://www.livelib.ru/book/1007109778`
     "1007109778": {"author": "Мария Горина, Антипова Юлия, Марченко Елена"},
-    // Итальянские маршруты Андрея Тарковского // @url:`https://www.livelib.ru/book/1007442097`
+    // Итальянские маршруты Андрея Тарковского
+    // @url:`https://www.livelib.ru/book/1007442097`
     "1007442097": {"weight": 22},
-    // Чагин // @url:`https://www.livelib.ru/book/1007537842`
+    // Чагин
+    // @url:`https://www.livelib.ru/book/1007537842`
     "1007537842": {"weight": 18},
-    // Ключевые идеи книги: Умри по нулям. Как получить максимум от своих денег и жизни. Билл Перкинс // @url:`https://www.livelib.ru/book/1007548783`
+    // Ключевые идеи книги: Умри по нулям. Как получить максимум от своих денег и жизни. Билл Перкинс
+    // @url:`https://www.livelib.ru/book/1007548783`
     "1007548783": {"author": "Bill Perkins"},
-    // Модель количественной оценки уровня счастья // @url:`https://www.livelib.ru/book/1008288064`
+    // Модель количественной оценки уровня счастья
+    // @url:`https://www.livelib.ru/book/1008288064`
     "1008288064": {"weight": 2},
-    // Не могу, Господи, жить без Тебя! Книга о молитве // @url:`https://www.livelib.ru/book/1008653314`
+    // Не могу, Господи, жить без Тебя! Книга о молитве
+    // @url:`https://www.livelib.ru/book/1008653314`
     "1008653314": {"weight": 15},
-    // Сила франчайзинга. Как компания РОББО построила топовую международную EdTech-франшизу // @url:`https://www.livelib.ru/book/1008738226`
+    // Сила франчайзинга. Как компания РОББО построила топовую международную EdTech-франшизу
+    // @url:`https://www.livelib.ru/book/1008738226`
     "1008738226": {"weight": 34},
-    // Детство. На дне // @url:`https://www.livelib.ru/book/1009879834`
-    "1009879834": {"omnibus": true},
-    // Ветер Радости. Три дня в лунном свете // @url:`https://www.livelib.ru/book/1009919548`
+    // Детство. На дне
+    // @url:`https://www.livelib.ru/book/1009879834`
+    "1009879834": {},
+    // Ветер Радости. Три дня в лунном свете
+    // @url:`https://www.livelib.ru/book/1009919548`
     "1009919548": {"weight": 12},
-    // Родная речь // @url:`https://www.livelib.ru/book/1010123266`
+    // Родная речь
+    // @url:`https://www.livelib.ru/book/1010123266`
     "1010123266": {"status": "read", "my_mark": 5},
-    // Поражение Запада // @url:`https://www.livelib.ru/book/1010580743`
+    // Поражение Запада
+    // @url:`https://www.livelib.ru/book/1010580743`
     "1010580743": {"weight": 26},
-    // Знакомьтесь, литература! От античности до Шекспира // @url:`https://www.livelib.ru/book/1012482743`
+    // Знакомьтесь, литература! От античности до Шекспира
+    // @url:`https://www.livelib.ru/book/1012482743`
     "1012482743": {"weight": 8},
-    // Sapiens. Краткая история человечества Харари Юваль Ной // @url:`https://www.livelib.ru/book/1015122040`
-    "1015122040": {"weight": 6}
-  },
-  "links": {
-    "https://www.livelib.ru/review/5738980": "lyuis-pisma-balamuta",
-    "https://www.livelib.ru/review/5033995": "tolstoy-ispoved",
-    "https://www.livelib.ru/book/1010788457": "tolstoy-detstvo",
-    "https://www.livelib.ru/book/1009002958": "zamyatin-my"
-  },
-  "external": [
-    "https://www.livelib.ru/quote/251353-tyazhelyj-pesok-anatolij-rybakov",
-    "https://www.livelib.ru/quote/47351690-shum-vremeni-dzhulian-patrik-barns",
-    "https://www.livelib.ru/quote/47413148-iskusstvennyj-intellekt-vozmozhnye-puti-opasnosti-i-strategii-nik-bostrom"
-  ],
-  "reference-books": {
-    // Путешествие из Петербурга в Москву // @url:`https://www.livelib.ru/book/1002971633`
-    "1002971633": {},
-    // Что делать? // @url:`https://www.livelib.ru/book/1007344816`
-    "1007344816": {"url": "https://www.livelib.ru/book/1007344816-chto-delat-nikolaj-chernyshevskij"},
-    // Сестра печали // @url:`https://www.livelib.ru/book/1006147069`
-    "1006147069": {"url": "https://www.livelib.ru/book/1006147069-sestra-pechali-vadim-shefner"},
-    // Се человек и дело его... // @url:`https://www.livelib.ru/book/1013622664`
-    "1013622664": {},
-    // Драйв. Что на самом деле нас мотивирует // @url:`https://www.livelib.ru/book/1000898792`
-    "1000898792": {}
+    // Sapiens. Краткая история человечества Харари Юваль Ной
+    // @url:`https://www.livelib.ru/book/1015122040`
+    "1015122040": {"weight": 6},
+    // Исповедь
+    // @url:`https://www.livelib.ru/book/1000986416`
+    // Исповедь
+    // @url:`https://www.livelib.ru/book/1004631490`
+    "1000986416": {"merges": [1004631490]},
+    // Детство
+    // @url:`https://www.livelib.ru/book/1000965163`
+    // Детство
+    // @url:`https://www.livelib.ru/book/1010788457`
+    "1000965163": {"merges": [1010788457]},
+    // Мы. Бич Божий. Сказки. Повести и рассказы
+    // @url:`https://www.livelib.ru/book/1000320425`
+    // Мы
+    // @url:`https://www.livelib.ru/book/1009002958`
+    "1000320425": {"merges": [1009002958]}
   }
 }

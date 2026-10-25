@@ -5,9 +5,7 @@ tags:
   - book
 my_mark: 5
 status: read
-important: true
-weight: 11
-livelib_book: "https://www.livelib.ru/book/1000750969"
+livelib_book: "https://www.livelib.ru/book/1000736563"
 livelib_editions:
   - "https://www.livelib.ru/book/1000458433"
   - "https://www.livelib.ru/book/1006171915"
@@ -15,7 +13,7 @@ livelib_editions:
   - "https://www.livelib.ru/book/1000738209"
   - "https://www.livelib.ru/book/1000269075"
   - "https://www.livelib.ru/book/1010075938"
-  - "https://www.livelib.ru/book/1000736563"
+  - "https://www.livelib.ru/book/1000750969"
 livelib_review: "https://www.livelib.ru/review/4002646"
 ---
 

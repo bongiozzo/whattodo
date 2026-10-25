@@ -3,11 +3,10 @@ title: "Сестра печали"
 author: Вадим Шефнер
 tags:
   - book
-my_mark: 5
 status: read
-livelib_book: "https://www.livelib.ru/book/1003165146"
+livelib_book: "https://www.livelib.ru/book/1006147069"
 livelib_editions:
-  - "https://www.livelib.ru/book/1006147069"
+  - "https://www.livelib.ru/book/1003165146"
 ---
 
 > Хорошо бы сразу за все отбояться, чтобы потом уже ничего не бояться. А лучше — с самого начала ничего не бояться. ^quote_1
