@@ -1,15 +1,16 @@
 ---
 title: "Письма Баламута"
-author: Клайв Льюис
+author: Клайв С. Льюис
 tags:
   - book
 my_mark: 5
 status: read
 important: true
 weight: 13
-livelib_book: "https://www.livelib.ru/book/1000327729"
+livelib_book: "https://www.livelib.ru/book/1001290747"
 livelib_editions:
   - "https://www.livelib.ru/book/1008888709"
+  - "https://www.livelib.ru/book/1000327729"
 livelib_review: "https://www.livelib.ru/review/5738980"
 ---
 
