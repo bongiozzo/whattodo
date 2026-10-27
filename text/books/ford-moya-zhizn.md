@@ -5,6 +5,8 @@ tags:
   - book
 status: unread
 livelib_book: "https://www.livelib.ru/book/1009172287"
+livelib_editions:
+  - "https://www.livelib.ru/book/1001447196"
 ---
 
 > Самая хорошая работа - это высокооплачиваемое хобби. ^quote_1
