@@ -3,7 +3,7 @@ title: "Достоевский без глянца"
 author: Павел Фокин
 tags:
   - book
-status: none
+status: read
 livelib_book: "https://www.livelib.ru/book/1012618807"
 livelib_editions:
   - "https://www.livelib.ru/book/1000284779"
