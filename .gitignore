@@ -11,3 +11,5 @@ obsidian/
 livelib-export/
 __pycache__/
 *.pyc
+livelib-export/
+_curation/link-map.json
