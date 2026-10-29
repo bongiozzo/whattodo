@@ -12,4 +12,4 @@ livelib-export/
 __pycache__/
 *.pyc
 livelib-export/
-_curation/link-map.json
+text/books/_curation/link-map.json
