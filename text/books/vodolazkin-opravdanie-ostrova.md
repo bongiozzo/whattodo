@@ -5,8 +5,6 @@ tags:
   - book
 my_mark: 5
 status: read
-important: true
-weight: 17
 livelib_book: "https://www.livelib.ru/book/1005497029"
 ---
 

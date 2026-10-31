@@ -340,7 +340,7 @@ Facebook, который бурно рос как канал коммуника�
 
 Перешёл дорогу на красный свет — получай минус в карму, причём с публичным порицанием на ближайшем рекламном дисплее.
 Не заплатил налог вовремя — получай ещё.
-Такой [технократический рациональный подход в управлении обществом](p2-110-system.md#god_and_science) начал описывать в начале прошлого столетия [петербуржец Замятин в антиутопии «Мы»](https://www.livelib.ru/book/1009002958-my-evgenij-zamyatin).
+Такой [технократический рациональный подход в управлении обществом](p2-110-system.md#god_and_science) начал описывать в начале прошлого столетия [петербуржец Замятин в антиутопии «Мы»](/books/zamyatin-my/).
 И уже потом подхватили Хаксли и Оруэлл.
 А наши современники сняли сериал «Чёрное зеркало».
 
@@ -352,7 +352,7 @@ Facebook, который бурно рос как канал коммуника�
 Мы без конца проклинаем товарища Сталина, и, разумеется, за дело.
 И все же я хочу спросить — кто написал четыре миллиона доносов?
 
-[Сергей Довлатов](https://www.livelib.ru/quote/1285671-zona-sergej-dovlatov){ .author }
+[Сергей Довлатов](/books/dovlatov-zona/#quote_1){ .author }
 
 ///
 
@@ -404,7 +404,7 @@ Facebook, который бурно рос как канал коммуника�
 
 Чем безнадёжнее цель, тем глубже эмоции.
 
-[Сергей Довлатов](https://www.livelib.ru/quote/42395907-sergej-dovlatov-izbrannoe-sergej-dovlatov){ .author }
+[Сергей Довлатов](/books/dovlatov-sergey-dovlatov/#quote_1){ .author }
 
 ///
 
@@ -417,12 +417,12 @@ Facebook, который бурно рос как канал коммуника�
 
 Вместо того, чтобы стремиться стать многогранной посредственностью и считать себя «гармонично развитой личностью», человек с твёрдыми убеждениями ставит перед собой цель — и стремится к ней.
 
-[Питер Тиль](https://www.livelib.ru/quote/47529455-ot-nulya-k-edinitse-kak-sozdat-startap-kotoryj-izmenit-buduschee){ .author }
+[Питер Тиль](/books/til-ot-nulya-k-edinitse/#quote_9){ .author }
 
 ///
 
 Такое планирование, как упражнение, многие коучи называют обязательным и ключевым.
-У [Кови было выделено еженедельное планирование целей и времени](https://www.livelib.ru/review/3792199-sem-navykov-vysokoeffektivnyh-lyudej).
+У [Кови было выделено еженедельное планирование целей и времени](/books/kovi-sem-navykov-vysokoeffektivnykh-lyudey/).
 
 Можно даже найти количественные показатели в [научном исследовании](https://scholar.dominican.edu/psychology-faculty-conference-presentations/3/) — участники, которые выписывали цели и отчитывались о них, достигли ~76% запланированных результатов, против ~43% у тех, кто только размышлял.
 
@@ -484,7 +484,7 @@ Facebook, который бурно рос как канал коммуника�
 
 Сравнение — это конец счастья и начало недовольства.
 
-[Сёрен Кьеркегор](https://www.livelib.ru/quote/45759415-chto-delaet-nas-lyudmi-kak-ponimat-svoi-emotsii-i-prinimat-ih-leon-vindshajd){ .author }
+[Сёрен Кьеркегор](/books/vindshayd-chto-delaet-nas-lyudmi/#quote_3){ .author }
 
 ///
 
@@ -492,7 +492,7 @@ Facebook, который бурно рос как канал коммуника�
 
 Социальные сети стоило бы избавить от количественных показателей, чтобы люди не использовали их для социального сравнения и постоянного целеполагания.
 
-[Адам Алтер](https://www.livelib.ru/quote/46659634-ne-otorvatsya-pochemu-nash-mozg-lyubit-vsjo-novoe-i-tak-li-eto-horosho-v-epohu-interneta-adam-alter){ .author }
+[Адам Алтер](/books/alter-ne-otorvatsya/#quote_16){ .author }
 
 ///
 
@@ -513,7 +513,7 @@ Facebook, который бурно рос как канал коммуника�
 Лишенная фальшивой популярности и наукообразного названия, геймификация — это эффективный способ построения любого опыта.
 Игры прекрасно снимают боль, делают скучное увлекательным и поощряют благотворительность, делая её интересной и приятной.
 
-[Адам Алтер](https://www.livelib.ru/quote/46659631-ne-otorvatsya-pochemu-nash-mozg-lyubit-vsjo-novoe-i-tak-li-eto-horosho-v-epohu-interneta-adam-alter){ .author }
+[Адам Алтер](/books/alter-ne-otorvatsya/#quote_15){ .author }
 
 ///
 
@@ -989,7 +989,7 @@ Telegram или Pacer используют яркие анимационные �
 Поэтому я хотел бы определить этот термин заново.
 И, как Вы говорили, Космос содержит космос (или физиосферу), жизнь (или биосферу), душу или разум (ноосферу) и божественное (теосферу или область божественного).
 
-[Кен Уилбер](https://www.livelib.ru/quote/46881931-kratkaya-istoriya-vsego-ken-uilber){ .author }
+[Кен Уилбер](/books/uilber-kratkaya-istoriya-vsego/#quote_1){ .author }
 
 ///
 
@@ -1027,7 +1027,7 @@ Telegram или Pacer используют яркие анимационные �
 
 Идея заключается в другом: создать некое объединение индивидуумов, организованных таким образом, чтобы эта появившаяся сеть по своему развитию могла бы достигнуть сверхинтеллектуального уровня — сеть, которую в следующей главе мы назовём «коллективный сверхразум».
 
-[Ник Бостром](https://www.livelib.ru/quote/47413148-iskusstvennyj-intellekt-vozmozhnye-puti-opasnosti-i-strategii-nik-bostrom){ .author }
+[Ник Бостром](/books/bostrom-iskusstvennyy-intellekt/#quote_22){ .author }
 
 ///
 
@@ -1038,7 +1038,7 @@ Telegram или Pacer используют яркие анимационные �
 
 Неотъемлемым свойством суперорганизма будет не то, что он состоит из копий одного «родителя», а то, что все индивидуальные агенты внутри него полностью посвятили себя **Общей Цели**.
 
-[Ник Бостром](https://www.livelib.ru/quote/47484347-iskusstvennyj-intellekt-vozmozhnye-puti-opasnosti-i-strategii-nik-bostrom){ .author }
+[Ник Бостром](/books/bostrom-iskusstvennyy-intellekt/#quote_15){ .author }
 
 ///
 
@@ -1089,7 +1089,7 @@ Harness — это обвязка и ограничения (guardrails), кот
 
 Религия несёт ровно ту же функцию необходимого ограничения человеческих страстей для обеспечения баланса.
 
-Корень слова Религия от глагола ligare (cвязывать), о чем [аккуратно напоминает авторитетный историк христианской церкви Василий Васильевич Болотов](https://www.livelib.ru/quote/47809153-lektsii-po-istorii-drevnej-tserkvi-v-4-tomah-tom-12-vasilij-bolotov).
+Корень слова Религия от глагола ligare (cвязывать), о чем [аккуратно напоминает авторитетный историк христианской церкви Василий Васильевич Болотов](/books/bolotov-lektsii-po-istorii-drevney-tserkvi/#quote_10).
 
 ///
 
@@ -1286,7 +1286,7 @@ Most Valuable Product (MVP) для предстоящей жизни бок о �
 
 Понимание смысла такого высказывания — экзаменационный вопрос для общественного деятеля, намеренного повлиять на поведение масс людей.
 
-[Александр Иванович Юрьев](https://www.livelib.ru/quote/46946284-strategicheskaya-psihologiya-globalizatsii-psihologiya-chelovecheskogo-kapitala){ .author }
+[Александр Иванович Юрьев](/books/yurev-strategicheskaya-psikhologiya-globalizatsii/#quote_6){ .author }
 
 ///
 
