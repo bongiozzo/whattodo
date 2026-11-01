@@ -6,3 +6,5 @@ tags:
 status: read
 livelib_book: "https://www.livelib.ru/book/1000118106"
 ---
+
+**Антон Чехов** — [LiveLib](https://www.livelib.ru/book/1000118106) — прочитано

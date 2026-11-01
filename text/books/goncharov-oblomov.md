@@ -8,6 +8,10 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1010783591"
 ---
 
+**Иван Гончаров** — [LiveLib](https://www.livelib.ru/book/1010783591) — недочитано
+
+## Цитаты
+
 > - Глядишь, кажется, нельзя и жить на белом свете, а выпьешь - можно жить! - утешался он. ^quote_1
 
 — [LiveLib](https://www.livelib.ru/quote/1257170)

@@ -6,3 +6,5 @@ tags:
 status: unread
 livelib_book: "https://www.livelib.ru/book/1002507514"
 ---
+
+**Фрэнсин Джей** — [LiveLib](https://www.livelib.ru/book/1002507514) — недочитано

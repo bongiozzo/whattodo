@@ -7,3 +7,5 @@ my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1000188488"
 ---
+
+**Мария Бок** — [LiveLib](https://www.livelib.ru/book/1000188488) — прочитано

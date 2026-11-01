@@ -9,6 +9,8 @@ livelib_book: "https://www.livelib.ru/book/1001502890"
 livelib_review: "https://www.livelib.ru/review/5457061"
 ---
 
+**Скотт Чакон, Бен Штрауб** — [LiveLib](https://www.livelib.ru/book/1001502890) — прочитано
+
 ## Рецензия
 
 Книга доступна в открытом исходнике, что полностью соответствует концепции Open Source.
@@ -38,6 +40,8 @@ livelib_review: "https://www.livelib.ru/review/5457061"
 И эта книга на простых примерах с картинками объясняет все нюансы.
 
 Начиная с краткой истории эволюционного появления Git.
+
+## Цитаты
 
 > Do not rebase commits that exist outside your repository and that people may have based work on.
 >

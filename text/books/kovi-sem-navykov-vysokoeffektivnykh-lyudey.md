@@ -11,6 +11,8 @@ livelib_book: "https://www.livelib.ru/book/1003055575"
 livelib_review: "https://www.livelib.ru/review/3792199"
 ---
 
+**Стивен Р. Кови, Шон Кови** — [LiveLib](https://www.livelib.ru/book/1003055575) — прочитано
+
 ## Рецензия
 
 Я как-то договорился с собой о простом правиле в оценке книг и фильмов.

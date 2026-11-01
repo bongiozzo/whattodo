@@ -6,3 +6,5 @@ tags:
 status: wish
 livelib_book: "https://www.livelib.ru/book/1010908241"
 ---
+
+**Мирча Элиаде** — [LiveLib](https://www.livelib.ru/book/1010908241) — хочу прочитать

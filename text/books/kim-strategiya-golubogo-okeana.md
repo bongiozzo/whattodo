@@ -6,3 +6,5 @@ tags:
 status: unread
 livelib_book: "https://www.livelib.ru/book/1002013677"
 ---
+
+**Чан Ким, Рене Моборн** — [LiveLib](https://www.livelib.ru/book/1002013677) — недочитано

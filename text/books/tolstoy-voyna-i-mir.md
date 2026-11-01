@@ -7,6 +7,10 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1012705174"
 ---
 
+**Лев Толстой** — [LiveLib](https://www.livelib.ru/book/1012705174) — недочитано
+
+## Цитаты
+
 > Нет величия там, где нет простоты, добра и правды. ^quote_1
 
 — [LiveLib](https://www.livelib.ru/quote/222034)

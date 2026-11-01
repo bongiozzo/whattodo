@@ -11,6 +11,8 @@ livelib_book: "https://www.livelib.ru/book/1008738226"
 livelib_review: "https://www.livelib.ru/review/3682591"
 ---
 
+**П. Фролов** — [LiveLib](https://www.livelib.ru/book/1008738226) — прочитано
+
 ## Рецензия
 
 О книге узнал с презентации, где ее автор рассказывал, что написал ее, чтобы не рассказывать по множеству раз одно и то же.

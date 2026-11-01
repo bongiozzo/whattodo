@@ -7,6 +7,10 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1000524641"
 ---
 
+**Анатолий Иванов** — [LiveLib](https://www.livelib.ru/book/1000524641) — хочу прочитать
+
+## Цитаты
+
 > Все люди вместе живут. Да поврозь часто думают. В этом все и горюшко на земле. Весь корень тут. ^quote_1
 
 — [LiveLib](https://www.livelib.ru/quote/639319)

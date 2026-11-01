@@ -6,3 +6,5 @@ tags:
 status: wish
 livelib_book: "https://www.livelib.ru/book/1001237904"
 ---
+
+**Виктор Пелевин** — [LiveLib](https://www.livelib.ru/book/1001237904) — хочу прочитать

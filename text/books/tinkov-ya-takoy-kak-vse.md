@@ -8,6 +8,10 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1004822173"
 ---
 
+**Олег Тиньков** — [LiveLib](https://www.livelib.ru/book/1004822173) — прочитано
+
+## Цитаты
+
 > Меня часто спрашивают: "С чего ты начинал?" С воли к жизни. Жить я хотел, а не прозябать. ^quote_1
 
 — [LiveLib](https://www.livelib.ru/quote/60533)

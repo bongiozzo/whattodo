@@ -6,3 +6,5 @@ tags:
 status: wish
 livelib_book: "https://www.livelib.ru/book/1005704698"
 ---
+
+**Иван Бунин** — [LiveLib](https://www.livelib.ru/book/1005704698) — хочу прочитать

@@ -6,3 +6,5 @@ tags:
 status: wish
 livelib_book: "https://www.livelib.ru/book/1001213772"
 ---
+
+**Ричард Бах** — [LiveLib](https://www.livelib.ru/book/1001213772) — хочу прочитать

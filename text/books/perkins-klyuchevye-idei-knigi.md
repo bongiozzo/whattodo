@@ -9,6 +9,8 @@ livelib_book: "https://www.livelib.ru/book/1007548783"
 livelib_review: "https://www.livelib.ru/review/3640978"
 ---
 
+**Bill Perkins** — [LiveLib](https://www.livelib.ru/book/1007548783) — прочитано
+
 ## Рецензия
 
 Книга может быть полезна людям, для которых Успешность человека прежде всего оценивается его Финансовым Капиталом.

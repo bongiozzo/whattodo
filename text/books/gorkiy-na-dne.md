@@ -9,3 +9,5 @@ livelib_book: "https://www.livelib.ru/book/1009916668"
 livelib_editions:
   - "https://www.livelib.ru/book/1007528788"
 ---
+
+**Максим Горький** — [LiveLib](https://www.livelib.ru/book/1009916668) — прочитано

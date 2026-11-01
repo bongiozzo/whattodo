@@ -7,3 +7,5 @@ my_mark: 3
 status: unread
 livelib_book: "https://www.livelib.ru/book/1002096938"
 ---
+
+**Джидду Кришнамурти** — [LiveLib](https://www.livelib.ru/book/1002096938) — недочитано

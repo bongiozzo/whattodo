@@ -7,6 +7,10 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1001000090"
 ---
 
+**Эдуард Успенский** — [LiveLib](https://www.livelib.ru/book/1001000090) — прочитано
+
+## Цитаты
+
 > В детстве она много читала. Поэтому не вышла замуж. ^quote_1
 
 — [LiveLib](https://www.livelib.ru/quote/43705576)

@@ -7,3 +7,5 @@ my_mark: 4
 status: read
 livelib_book: "https://www.livelib.ru/book/1001280701"
 ---
+
+**Борис Минаев** — [LiveLib](https://www.livelib.ru/book/1001280701) — прочитано

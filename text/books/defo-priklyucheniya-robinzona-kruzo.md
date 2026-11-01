@@ -7,3 +7,5 @@ my_mark: 3
 status: read
 livelib_book: "https://www.livelib.ru/book/1003010899"
 ---
+
+**Даниэль Дефо** — [LiveLib](https://www.livelib.ru/book/1003010899) — прочитано

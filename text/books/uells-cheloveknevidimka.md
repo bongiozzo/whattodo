@@ -9,3 +9,5 @@ livelib_book: "https://www.livelib.ru/book/1000104859"
 livelib_editions:
   - "https://www.livelib.ru/book/1010170867"
 ---
+
+**Герберт Уэллс** — [LiveLib](https://www.livelib.ru/book/1000104859) — прочитано

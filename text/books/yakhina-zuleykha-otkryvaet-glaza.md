@@ -6,3 +6,5 @@ tags:
 status: wish
 livelib_book: "https://www.livelib.ru/book/1003944406"
 ---
+
+**Гузель Яхина** — [LiveLib](https://www.livelib.ru/book/1003944406) — хочу прочитать

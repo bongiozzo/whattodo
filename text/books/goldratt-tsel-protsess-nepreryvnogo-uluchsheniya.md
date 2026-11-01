@@ -11,6 +11,8 @@ livelib_book: "https://www.livelib.ru/book/1002805092"
 livelib_review: "https://www.livelib.ru/review/3908812"
 ---
 
+**Элияху Голдратт, Джефф Кокс** — [LiveLib](https://www.livelib.ru/book/1002805092) — прочитано
+
 ## Рецензия
 
 Книгу прочел, кажется, лет 15 назад.

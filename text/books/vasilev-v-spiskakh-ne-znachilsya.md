@@ -7,3 +7,5 @@ my_mark: 4
 status: read
 livelib_book: "https://www.livelib.ru/book/1001236893"
 ---
+
+**Борис Васильев** — [LiveLib](https://www.livelib.ru/book/1001236893) — прочитано

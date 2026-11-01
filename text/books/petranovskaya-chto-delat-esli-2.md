@@ -13,6 +13,8 @@ livelib_editions:
 livelib_review: "https://www.livelib.ru/review/4201003"
 ---
 
+**Людмила Петрановская** — [LiveLib](https://www.livelib.ru/book/1003212127) — прочитано
+
 ## Рецензия
 
 Название книги очень нравится :-) Нацелено на практику. И совсем не Чернышевский.

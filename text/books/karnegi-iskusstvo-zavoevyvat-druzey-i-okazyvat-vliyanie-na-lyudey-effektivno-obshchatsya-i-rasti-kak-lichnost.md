@@ -7,3 +7,5 @@ my_mark: 3
 status: read
 livelib_book: "https://www.livelib.ru/book/1005883771"
 ---
+
+**Дейл Карнеги** — [LiveLib](https://www.livelib.ru/book/1005883771) — прочитано

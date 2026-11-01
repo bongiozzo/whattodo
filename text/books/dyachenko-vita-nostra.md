@@ -10,3 +10,5 @@ livelib_editions:
   - "https://www.livelib.ru/book/1000264203"
   - "https://www.livelib.ru/book/1001110808"
 ---
+
+**Марина и Сергей Дяченко** — [LiveLib](https://www.livelib.ru/book/1002994111) — прочитано

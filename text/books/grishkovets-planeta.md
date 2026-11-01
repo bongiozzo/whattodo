@@ -7,3 +7,5 @@ my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1000311149"
 ---
+
+**Евгений Гришковец** — [LiveLib](https://www.livelib.ru/book/1000311149) — прочитано

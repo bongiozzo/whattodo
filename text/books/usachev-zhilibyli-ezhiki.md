@@ -7,3 +7,5 @@ my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1002949893"
 ---
+
+**Андрей Усачёв** — [LiveLib](https://www.livelib.ru/book/1002949893) — прочитано

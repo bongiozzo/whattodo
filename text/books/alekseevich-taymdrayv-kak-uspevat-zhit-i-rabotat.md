@@ -7,3 +7,5 @@ my_mark: 3
 status: read
 livelib_book: "https://www.livelib.ru/book/1002817505"
 ---
+
+**Архангельский Глеб Алексеевич** — [LiveLib](https://www.livelib.ru/book/1002817505) — прочитано

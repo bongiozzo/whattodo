@@ -7,3 +7,5 @@ my_mark: 4
 status: read
 livelib_book: "https://www.livelib.ru/book/1006939180"
 ---
+
+**Сара Гэй Форден** — [LiveLib](https://www.livelib.ru/book/1006939180) — прочитано

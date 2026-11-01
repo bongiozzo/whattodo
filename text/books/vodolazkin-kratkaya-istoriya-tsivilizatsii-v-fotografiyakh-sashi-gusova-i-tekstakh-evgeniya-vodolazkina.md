@@ -7,3 +7,5 @@ my_mark: 2
 status: read
 livelib_book: "https://www.livelib.ru/book/1007095369"
 ---
+
+**Евгений Водолазкин, Саша Гусов** — [LiveLib](https://www.livelib.ru/book/1007095369) — прочитано

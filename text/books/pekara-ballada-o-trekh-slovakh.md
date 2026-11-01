@@ -9,6 +9,8 @@ livelib_book: "https://www.livelib.ru/book/1002745327"
 livelib_review: "https://www.livelib.ru/review/5726422"
 ---
 
+**Яцек Пекара** — [LiveLib](https://www.livelib.ru/book/1002745327) — прочитано
+
 ## Рецензия
 
 Произведение замечательно, прежде всего, своей краткостью.

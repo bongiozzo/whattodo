@@ -6,3 +6,5 @@ tags:
 status: read
 livelib_book: "https://www.livelib.ru/book/1011326237"
 ---
+
+**Виктория Ледерман** — [LiveLib](https://www.livelib.ru/book/1011326237) — прочитано

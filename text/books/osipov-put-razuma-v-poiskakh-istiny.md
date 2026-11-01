@@ -6,3 +6,5 @@ tags:
 status: wish
 livelib_book: "https://www.livelib.ru/book/1000469712"
 ---
+
+**Осипов А.** — [LiveLib](https://www.livelib.ru/book/1000469712) — хочу прочитать

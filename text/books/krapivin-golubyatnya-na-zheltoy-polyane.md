@@ -6,3 +6,5 @@ tags:
 status: unread
 livelib_book: "https://www.livelib.ru/book/1002607502"
 ---
+
+**Владислав Крапивин** — [LiveLib](https://www.livelib.ru/book/1002607502) — недочитано

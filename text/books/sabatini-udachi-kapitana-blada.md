@@ -7,3 +7,5 @@ my_mark: 3
 status: read
 livelib_book: "https://www.livelib.ru/book/1001604352"
 ---
+
+**Рафаэль Сабатини** — [LiveLib](https://www.livelib.ru/book/1001604352) — прочитано

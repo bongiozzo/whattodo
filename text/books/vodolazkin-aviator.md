@@ -9,3 +9,5 @@ livelib_book: "https://www.livelib.ru/book/1001511802"
 livelib_editions:
   - "https://www.livelib.ru/book/1005786340"
 ---
+
+**Евгений Водолазкин** — [LiveLib](https://www.livelib.ru/book/1001511802) — прочитано

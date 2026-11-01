@@ -17,7 +17,7 @@ description: Написание кода как нахождение в Пото
 
 Математика — царица наук.
 
-[Гаусс](https://ru.wikipedia.org/wiki/Гаусс,_Карл_Фридрих){ .author }
+[Гаусс](https://ru.wikipedia.org/wiki/Гаусс,_Карл_Фридрих){: .author }
 
 ///
 

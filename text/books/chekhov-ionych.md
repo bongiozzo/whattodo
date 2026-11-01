@@ -7,3 +7,5 @@ my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1000733939"
 ---
+
+**Антон Чехов** — [LiveLib](https://www.livelib.ru/book/1000733939) — прочитано

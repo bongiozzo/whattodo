@@ -7,6 +7,10 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1002593173"
 ---
 
+**Лира Муховицкая** — [LiveLib](https://www.livelib.ru/book/1002593173) — хочу прочитать
+
+## Цитаты
+
 > У Морозовых всё же был девиз – Любовь к России ^quote_1
 
 — [LiveLib](https://www.livelib.ru/quote/48372424)

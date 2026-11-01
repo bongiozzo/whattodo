@@ -6,3 +6,5 @@ tags:
 status: read
 livelib_book: "https://www.livelib.ru/book/1002971633"
 ---
+
+**Александр Радищев** — [LiveLib](https://www.livelib.ru/book/1002971633) — прочитано

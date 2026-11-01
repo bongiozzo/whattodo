@@ -6,3 +6,5 @@ tags:
 status: unread
 livelib_book: "https://www.livelib.ru/book/1001492575"
 ---
+
+**Харуки Мураками** — [LiveLib](https://www.livelib.ru/book/1001492575) — недочитано

@@ -7,6 +7,10 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1002729950"
 ---
 
+**Владимир Орлов** — [LiveLib](https://www.livelib.ru/book/1002729950) — недочитано
+
+## Цитаты
+
 > У них во всех бумагах и разговорах Земля так и называлась – Тот Свет, а иногда и – Тот Ещё Свет. ^quote_1
 
 — [LiveLib](https://www.livelib.ru/quote/34418)

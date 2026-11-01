@@ -7,6 +7,10 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1000889391"
 ---
 
+**Наринэ Абгарян** — [LiveLib](https://www.livelib.ru/book/1000889391) — хочу прочитать
+
+## Цитаты
+
 > “детство – самое совершенное состояние души – всех любишь, ни на кого не держишь зла.” ^quote_1
 
 — [LiveLib](https://www.livelib.ru/quote/799961)

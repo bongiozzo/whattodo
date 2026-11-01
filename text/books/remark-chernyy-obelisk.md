@@ -7,3 +7,5 @@ my_mark: 3
 status: read
 livelib_book: "https://www.livelib.ru/book/1000933347"
 ---
+
+**Эрих Мария Ремарк** — [LiveLib](https://www.livelib.ru/book/1000933347) — прочитано

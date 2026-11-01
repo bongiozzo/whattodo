@@ -6,3 +6,5 @@ tags:
 status: wish
 livelib_book: "https://www.livelib.ru/book/1002061316"
 ---
+
+**Максим Кронгауз** — [LiveLib](https://www.livelib.ru/book/1002061316) — хочу прочитать

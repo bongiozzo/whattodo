@@ -6,3 +6,5 @@ tags:
 status: unread
 livelib_book: "https://www.livelib.ru/book/1002753939"
 ---
+
+**Павел Басинский** — [LiveLib](https://www.livelib.ru/book/1002753939) — недочитано

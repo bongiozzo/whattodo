@@ -7,6 +7,10 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1000465750"
 ---
 
+**Владимир Плунгян** — [LiveLib](https://www.livelib.ru/book/1000465750) — хочу прочитать
+
+## Цитаты
+
 > Вежливость — это как раз такой замечательный способ общения, где всегда лучше пересолить, чем недосолить. ^quote_1
 
 — [LiveLib](https://www.livelib.ru/quote/1197814)

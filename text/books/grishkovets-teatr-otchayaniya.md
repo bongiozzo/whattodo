@@ -11,6 +11,8 @@ livelib_book: "https://www.livelib.ru/book/1002802989"
 livelib_review: "https://www.livelib.ru/review/3730660"
 ---
 
+**Евгений Гришковец** — [LiveLib](https://www.livelib.ru/book/1002802989) — прочитано
+
 ## Рецензия
 
 Уже и не помню, что первое увидел или прочитал у Гришковца. Наверное, "Как я съел собаку?"

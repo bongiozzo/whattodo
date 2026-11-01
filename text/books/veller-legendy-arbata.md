@@ -7,3 +7,5 @@ my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1003506224"
 ---
+
+**Михаил Веллер** — [LiveLib](https://www.livelib.ru/book/1003506224) — прочитано

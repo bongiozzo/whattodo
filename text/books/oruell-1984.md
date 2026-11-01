@@ -8,6 +8,10 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1007684998"
 ---
 
+**Джордж Оруэлл** — [LiveLib](https://www.livelib.ru/book/1007684998) — прочитано
+
+## Цитаты
+
 > Лучшие книги, понял он, говорят тебе то, что ты уже сам знаешь. ^quote_1
 
 — [LiveLib](https://www.livelib.ru/quote/101556)

@@ -7,3 +7,5 @@ my_mark: 3
 status: read
 livelib_book: "https://www.livelib.ru/book/1007101123"
 ---
+
+**Астрид Линдгрен** — [LiveLib](https://www.livelib.ru/book/1007101123) — прочитано

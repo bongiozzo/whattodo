@@ -7,6 +7,10 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000479622"
 ---
 
+**Эдуард Успенский** — [LiveLib](https://www.livelib.ru/book/1000479622) — прочитано
+
+## Цитаты
+
 > Кот Матроскин подойти к телефону  не может. Он очень занят. Он на печи лежит. ^quote_1
 
 — [LiveLib](https://www.livelib.ru/quote/256961)

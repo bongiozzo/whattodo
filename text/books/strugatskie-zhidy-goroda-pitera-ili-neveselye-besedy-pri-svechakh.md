@@ -9,3 +9,5 @@ livelib_book: "https://www.livelib.ru/book/1009830022"
 livelib_editions:
   - "https://www.livelib.ru/book/1000897620"
 ---
+
+**Аркадий и Борис Стругацкие** — [LiveLib](https://www.livelib.ru/book/1009830022) — прочитано

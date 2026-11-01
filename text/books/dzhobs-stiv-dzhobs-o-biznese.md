@@ -7,6 +7,10 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1000716658"
 ---
 
+**Стив Джобс** — [LiveLib](https://www.livelib.ru/book/1000716658) — недочитано
+
+## Цитаты
+
 > Смерть, похоже, лучшее изобретение жизни. ^quote_1
 
 — [LiveLib](https://www.livelib.ru/quote/46602979)

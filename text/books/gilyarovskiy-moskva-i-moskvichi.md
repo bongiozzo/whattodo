@@ -7,3 +7,5 @@ my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1004708560"
 ---
+
+**Владимир Гиляровский** — [LiveLib](https://www.livelib.ru/book/1004708560) — прочитано

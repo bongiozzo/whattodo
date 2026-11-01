@@ -9,6 +9,8 @@ livelib_book: "https://www.livelib.ru/book/1011652508"
 livelib_review: "https://www.livelib.ru/review/5241073"
 ---
 
+**Геральд Иванович Мацепура** — [LiveLib](https://www.livelib.ru/book/1011652508) — недочитано
+
 ## Рецензия
 
 Книга заинтересовала названием.

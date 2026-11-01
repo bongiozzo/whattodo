@@ -6,3 +6,5 @@ tags:
 status: read
 livelib_book: "https://www.livelib.ru/book/1002546572"
 ---
+
+**Сергей Юрский** — [LiveLib](https://www.livelib.ru/book/1002546572) — прочитано

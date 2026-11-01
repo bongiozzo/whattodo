@@ -7,3 +7,5 @@ my_mark: 4
 status: read
 livelib_book: "https://www.livelib.ru/book/1002305507"
 ---
+
+**Эдгар Аллан По** — [LiveLib](https://www.livelib.ru/book/1002305507) — прочитано

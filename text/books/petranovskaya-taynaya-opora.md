@@ -6,3 +6,5 @@ tags:
 status: unread
 livelib_book: "https://www.livelib.ru/book/1001111085"
 ---
+
+**Людмила Петрановская** — [LiveLib](https://www.livelib.ru/book/1001111085) — недочитано

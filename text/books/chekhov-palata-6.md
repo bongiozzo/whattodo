@@ -9,3 +9,5 @@ livelib_book: "https://www.livelib.ru/book/1000434258"
 livelib_editions:
   - "https://www.livelib.ru/book/1011110963"
 ---
+
+**Антон Чехов** — [LiveLib](https://www.livelib.ru/book/1000434258) — прочитано

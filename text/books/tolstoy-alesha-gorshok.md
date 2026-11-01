@@ -7,3 +7,5 @@ my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1009846426"
 ---
+
+**Лев Толстой** — [LiveLib](https://www.livelib.ru/book/1009846426) — прочитано

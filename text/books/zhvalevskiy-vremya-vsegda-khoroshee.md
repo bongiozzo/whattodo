@@ -6,3 +6,5 @@ tags:
 status: unread
 livelib_book: "https://www.livelib.ru/book/1008909154"
 ---
+
+**Андрей Жвалевский, Евгения Пастернак** — [LiveLib](https://www.livelib.ru/book/1008909154) — недочитано

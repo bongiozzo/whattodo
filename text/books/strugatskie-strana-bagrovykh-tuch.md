@@ -7,3 +7,5 @@ my_mark: 3
 status: read
 livelib_book: "https://www.livelib.ru/book/1004647969"
 ---
+
+**Аркадий и Борис Стругацкие** — [LiveLib](https://www.livelib.ru/book/1004647969) — прочитано

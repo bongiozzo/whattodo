@@ -7,3 +7,5 @@ my_mark: 2
 status: unread
 livelib_book: "https://www.livelib.ru/book/1000614114"
 ---
+
+**Арнольд Шварценеггер** — [LiveLib](https://www.livelib.ru/book/1000614114) — недочитано

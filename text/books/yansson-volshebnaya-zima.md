@@ -7,6 +7,10 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000038942"
 ---
 
+**Туве Янссон** — [LiveLib](https://www.livelib.ru/book/1000038942) — прочитано
+
+## Цитаты
+
 > быть может, добрые намерения - важнее результата ^quote_1
 
 — [LiveLib](https://www.livelib.ru/quote/13223)

@@ -10,3 +10,5 @@ livelib_editions:
   - "https://www.livelib.ru/book/1005966151"
   - "https://www.livelib.ru/book/1007362321"
 ---
+
+**Артур Конан Дойл** — [LiveLib](https://www.livelib.ru/book/1006766917) — прочитано

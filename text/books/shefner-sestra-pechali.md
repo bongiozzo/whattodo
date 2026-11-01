@@ -8,6 +8,10 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1003165146"
 ---
 
+**Вадим Шефнер** — [LiveLib](https://www.livelib.ru/book/1003165146) — прочитано
+
+## Цитаты
+
 > Хорошо бы сразу за все отбояться, чтобы потом уже ничего не бояться. А лучше — с самого начала ничего не бояться. ^quote_1
 
 — [LiveLib](https://www.livelib.ru/quote/42447638)

@@ -6,3 +6,5 @@ tags:
 status: read
 livelib_book: "https://www.livelib.ru/book/1000466463"
 ---
+
+**Наринэ Абгарян** — [LiveLib](https://www.livelib.ru/book/1000466463) — прочитано

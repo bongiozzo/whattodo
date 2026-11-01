@@ -7,3 +7,5 @@ my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1006734349"
 ---
+
+**Захар Прилепин** — [LiveLib](https://www.livelib.ru/book/1006734349) — прочитано

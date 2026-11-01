@@ -6,3 +6,5 @@ tags:
 status: wish
 livelib_book: "https://www.livelib.ru/book/1008984046"
 ---
+
+**Владимир Меньшов** — [LiveLib](https://www.livelib.ru/book/1008984046) — хочу прочитать

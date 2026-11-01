@@ -7,6 +7,10 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1000444845"
 ---
 
+**Василий Аксёнов** — [LiveLib](https://www.livelib.ru/book/1000444845) — хочу прочитать
+
+## Цитаты
+
 > Однако сколько голов, столько и разных путей для скорейшего достижения счастья человечества. ^quote_1
 
 — [LiveLib](https://www.livelib.ru/quote/45716146)

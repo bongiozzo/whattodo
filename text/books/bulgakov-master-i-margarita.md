@@ -18,6 +18,8 @@ livelib_editions:
 livelib_review: "https://www.livelib.ru/review/4002646"
 ---
 
+**Михаил Булгаков** — [LiveLib](https://www.livelib.ru/book/1000736563) — прочитано
+
 ## Рецензия
 
 Великим книгам оценки ставить и рецензии на них писать – странно.

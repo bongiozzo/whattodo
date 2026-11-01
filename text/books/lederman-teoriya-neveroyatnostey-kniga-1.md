@@ -11,6 +11,8 @@ livelib_editions:
 livelib_review: "https://www.livelib.ru/review/4526516"
 ---
 
+**Виктория Ледерман** — [LiveLib](https://www.livelib.ru/book/1005003613) — прочитано
+
 ## Рецензия
 
 Великолепная книга для прослушивания в машине с детьми 10-20 лет )

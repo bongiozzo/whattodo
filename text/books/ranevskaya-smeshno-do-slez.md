@@ -7,3 +7,5 @@ my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1001522638"
 ---
+
+**Раневская Ф.Г.** — [LiveLib](https://www.livelib.ru/book/1001522638) — прочитано

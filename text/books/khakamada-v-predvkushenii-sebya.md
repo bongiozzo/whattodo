@@ -6,3 +6,5 @@ tags:
 status: unread
 livelib_book: "https://www.livelib.ru/book/1013326933"
 ---
+
+**Ирина Хакамада** — [LiveLib](https://www.livelib.ru/book/1013326933) — недочитано

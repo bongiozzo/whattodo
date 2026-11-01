@@ -6,3 +6,5 @@ tags:
 status: unread
 livelib_book: "https://www.livelib.ru/book/1003972336"
 ---
+
+**Сьюзан Кейн** — [LiveLib](https://www.livelib.ru/book/1003972336) — недочитано

@@ -6,3 +6,5 @@ tags:
 status: read
 livelib_book: "https://www.livelib.ru/book/1006766836"
 ---
+
+**Жюль Верн** — [LiveLib](https://www.livelib.ru/book/1006766836) — прочитано

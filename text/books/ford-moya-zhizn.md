@@ -9,6 +9,10 @@ livelib_editions:
   - "https://www.livelib.ru/book/1001447196"
 ---
 
+**Генри Форд** — [LiveLib](https://www.livelib.ru/book/1009172287) — недочитано
+
+## Цитаты
+
 > Самая хорошая работа - это высокооплачиваемое хобби. ^quote_1
 
 — [LiveLib](https://www.livelib.ru/quote/47208539)

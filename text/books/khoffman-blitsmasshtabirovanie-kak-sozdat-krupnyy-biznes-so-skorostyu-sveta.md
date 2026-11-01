@@ -6,3 +6,5 @@ tags:
 status: wish
 livelib_book: "https://www.livelib.ru/book/1003152634"
 ---
+
+**Рид Хоффман, Крис Йе** — [LiveLib](https://www.livelib.ru/book/1003152634) — хочу прочитать

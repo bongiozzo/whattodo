@@ -8,6 +8,10 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000977005"
 ---
 
+**Наталья Перевезенцева** — [LiveLib](https://www.livelib.ru/book/1000977005) — прочитано
+
+## Цитаты
+
 > Основной девиз масонства – «memento mori». ^quote_1
 
 — [LiveLib](https://www.livelib.ru/quote/47358155)

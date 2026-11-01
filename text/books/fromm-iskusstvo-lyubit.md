@@ -11,6 +11,8 @@ livelib_book: "https://www.livelib.ru/book/1002524734"
 livelib_review: "https://www.livelib.ru/review/2985526"
 ---
 
+**Эрих Фромм** — [LiveLib](https://www.livelib.ru/book/1002524734) — прочитано
+
 ## Рецензия
 
 Книгу читал давно. Но сразу по прочтении записал её в список очень важных книг.

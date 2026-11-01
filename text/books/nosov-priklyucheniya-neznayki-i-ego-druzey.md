@@ -9,3 +9,5 @@ livelib_book: "https://www.livelib.ru/book/1000442474"
 livelib_editions:
   - "https://www.livelib.ru/book/1005648457"
 ---
+
+**Николай Носов** — [LiveLib](https://www.livelib.ru/book/1000442474) — прочитано

@@ -7,3 +7,5 @@ my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1008524209"
 ---
+
+**Александр Волков** — [LiveLib](https://www.livelib.ru/book/1008524209) — прочитано

@@ -11,6 +11,8 @@ livelib_book: "https://www.livelib.ru/book/1015122040"
 livelib_review: "https://www.livelib.ru/review/6391126"
 ---
 
+**Юваль Ной Харари** — [LiveLib](https://www.livelib.ru/book/1015122040) — недочитано
+
 ## Рецензия
 
 Слушали в машине первую часть аудиокниги — полезные мыслительные процессы в голове текст запускает.

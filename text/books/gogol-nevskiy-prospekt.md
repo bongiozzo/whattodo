@@ -7,3 +7,5 @@ my_mark: 4
 status: read
 livelib_book: "https://www.livelib.ru/book/1000962694"
 ---
+
+**Николай Гоголь** — [LiveLib](https://www.livelib.ru/book/1000962694) — прочитано

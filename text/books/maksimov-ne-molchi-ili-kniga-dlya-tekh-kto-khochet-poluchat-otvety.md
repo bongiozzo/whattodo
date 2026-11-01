@@ -9,6 +9,8 @@ livelib_book: "https://www.livelib.ru/book/1000323269"
 livelib_review: "https://www.livelib.ru/review/2964769"
 ---
 
+**Максимов А.** — [LiveLib](https://www.livelib.ru/book/1000323269) — прочитано
+
 ## Рецензия
 
 Если книга реально сподвигла тебя делать что-то иначе чем ранее - она заслуживает самой высокой оценки. На мой взгляд.

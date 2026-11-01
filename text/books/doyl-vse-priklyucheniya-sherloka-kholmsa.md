@@ -7,3 +7,5 @@ my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1001280414"
 ---
+
+**Артур Конан Дойл** — [LiveLib](https://www.livelib.ru/book/1001280414) — прочитано

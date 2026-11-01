@@ -6,3 +6,5 @@ tags:
 status: unread
 livelib_book: "https://www.livelib.ru/book/1001402105"
 ---
+
+**Лев Толстой** — [LiveLib](https://www.livelib.ru/book/1001402105) — недочитано

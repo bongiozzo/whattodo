@@ -9,6 +9,8 @@ livelib_book: "https://www.livelib.ru/book/1000356027"
 livelib_review: "https://www.livelib.ru/review/5220355"
 ---
 
+**Эльдар Рязанов** — [LiveLib](https://www.livelib.ru/book/1000356027) — прочитано
+
 ## Рецензия
 
 Неоднократно ловил себя на мысли: Невероятно! Я и не думал, что столько приходилось всего проделать, чтобы снять этот фильм!

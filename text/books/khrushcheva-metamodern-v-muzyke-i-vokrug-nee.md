@@ -6,3 +6,5 @@ tags:
 status: unread
 livelib_book: "https://www.livelib.ru/book/1008167893"
 ---
+
+**Настасья Хрущёва** — [LiveLib](https://www.livelib.ru/book/1008167893) — недочитано

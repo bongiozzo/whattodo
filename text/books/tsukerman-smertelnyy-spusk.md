@@ -6,3 +6,5 @@ tags:
 status: read
 livelib_book: "https://www.livelib.ru/book/1007673646"
 ---
+
+**Питер Цукерман, Аманда Падоан** — [LiveLib](https://www.livelib.ru/book/1007673646) — прочитано

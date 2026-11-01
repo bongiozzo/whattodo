@@ -7,3 +7,5 @@ my_mark: 3
 status: read
 livelib_book: "https://www.livelib.ru/book/1000318289"
 ---
+
+**Марина и Сергей Дяченко** — [LiveLib](https://www.livelib.ru/book/1000318289) — прочитано

@@ -9,6 +9,8 @@ livelib_book: "https://www.livelib.ru/book/1001553086"
 livelib_review: "https://www.livelib.ru/review/3718900"
 ---
 
+**Лев Толстой** — [LiveLib](https://www.livelib.ru/book/1001553086) — прочитано
+
 ## Рецензия
 
 Прежде всего следовать Любви и ее иррациональным порывам в своём жизненном Пути. Очень это важно.

@@ -6,3 +6,5 @@ tags:
 status: unread
 livelib_book: "https://www.livelib.ru/book/1003633686"
 ---
+
+**Райнер Мария Рильке** — [LiveLib](https://www.livelib.ru/book/1003633686) — недочитано

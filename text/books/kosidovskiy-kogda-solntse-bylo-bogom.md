@@ -7,3 +7,5 @@ my_mark: 5
 status: read
 livelib_book: "https://www.livelib.ru/book/1000489785"
 ---
+
+**Зенон Косидовский** — [LiveLib](https://www.livelib.ru/book/1000489785) — прочитано

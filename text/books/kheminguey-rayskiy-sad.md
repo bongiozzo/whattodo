@@ -7,6 +7,10 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1000417324"
 ---
 
+**Эрнест Хемингуэй** — [LiveLib](https://www.livelib.ru/book/1000417324) — недочитано
+
+## Цитаты
+
 > Умные люди чрезвычайно редко бывают счастливы. ^quote_1
 
 — [LiveLib](https://www.livelib.ru/quote/174575)

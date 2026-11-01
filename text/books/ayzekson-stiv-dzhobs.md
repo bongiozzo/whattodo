@@ -7,6 +7,10 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1000507201"
 ---
 
+**Уолтер Айзексон** — [LiveLib](https://www.livelib.ru/book/1000507201) — недочитано
+
+## Цитаты
+
 > Мне кажется, все религии — это лишь разные двери в один и тот же дом. ^quote_1
 
 — [LiveLib](https://www.livelib.ru/quote/278883)

@@ -11,3 +11,5 @@ livelib_editions:
   - "https://www.livelib.ru/book/1009877356"
   - "https://www.livelib.ru/book/1000730276"
 ---
+
+**М. А. Булгаков** — [LiveLib](https://www.livelib.ru/book/1001789976) — прочитано

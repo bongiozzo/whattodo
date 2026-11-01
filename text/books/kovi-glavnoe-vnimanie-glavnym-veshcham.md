@@ -6,3 +6,5 @@ tags:
 status: read
 livelib_book: "https://www.livelib.ru/book/1001773922"
 ---
+
+**Стивен Р. Кови, А. Роджер Меррилл, Ребекка Р. Меррилл** — [LiveLib](https://www.livelib.ru/book/1001773922) — прочитано

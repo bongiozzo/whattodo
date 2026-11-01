@@ -7,3 +7,5 @@ my_mark: 4
 status: read
 livelib_book: "https://www.livelib.ru/book/1003012314"
 ---
+
+**Герберт Уэллс** — [LiveLib](https://www.livelib.ru/book/1003012314) — прочитано

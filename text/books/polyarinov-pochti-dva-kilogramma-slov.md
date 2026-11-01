@@ -6,3 +6,5 @@ tags:
 status: read
 livelib_book: "https://www.livelib.ru/book/1002950866"
 ---
+
+**Алексей Поляринов** — [LiveLib](https://www.livelib.ru/book/1002950866) — прочитано

@@ -9,6 +9,8 @@ livelib_book: "https://www.livelib.ru/book/1008883819"
 livelib_review: "https://www.livelib.ru/review/3780112"
 ---
 
+**Мэттью Перри** — [LiveLib](https://www.livelib.ru/book/1008883819) — прочитано
+
 ## Рецензия
 
 Книга полезная.
@@ -24,6 +26,8 @@ livelib_review: "https://www.livelib.ru/review/3780112"
 
 
 История с присутствием Бога в книге была неожиданной и тронула.
+
+## Цитаты
 
 > I stayed sober for two years based solely on that moment. God had shown me a sliver of what life could be. He had saved me that day, and for all days, no matter what. He had turned me into a seeker, not only of sobriety, and truth, but also of him. He had opened a window, and closed it, as if to say, “Now go earn this.” ^quote_1
 

@@ -7,3 +7,5 @@ my_mark: 2
 status: unread
 livelib_book: "https://www.livelib.ru/book/1003380115"
 ---
+
+**Петр Вайль** — [LiveLib](https://www.livelib.ru/book/1003380115) — недочитано

@@ -6,3 +6,5 @@ tags:
 status: unread
 livelib_book: "https://www.livelib.ru/book/1000600401"
 ---
+
+**Василий Иванович Смирнов** — [LiveLib](https://www.livelib.ru/book/1000600401) — недочитано

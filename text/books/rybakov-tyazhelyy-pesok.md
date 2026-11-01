@@ -7,6 +7,10 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1000443129"
 ---
 
+**Анатолий Рыбаков** — [LiveLib](https://www.livelib.ru/book/1000443129) — хочу прочитать
+
+## Цитаты
+
 > … чем больше у людей квартира, тем меньше находится места, чтобы переночевать постороннему человеку. ^quote_1
 
 — [LiveLib](https://www.livelib.ru/quote/188050)

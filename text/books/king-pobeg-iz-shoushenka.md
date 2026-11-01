@@ -7,3 +7,5 @@ my_mark: 4
 status: read
 livelib_book: "https://www.livelib.ru/book/1001445982"
 ---
+
+**Стивен Кинг** — [LiveLib](https://www.livelib.ru/book/1001445982) — прочитано

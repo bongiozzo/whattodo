@@ -6,3 +6,5 @@ tags:
 status: wish
 livelib_book: "https://www.livelib.ru/book/1009208446"
 ---
+
+**Герман Гессе** — [LiveLib](https://www.livelib.ru/book/1009208446) — хочу прочитать

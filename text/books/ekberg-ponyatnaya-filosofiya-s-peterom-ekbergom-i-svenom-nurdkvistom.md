@@ -11,6 +11,8 @@ livelib_book: "https://www.livelib.ru/book/1002968521"
 livelib_review: "https://www.livelib.ru/review/4050400"
 ---
 
+**Петер Экберг** — [LiveLib](https://www.livelib.ru/book/1002968521) — прочитано
+
 ## Рецензия
 
 Прекрасная возможность порассуждать с ребёнком на разные жизненные вопросы вместе.

@@ -9,3 +9,5 @@ livelib_book: "https://www.livelib.ru/book/1001461999"
 livelib_editions:
   - "https://www.livelib.ru/book/1000978126"
 ---
+
+**Марк Твен** — [LiveLib](https://www.livelib.ru/book/1001461999) — прочитано
