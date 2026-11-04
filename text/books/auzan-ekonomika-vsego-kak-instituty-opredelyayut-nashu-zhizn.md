@@ -4,11 +4,11 @@ author: Александр Аузан
 tags:
   - book
 my_mark: 5
-status: read
+status: unread
 livelib_book: "https://www.livelib.ru/book/1004124394"
 ---
 
-**Александр Аузан** — [LiveLib](https://www.livelib.ru/book/1004124394) — прочитано
+**Александр Аузан** — [LiveLib](https://www.livelib.ru/book/1004124394) — недочитано
 
 ## Цитаты
 
