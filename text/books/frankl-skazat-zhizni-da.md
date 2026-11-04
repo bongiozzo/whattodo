@@ -22,7 +22,7 @@ livelib_review: "https://www.livelib.ru/review/4226059"
 
 Улыбнулся фразе, что говорить о Смысле Жизни явно не получится - слишком будет пафосно и засмеют, либо просто не позволят, если будет слишком прямолинейно.
 
-https://www.livelib.ru/quote/47015722-skazat-zhizni-da-psiholog-v-kontslagere-sbornik-viktor-frankl
+[https://www.livelib.ru/quote/47015722-skazat-zhizni-da-psiholog-v-kontslagere-sbornik-viktor-frankl](https://www.livelib.ru/quote/47015722-skazat-zhizni-da-psiholog-v-kontslagere-sbornik-viktor-frankl)
 
 И единственный путь достучаться через искусство и художественные образы.
 
@@ -30,7 +30,7 @@ https://www.livelib.ru/quote/47015722-skazat-zhizni-da-psiholog-v-kontslagere-sb
 
 Но кажется, что получается всё еще не очень. Серьёзные вопросы Смысла Жизни в литературе, музыке, театре не стали массово популярны с момента написания книги. Спустя 25 лет после публикации Франкл говорил о растущем влиянии Материальных ценностей, потенциальных причинах новых войн и важности формулировки Смысла Жизни в дефиците Духовных идеалов
 
-https://www.youtube.com/watch?v=VEsQPMbqXHw
+[https://www.youtube.com/watch?v=VEsQPMbqXHw](https://www.livelib.ru/go?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DVEsQPMbqXHw)
 
 Но кажется, что при нашей жизни случатся перемены в обществе с появлением Искусственного Интеллекта, которые помогут достучаться через Необходимость...
 

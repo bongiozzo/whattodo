@@ -25,11 +25,11 @@ livelib_review: "https://www.livelib.ru/review/5900392"
 
 В более доступной форме, если сравнивать с лекциями Болотова об истории церкви
 
-https://livelib.ru/review/5043412-lektsii-po-istorii-drevnej-tserkvi-v-4-tomah-tom-12-vasilij-bolotov
+[https://livelib.ru/review/5043412-lektsii-po-istorii-drevnej-tserkvi-v-4-tomah-tom-12-vasilij-bolotov](https://livelib.ru/review/5043412-lektsii-po-istorii-drevnej-tserkvi-v-4-tomah-tom-12-vasilij-bolotov)
 
 Открытые тексты Антония можно найти на сайте
 
-https://azbyka.ru/otechnik/Antonij_Surozhskij/
+[https://azbyka.ru/otechnik/Antonij_Surozhskij/](https://www.livelib.ru/go?url=https%3A%2F%2Fazbyka.ru%2Fotechnik%2FAntonij_Surozhskij%2F)
 
 ## Цитаты
 

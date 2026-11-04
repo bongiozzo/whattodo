@@ -17,7 +17,7 @@ livelib_review: "https://www.livelib.ru/review/4452449"
 
 
 
-https://www.livelib.ru/quote/42787060-kak-pisat-knigi-stiven-king
+[https://www.livelib.ru/quote/42787060-kak-pisat-knigi-stiven-king](https://www.livelib.ru/quote/42787060-kak-pisat-knigi-stiven-king)
 
 
 
