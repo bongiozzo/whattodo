@@ -12,3 +12,4 @@ livelib-export/
 __pycache__/
 *.pyc
 livelib-export/
+uv.lock
