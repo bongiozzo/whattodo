@@ -1394,7 +1394,7 @@ wheels = [
 
 [[package]]
 name = "sg-text-forge"
-version = "0.3.5"
+version = "0.3.6"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -1406,9 +1406,9 @@ dependencies = [
     { name = "mkdocs-material" },
     { name = "pyyaml" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/75/af/deba6a1eae7b3d1c8704b1ec12d680a5e726b745e2a0e6c196799ae0545a/sg_text_forge-0.3.5.tar.gz", hash = "sha256:c878759a325f192d26c2837f0d976fe4cb740a8b81db01b32a1ed9340382772c", size = 202173, upload-time = "2026-11-05T14:09:13.293Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/11/03/295846f6a26552113c7d9a8e0b52aad250e34773c313f5fe15015cc49a14/sg_text_forge-0.3.6.tar.gz", hash = "sha256:f0fcc15df230a2fac5195165f88a82bd5d690448c0e6bfb79c9884032b49074a", size = 202185, upload-time = "2026-11-05T15:09:03.65Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/57/cf/d73df5c77425348f7cb4e7227fde5292548e20c26b455893225be3f2194d/sg_text_forge-0.3.5-py3-none-any.whl", hash = "sha256:ff9cb40181d66f30ce15eef1d9f38695bc00910fdc36010ff4b26811e2676b56", size = 126501, upload-time = "2026-11-05T14:09:11.822Z" },
+    { url = "https://files.pythonhosted.org/packages/c4/1f/36cd7d51cfb9cffd95e1918ed6f46c2cbd6221b41112a83496c20f558859/sg_text_forge-0.3.6-py3-none-any.whl", hash = "sha256:316b33f627f6f18825e5ea395f89692c0c24fdd42f6dc87b818b3e0cf7a44eee", size = 126520, upload-time = "2026-11-05T15:09:01.91Z" },
 ]
 
 [[package]]
