@@ -3,6 +3,8 @@ comments: true
 created: 18.06.2023
 published: 22.10.2023
 description: Наш Текст — это сборка смыслов, взятых из книг и успешно применяемых на практике.
+search:
+  exclude: true
 ---
 
 # Книги как фундамент
