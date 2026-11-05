@@ -27,7 +27,7 @@ livelib_review: "https://www.livelib.ru/review/5726422"
 
 
 
-https://text.sharedgoals.ru/ru/p2-120-school#happiness_in_school
+[https://text.sharedgoals.ru/ru/p2-120-school#happiness_in_school](https://www.livelib.ru/go?url=https%3A%2F%2Ftext.sharedgoals.ru%2Fru%2Fp2-120-school%23happiness_in_school)
 
 
 

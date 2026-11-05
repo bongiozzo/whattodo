@@ -17,13 +17,13 @@ livelib_review: "https://www.livelib.ru/review/6372058"
 
 
 
-Павел Басинский - Лев Толстой. Свободный человек
+[Павел Басинский - Лев Толстой. Свободный человек](https://www.livelib.ru/book/1010116129-lev-tolstoj-svobodnyj-chelovek-pavel-basinskij)
 
 и биографий Достоевского
 
 
 
-Павел Фокин - Достоевский глазами современников 
+[Павел Фокин - Достоевский глазами современников](https://www.livelib.ru/book/1001534213-dostoevskij-glazami-sovremennikov-pavel-fokin) 
 
 
 

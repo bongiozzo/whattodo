@@ -36,7 +36,7 @@ livelib_review: "https://www.livelib.ru/review/5738980"
 
 И вроде не про Вторую Мировую Войну речь, но понятно как внутренний мир человека формирует психологию общества и как она меняет всё вокруг.
 
-https://text.sharedgoals.ru/ru/p2-120-school/#human_capital_book
+[https://text.sharedgoals.ru/ru/p2-120-school/#human_capital_book](https://www.livelib.ru/go?url=https%3A%2F%2Ftext.sharedgoals.ru%2Fru%2Fp2-120-school%2F%23human_capital_book)
 
 ## Цитаты
 

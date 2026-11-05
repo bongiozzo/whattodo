@@ -110,7 +110,7 @@ Anton is a **systems engineer** who values clarity, automation, and understandin
 He's pragmatic, fast-moving when informed, and deeply invested in making his brain scale.
 Not flashy, not political — just _competent_.
 
-[Chez](https://github.com/chezim){: .author }
+[Chez](https://github.com/chezim){ .author }
 
 ///
 

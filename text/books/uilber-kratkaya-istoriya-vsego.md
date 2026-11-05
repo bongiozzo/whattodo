@@ -16,7 +16,7 @@ livelib_review: "https://www.livelib.ru/review/4103959"
 Не смог дочитать книгу. Увяз.
 Во время прочтения был согласен с излагаемыми мыслями. Выводы сделаны важные - например, про необходимости объединения в себе двух полюсов Рацио и Иррацио. Автор признает, что это большой труд.
 
-https://www.livelib.ru/quote/46909918-kratkaya-istoriya-vsego-ken-uilber
+[https://www.livelib.ru/quote/46909918-kratkaya-istoriya-vsego-ken-uilber](https://www.livelib.ru/quote/46909918-kratkaya-istoriya-vsego-ken-uilber)
 
 Однако при прочтении ускользает суть в нагромождении обоснований, взаимосвязей, холонов, графиков, векторов и прочее.
 

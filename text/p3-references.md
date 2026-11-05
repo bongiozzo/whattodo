@@ -65,7 +65,7 @@ description: Наш Текст — это сборка смыслов, взят�
 - [Всё не случайно — Вера Алентова](books/alentova-vse-ne-sluchayno.md)
 - [Не оторваться! Почему наш мозг любит всё новое и так ли это хорошо в эпоху интернета — Адам Алтер](books/alter-ne-otorvatsya.md)
 - [Модель количественной оценки уровня счастья — Владимир Андреев](books/andreev-model-kolichestvennoy-otsenki-urovnya-schastya.md)
-- [Экономика всего. Как институты определяют нашу жизнь — Александр Аузан](books/auzan-ekonomika-vsego.md)
+- [Экономика всего. Институты и общество: жизнь по правилам и без — Александр Аузан](books/auzan-ekonomika-vsego-instituty-i-obshchestvo-zhizn-po-pravilam-i-bez.md)
 - [Я - Оззи. Всё, что мне удалось вспомнить — Крис Айрс, Оззи Осборн](books/ayrs-ya-ozzi-vse-chto-mne-udalos-vspomnit.md)
 - [Стальные пещеры — Айзек Азимов](books/azimov-stalnye-peshchery.md)
 - [Я, робот — Айзек Азимов](books/azimov-ya-robot.md)
@@ -350,7 +350,8 @@ description: Наш Текст — это сборка смыслов, взят�
 - [Вся кремлевская рать. Краткая история современной России — Михаил Зыгарь](books/zygar-vsya-kremlevskaya-rat.md)
 ///
 
-/// details | Недочитанные (69)
+/// details | Недочитанные (70)
+- [Экономика всего. Как институты определяют нашу жизнь — Александр Аузан](books/auzan-ekonomika-vsego-kak-instituty-opredelyayut-nashu-zhizn.md)
 - [Стив Джобс — Уолтер Айзексон](books/ayzekson-stiv-dzhobs.md)
 - [Горький: страсти по Максиму — Павел Басинский](books/basinskiy-gorkiy-strasti-po-maksimu.md)
 - [Жизнь в ветреную погоду — Андрей Битов](books/bitov-zhizn-v-vetrenuyu-pogodu.md)
@@ -422,7 +423,7 @@ description: Наш Текст — это сборка смыслов, взят�
 - [Время всегда хорошее — Андрей Жвалевский, Евгения Пастернак](books/zhvalevskiy-vremya-vsegda-khoroshee.md)
 ///
 
-/// details | Хочу прочитать (43)
+/// details | Хочу прочитать (44)
 - [Люди, которые всегда со мной — Наринэ Абгарян](books/abgaryan-lyudi-kotorye-vsegda-so-mnoy.md)
 - [Блокадная книга — Алесь Адамович, Даниил Гранин](books/adamovich-blokadnaya-kniga.md)
 - [Московская сага. В 3 книгах. Книга 1. Поколение зимы — Василий Аксёнов](books/aksenov-moskovskaya-saga.md)
@@ -443,6 +444,7 @@ description: Наш Текст — это сборка смыслов, взят�
 - [Се человек и дело его... — Валерий Керов](books/kerov-se-chelovek-i-delo-ego.md)
 - [Лестница в небо. Диалоги о власти, карьере и мировой элите — Михаил Хазин, Сергей Щеглов](books/khazin-lestnitsa-v-nebo.md)
 - [Блиц-масштабирование. Как создать крупный бизнес со скоростью света — Рид Хоффман, Крис Йе](books/khoffman-blitsmasshtabirovanie-kak-sozdat-krupnyy-biznes-so-skorostyu-sveta.md)
+- [Конец детства — Артур Кларк](books/klark-konets-detstva.md)
 - [Рабы Microsoft — Дуглас Коупленд](books/kouplend-raby-microsoft.md)
 - [Новый вор — Юрий Козлов](books/kozlov-novyy-vor.md)
 - [Русский язык на грани нервного срыва — Максим Кронгауз](books/krongauz-russkiy-yazyk-na-grani-nervnogo-sryva.md)
