@@ -134,7 +134,9 @@ install: ## Bootstrap: uv, pandoc, text-forge + shared-goals/skill, uv sync
 		git clone https://github.com/shared-goals/skill.git "$(SHARED_GOALS_SKILL_DIR)"; \
 	fi
 	@# --- Python deps ---
-	uv sync --upgrade
+	@# plain sync: the lockfile pins versions; upgrade only on release days
+	@# (uv lock --upgrade-package sg-text-forge) — never churn the lock here
+	uv sync
 
 obsidian: install ## Set up Obsidian: Templater plugin, scripts, hotkeys
 	@mkdir -p .obsidian/plugins/templater-obsidian
