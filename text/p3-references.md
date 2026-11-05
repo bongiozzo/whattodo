@@ -44,6 +44,7 @@ description: Наш Текст — это сборка смыслов, взят�
 - Про будущее технологий и образования: [Сила франчайзинга. Как компания РОББО построила топовую международную EdTech-франшизу](books/frolov-sila-franchayzinga.md)
 - О нарко-зависимостях и их причинах: [Занимательная наркология](books/makarevich-zanimatelnaya-narkologiya.md)
 - О поведенческих зависимостях: [Не оторваться! Почему наш мозг любит всё новое и так ли это хорошо в эпоху интернета](books/alter-ne-otorvatsya.md)
+- Про экономику всего, но что дальше?: [Экономика всего. Институты и общество: жизнь по правилам и без](books/auzan-ekonomika-vsego-instituty-i-obshchestvo-zhizn-po-pravilam-i-bez.md)
 
 /// details | Читаю (1)
 - [Последнее дело майора Чистова — Евгений Водолазкин](books/vodolazkin-poslednee-delo-mayora-chistova.md)
