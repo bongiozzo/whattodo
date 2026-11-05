@@ -200,6 +200,10 @@ plugins:
       branch: master
       docs_path: text/
       enabled: !ENV ["MKDOCS_GIT_COMMITTERS_ENABLED", true]
+      # Книги генерируются: git-авторы там — операторы сборки, а не авторы.
+      # Плюс это 413 API-вызовов к GitHub на каждый билд — исключаем.
+      exclude:
+        - books/*
 
 extra:
 
