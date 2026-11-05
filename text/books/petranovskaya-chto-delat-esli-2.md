@@ -6,7 +6,7 @@ tags:
 my_mark: 5
 status: read
 important: true
-weight: 10
+weight: 100
 livelib_book: "https://www.livelib.ru/book/1003212127"
 livelib_editions:
   - "https://www.livelib.ru/book/1000777860"
