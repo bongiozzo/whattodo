@@ -15,7 +15,7 @@ description: Фотографировать и делиться снимками
 
 И в самой истории, и в изображении.
 
-[Георгий Рерберг](https://ru.wikipedia.org/wiki/Рерберг,_Георгий_Иванович){: .author }
+[Георгий Рерберг](https://ru.wikipedia.org/wiki/Рерберг,_Георгий_Иванович){ .author }
 
 ///
 
@@ -65,7 +65,7 @@ Ph. Mikhail Krugov, [2 Jun 2025 at 20:56:01]:
 С необычайным волнением я стал изучать эти фотографии.
 И увидел, что они меня волнуют больше, чем даже желание найти причину моих несчастий.
 
-[Михаил Михайлович Зощенко](books/zoshchenko-pered-voskhodom-solntsa.md#quote_9){: .author }
+[Михаил Михайлович Зощенко](books/zoshchenko-pered-voskhodom-solntsa.md#quote_9){ .author }
 
 ///
 
@@ -85,7 +85,7 @@ Ph. Mikhail Krugov, [2 Jun 2025 at 20:56:01]:
 
 Детство — самое совершенное состояние души — всех любишь, ни на кого не держишь зла.
 
-[Наринэ Абгарян](books/abgaryan-lyudi-kotorye-vsegda-so-mnoy.md#quote_1){: .author }
+[Наринэ Абгарян](books/abgaryan-lyudi-kotorye-vsegda-so-mnoy.md#quote_1){ .author }
 
 ///
 
@@ -125,7 +125,7 @@ Ph. Mikhail Krugov, [2 Jun 2025 at 20:56:01]:
 
 Тарковский часто размышлял над подобным полётом „времени“ и желал только одного: остановить его — пусть даже и быстрым взглядом из моментальных полароидных изображений.
 
-[Лев Наумов](books/naumov-italyanskie-marshruty-andreya-tarkovskogo.md#quote_23){: .author }
+[Лев Наумов](books/naumov-italyanskie-marshruty-andreya-tarkovskogo.md#quote_23){ .author }
 
 ///
 
@@ -510,7 +510,7 @@ Point and shoot.
 Я стала плакать и чувствовала, как со слезами оттаивает мое заледеневшее сердце.
 Мне стало жаль нашей любви — такой необъятной и такой необыкновенной…
 
-[Вера Алентова](books/alentova-vse-ne-sluchayno.md#quote_1){: .author }
+[Вера Алентова](books/alentova-vse-ne-sluchayno.md#quote_1){ .author }
 
 ///
 
@@ -954,7 +954,7 @@ Zoom-объектив перевернул моё представление о 
 Человек живёт не для того, чтобы быть счастливым.
 Есть вещи гораздо более важные, чем счастье!
 
-[Андрей Тарковский](books/naumov-italyanskie-marshruty-andreya-tarkovskogo.md#quote_63){: .author }
+[Андрей Тарковский](books/naumov-italyanskie-marshruty-andreya-tarkovskogo.md#quote_63){ .author }
 
 ///
 

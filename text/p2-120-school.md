@@ -371,7 +371,7 @@ description: Количественная модель Счастья повыш
 
 Для этого можно попытаться расширить принятую сегодня дифференциацию психологического знания на сферы Воли, Разума, Бессознательного и Веры.
 
-[Александр Иванович Юрьев](books/yurev-strategicheskaya-psikhologiya-globalizatsii.md#quote_63){: .author }
+[Александр Иванович Юрьев](books/yurev-strategicheskaya-psikhologiya-globalizatsii.md#quote_63){ .author }
 
 ///
 
@@ -554,7 +554,7 @@ description: Количественная модель Счастья повыш
 Толстому чего-то не хватает.
 Спустя несколько лет он поймет, чего ему не хватает – веры в Бога!
 
-[Павел Басинский](books/basinskiy-svyatoy-protiv-lva.md#quote_42){: .author }
+[Павел Басинский](books/basinskiy-svyatoy-protiv-lva.md#quote_42){ .author }
 
 ///
 
@@ -594,7 +594,7 @@ description: Количественная модель Счастья повыш
 
 По молодости и по глупости никто в Бога не верит, и лишь к старости люди понимают, что всю жизнь, даже не зная того, постоянно вели внутренние разговоры с Ним.
 
-[Наринэ Абгарян](books/abgaryan-lyudi-kotorye-vsegda-so-mnoy.md#quote_5){: .author }
+[Наринэ Абгарян](books/abgaryan-lyudi-kotorye-vsegda-so-mnoy.md#quote_5){ .author }
 
 ///
 
@@ -613,7 +613,7 @@ Many things are easier to explain if there is than if there isn't.
 
 Вероятно, должен быть Бог, потому что многое труднее объяснить, если Его нет.
 
-[Джон фон Нейман](https://en.wikipedia.org/wiki/John_von_Neumann){: .author }
+[Джон фон Нейман](https://en.wikipedia.org/wiki/John_von_Neumann){ .author }
 
 ///
 
@@ -631,7 +631,7 @@ I know!
 — Я не верю.
 Я знаю!
 
-[Карл Густав Юнг](https://www.youtube.com/watch?v=oBYEFX2dqpM&t=483s){: .author }
+[Карл Густав Юнг](https://www.youtube.com/watch?v=oBYEFX2dqpM&t=483s){ .author }
 
 ///
 
@@ -702,6 +702,19 @@ I know!
 Образ Свободы при этом остаётся [прекрасным объектом для политических и социальных манипуляций](p1-030-time.md#lgbt_blm).
 
 Люди безотказно и [эмоционально сопереживают](#psychology_of_unconscious) вводимым ограничениям, не всегда вдумываясь в смыслы.
+
+Жизнь в обществе и государстве не может не иметь ограничений.
+Скорее соглашусь с категоричным определением свободы от Оруэлла:
+
+/// quote
+
+Свобода — это возможность сказать, что дважды два — четыре.
+
+[Джордж Оруэлл](books/oruell-1984.md#quote_3){ .author }
+
+/// 
+
+И значит определение Свободы должно быть прежде всего личным.
 
 Эзоп отказался от освобождения и даже жизни, когда предлагалось поступиться идеалами и признаться в преступлении, которое он не совершал.
 
@@ -850,7 +863,7 @@ I know!
 
 Мои только ошибки и недостатки.
 
-[Иоанн Кронштадтский](https://azbyka.ru/otechnik/Ioann_Kronshtadtskij/dnevnik/1){: .author }
+[Иоанн Кронштадтский](https://azbyka.ru/otechnik/Ioann_Kronshtadtskij/dnevnik/1){ .author }
 
 ///
 
@@ -937,7 +950,7 @@ I know!
 
 Необходимо открыть юридическое право на свободу как психологию свободного поведения.
 
-[Александр Иванович Юрьев](books/yurev-strategicheskaya-psikhologiya-globalizatsii.md#quote_51){: .author }
+[Александр Иванович Юрьев](books/yurev-strategicheskaya-psikhologiya-globalizatsii.md#quote_51){ .author }
 
 ///
 

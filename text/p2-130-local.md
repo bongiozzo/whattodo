@@ -84,7 +84,7 @@ description: Значение места жительства в ощущени�
 Мы утрачиваем способность шутить, иронизировать.
 Одно это приводит меня в ужас.
 
-[Сергей Довлатов](books/dovlatov-zapovednik.md#quote_1){: .author }
+[Сергей Довлатов](books/dovlatov-zapovednik.md#quote_1){ .author }
 
 ///
 
@@ -245,7 +245,7 @@ description: Значение места жительства в ощущени�
 
 Васин остров для меня - пуп Земли и центр Вселенной.
 
-[Вадим Шефнер](http://a-pesni.org/dvor/piter/a-izzapisn.php){: .author }
+[Вадим Шефнер](http://a-pesni.org/dvor/piter/a-izzapisn.php){ .author }
 
 ///
 
@@ -387,7 +387,7 @@ description: Значение места жительства в ощущени�
 
 Ведь в каждом коренном петербуржце сидит гид!
 
-[Анатолий Рыбаков](books/rybakov-tyazhelyy-pesok.md#quote_3){: .author }
+[Анатолий Рыбаков](books/rybakov-tyazhelyy-pesok.md#quote_3){ .author }
 
 ///
 

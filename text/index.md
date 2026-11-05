@@ -112,7 +112,7 @@ DRY.
 
 Дело в том, как человек выходит из этой ситуации, — это всегда зависит только от него.
 
-[Анатолий Рыбаков](books/rybakov-tyazhelyy-pesok.md#quote_8){: .author }
+[Анатолий Рыбаков](books/rybakov-tyazhelyy-pesok.md#quote_8){ .author }
 
 ///
 
@@ -211,7 +211,7 @@ DRY.
 
 Кто пробовал — тот меня поймёт.
 
-[Владимир Плунгян](books/plungyan-pochemu-yazyki-takie-raznye.md#quote_2){: .author }
+[Владимир Плунгян](books/plungyan-pochemu-yazyki-takie-raznye.md#quote_2){ .author }
 
 ///
 
@@ -254,11 +254,25 @@ DRY.
 Может быть он будет лучше.
 Но это неточно.
 
+Вот такая цитата отзывается:
+
 /// quote
 
 Революция, похоже, это не что иное, как пик декаданса…
 
-[Василий Аксёнов](books/aksenov-moskovskaya-saga.md#quote_3){: .author }
+[Василий Аксёнов](books/aksenov-moskovskaya-saga.md#quote_3){ .author }
+
+///
+
+или с более рациональной точки зрения экономиста:
+
+/// quote
+
+С одной стороны, очевидно, что застой и реакционный политический режим зажигает революционный огонь в душах.
+Но не надо желать революции!
+Анализ институциональных изменений показывает, что это худший из всех вариантов выхода из колеи, и прелести, связанные с последствиями революций, придется расхлебывать внукам.
+
+[Александр Аузан](books/auzan-ekonomika-vsego-instituty-i-obshchestvo-zhizn-po-pravilam-i-bez.md#quote_4){ .author }
 
 ///
 

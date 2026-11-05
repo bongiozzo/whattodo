@@ -154,7 +154,7 @@ ChatGPT:
 
 Это были большею частью люди, озлобленные новыми порядками и понижением своего благосостояния и полагавшие, что им будет легче жить на чужбине.
 
-[Павел Фокин](books/fokin-dostoevskiy-glazami-sovremennikov.md#quote_9){: .author }
+[Павел Фокин](books/fokin-dostoevskiy-glazami-sovremennikov.md#quote_9){ .author }
 
 ///
 
