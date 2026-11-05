@@ -1,0 +1,17 @@
+---
+title: "Соло на ундервуде"
+author: Сергей Довлатов
+tags:
+  - book
+my_mark: 5
+status: read
+livelib_book: "https://www.livelib.ru/book/1000322255"
+livelib_editions:
+  - "https://www.livelib.ru/book/1000938000"
+---
+
+Автор: Сергей Довлатов
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000322255](https://www.livelib.ru/book/1000322255)

@@ -1,0 +1,21 @@
+---
+title: "Центр тяжести"
+author: Алексей Поляринов
+tags:
+  - book
+my_mark: 5
+status: read
+livelib_book: "https://www.livelib.ru/book/1005526645"
+---
+
+Автор: Алексей Поляринов
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1005526645](https://www.livelib.ru/book/1005526645)
+
+## Цитаты
+
+> Информация – это новая нефть. ^quote_1
+
+— [LiveLib](https://www.livelib.ru/quote/47265491)

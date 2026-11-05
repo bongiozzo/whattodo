@@ -44,7 +44,7 @@ Ph. Mikhail Krugov, [2 Jun 2025 at 20:56:01]:
 [Взял на себя ответственность за собственное счастье и начал писать](p2-200-text.md#writing_is_not_reading).
 Рукопись изначально называлась «Ключи Счастья» и представляла собой основательный самоанализ его жизни.
 
-[В его книге даётся описание времени, исторических событий и встреч с важными людьми](https://www.livelib.ru/review/5058298-pered-voshodom-solntsa-mihail-zoschenko).
+[В его книге даётся описание времени, исторических событий и встреч с важными людьми](books/zoshchenko-pered-voskhodom-solntsa.md).
 Всё, что могло всерьёз повлиять на восприятие жизни и запомнилось.
 Всё это аккуратно выписывалось в форме рассказов-зарисовок.
 
@@ -65,11 +65,11 @@ Ph. Mikhail Krugov, [2 Jun 2025 at 20:56:01]:
 С необычайным волнением я стал изучать эти фотографии.
 И увидел, что они меня волнуют больше, чем даже желание найти причину моих несчастий.
 
-[Михаил Михайлович Зощенко](https://www.livelib.ru/quote/48042808-pered-voshodom-solntsa-mihail-zoschenko){ .author }
+[Михаил Михайлович Зощенко](books/zoshchenko-pered-voskhodom-solntsa.md#quote_9){ .author }
 
 ///
 
-До Зощенко описания ярких образов детства, которые сформировали сознание, сделали [Лев Толстой](https://www.livelib.ru/book/1010788457-detstvo-lev-tolstoj) и [Максим Горький](https://www.livelib.ru/book/1008780553-detstvo-maksim-gorkij).
+До Зощенко описания ярких образов детства, которые сформировали сознание, сделали [Лев Толстой](books/tolstoy-detstvo.md) и [Максим Горький](books/gorkiy-detstvo-na-dne.md).
 Эти произведения стали классикой мировой литературы, хотя и не несли такой практической цели и структурного подхода.
 
 Из шедевров кинематографа на ум приходит [фильм «Зеркало» Тарковского](https://ru.kinorium.com/67295/).
@@ -85,7 +85,7 @@ Ph. Mikhail Krugov, [2 Jun 2025 at 20:56:01]:
 
 Детство — самое совершенное состояние души — всех любишь, ни на кого не держишь зла.
 
-[Наринэ Абгарян](https://www.livelib.ru/quote/799961-lyudi-kotorye-vsegda-so-mnoj-narine-abgaryan){ .author }
+[Наринэ Абгарян](books/abgaryan-lyudi-kotorye-vsegda-so-mnoy.md#quote_1){ .author }
 
 ///
 
@@ -125,7 +125,7 @@ Ph. Mikhail Krugov, [2 Jun 2025 at 20:56:01]:
 
 Тарковский часто размышлял над подобным полётом „времени“ и желал только одного: остановить его — пусть даже и быстрым взглядом из моментальных полароидных изображений.
 
-[Лев Наумов](https://www.livelib.ru/quote/48072508-italyanskie-marshruty-andreya-tarkovskogo-lev-naumov){ .author }
+[Лев Наумов](books/naumov-italyanskie-marshruty-andreya-tarkovskogo.md#quote_23){ .author }
 
 ///
 
@@ -510,7 +510,7 @@ Point and shoot.
 Я стала плакать и чувствовала, как со слезами оттаивает мое заледеневшее сердце.
 Мне стало жаль нашей любви — такой необъятной и такой необыкновенной…
 
-[Вера Алентова](https://www.livelib.ru/quote/48190393-vsjo-ne-sluchajno-vera-alentova){ .author }
+[Вера Алентова](books/alentova-vse-ne-sluchayno.md#quote_1){ .author }
 
 ///
 
@@ -602,7 +602,7 @@ Point and shoot.
 Для многих фотографов это звучит, как минимум, странно, но в моём случае это так.
 
 Разное отношение к этапам творческого процесса можно проследить и в кинематографе.
-Из [книги о Тарковском узнал](https://www.livelib.ru/quote/48196756-italyanskie-marshruty-andreya-tarkovskogo-lev-naumov), что Эйзенштейн уделял монтажу больше внимания, чем самому процессу съёмки.
+Из [книги о Тарковском узнал](books/naumov-italyanskie-marshruty-andreya-tarkovskogo.md#quote_50), что Эйзенштейн уделял монтажу больше внимания, чем самому процессу съёмки.
 Разработанный Эйзенштейном метод — [монтаж аттракционов](https://ru.wikipedia.org/wiki/Монтаж_аттракционов), во многом повлиял на мировой кинематограф, а Андрей Арсеньевич совсем не разделял такого подхода и формировал картинку сразу в видоискателе кинокамеры.
 
 После поездки подключаешь камеру к компьютеру и, даже не копируя все фотографии на диск, а в режиме предпросмотра Adobe Lightroom, отбираешь удачные снимки.
@@ -954,19 +954,19 @@ Zoom-объектив перевернул моё представление о 
 Человек живёт не для того, чтобы быть счастливым.
 Есть вещи гораздо более важные, чем счастье!
 
-[Андрей Тарковский](https://www.livelib.ru/quote/48219463-italyanskie-marshruty-andreya-tarkovskogo-lev-naumov){ .author }
+[Андрей Тарковский](books/naumov-italyanskie-marshruty-andreya-tarkovskogo.md#quote_63){ .author }
 
 ///
 
-На мой взгляд, образ счастья Тарковского был в том, чтобы [быть нужным другим](https://www.livelib.ru/quote/48218479-italyanskie-marshruty-andreya-tarkovskogo-lev-naumov).
-Чтобы через его творчество запускался [поиск ответов на важные вопросы](https://www.livelib.ru/quote/48219505-italyanskie-marshruty-andreya-tarkovskogo-lev-naumov).
+На мой взгляд, образ счастья Тарковского был в том, чтобы [быть нужным другим](books/naumov-italyanskie-marshruty-andreya-tarkovskogo.md#quote_60).
+Чтобы через его творчество запускался [поиск ответов на важные вопросы](books/naumov-italyanskie-marshruty-andreya-tarkovskogo.md#quote_65).
 
-Конечно же, этот образ никак не связан с [расхожим представлениям «happiness», как комфортное состояние](https://www.livelib.ru/quote/48217174-italyanskie-marshruty-andreya-tarkovskogo-lev-naumov).
-Равно как и [его искусство максимально далеко от задачи «развлекалова»](https://www.livelib.ru/quote/1208283-martirolog-andrej-tarkovskij).  
+Конечно же, этот образ никак не связан с [расхожим представлениям «happiness», как комфортное состояние](books/naumov-italyanskie-marshruty-andreya-tarkovskogo.md#quote_58).
+Равно как и [его искусство максимально далеко от задачи «развлекалова»](books/tarkovskiy-martirolog.md#quote_1).  
 
 ## В качестве заключения {#final_thought}
 
-В стадии завершения этой главы, во время [прослушивания мемуаров Эльдара Рязанова](https://www.livelib.ru/review/5220355-nepodvedennye-itogi-eldar-ryazanov) (ох, сколько же в нём «рацио» и какой же он оказался «зануда» в рассуждениях — [родная душа](index.md#introduction)!), с удивлением обнаружил, что не видел его [фильма «Зигзаг Удачи»](https://ru.kinorium.com/59695/).
+В стадии завершения этой главы, во время [прослушивания мемуаров Эльдара Рязанова](books/ryazanov-nepodvedennye-itogi.md) (ох, сколько же в нём «рацио» и какой же он оказался «зануда» в рассуждениях — [родная душа](index.md#introduction)!), с удивлением обнаружил, что не видел его [фильма «Зигзаг Удачи»](https://ru.kinorium.com/59695/).
 
 Исправил это упущение за время написания этих строк.
 

@@ -1,0 +1,15 @@
+---
+title: "Соловьев и Ларионов"
+author: Евгений Водолазкин
+tags:
+  - book
+my_mark: 4
+status: read
+livelib_book: "https://www.livelib.ru/book/1002921621"
+---
+
+Автор: Евгений Водолазкин
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002921621](https://www.livelib.ru/book/1002921621)

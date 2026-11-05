@@ -6,7 +6,7 @@
 #
 # Running `make` with no target shows this help (see `help` target below).
 
-.PHONY: all epub site serve clean help install publish obsidian ingest compass-update changelog grammar
+.PHONY: all epub site serve clean help install publish obsidian ingest compass-update changelog grammar books
 .DEFAULT_GOAL := help
 
 TEXT_FORGE_DIR ?= ../text-forge
@@ -182,6 +182,13 @@ serve: ## Run local preview server (fast, no EPUB)
 
 epub: ## Build EPUB only
 	uv run text-forge epub --config mkdocs.yml
+
+books: ## Regenerate text/books/*.md from livelib (fresh export + curation)
+	uv run --project $(TEXT_FORGE_DIR) python -m text_forge.wtd_books_build $(CURDIR)
+
+clean-cache: ## Drop livelib crawl caches (editions/works) — next build re-reads pages from livelib
+	rm -f livelib-export/editions-cache.json livelib-export/works-cache.json
+	@echo "caches dropped — next make books re-reads edition cards/contents"
 
 site: ## Build MkDocs site + EPUB
 	MKDOCS_GIT_COMMITTERS_ENABLED=false uv run text-forge build --config mkdocs.yml

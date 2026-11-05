@@ -1,0 +1,21 @@
+---
+title: "Заповедник"
+author: Сергей Довлатов
+tags:
+  - book
+my_mark: 5
+status: read
+livelib_book: "https://www.livelib.ru/book/1000004644"
+---
+
+Автор: Сергей Довлатов
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000004644](https://www.livelib.ru/book/1000004644)
+
+## Цитаты
+
+> На чужом языке мы теряем восемьдесят процентов своей личности. Мы утрачиваем способность шутить, иронизировать. Одно это приводит меня в ужас. ^quote_1
+
+— [LiveLib](https://www.livelib.ru/quote/154795)

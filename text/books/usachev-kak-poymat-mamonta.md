@@ -1,0 +1,14 @@
+---
+title: "Как поймать мамонта. Первобытная история"
+author: Андрей Усачёв, Алёша Дмитриев
+tags:
+  - book
+status: read
+livelib_book: "https://www.livelib.ru/book/1002571588"
+---
+
+Автор: Андрей Усачёв, Алёша Дмитриев
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002571588](https://www.livelib.ru/book/1002571588)
