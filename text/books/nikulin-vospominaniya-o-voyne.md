@@ -11,7 +11,11 @@ livelib_editions:
 livelib_review: "https://www.livelib.ru/review/2998678"
 ---
 
-**Николай Никулин** — [LiveLib](https://www.livelib.ru/book/1002095486) — прочитано
+Автор: Николай Никулин
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002095486](https://www.livelib.ru/book/1002095486)
 
 ## Рецензия
 

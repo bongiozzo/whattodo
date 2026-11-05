@@ -11,7 +11,11 @@ livelib_book: "https://www.livelib.ru/book/1010580743"
 livelib_review: "https://www.livelib.ru/review/5545582"
 ---
 
-**Эмманюэль Тодд** — [LiveLib](https://www.livelib.ru/book/1010580743) — прочитано
+Автор: Эмманюэль Тодд
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1010580743](https://www.livelib.ru/book/1010580743)
 
 ## Рецензия
 

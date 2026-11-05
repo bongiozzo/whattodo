@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1000436072"
 ---
 
-**Валентин Пикуль** — [LiveLib](https://www.livelib.ru/book/1000436072) — хочу прочитать
+Автор: Валентин Пикуль
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1000436072](https://www.livelib.ru/book/1000436072)

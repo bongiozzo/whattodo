@@ -14,7 +14,11 @@ livelib_editions:
 livelib_review: "https://www.livelib.ru/review/4226059"
 ---
 
-**Виктор Франкл** — [LiveLib](https://www.livelib.ru/book/1000225484) — прочитано
+Автор: Виктор Франкл
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000225484](https://www.livelib.ru/book/1000225484)
 
 ## Рецензия
 

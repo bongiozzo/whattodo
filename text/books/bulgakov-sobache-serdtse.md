@@ -13,4 +13,8 @@ livelib_editions:
   - "https://www.livelib.ru/book/1004577889"
 ---
 
-**Михаил Булгаков** — [LiveLib](https://www.livelib.ru/book/1006008070) — прочитано
+Автор: Михаил Булгаков
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1006008070](https://www.livelib.ru/book/1006008070)

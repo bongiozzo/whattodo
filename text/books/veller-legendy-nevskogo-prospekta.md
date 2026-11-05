@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1001520527"
 ---
 
-**Михаил Веллер** — [LiveLib](https://www.livelib.ru/book/1001520527) — прочитано
+Автор: Михаил Веллер
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001520527](https://www.livelib.ru/book/1001520527)

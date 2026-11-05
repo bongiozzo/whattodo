@@ -8,7 +8,9 @@ livelib_book: "https://www.livelib.ru/book/1003022554"
 livelib_review: "https://www.livelib.ru/review/3021487"
 ---
 
-[LiveLib](https://www.livelib.ru/book/1003022554) — прочитано
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1003022554](https://www.livelib.ru/book/1003022554)
 
 ## Рецензия
 

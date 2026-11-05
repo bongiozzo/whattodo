@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1003629903"
 ---
 
-**Борис Акунин** — [LiveLib](https://www.livelib.ru/book/1003629903) — прочитано
+Автор: Борис Акунин
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1003629903](https://www.livelib.ru/book/1003629903)

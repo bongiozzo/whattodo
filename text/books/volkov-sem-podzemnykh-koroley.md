@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1008524209"
 ---
 
-**Александр Волков** — [LiveLib](https://www.livelib.ru/book/1008524209) — прочитано
+Автор: Александр Волков
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1008524209](https://www.livelib.ru/book/1008524209)

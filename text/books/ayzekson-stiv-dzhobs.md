@@ -7,7 +7,11 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1000507201"
 ---
 
-**Уолтер Айзексон** — [LiveLib](https://www.livelib.ru/book/1000507201) — недочитано
+Автор: Уолтер Айзексон
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1000507201](https://www.livelib.ru/book/1000507201)
 
 ## Цитаты
 

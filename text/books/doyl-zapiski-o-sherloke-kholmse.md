@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1001401495"
 ---
 
-**Артур Конан Дойл** — [LiveLib](https://www.livelib.ru/book/1001401495) — прочитано
+Автор: Артур Конан Дойл
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001401495](https://www.livelib.ru/book/1001401495)

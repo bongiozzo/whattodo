@@ -10,4 +10,8 @@ livelib_editions:
   - "https://www.livelib.ru/book/1007528788"
 ---
 
-**Максим Горький** — [LiveLib](https://www.livelib.ru/book/1009916668) — прочитано
+Автор: Максим Горький
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1009916668](https://www.livelib.ru/book/1009916668)

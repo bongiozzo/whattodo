@@ -7,4 +7,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1006181185"
 ---
 
-**Ирина Хакамада** — [LiveLib](https://www.livelib.ru/book/1006181185) — прочитано
+Автор: Ирина Хакамада
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1006181185](https://www.livelib.ru/book/1006181185)

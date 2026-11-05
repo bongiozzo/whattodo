@@ -11,7 +11,11 @@ livelib_book: "https://www.livelib.ru/book/1002524734"
 livelib_review: "https://www.livelib.ru/review/2985526"
 ---
 
-**Эрих Фромм** — [LiveLib](https://www.livelib.ru/book/1002524734) — прочитано
+Автор: Эрих Фромм
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002524734](https://www.livelib.ru/book/1002524734)
 
 ## Рецензия
 

@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1009161802"
 livelib_review: "https://www.livelib.ru/review/5301010"
 ---
 
-**Лев Толстой** — [LiveLib](https://www.livelib.ru/book/1009161802) — недочитано
+Автор: Лев Толстой
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1009161802](https://www.livelib.ru/book/1009161802)
 
 ## Рецензия
 

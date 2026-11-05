@@ -7,7 +7,11 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1000742797"
 ---
 
-**Андрей Битов** — [LiveLib](https://www.livelib.ru/book/1000742797) — недочитано
+Автор: Андрей Битов
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1000742797](https://www.livelib.ru/book/1000742797)
 
 ## Цитаты
 

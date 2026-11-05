@@ -11,7 +11,11 @@ livelib_editions:
 livelib_review: "https://www.livelib.ru/review/4526516"
 ---
 
-**Виктория Ледерман** — [LiveLib](https://www.livelib.ru/book/1005003613) — прочитано
+Автор: Виктория Ледерман
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1005003613](https://www.livelib.ru/book/1005003613)
 
 ## Рецензия
 

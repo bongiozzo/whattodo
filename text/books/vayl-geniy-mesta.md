@@ -8,4 +8,8 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1003380115"
 ---
 
-**Петр Вайль** — [LiveLib](https://www.livelib.ru/book/1003380115) — недочитано
+Автор: Петр Вайль
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1003380115](https://www.livelib.ru/book/1003380115)

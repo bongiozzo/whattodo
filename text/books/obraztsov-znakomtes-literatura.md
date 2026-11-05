@@ -11,7 +11,11 @@ livelib_book: "https://www.livelib.ru/book/1012482743"
 livelib_review: "https://www.livelib.ru/review/4822360"
 ---
 
-**Константин Образцов** — [LiveLib](https://www.livelib.ru/book/1012482743) — прочитано
+Автор: Константин Образцов
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1012482743](https://www.livelib.ru/book/1012482743)
 
 ## Рецензия
 

@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1002967179"
 ---
 
-**К. И. Чуковский** — [LiveLib](https://www.livelib.ru/book/1002967179) — прочитано
+Автор: К. И. Чуковский
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002967179](https://www.livelib.ru/book/1002967179)

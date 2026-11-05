@@ -11,7 +11,11 @@ livelib_book: "https://www.livelib.ru/book/1002802989"
 livelib_review: "https://www.livelib.ru/review/3730660"
 ---
 
-**Евгений Гришковец** — [LiveLib](https://www.livelib.ru/book/1002802989) — прочитано
+Автор: Евгений Гришковец
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002802989](https://www.livelib.ru/book/1002802989)
 
 ## Рецензия
 

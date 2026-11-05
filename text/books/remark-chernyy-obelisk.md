@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000933347"
 ---
 
-**Эрих Мария Ремарк** — [LiveLib](https://www.livelib.ru/book/1000933347) — прочитано
+Автор: Эрих Мария Ремарк
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000933347](https://www.livelib.ru/book/1000933347)

@@ -7,4 +7,8 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1003633686"
 ---
 
-**Райнер Мария Рильке** — [LiveLib](https://www.livelib.ru/book/1003633686) — недочитано
+Автор: Райнер Мария Рильке
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1003633686](https://www.livelib.ru/book/1003633686)

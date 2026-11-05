@@ -7,7 +7,11 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1000716658"
 ---
 
-**Стив Джобс** — [LiveLib](https://www.livelib.ru/book/1000716658) — недочитано
+Автор: Стив Джобс
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1000716658](https://www.livelib.ru/book/1000716658)
 
 ## Цитаты
 

@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1000443661"
 livelib_review: "https://www.livelib.ru/review/4088782"
 ---
 
-**Д. А. Засосов, В. И. Пызин** — [LiveLib](https://www.livelib.ru/book/1000443661) — прочитано
+Автор: Д. А. Засосов, В. И. Пызин
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000443661](https://www.livelib.ru/book/1000443661)
 
 ## Рецензия
 

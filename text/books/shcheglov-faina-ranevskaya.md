@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000611792"
 ---
 
-**Дмитрий Щеглов** — [LiveLib](https://www.livelib.ru/book/1000611792) — прочитано
+Автор: Дмитрий Щеглов
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000611792](https://www.livelib.ru/book/1000611792)

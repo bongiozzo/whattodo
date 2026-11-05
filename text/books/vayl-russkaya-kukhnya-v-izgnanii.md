@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1001242883"
 ---
 
-**Петр Вайль, Александр Генис** — [LiveLib](https://www.livelib.ru/book/1001242883) — прочитано
+Автор: Петр Вайль, Александр Генис
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001242883](https://www.livelib.ru/book/1001242883)

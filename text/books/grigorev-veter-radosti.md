@@ -11,7 +11,11 @@ livelib_book: "https://www.livelib.ru/book/1009919548"
 livelib_review: "https://www.livelib.ru/review/5065204"
 ---
 
-**Григорий Григорьев** — [LiveLib](https://www.livelib.ru/book/1009919548) — прочитано
+Автор: Григорий Григорьев
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1009919548](https://www.livelib.ru/book/1009919548)
 
 ## Рецензия
 

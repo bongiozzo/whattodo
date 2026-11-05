@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1003152634"
 ---
 
-**Рид Хоффман, Крис Йе** — [LiveLib](https://www.livelib.ru/book/1003152634) — хочу прочитать
+Автор: Рид Хоффман, Крис Йе
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1003152634](https://www.livelib.ru/book/1003152634)

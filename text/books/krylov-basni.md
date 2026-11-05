@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1003180974"
 ---
 
-**Иван Крылов, Эзоп , Жан де Лафонтен** — [LiveLib](https://www.livelib.ru/book/1003180974) — прочитано
+Автор: Иван Крылов, Эзоп , Жан де Лафонтен
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1003180974](https://www.livelib.ru/book/1003180974)

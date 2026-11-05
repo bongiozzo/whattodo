@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1001651792"
 livelib_review: "https://www.livelib.ru/review/4338980"
 ---
 
-**Александр Генис** — [LiveLib](https://www.livelib.ru/book/1001651792) — прочитано
+Автор: Александр Генис
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001651792](https://www.livelib.ru/book/1001651792)
 
 ## Рецензия
 

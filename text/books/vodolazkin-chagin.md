@@ -11,7 +11,11 @@ livelib_book: "https://www.livelib.ru/book/1007537842"
 livelib_review: "https://www.livelib.ru/review/4403090"
 ---
 
-**Евгений Водолазкин** — [LiveLib](https://www.livelib.ru/book/1007537842) — прочитано
+Автор: Евгений Водолазкин
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1007537842](https://www.livelib.ru/book/1007537842)
 
 ## Рецензия
 

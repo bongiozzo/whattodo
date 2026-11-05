@@ -13,7 +13,11 @@ livelib_editions:
 livelib_review: "https://www.livelib.ru/review/2977069"
 ---
 
-**Денис Драгунский, Виктор Драгунский** — [LiveLib](https://www.livelib.ru/book/1000752168) — прочитано
+Автор: Денис Драгунский, Виктор Драгунский
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000752168](https://www.livelib.ru/book/1000752168)
 
 ## Рецензия
 

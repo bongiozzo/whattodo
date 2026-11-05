@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1001035681"
 ---
 
-**Андрей Максимов** — [LiveLib](https://www.livelib.ru/book/1001035681) — хочу прочитать
+Автор: Андрей Максимов
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1001035681](https://www.livelib.ru/book/1001035681)

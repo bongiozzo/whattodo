@@ -7,7 +7,11 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1002611070"
 ---
 
-**Лев Толстой** — [LiveLib](https://www.livelib.ru/book/1002611070) — недочитано
+Автор: Лев Толстой
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1002611070](https://www.livelib.ru/book/1002611070)
 
 ## Цитаты
 

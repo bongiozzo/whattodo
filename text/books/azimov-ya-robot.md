@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1002746847"
 ---
 
-**Айзек Азимов** — [LiveLib](https://www.livelib.ru/book/1002746847) — прочитано
+Автор: Айзек Азимов
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002746847](https://www.livelib.ru/book/1002746847)

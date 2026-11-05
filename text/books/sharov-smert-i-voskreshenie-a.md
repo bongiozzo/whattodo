@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000931499"
 ---
 
-**Александр Шаров** — [LiveLib](https://www.livelib.ru/book/1000931499) — прочитано
+Автор: Александр Шаров
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000931499](https://www.livelib.ru/book/1000931499)

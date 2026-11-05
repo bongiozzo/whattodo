@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1001522638"
 ---
 
-**Раневская Ф.Г.** — [LiveLib](https://www.livelib.ru/book/1001522638) — прочитано
+Автор: Раневская Ф.Г.
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001522638](https://www.livelib.ru/book/1001522638)

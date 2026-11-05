@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1007649064"
 livelib_review: "https://www.livelib.ru/review/3634177"
 ---
 
-**Евгений Вышенков** — [LiveLib](https://www.livelib.ru/book/1007649064) — прочитано
+Автор: Евгений Вышенков
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1007649064](https://www.livelib.ru/book/1007649064)
 
 ## Рецензия
 

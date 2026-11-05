@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1001380284"
 ---
 
-**Павел Бажов** — [LiveLib](https://www.livelib.ru/book/1001380284) — прочитано
+Автор: Павел Бажов
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001380284](https://www.livelib.ru/book/1001380284)

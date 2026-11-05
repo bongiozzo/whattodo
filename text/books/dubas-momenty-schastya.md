@@ -10,7 +10,11 @@ livelib_book: "https://www.livelib.ru/book/1003047920"
 livelib_review: "https://www.livelib.ru/review/3575245"
 ---
 
-**Алекс Дубас** — [LiveLib](https://www.livelib.ru/book/1003047920) — недочитано
+Автор: Алекс Дубас
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1003047920](https://www.livelib.ru/book/1003047920)
 
 ## Рецензия
 

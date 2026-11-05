@@ -7,7 +7,11 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1009268587"
 ---
 
-**Андрей Буровский** — [LiveLib](https://www.livelib.ru/book/1009268587) — недочитано
+Автор: Андрей Буровский
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1009268587](https://www.livelib.ru/book/1009268587)
 
 ## Цитаты
 

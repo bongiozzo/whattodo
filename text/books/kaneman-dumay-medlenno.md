@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1001961390"
 ---
 
-**Даниэль Канеман** — [LiveLib](https://www.livelib.ru/book/1001961390) — хочу прочитать
+Автор: Даниэль Канеман
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1001961390](https://www.livelib.ru/book/1001961390)

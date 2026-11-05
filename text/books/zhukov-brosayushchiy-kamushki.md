@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1017903715"
 ---
 
-**Евгений Александрович Жуков** — [LiveLib](https://www.livelib.ru/book/1017903715) — хочу прочитать
+Автор: Евгений Александрович Жуков
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1017903715](https://www.livelib.ru/book/1017903715)

@@ -8,7 +8,11 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000977005"
 ---
 
-**Наталья Перевезенцева** — [LiveLib](https://www.livelib.ru/book/1000977005) — прочитано
+Автор: Наталья Перевезенцева
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000977005](https://www.livelib.ru/book/1000977005)
 
 ## Цитаты
 

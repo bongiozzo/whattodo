@@ -7,7 +7,11 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1000395079"
 ---
 
-**Иммануил Кант** — [LiveLib](https://www.livelib.ru/book/1000395079) — недочитано
+Автор: Иммануил Кант
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1000395079](https://www.livelib.ru/book/1000395079)
 
 ## Цитаты
 

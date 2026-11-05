@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1002272824"
 ---
 
-**Дженсис Робинсон** — [LiveLib](https://www.livelib.ru/book/1002272824) — прочитано
+Автор: Дженсис Робинсон
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002272824](https://www.livelib.ru/book/1002272824)

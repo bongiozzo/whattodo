@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1000040440"
 livelib_review: "https://www.livelib.ru/review/3715936"
 ---
 
-**М. И. Пыляев** — [LiveLib](https://www.livelib.ru/book/1000040440) — прочитано
+Автор: М. И. Пыляев
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000040440](https://www.livelib.ru/book/1000040440)
 
 ## Рецензия
 

@@ -10,7 +10,11 @@ livelib_editions:
   - "https://www.livelib.ru/book/1001267999"
 ---
 
-**Олдос Хаксли** — [LiveLib](https://www.livelib.ru/book/1004995033) — прочитано
+Автор: Олдос Хаксли
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1004995033](https://www.livelib.ru/book/1004995033)
 
 ## Цитаты
 

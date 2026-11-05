@@ -10,7 +10,11 @@ livelib_editions:
   - "https://www.livelib.ru/book/1009344658"
 ---
 
-**Александр Генис** — [LiveLib](https://www.livelib.ru/book/1003527545) — недочитано
+Автор: Александр Генис
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1003527545](https://www.livelib.ru/book/1003527545)
 
 ## Цитаты
 

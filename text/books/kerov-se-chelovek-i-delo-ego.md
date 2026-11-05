@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1013622664"
 ---
 
-**Валерий Керов** — [LiveLib](https://www.livelib.ru/book/1013622664) — хочу прочитать
+Автор: Валерий Керов
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1013622664](https://www.livelib.ru/book/1013622664)

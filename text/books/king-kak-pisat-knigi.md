@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1006930180"
 livelib_review: "https://www.livelib.ru/review/4452449"
 ---
 
-**Стивен Кинг** — [LiveLib](https://www.livelib.ru/book/1006930180) — прочитано
+Автор: Стивен Кинг
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1006930180](https://www.livelib.ru/book/1006930180)
 
 ## Рецензия
 

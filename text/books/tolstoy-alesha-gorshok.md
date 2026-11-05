@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1009846426"
 ---
 
-**Лев Толстой** — [LiveLib](https://www.livelib.ru/book/1009846426) — прочитано
+Автор: Лев Толстой
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1009846426](https://www.livelib.ru/book/1009846426)

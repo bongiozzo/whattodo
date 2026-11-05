@@ -7,7 +7,11 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1000410280"
 ---
 
-**Джон Голсуорси** — [LiveLib](https://www.livelib.ru/book/1000410280) — недочитано
+Автор: Джон Голсуорси
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1000410280](https://www.livelib.ru/book/1000410280)
 
 ## Цитаты
 

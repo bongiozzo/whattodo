@@ -7,4 +7,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1001110049"
 ---
 
-**Ирина Пивоварова** — [LiveLib](https://www.livelib.ru/book/1001110049) — прочитано
+Автор: Ирина Пивоварова
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001110049](https://www.livelib.ru/book/1001110049)

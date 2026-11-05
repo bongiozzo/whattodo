@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1003186858"
 ---
 
-**Ричард Фейнман** — [LiveLib](https://www.livelib.ru/book/1003186858) — прочитано
+Автор: Ричард Фейнман
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1003186858](https://www.livelib.ru/book/1003186858)

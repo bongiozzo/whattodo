@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1009208446"
 ---
 
-**Герман Гессе** — [LiveLib](https://www.livelib.ru/book/1009208446) — хочу прочитать
+Автор: Герман Гессе
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1009208446](https://www.livelib.ru/book/1009208446)

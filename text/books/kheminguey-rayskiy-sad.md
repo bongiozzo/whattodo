@@ -7,7 +7,11 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1000417324"
 ---
 
-**Эрнест Хемингуэй** — [LiveLib](https://www.livelib.ru/book/1000417324) — недочитано
+Автор: Эрнест Хемингуэй
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1000417324](https://www.livelib.ru/book/1000417324)
 
 ## Цитаты
 

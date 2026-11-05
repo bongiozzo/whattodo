@@ -7,7 +7,11 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1000107117"
 ---
 
-**Т.Л. Сухотина-Толстая** — [LiveLib](https://www.livelib.ru/book/1000107117) — недочитано
+Автор: Т.Л. Сухотина-Толстая
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1000107117](https://www.livelib.ru/book/1000107117)
 
 ## Цитаты
 

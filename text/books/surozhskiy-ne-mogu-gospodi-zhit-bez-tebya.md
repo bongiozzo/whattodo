@@ -11,7 +11,11 @@ livelib_book: "https://www.livelib.ru/book/1008653314"
 livelib_review: "https://www.livelib.ru/review/5900392"
 ---
 
-**митрополит Антоний Сурожский** — [LiveLib](https://www.livelib.ru/book/1008653314) — прочитано
+Автор: митрополит Антоний Сурожский
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1008653314](https://www.livelib.ru/book/1008653314)
 
 ## Рецензия
 

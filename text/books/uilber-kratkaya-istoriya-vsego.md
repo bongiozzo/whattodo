@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1002972881"
 livelib_review: "https://www.livelib.ru/review/4103959"
 ---
 
-**Кен Уилбер** — [LiveLib](https://www.livelib.ru/book/1002972881) — недочитано
+Автор: Кен Уилбер
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1002972881](https://www.livelib.ru/book/1002972881)
 
 ## Рецензия
 

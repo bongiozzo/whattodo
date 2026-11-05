@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1001280701"
 ---
 
-**Борис Минаев** — [LiveLib](https://www.livelib.ru/book/1001280701) — прочитано
+Автор: Борис Минаев
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001280701](https://www.livelib.ru/book/1001280701)

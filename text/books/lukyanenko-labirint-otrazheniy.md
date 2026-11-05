@@ -10,4 +10,8 @@ livelib_editions:
   - "https://www.livelib.ru/book/1000463704"
 ---
 
-**Сергей Лукьяненко** — [LiveLib](https://www.livelib.ru/book/1002042063) — прочитано
+Автор: Сергей Лукьяненко
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002042063](https://www.livelib.ru/book/1002042063)

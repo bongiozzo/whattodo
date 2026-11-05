@@ -7,7 +7,11 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1000570043"
 ---
 
-**Фридрих Ницше** — [LiveLib](https://www.livelib.ru/book/1000570043) — недочитано
+Автор: Фридрих Ницше
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1000570043](https://www.livelib.ru/book/1000570043)
 
 ## Цитаты
 

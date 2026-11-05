@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1004708560"
 ---
 
-**Владимир Гиляровский** — [LiveLib](https://www.livelib.ru/book/1004708560) — прочитано
+Автор: Владимир Гиляровский
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1004708560](https://www.livelib.ru/book/1004708560)

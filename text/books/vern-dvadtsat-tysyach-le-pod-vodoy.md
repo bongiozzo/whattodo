@@ -7,4 +7,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1015438324"
 ---
 
-**Жюль Верн** — [LiveLib](https://www.livelib.ru/book/1015438324) — прочитано
+Автор: Жюль Верн
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1015438324](https://www.livelib.ru/book/1015438324)

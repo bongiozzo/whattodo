@@ -7,7 +7,11 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1012480325"
 ---
 
-**Иван Тургенев** — [LiveLib](https://www.livelib.ru/book/1012480325) — недочитано
+Автор: Иван Тургенев
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1012480325](https://www.livelib.ru/book/1012480325)
 
 ## Цитаты
 

@@ -8,4 +8,8 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1000614114"
 ---
 
-**Арнольд Шварценеггер** — [LiveLib](https://www.livelib.ru/book/1000614114) — недочитано
+Автор: Арнольд Шварценеггер
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1000614114](https://www.livelib.ru/book/1000614114)

@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1006074295"
 ---
 
-**Борис Васильев** — [LiveLib](https://www.livelib.ru/book/1006074295) — хочу прочитать
+Автор: Борис Васильев
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1006074295](https://www.livelib.ru/book/1006074295)

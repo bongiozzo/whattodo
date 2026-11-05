@@ -9,7 +9,11 @@ livelib_editions:
   - "https://www.livelib.ru/book/1000284779"
 ---
 
-**Павел Фокин** — [LiveLib](https://www.livelib.ru/book/1012618807) — прочитано
+Автор: Павел Фокин
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1012618807](https://www.livelib.ru/book/1012618807)
 
 ## Цитаты
 

@@ -10,4 +10,8 @@ livelib_editions:
   - "https://www.livelib.ru/book/1010170867"
 ---
 
-**Герберт Уэллс** — [LiveLib](https://www.livelib.ru/book/1000104859) — прочитано
+Автор: Герберт Уэллс
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000104859](https://www.livelib.ru/book/1000104859)

@@ -7,4 +7,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1003043218"
 ---
 
-**Лев Толстой** — [LiveLib](https://www.livelib.ru/book/1003043218) — прочитано
+Автор: Лев Толстой
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1003043218](https://www.livelib.ru/book/1003043218)

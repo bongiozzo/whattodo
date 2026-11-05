@@ -11,7 +11,11 @@ livelib_book: "https://www.livelib.ru/book/1001128870"
 livelib_review: "https://www.livelib.ru/review/4165063"
 ---
 
-**Александр Юрьев** — [LiveLib](https://www.livelib.ru/book/1001128870) — прочитано
+Автор: Александр Юрьев
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001128870](https://www.livelib.ru/book/1001128870)
 
 ## Рецензия
 

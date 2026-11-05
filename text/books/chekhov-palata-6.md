@@ -10,4 +10,8 @@ livelib_editions:
   - "https://www.livelib.ru/book/1011110963"
 ---
 
-**Антон Чехов** — [LiveLib](https://www.livelib.ru/book/1000434258) — прочитано
+Автор: Антон Чехов
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000434258](https://www.livelib.ru/book/1000434258)

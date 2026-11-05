@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1010832521"
 ---
 
-**Александр Пушкин** — [LiveLib](https://www.livelib.ru/book/1010832521) — прочитано
+Автор: Александр Пушкин
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1010832521](https://www.livelib.ru/book/1010832521)

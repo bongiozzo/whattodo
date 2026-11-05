@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1007482252"
 ---
 
-**Ричард Докинз** — [LiveLib](https://www.livelib.ru/book/1007482252) — хочу прочитать
+Автор: Ричард Докинз
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1007482252](https://www.livelib.ru/book/1007482252)

@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1002692169"
 livelib_review: "https://www.livelib.ru/review/2960671"
 ---
 
-**Кирилл Андреевич Соловьев** — [LiveLib](https://www.livelib.ru/book/1002692169) — прочитано
+Автор: Кирилл Андреевич Соловьев
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002692169](https://www.livelib.ru/book/1002692169)
 
 ## Рецензия
 

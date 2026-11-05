@@ -7,7 +7,11 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1000019230"
 ---
 
-**Аристотель** — [LiveLib](https://www.livelib.ru/book/1000019230) — хочу прочитать
+Автор: Аристотель
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1000019230](https://www.livelib.ru/book/1000019230)
 
 ## Цитаты
 

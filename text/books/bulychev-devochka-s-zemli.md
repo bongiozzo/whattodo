@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1002287433"
 ---
 
-**Кир Булычёв** — [LiveLib](https://www.livelib.ru/book/1002287433) — прочитано
+Автор: Кир Булычёв
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002287433](https://www.livelib.ru/book/1002287433)

@@ -7,7 +7,11 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1000443129"
 ---
 
-**Анатолий Рыбаков** — [LiveLib](https://www.livelib.ru/book/1000443129) — хочу прочитать
+Автор: Анатолий Рыбаков
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1000443129](https://www.livelib.ru/book/1000443129)
 
 ## Цитаты
 

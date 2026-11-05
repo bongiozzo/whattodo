@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1003171277"
 ---
 
-**Виктор Пелевин** — [LiveLib](https://www.livelib.ru/book/1003171277) — прочитано
+Автор: Виктор Пелевин
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1003171277](https://www.livelib.ru/book/1003171277)

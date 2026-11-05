@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1008883819"
 livelib_review: "https://www.livelib.ru/review/3780112"
 ---
 
-**Мэттью Перри** — [LiveLib](https://www.livelib.ru/book/1008883819) — прочитано
+Автор: Мэттью Перри
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1008883819](https://www.livelib.ru/book/1008883819)
 
 ## Рецензия
 

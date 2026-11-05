@@ -7,4 +7,8 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1001758706"
 ---
 
-**Максим Горький** — [LiveLib](https://www.livelib.ru/book/1001758706) — недочитано
+Автор: Максим Горький
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1001758706](https://www.livelib.ru/book/1001758706)

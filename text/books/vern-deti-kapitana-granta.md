@@ -10,4 +10,8 @@ livelib_editions:
   - "https://www.livelib.ru/book/1000172127"
 ---
 
-**Жюль Верн** — [LiveLib](https://www.livelib.ru/book/1007134321) — прочитано
+Автор: Жюль Верн
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1007134321](https://www.livelib.ru/book/1007134321)

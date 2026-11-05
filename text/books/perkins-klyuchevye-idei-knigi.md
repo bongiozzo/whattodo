@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1007548783"
 livelib_review: "https://www.livelib.ru/review/3640978"
 ---
 
-**Bill Perkins** — [LiveLib](https://www.livelib.ru/book/1007548783) — прочитано
+Автор: Bill Perkins
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1007548783](https://www.livelib.ru/book/1007548783)
 
 ## Рецензия
 

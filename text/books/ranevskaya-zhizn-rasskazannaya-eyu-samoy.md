@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000615020"
 ---
 
-**Фаина Раневская** — [LiveLib](https://www.livelib.ru/book/1000615020) — прочитано
+Автор: Фаина Раневская
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000615020](https://www.livelib.ru/book/1000615020)

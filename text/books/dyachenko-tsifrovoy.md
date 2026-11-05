@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000318289"
 ---
 
-**Марина и Сергей Дяченко** — [LiveLib](https://www.livelib.ru/book/1000318289) — прочитано
+Автор: Марина и Сергей Дяченко
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000318289](https://www.livelib.ru/book/1000318289)

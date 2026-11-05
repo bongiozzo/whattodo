@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1009165489"
 ---
 
-**Антоний Погорельский** — [LiveLib](https://www.livelib.ru/book/1009165489) — прочитано
+Автор: Антоний Погорельский
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1009165489](https://www.livelib.ru/book/1009165489)

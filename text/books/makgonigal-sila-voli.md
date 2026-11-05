@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1001222122"
 livelib_review: "https://www.livelib.ru/review/3038405"
 ---
 
-**Келли Макгонигал** — [LiveLib](https://www.livelib.ru/book/1001222122) — прочитано
+Автор: Келли Макгонигал
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001222122](https://www.livelib.ru/book/1001222122)
 
 ## Рецензия
 

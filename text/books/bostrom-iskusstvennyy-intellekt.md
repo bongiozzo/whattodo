@@ -11,7 +11,11 @@ livelib_book: "https://www.livelib.ru/book/1001459912"
 livelib_review: "https://www.livelib.ru/review/4606844"
 ---
 
-**Ник Бостром** — [LiveLib](https://www.livelib.ru/book/1001459912) — прочитано
+Автор: Ник Бостром
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001459912](https://www.livelib.ru/book/1001459912)
 
 ## Рецензия
 

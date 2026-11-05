@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1007095369"
 ---
 
-**Евгений Водолазкин, Саша Гусов** — [LiveLib](https://www.livelib.ru/book/1007095369) — прочитано
+Автор: Евгений Водолазкин, Саша Гусов
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1007095369](https://www.livelib.ru/book/1007095369)

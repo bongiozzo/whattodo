@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1002605124"
 livelib_review: "https://www.livelib.ru/review/3316993"
 ---
 
-**Михаил Веллер** — [LiveLib](https://www.livelib.ru/book/1002605124) — прочитано
+Автор: Михаил Веллер
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002605124](https://www.livelib.ru/book/1002605124)
 
 ## Рецензия
 

@@ -11,4 +11,8 @@ livelib_editions:
   - "https://www.livelib.ru/book/1009002958"
 ---
 
-**Евгений Замятин** — [LiveLib](https://www.livelib.ru/book/1000469874) — недочитано
+Автор: Евгений Замятин
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1000469874](https://www.livelib.ru/book/1000469874)

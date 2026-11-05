@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000552940"
 ---
 
-**Элияху Голдратт** — [LiveLib](https://www.livelib.ru/book/1000552940) — прочитано
+Автор: Элияху Голдратт
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000552940](https://www.livelib.ru/book/1000552940)

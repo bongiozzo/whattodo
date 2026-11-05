@@ -7,4 +7,8 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1013326933"
 ---
 
-**Ирина Хакамада** — [LiveLib](https://www.livelib.ru/book/1013326933) — недочитано
+Автор: Ирина Хакамада
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1013326933](https://www.livelib.ru/book/1013326933)

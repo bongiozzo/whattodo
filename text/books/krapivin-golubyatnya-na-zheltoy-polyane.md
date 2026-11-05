@@ -7,4 +7,8 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1002607502"
 ---
 
-**Владислав Крапивин** — [LiveLib](https://www.livelib.ru/book/1002607502) — недочитано
+Автор: Владислав Крапивин
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1002607502](https://www.livelib.ru/book/1002607502)

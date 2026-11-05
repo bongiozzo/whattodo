@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000312019"
 ---
 
-**Айн Рэнд** — [LiveLib](https://www.livelib.ru/book/1000312019) — прочитано
+Автор: Айн Рэнд
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000312019](https://www.livelib.ru/book/1000312019)

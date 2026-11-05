@@ -14,7 +14,11 @@ livelib_editions:
 livelib_review: "https://www.livelib.ru/review/5738980"
 ---
 
-**Клайв С. Льюис** — [LiveLib](https://www.livelib.ru/book/1001290747) — прочитано
+Автор: Клайв С. Льюис
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001290747](https://www.livelib.ru/book/1001290747)
 
 ## Рецензия
 

@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1005883771"
 ---
 
-**Дейл Карнеги** — [LiveLib](https://www.livelib.ru/book/1005883771) — прочитано
+Автор: Дейл Карнеги
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1005883771](https://www.livelib.ru/book/1005883771)

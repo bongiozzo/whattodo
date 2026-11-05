@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1001507738"
 ---
 
-**Энди Паддикомб** — [LiveLib](https://www.livelib.ru/book/1001507738) — прочитано
+Автор: Энди Паддикомб
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001507738](https://www.livelib.ru/book/1001507738)

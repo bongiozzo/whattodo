@@ -11,7 +11,11 @@ livelib_book: "https://www.livelib.ru/book/1001118351"
 livelib_review: "https://www.livelib.ru/review/3093508"
 ---
 
-**Александр Прохоров** — [LiveLib](https://www.livelib.ru/book/1001118351) — прочитано
+Автор: Александр Прохоров
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001118351](https://www.livelib.ru/book/1001118351)
 
 ## Рецензия
 

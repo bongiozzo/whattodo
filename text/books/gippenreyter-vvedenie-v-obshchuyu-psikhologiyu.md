@@ -7,4 +7,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000787010"
 ---
 
-**Юлия Гиппенрейтер** — [LiveLib](https://www.livelib.ru/book/1000787010) — прочитано
+Автор: Юлия Гиппенрейтер
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000787010](https://www.livelib.ru/book/1000787010)

@@ -7,7 +7,11 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1000470367"
 ---
 
-**Сёрен Кьеркегор** — [LiveLib](https://www.livelib.ru/book/1000470367) — недочитано
+Автор: Сёрен Кьеркегор
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1000470367](https://www.livelib.ru/book/1000470367)
 
 ## Цитаты
 

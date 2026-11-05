@@ -7,4 +7,8 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1002753939"
 ---
 
-**Павел Басинский** — [LiveLib](https://www.livelib.ru/book/1002753939) — недочитано
+Автор: Павел Басинский
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1002753939](https://www.livelib.ru/book/1002753939)

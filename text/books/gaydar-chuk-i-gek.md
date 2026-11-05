@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1009005229"
 ---
 
-**Аркадий Гайдар** — [LiveLib](https://www.livelib.ru/book/1009005229) — прочитано
+Автор: Аркадий Гайдар
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1009005229](https://www.livelib.ru/book/1009005229)

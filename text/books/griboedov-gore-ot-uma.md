@@ -7,4 +7,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1001725965"
 ---
 
-**Александр Грибоедов** — [LiveLib](https://www.livelib.ru/book/1001725965) — прочитано
+Автор: Александр Грибоедов
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001725965](https://www.livelib.ru/book/1001725965)

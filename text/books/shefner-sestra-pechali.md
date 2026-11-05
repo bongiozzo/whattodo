@@ -8,7 +8,11 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1003165146"
 ---
 
-**Вадим Шефнер** — [LiveLib](https://www.livelib.ru/book/1003165146) — прочитано
+Автор: Вадим Шефнер
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1003165146](https://www.livelib.ru/book/1003165146)
 
 ## Цитаты
 

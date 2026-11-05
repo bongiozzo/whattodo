@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000494281"
 ---
 
-**Марио Пьюзо** — [LiveLib](https://www.livelib.ru/book/1000494281) — прочитано
+Автор: Марио Пьюзо
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000494281](https://www.livelib.ru/book/1000494281)

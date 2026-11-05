@@ -7,7 +7,11 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1000108016"
 ---
 
-**А. Г. Достоевская** — [LiveLib](https://www.livelib.ru/book/1000108016) — недочитано
+Автор: А. Г. Достоевская
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1000108016](https://www.livelib.ru/book/1000108016)
 
 ## Цитаты
 

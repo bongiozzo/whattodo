@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1002817505"
 ---
 
-**Архангельский Глеб Алексеевич** — [LiveLib](https://www.livelib.ru/book/1002817505) — прочитано
+Автор: Архангельский Глеб Алексеевич
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002817505](https://www.livelib.ru/book/1002817505)

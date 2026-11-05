@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000877187"
 ---
 
-**Роджер Желязны** — [LiveLib](https://www.livelib.ru/book/1000877187) — прочитано
+Автор: Роджер Желязны
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000877187](https://www.livelib.ru/book/1000877187)

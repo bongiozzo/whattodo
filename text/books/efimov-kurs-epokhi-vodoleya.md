@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1000505966"
 ---
 
-**Виктор Ефимов** — [LiveLib](https://www.livelib.ru/book/1000505966) — хочу прочитать
+Автор: Виктор Ефимов
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1000505966](https://www.livelib.ru/book/1000505966)

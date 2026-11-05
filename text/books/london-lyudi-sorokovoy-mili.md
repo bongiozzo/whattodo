@@ -7,4 +7,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1001790173"
 ---
 
-**Джек Лондон** — [LiveLib](https://www.livelib.ru/book/1001790173) — прочитано
+Автор: Джек Лондон
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001790173](https://www.livelib.ru/book/1001790173)

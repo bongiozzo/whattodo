@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1005704698"
 ---
 
-**Иван Бунин** — [LiveLib](https://www.livelib.ru/book/1005704698) — хочу прочитать
+Автор: Иван Бунин
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1005704698](https://www.livelib.ru/book/1005704698)

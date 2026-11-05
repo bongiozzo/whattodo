@@ -15,7 +15,11 @@ livelib_editions:
 livelib_review: "https://www.livelib.ru/review/6390886"
 ---
 
-**Петр Вайль, Александр Генис** — [LiveLib](https://www.livelib.ru/book/1001474484) — прочитано
+Автор: Петр Вайль, Александр Генис
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001474484](https://www.livelib.ru/book/1001474484)
 
 ## Рецензия
 

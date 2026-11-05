@@ -7,7 +7,11 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1005994780"
 ---
 
-**Михаил Хазин, Сергей Щеглов** — [LiveLib](https://www.livelib.ru/book/1005994780) — хочу прочитать
+Автор: Михаил Хазин, Сергей Щеглов
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1005994780](https://www.livelib.ru/book/1005994780)
 
 ## Цитаты
 

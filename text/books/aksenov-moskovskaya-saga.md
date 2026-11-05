@@ -7,7 +7,11 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1000444845"
 ---
 
-**Василий Аксёнов** — [LiveLib](https://www.livelib.ru/book/1000444845) — хочу прочитать
+Автор: Василий Аксёнов
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1000444845](https://www.livelib.ru/book/1000444845)
 
 ## Цитаты
 

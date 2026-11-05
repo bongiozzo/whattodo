@@ -10,4 +10,8 @@ livelib_editions:
   - "https://www.livelib.ru/book/1006164937"
 ---
 
-**Александр Волков** — [LiveLib](https://www.livelib.ru/book/1005396508) — прочитано
+Автор: Александр Волков
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1005396508](https://www.livelib.ru/book/1005396508)

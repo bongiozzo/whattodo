@@ -7,4 +7,8 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1001492575"
 ---
 
-**Харуки Мураками** — [LiveLib](https://www.livelib.ru/book/1001492575) — недочитано
+Автор: Харуки Мураками
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1001492575](https://www.livelib.ru/book/1001492575)

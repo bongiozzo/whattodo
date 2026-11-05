@@ -8,7 +8,11 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1004822173"
 ---
 
-**Олег Тиньков** — [LiveLib](https://www.livelib.ru/book/1004822173) — прочитано
+Автор: Олег Тиньков
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1004822173](https://www.livelib.ru/book/1004822173)
 
 ## Цитаты
 

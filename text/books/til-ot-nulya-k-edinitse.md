@@ -11,7 +11,11 @@ livelib_book: "https://www.livelib.ru/book/1001008859"
 livelib_review: "https://www.livelib.ru/review/4639619"
 ---
 
-**Питер Тиль, Блейк Мастерс** — [LiveLib](https://www.livelib.ru/book/1001008859) — прочитано
+Автор: Питер Тиль, Блейк Мастерс
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001008859](https://www.livelib.ru/book/1001008859)
 
 ## Рецензия
 

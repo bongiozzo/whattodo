@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1007434216"
 livelib_review: "https://www.livelib.ru/review/5304733"
 ---
 
-**Павел Басинский** — [LiveLib](https://www.livelib.ru/book/1007434216) — прочитано
+Автор: Павел Басинский
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1007434216](https://www.livelib.ru/book/1007434216)
 
 ## Рецензия
 

@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1003790864"
 ---
 
-**Николай Носов, Игорь Носов** — [LiveLib](https://www.livelib.ru/book/1003790864) — прочитано
+Автор: Николай Носов, Игорь Носов
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1003790864](https://www.livelib.ru/book/1003790864)

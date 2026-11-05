@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1002106176"
 ---
 
-**Фрэнк Уильям Абигнейл, Стэн Реддинг** — [LiveLib](https://www.livelib.ru/book/1002106176) — прочитано
+Автор: Фрэнк Уильям Абигнейл, Стэн Реддинг
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002106176](https://www.livelib.ru/book/1002106176)

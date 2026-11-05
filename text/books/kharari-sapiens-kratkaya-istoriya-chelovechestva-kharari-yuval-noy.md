@@ -11,7 +11,11 @@ livelib_book: "https://www.livelib.ru/book/1015122040"
 livelib_review: "https://www.livelib.ru/review/6391126"
 ---
 
-**Юваль Ной Харари** — [LiveLib](https://www.livelib.ru/book/1015122040) — недочитано
+Автор: Юваль Ной Харари
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1015122040](https://www.livelib.ru/book/1015122040)
 
 ## Рецензия
 

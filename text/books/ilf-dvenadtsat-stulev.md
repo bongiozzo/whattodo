@@ -10,4 +10,8 @@ livelib_editions:
   - "https://www.livelib.ru/book/1000485350"
 ---
 
-**Илья Ильф, Евгений Петров** — [LiveLib](https://www.livelib.ru/book/1002878229) — прочитано
+Автор: Илья Ильф, Евгений Петров
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002878229](https://www.livelib.ru/book/1002878229)

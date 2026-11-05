@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1005772870"
 ---
 
-**Алан А. Милн, Борис Заходер** — [LiveLib](https://www.livelib.ru/book/1005772870) — прочитано
+Автор: Алан А. Милн, Борис Заходер
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1005772870](https://www.livelib.ru/book/1005772870)

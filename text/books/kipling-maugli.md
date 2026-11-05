@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000554191"
 ---
 
-**Редьярд Киплинг** — [LiveLib](https://www.livelib.ru/book/1000554191) — прочитано
+Автор: Редьярд Киплинг
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000554191](https://www.livelib.ru/book/1000554191)

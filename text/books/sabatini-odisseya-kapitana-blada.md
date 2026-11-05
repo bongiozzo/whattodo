@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1009611271"
 ---
 
-**Рафаэль Сабатини** — [LiveLib](https://www.livelib.ru/book/1009611271) — прочитано
+Автор: Рафаэль Сабатини
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1009611271](https://www.livelib.ru/book/1009611271)

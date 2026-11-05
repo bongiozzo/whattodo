@@ -11,7 +11,11 @@ livelib_book: "https://www.livelib.ru/book/1002986342"
 livelib_review: "https://www.livelib.ru/review/3938821"
 ---
 
-**Адам Алтер** — [LiveLib](https://www.livelib.ru/book/1002986342) — прочитано
+Автор: Адам Алтер
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002986342](https://www.livelib.ru/book/1002986342)
 
 ## Рецензия
 

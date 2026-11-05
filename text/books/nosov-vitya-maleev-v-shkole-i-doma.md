@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1002799709"
 ---
 
-**Николай Носов** — [LiveLib](https://www.livelib.ru/book/1002799709) — прочитано
+Автор: Николай Носов
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002799709](https://www.livelib.ru/book/1002799709)

@@ -11,4 +11,8 @@ livelib_editions:
   - "https://www.livelib.ru/book/1007362321"
 ---
 
-**Артур Конан Дойл** — [LiveLib](https://www.livelib.ru/book/1006766917) — прочитано
+Автор: Артур Конан Дойл
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1006766917](https://www.livelib.ru/book/1006766917)

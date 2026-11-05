@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1000898792"
 ---
 
-**Дэниел Пинк** — [LiveLib](https://www.livelib.ru/book/1000898792) — хочу прочитать
+Автор: Дэниел Пинк
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1000898792](https://www.livelib.ru/book/1000898792)

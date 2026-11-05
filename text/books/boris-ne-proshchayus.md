@@ -7,4 +7,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1002760783"
 ---
 
-**Акунин Борис** — [LiveLib](https://www.livelib.ru/book/1002760783) — прочитано
+Автор: Акунин Борис
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002760783](https://www.livelib.ru/book/1002760783)

@@ -9,7 +9,11 @@ livelib_editions:
   - "https://www.livelib.ru/book/1001447196"
 ---
 
-**Генри Форд** — [LiveLib](https://www.livelib.ru/book/1009172287) — недочитано
+Автор: Генри Форд
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1009172287](https://www.livelib.ru/book/1009172287)
 
 ## Цитаты
 

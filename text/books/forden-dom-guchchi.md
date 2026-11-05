@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1006939180"
 ---
 
-**Сара Гэй Форден** — [LiveLib](https://www.livelib.ru/book/1006939180) — прочитано
+Автор: Сара Гэй Форден
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1006939180](https://www.livelib.ru/book/1006939180)

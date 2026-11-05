@@ -7,4 +7,8 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1001223918"
 ---
 
-**Иван Божерянов, Виктор Никольский, Михаил Пыляев** — [LiveLib](https://www.livelib.ru/book/1001223918) — недочитано
+Автор: Иван Божерянов, Виктор Никольский, Михаил Пыляев
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1001223918](https://www.livelib.ru/book/1001223918)

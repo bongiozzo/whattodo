@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1001560060"
 ---
 
-**Джон Перкинс** — [LiveLib](https://www.livelib.ru/book/1001560060) — прочитано
+Автор: Джон Перкинс
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001560060](https://www.livelib.ru/book/1001560060)

@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1008703420"
 livelib_review: "https://www.livelib.ru/review/3603013"
 ---
 
-**Казарина Марина** — [LiveLib](https://www.livelib.ru/book/1008703420) — прочитано
+Автор: Казарина Марина
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1008703420](https://www.livelib.ru/book/1008703420)
 
 ## Рецензия
 

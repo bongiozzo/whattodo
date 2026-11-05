@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1002971832"
 ---
 
-**Антон Чехов** — [LiveLib](https://www.livelib.ru/book/1002971832) — прочитано
+Автор: Антон Чехов
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002971832](https://www.livelib.ru/book/1002971832)

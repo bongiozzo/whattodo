@@ -8,4 +8,8 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1002096938"
 ---
 
-**Джидду Кришнамурти** — [LiveLib](https://www.livelib.ru/book/1002096938) — недочитано
+Автор: Джидду Кришнамурти
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1002096938](https://www.livelib.ru/book/1002096938)

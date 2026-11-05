@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1007411785"
 ---
 
-**Айзек Азимов** — [LiveLib](https://www.livelib.ru/book/1007411785) — хочу прочитать
+Автор: Айзек Азимов
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1007411785](https://www.livelib.ru/book/1007411785)

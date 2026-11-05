@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1000601810"
 ---
 
-**Нодар Думбадзе** — [LiveLib](https://www.livelib.ru/book/1000601810) — хочу прочитать
+Автор: Нодар Думбадзе
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1000601810](https://www.livelib.ru/book/1000601810)

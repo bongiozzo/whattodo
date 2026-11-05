@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1002305507"
 ---
 
-**Эдгар Аллан По** — [LiveLib](https://www.livelib.ru/book/1002305507) — прочитано
+Автор: Эдгар Аллан По
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002305507](https://www.livelib.ru/book/1002305507)

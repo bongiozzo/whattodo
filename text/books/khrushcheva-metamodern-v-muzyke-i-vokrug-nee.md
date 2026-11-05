@@ -7,4 +7,8 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1008167893"
 ---
 
-**Настасья Хрущёва** — [LiveLib](https://www.livelib.ru/book/1008167893) — недочитано
+Автор: Настасья Хрущёва
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1008167893](https://www.livelib.ru/book/1008167893)

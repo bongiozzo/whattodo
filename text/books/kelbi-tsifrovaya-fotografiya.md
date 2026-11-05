@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1001499088"
 ---
 
-**Скотт Келби** — [LiveLib](https://www.livelib.ru/book/1001499088) — прочитано
+Автор: Скотт Келби
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001499088](https://www.livelib.ru/book/1001499088)

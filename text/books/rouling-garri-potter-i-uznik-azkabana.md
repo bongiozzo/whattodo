@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1003317448"
 ---
 
-**Джоан Роулинг** — [LiveLib](https://www.livelib.ru/book/1003317448) — прочитано
+Автор: Джоан Роулинг
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1003317448](https://www.livelib.ru/book/1003317448)

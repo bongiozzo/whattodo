@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000188488"
 ---
 
-**Мария Бок** — [LiveLib](https://www.livelib.ru/book/1000188488) — прочитано
+Автор: Мария Бок
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000188488](https://www.livelib.ru/book/1000188488)

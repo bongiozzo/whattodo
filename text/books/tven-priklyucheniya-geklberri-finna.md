@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1010133607"
 ---
 
-**Марк Твен** — [LiveLib](https://www.livelib.ru/book/1010133607) — прочитано
+Автор: Марк Твен
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1010133607](https://www.livelib.ru/book/1010133607)

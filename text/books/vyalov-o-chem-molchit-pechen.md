@@ -8,7 +8,11 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1003965301"
 ---
 
-**Сергей Вялов** — [LiveLib](https://www.livelib.ru/book/1003965301) — прочитано
+Автор: Сергей Вялов
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1003965301](https://www.livelib.ru/book/1003965301)
 
 ## Цитаты
 

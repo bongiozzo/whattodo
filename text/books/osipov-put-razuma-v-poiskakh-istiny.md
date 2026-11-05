@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1000469712"
 ---
 
-**Осипов А.** — [LiveLib](https://www.livelib.ru/book/1000469712) — хочу прочитать
+Автор: Осипов А.
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1000469712](https://www.livelib.ru/book/1000469712)

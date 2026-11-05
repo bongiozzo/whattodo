@@ -8,4 +8,8 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1000515841"
 ---
 
-**Н. Н. Суханов** — [LiveLib](https://www.livelib.ru/book/1000515841) — недочитано
+Автор: Н. Н. Суханов
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1000515841](https://www.livelib.ru/book/1000515841)

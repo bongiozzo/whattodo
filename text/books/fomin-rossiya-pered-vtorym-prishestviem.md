@@ -8,7 +8,11 @@ livelib_book: "https://www.livelib.ru/book/1000194594"
 livelib_review: "https://www.livelib.ru/review/3060850"
 ---
 
-**Сергей Фомин** — [LiveLib](https://www.livelib.ru/book/1000194594) — недочитано
+Автор: Сергей Фомин
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1000194594](https://www.livelib.ru/book/1000194594)
 
 ## Рецензия
 

@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1003527531"
 livelib_review: "https://www.livelib.ru/review/4208659"
 ---
 
-**Роман Михайлов** — [LiveLib](https://www.livelib.ru/book/1003527531) — прочитано
+Автор: Роман Михайлов
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1003527531](https://www.livelib.ru/book/1003527531)
 
 ## Рецензия
 

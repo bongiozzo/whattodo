@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1002275302"
 livelib_review: "https://www.livelib.ru/review/4473476"
 ---
 
-**Джулиан Барнс** — [LiveLib](https://www.livelib.ru/book/1002275302) — прочитано
+Автор: Джулиан Барнс
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002275302](https://www.livelib.ru/book/1002275302)
 
 ## Рецензия
 

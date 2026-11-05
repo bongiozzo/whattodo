@@ -7,7 +7,11 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1002600387"
 ---
 
-**Лев Толстой, Михаил Орлов** — [LiveLib](https://www.livelib.ru/book/1002600387) — недочитано
+Автор: Лев Толстой, Михаил Орлов
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1002600387](https://www.livelib.ru/book/1002600387)
 
 ## Цитаты
 

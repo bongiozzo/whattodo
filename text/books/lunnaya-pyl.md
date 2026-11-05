@@ -12,7 +12,9 @@ livelib_editions:
 livelib_review: "https://www.livelib.ru/review/5189677"
 ---
 
-[LiveLib](https://www.livelib.ru/book/1000507758) — прочитано
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000507758](https://www.livelib.ru/book/1000507758)
 
 ## Рецензия
 

@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1007902828"
 livelib_review: "https://www.livelib.ru/review/3871987"
 ---
 
-**Шиманн Йорн, Вейрс Отто, Рэнд Лариса Арарипе** — [LiveLib](https://www.livelib.ru/book/1007902828) — прочитано
+Автор: Шиманн Йорн, Вейрс Отто, Рэнд Лариса Арарипе
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1007902828](https://www.livelib.ru/book/1007902828)
 
 ## Рецензия
 

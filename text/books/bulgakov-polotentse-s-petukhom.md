@@ -12,4 +12,8 @@ livelib_editions:
   - "https://www.livelib.ru/book/1000730276"
 ---
 
-**М. А. Булгаков** — [LiveLib](https://www.livelib.ru/book/1001789976) — прочитано
+Автор: М. А. Булгаков
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001789976](https://www.livelib.ru/book/1001789976)

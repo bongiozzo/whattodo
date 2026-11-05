@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1000027810"
 ---
 
-**Леонид Выскочков** — [LiveLib](https://www.livelib.ru/book/1000027810) — хочу прочитать
+Автор: Леонид Выскочков
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1000027810](https://www.livelib.ru/book/1000027810)

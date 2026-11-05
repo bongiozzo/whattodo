@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1007056054"
 livelib_review: "https://www.livelib.ru/review/5168533"
 ---
 
-**Вера Алентова** — [LiveLib](https://www.livelib.ru/book/1007056054) — прочитано
+Автор: Вера Алентова
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1007056054](https://www.livelib.ru/book/1007056054)
 
 ## Рецензия
 

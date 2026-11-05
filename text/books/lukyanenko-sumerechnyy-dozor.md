@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1003239435"
 ---
 
-**Сергей Лукьяненко** — [LiveLib](https://www.livelib.ru/book/1003239435) — прочитано
+Автор: Сергей Лукьяненко
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1003239435](https://www.livelib.ru/book/1003239435)

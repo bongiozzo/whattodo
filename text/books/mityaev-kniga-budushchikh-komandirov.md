@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1001245287"
 ---
 
-**Анатолий Митяев** — [LiveLib](https://www.livelib.ru/book/1001245287) — прочитано
+Автор: Анатолий Митяев
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001245287](https://www.livelib.ru/book/1001245287)

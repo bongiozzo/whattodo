@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000107323"
 ---
 
-**Павел Перец** — [LiveLib](https://www.livelib.ru/book/1000107323) — прочитано
+Автор: Павел Перец
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000107323](https://www.livelib.ru/book/1000107323)

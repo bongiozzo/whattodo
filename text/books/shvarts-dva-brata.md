@@ -7,4 +7,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1002101401"
 ---
 
-**Е. Л. Шварц** — [LiveLib](https://www.livelib.ru/book/1002101401) — прочитано
+Автор: Е. Л. Шварц
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002101401](https://www.livelib.ru/book/1002101401)

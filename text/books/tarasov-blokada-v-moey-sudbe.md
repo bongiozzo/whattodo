@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1000603596"
 livelib_review: "https://www.livelib.ru/review/3007177"
 ---
 
-**Борис Тарасов, Борис Тарасов** — [LiveLib](https://www.livelib.ru/book/1000603596) — прочитано
+Автор: Борис Тарасов, Борис Тарасов
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000603596](https://www.livelib.ru/book/1000603596)
 
 ## Рецензия
 

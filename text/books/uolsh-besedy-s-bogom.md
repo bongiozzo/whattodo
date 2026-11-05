@@ -7,4 +7,8 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1000819811"
 ---
 
-**Нил Доналд Уолш** — [LiveLib](https://www.livelib.ru/book/1000819811) — недочитано
+Автор: Нил Доналд Уолш
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1000819811](https://www.livelib.ru/book/1000819811)

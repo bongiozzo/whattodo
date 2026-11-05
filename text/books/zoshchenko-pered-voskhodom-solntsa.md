@@ -11,7 +11,11 @@ livelib_book: "https://www.livelib.ru/book/1002954997"
 livelib_review: "https://www.livelib.ru/review/5058298"
 ---
 
-**Михаил Зощенко** — [LiveLib](https://www.livelib.ru/book/1002954997) — прочитано
+Автор: Михаил Зощенко
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002954997](https://www.livelib.ru/book/1002954997)
 
 ## Рецензия
 

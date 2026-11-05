@@ -7,4 +7,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1002706824"
 ---
 
-**Тим О'Брайен** — [LiveLib](https://www.livelib.ru/book/1002706824) — прочитано
+Автор: Тим О'Брайен
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002706824](https://www.livelib.ru/book/1002706824)

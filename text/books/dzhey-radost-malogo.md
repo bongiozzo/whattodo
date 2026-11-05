@@ -7,4 +7,8 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1002507514"
 ---
 
-**Фрэнсин Джей** — [LiveLib](https://www.livelib.ru/book/1002507514) — недочитано
+Автор: Фрэнсин Джей
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1002507514](https://www.livelib.ru/book/1002507514)

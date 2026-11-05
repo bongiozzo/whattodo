@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1001553086"
 livelib_review: "https://www.livelib.ru/review/3718900"
 ---
 
-**Лев Толстой** — [LiveLib](https://www.livelib.ru/book/1001553086) — прочитано
+Автор: Лев Толстой
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001553086](https://www.livelib.ru/book/1001553086)
 
 ## Рецензия
 

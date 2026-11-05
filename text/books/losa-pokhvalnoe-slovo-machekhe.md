@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1000474921"
 ---
 
-**Марио Варгас Льоса** — [LiveLib](https://www.livelib.ru/book/1000474921) — хочу прочитать
+Автор: Марио Варгас Льоса
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1000474921](https://www.livelib.ru/book/1000474921)

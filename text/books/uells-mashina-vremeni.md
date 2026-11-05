@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1003012314"
 ---
 
-**Герберт Уэллс** — [LiveLib](https://www.livelib.ru/book/1003012314) — прочитано
+Автор: Герберт Уэллс
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1003012314](https://www.livelib.ru/book/1003012314)

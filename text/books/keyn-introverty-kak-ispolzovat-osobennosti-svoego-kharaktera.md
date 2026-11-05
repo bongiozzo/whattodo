@@ -7,4 +7,8 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1003972336"
 ---
 
-**Сьюзан Кейн** — [LiveLib](https://www.livelib.ru/book/1003972336) — недочитано
+Автор: Сьюзан Кейн
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1003972336](https://www.livelib.ru/book/1003972336)

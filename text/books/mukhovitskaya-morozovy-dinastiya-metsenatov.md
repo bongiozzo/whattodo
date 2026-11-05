@@ -7,7 +7,11 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1002593173"
 ---
 
-**Лира Муховицкая** — [LiveLib](https://www.livelib.ru/book/1002593173) — хочу прочитать
+Автор: Лира Муховицкая
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1002593173](https://www.livelib.ru/book/1002593173)
 
 ## Цитаты
 

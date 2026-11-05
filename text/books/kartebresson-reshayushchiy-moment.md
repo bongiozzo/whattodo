@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000929107"
 ---
 
-**Анри Картье-Брессон** — [LiveLib](https://www.livelib.ru/book/1000929107) — прочитано
+Автор: Анри Картье-Брессон
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000929107](https://www.livelib.ru/book/1000929107)

@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1001236893"
 ---
 
-**Борис Васильев** — [LiveLib](https://www.livelib.ru/book/1001236893) — прочитано
+Автор: Борис Васильев
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001236893](https://www.livelib.ru/book/1001236893)

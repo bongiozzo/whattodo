@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1001445982"
 ---
 
-**Стивен Кинг** — [LiveLib](https://www.livelib.ru/book/1001445982) — прочитано
+Автор: Стивен Кинг
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001445982](https://www.livelib.ru/book/1001445982)

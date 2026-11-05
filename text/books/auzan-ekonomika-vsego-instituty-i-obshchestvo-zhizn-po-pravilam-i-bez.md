@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1013573767"
 livelib_review: "https://www.livelib.ru/review/6428686"
 ---
 
-**Александр Аузан** — [LiveLib](https://www.livelib.ru/book/1013573767) — прочитано
+Автор: Александр Аузан
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1013573767](https://www.livelib.ru/book/1013573767)
 
 ## Рецензия
 

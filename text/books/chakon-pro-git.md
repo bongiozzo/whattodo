@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1001502890"
 livelib_review: "https://www.livelib.ru/review/5457061"
 ---
 
-**Скотт Чакон, Бен Штрауб** — [LiveLib](https://www.livelib.ru/book/1001502890) — прочитано
+Автор: Скотт Чакон, Бен Штрауб
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001502890](https://www.livelib.ru/book/1001502890)
 
 ## Рецензия
 

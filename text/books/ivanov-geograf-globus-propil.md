@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1001559581"
 livelib_review: "https://www.livelib.ru/review/3387328"
 ---
 
-**Алексей Иванов** — [LiveLib](https://www.livelib.ru/book/1001559581) — прочитано
+Автор: Алексей Иванов
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001559581](https://www.livelib.ru/book/1001559581)
 
 ## Рецензия
 

@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1001169115"
 ---
 
-**Петр Столыпин** — [LiveLib](https://www.livelib.ru/book/1001169115) — хочу прочитать
+Автор: Петр Столыпин
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1001169115](https://www.livelib.ru/book/1001169115)

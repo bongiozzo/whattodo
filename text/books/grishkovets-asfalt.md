@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000307915"
 ---
 
-**Евгений Гришковец** — [LiveLib](https://www.livelib.ru/book/1000307915) — прочитано
+Автор: Евгений Гришковец
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000307915](https://www.livelib.ru/book/1000307915)

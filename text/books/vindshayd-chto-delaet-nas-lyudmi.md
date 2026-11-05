@@ -7,7 +7,11 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1007502808"
 ---
 
-**Леон Виндшайд** — [LiveLib](https://www.livelib.ru/book/1007502808) — хочу прочитать
+Автор: Леон Виндшайд
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1007502808](https://www.livelib.ru/book/1007502808)
 
 ## Цитаты
 

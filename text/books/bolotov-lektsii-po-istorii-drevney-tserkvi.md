@@ -11,7 +11,11 @@ livelib_book: "https://www.livelib.ru/book/1000540454"
 livelib_review: "https://www.livelib.ru/review/5043412"
 ---
 
-**Василий Болотов** — [LiveLib](https://www.livelib.ru/book/1000540454) — прочитано
+Автор: Василий Болотов
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000540454](https://www.livelib.ru/book/1000540454)
 
 ## Рецензия
 

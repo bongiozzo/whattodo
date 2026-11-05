@@ -10,4 +10,8 @@ livelib_editions:
   - "https://www.livelib.ru/book/1000603389"
 ---
 
-**Н.М. Карамзин** — [LiveLib](https://www.livelib.ru/book/1001169934) — прочитано
+Автор: Н.М. Карамзин
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001169934](https://www.livelib.ru/book/1001169934)

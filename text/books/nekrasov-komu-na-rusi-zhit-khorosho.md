@@ -7,4 +7,8 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1009917349"
 ---
 
-**Н. А. Некрасов** — [LiveLib](https://www.livelib.ru/book/1009917349) — недочитано
+Автор: Н. А. Некрасов
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1009917349](https://www.livelib.ru/book/1009917349)

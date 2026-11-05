@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1000323269"
 livelib_review: "https://www.livelib.ru/review/2964769"
 ---
 
-**Максимов А.** — [LiveLib](https://www.livelib.ru/book/1000323269) — прочитано
+Автор: Максимов А.
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000323269](https://www.livelib.ru/book/1000323269)
 
 ## Рецензия
 

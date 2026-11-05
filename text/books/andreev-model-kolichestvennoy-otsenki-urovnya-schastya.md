@@ -11,7 +11,11 @@ livelib_book: "https://www.livelib.ru/book/1008288064"
 livelib_review: "https://www.livelib.ru/review/6390790"
 ---
 
-**Владимир Андреев** — [LiveLib](https://www.livelib.ru/book/1008288064) — прочитано
+Автор: Владимир Андреев
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1008288064](https://www.livelib.ru/book/1008288064)
 
 ## Рецензия
 

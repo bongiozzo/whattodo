@@ -7,7 +7,11 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1002729950"
 ---
 
-**Владимир Орлов** — [LiveLib](https://www.livelib.ru/book/1002729950) — недочитано
+Автор: Владимир Орлов
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1002729950](https://www.livelib.ru/book/1002729950)
 
 ## Цитаты
 

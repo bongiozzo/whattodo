@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1003010899"
 ---
 
-**Даниэль Дефо** — [LiveLib](https://www.livelib.ru/book/1003010899) — прочитано
+Автор: Даниэль Дефо
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1003010899](https://www.livelib.ru/book/1003010899)

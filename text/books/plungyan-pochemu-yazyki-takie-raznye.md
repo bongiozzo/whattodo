@@ -7,7 +7,11 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1000465750"
 ---
 
-**Владимир Плунгян** — [LiveLib](https://www.livelib.ru/book/1000465750) — хочу прочитать
+Автор: Владимир Плунгян
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1000465750](https://www.livelib.ru/book/1000465750)
 
 ## Цитаты
 

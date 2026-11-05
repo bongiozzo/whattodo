@@ -11,7 +11,11 @@ livelib_book: "https://www.livelib.ru/book/1000440333"
 livelib_review: "https://www.livelib.ru/review/3720607"
 ---
 
-**Гэри Чепмен** — [LiveLib](https://www.livelib.ru/book/1000440333) — прочитано
+Автор: Гэри Чепмен
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000440333](https://www.livelib.ru/book/1000440333)
 
 ## Рецензия
 

@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000970209"
 ---
 
-**Астрид Линдгрен** — [LiveLib](https://www.livelib.ru/book/1000970209) — прочитано
+Автор: Астрид Линдгрен
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000970209](https://www.livelib.ru/book/1000970209)

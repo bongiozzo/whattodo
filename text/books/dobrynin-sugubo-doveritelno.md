@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000388225"
 ---
 
-**Добрынин А.Ф.** — [LiveLib](https://www.livelib.ru/book/1000388225) — прочитано
+Автор: Добрынин А.Ф.
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000388225](https://www.livelib.ru/book/1000388225)

@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1003633550"
 ---
 
-**Максим Спиридонов, Вячеслав Макович** — [LiveLib](https://www.livelib.ru/book/1003633550) — прочитано
+Автор: Максим Спиридонов, Вячеслав Макович
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1003633550](https://www.livelib.ru/book/1003633550)

@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1001534213"
 livelib_review: "https://www.livelib.ru/review/3593419"
 ---
 
-**Павел Фокин** — [LiveLib](https://www.livelib.ru/book/1001534213) — прочитано
+Автор: Павел Фокин
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001534213](https://www.livelib.ru/book/1001534213)
 
 ## Рецензия
 

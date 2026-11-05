@@ -7,7 +7,11 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1003224848"
 ---
 
-**Артур Кларк** — [LiveLib](https://www.livelib.ru/book/1003224848) — хочу прочитать
+Автор: Артур Кларк
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1003224848](https://www.livelib.ru/book/1003224848)
 
 ## Цитаты
 

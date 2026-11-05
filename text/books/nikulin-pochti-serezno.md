@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1003208154"
 livelib_review: "https://www.livelib.ru/review/2997154"
 ---
 
-**Юрий Никулин** — [LiveLib](https://www.livelib.ru/book/1003208154) — прочитано
+Автор: Юрий Никулин
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1003208154](https://www.livelib.ru/book/1003208154)
 
 ## Рецензия
 

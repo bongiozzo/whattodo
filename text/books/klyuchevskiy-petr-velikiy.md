@@ -7,4 +7,8 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1001726453"
 ---
 
-**Василий Ключевский** — [LiveLib](https://www.livelib.ru/book/1001726453) — недочитано
+Автор: Василий Ключевский
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1001726453](https://www.livelib.ru/book/1001726453)

@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1002733407"
 ---
 
-**Михаил Зыгарь** — [LiveLib](https://www.livelib.ru/book/1002733407) — прочитано
+Автор: Михаил Зыгарь
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002733407](https://www.livelib.ru/book/1002733407)

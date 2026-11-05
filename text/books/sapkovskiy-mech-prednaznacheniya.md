@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1001616125"
 ---
 
-**Анджей Сапковский** — [LiveLib](https://www.livelib.ru/book/1001616125) — прочитано
+Автор: Анджей Сапковский
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001616125](https://www.livelib.ru/book/1001616125)

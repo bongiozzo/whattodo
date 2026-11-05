@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1001111195"
 livelib_review: "https://www.livelib.ru/review/3060793"
 ---
 
-**Федор Конюхов** — [LiveLib](https://www.livelib.ru/book/1001111195) — прочитано
+Автор: Федор Конюхов
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001111195](https://www.livelib.ru/book/1001111195)
 
 ## Рецензия
 

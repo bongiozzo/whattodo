@@ -8,7 +8,11 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1004124394"
 ---
 
-**Александр Аузан** — [LiveLib](https://www.livelib.ru/book/1004124394) — недочитано
+Автор: Александр Аузан
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1004124394](https://www.livelib.ru/book/1004124394)
 
 ## Цитаты
 

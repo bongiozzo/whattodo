@@ -7,7 +7,11 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000479622"
 ---
 
-**Эдуард Успенский** — [LiveLib](https://www.livelib.ru/book/1000479622) — прочитано
+Автор: Эдуард Успенский
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000479622](https://www.livelib.ru/book/1000479622)
 
 ## Цитаты
 

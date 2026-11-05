@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000565818"
 ---
 
-**Аркадий Гордин, Михаил Гордин** — [LiveLib](https://www.livelib.ru/book/1000565818) — прочитано
+Автор: Аркадий Гордин, Михаил Гордин
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000565818](https://www.livelib.ru/book/1000565818)

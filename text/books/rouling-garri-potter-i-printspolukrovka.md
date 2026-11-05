@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000186331"
 ---
 
-**Джоан Роулинг, Мишель Пейвер** — [LiveLib](https://www.livelib.ru/book/1000186331) — прочитано
+Автор: Джоан Роулинг, Мишель Пейвер
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000186331](https://www.livelib.ru/book/1000186331)

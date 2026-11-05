@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1001875789"
 ---
 
-**Михаил Салтыков-Щедрин** — [LiveLib](https://www.livelib.ru/book/1001875789) — прочитано
+Автор: Михаил Салтыков-Щедрин
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001875789](https://www.livelib.ru/book/1001875789)

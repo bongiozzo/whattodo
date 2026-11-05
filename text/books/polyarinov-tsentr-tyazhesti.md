@@ -8,7 +8,11 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1005526645"
 ---
 
-**Алексей Поляринов** — [LiveLib](https://www.livelib.ru/book/1005526645) — прочитано
+Автор: Алексей Поляринов
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1005526645](https://www.livelib.ru/book/1005526645)
 
 ## Цитаты
 

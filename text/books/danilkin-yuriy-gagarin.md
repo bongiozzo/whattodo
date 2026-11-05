@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1000470444"
 livelib_review: "https://www.livelib.ru/review/3384303"
 ---
 
-**Лев Данилкин** — [LiveLib](https://www.livelib.ru/book/1000470444) — прочитано
+Автор: Лев Данилкин
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000470444](https://www.livelib.ru/book/1000470444)
 
 ## Рецензия
 

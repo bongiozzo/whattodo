@@ -8,7 +8,11 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1007684998"
 ---
 
-**Джордж Оруэлл** — [LiveLib](https://www.livelib.ru/book/1007684998) — прочитано
+Автор: Джордж Оруэлл
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1007684998](https://www.livelib.ru/book/1007684998)
 
 ## Цитаты
 

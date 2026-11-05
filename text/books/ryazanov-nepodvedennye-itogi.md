@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1000356027"
 livelib_review: "https://www.livelib.ru/review/5220355"
 ---
 
-**Эльдар Рязанов** — [LiveLib](https://www.livelib.ru/book/1000356027) — прочитано
+Автор: Эльдар Рязанов
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000356027](https://www.livelib.ru/book/1000356027)
 
 ## Рецензия
 

@@ -7,7 +7,11 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000038942"
 ---
 
-**Туве Янссон** — [LiveLib](https://www.livelib.ru/book/1000038942) — прочитано
+Автор: Туве Янссон
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000038942](https://www.livelib.ru/book/1000038942)
 
 ## Цитаты
 

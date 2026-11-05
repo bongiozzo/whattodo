@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1001486784"
 ---
 
-**Грегори Дэвид Робертс** — [LiveLib](https://www.livelib.ru/book/1001486784) — хочу прочитать
+Автор: Грегори Дэвид Робертс
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1001486784](https://www.livelib.ru/book/1001486784)

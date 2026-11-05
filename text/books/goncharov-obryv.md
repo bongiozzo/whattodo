@@ -7,7 +7,11 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1000120822"
 ---
 
-**И. А. Гончаров** — [LiveLib](https://www.livelib.ru/book/1000120822) — недочитано
+Автор: И. А. Гончаров
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1000120822](https://www.livelib.ru/book/1000120822)
 
 ## Цитаты
 

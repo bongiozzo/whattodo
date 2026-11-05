@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000290303"
 ---
 
-**Дэн Браун** — [LiveLib](https://www.livelib.ru/book/1000290303) — прочитано
+Автор: Дэн Браун
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000290303](https://www.livelib.ru/book/1000290303)

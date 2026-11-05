@@ -10,7 +10,11 @@ livelib_editions:
   - "https://www.livelib.ru/book/1000298626"
 ---
 
-**Туве Янссон** — [LiveLib](https://www.livelib.ru/book/1000015451) — прочитано
+Автор: Туве Янссон
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000015451](https://www.livelib.ru/book/1000015451)
 
 ## Цитаты
 

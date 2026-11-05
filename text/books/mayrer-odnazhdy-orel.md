@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1000462964"
 livelib_review: "https://www.livelib.ru/review/5368711"
 ---
 
-**Энтон Майрер** — [LiveLib](https://www.livelib.ru/book/1000462964) — прочитано
+Автор: Энтон Майрер
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000462964](https://www.livelib.ru/book/1000462964)
 
 ## Рецензия
 

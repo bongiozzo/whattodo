@@ -10,4 +10,8 @@ livelib_editions:
   - "https://www.livelib.ru/book/1000978126"
 ---
 
-**Марк Твен** — [LiveLib](https://www.livelib.ru/book/1001461999) — прочитано
+Автор: Марк Твен
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001461999](https://www.livelib.ru/book/1001461999)

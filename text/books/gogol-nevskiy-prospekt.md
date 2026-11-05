@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000962694"
 ---
 
-**Николай Гоголь** — [LiveLib](https://www.livelib.ru/book/1000962694) — прочитано
+Автор: Николай Гоголь
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000962694](https://www.livelib.ru/book/1000962694)

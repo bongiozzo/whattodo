@@ -6,4 +6,6 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000506484"
 ---
 
-[LiveLib](https://www.livelib.ru/book/1000506484) — прочитано
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000506484](https://www.livelib.ru/book/1000506484)

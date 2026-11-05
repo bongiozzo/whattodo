@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1000489608"
 ---
 
-**Николай Надеждин** — [LiveLib](https://www.livelib.ru/book/1000489608) — прочитано
+Автор: Николай Надеждин
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000489608](https://www.livelib.ru/book/1000489608)

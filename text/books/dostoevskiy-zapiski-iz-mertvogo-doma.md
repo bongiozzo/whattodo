@@ -7,7 +7,11 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1000713088"
 ---
 
-**Фёдор Достоевский** — [LiveLib](https://www.livelib.ru/book/1000713088) — недочитано
+Автор: Фёдор Достоевский
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1000713088](https://www.livelib.ru/book/1000713088)
 
 ## Цитаты
 

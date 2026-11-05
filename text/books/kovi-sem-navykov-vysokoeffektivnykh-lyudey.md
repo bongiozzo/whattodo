@@ -11,7 +11,11 @@ livelib_book: "https://www.livelib.ru/book/1003055575"
 livelib_review: "https://www.livelib.ru/review/3792199"
 ---
 
-**Стивен Р. Кови, Шон Кови** — [LiveLib](https://www.livelib.ru/book/1003055575) — прочитано
+Автор: Стивен Р. Кови, Шон Кови
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1003055575](https://www.livelib.ru/book/1003055575)
 
 ## Рецензия
 

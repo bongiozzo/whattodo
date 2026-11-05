@@ -7,7 +7,11 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1000524641"
 ---
 
-**Анатолий Иванов** — [LiveLib](https://www.livelib.ru/book/1000524641) — хочу прочитать
+Автор: Анатолий Иванов
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1000524641](https://www.livelib.ru/book/1000524641)
 
 ## Цитаты
 

@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1010908241"
 ---
 
-**Мирча Элиаде** — [LiveLib](https://www.livelib.ru/book/1010908241) — хочу прочитать
+Автор: Мирча Элиаде
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1010908241](https://www.livelib.ru/book/1010908241)

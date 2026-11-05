@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1002949893"
 ---
 
-**Андрей Усачёв** — [LiveLib](https://www.livelib.ru/book/1002949893) — прочитано
+Автор: Андрей Усачёв
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002949893](https://www.livelib.ru/book/1002949893)

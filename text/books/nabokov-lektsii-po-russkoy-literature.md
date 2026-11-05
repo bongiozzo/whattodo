@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1002637577"
 livelib_review: "https://www.livelib.ru/review/5057389"
 ---
 
-**Владимир Набоков** — [LiveLib](https://www.livelib.ru/book/1002637577) — прочитано
+Автор: Владимир Набоков
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002637577](https://www.livelib.ru/book/1002637577)
 
 ## Рецензия
 

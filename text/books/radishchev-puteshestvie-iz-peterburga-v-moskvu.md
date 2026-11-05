@@ -7,4 +7,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1002971633"
 ---
 
-**Александр Радищев** — [LiveLib](https://www.livelib.ru/book/1002971633) — прочитано
+Автор: Александр Радищев
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002971633](https://www.livelib.ru/book/1002971633)

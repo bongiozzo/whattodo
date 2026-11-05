@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1009349701"
 ---
 
-**Эдит Ева Эгер, Швалль-Вейганд Э.** — [LiveLib](https://www.livelib.ru/book/1009349701) — хочу прочитать
+Автор: Эдит Ева Эгер, Швалль-Вейганд Э.
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1009349701](https://www.livelib.ru/book/1009349701)

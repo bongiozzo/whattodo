@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1002061316"
 ---
 
-**Максим Кронгауз** — [LiveLib](https://www.livelib.ru/book/1002061316) — хочу прочитать
+Автор: Максим Кронгауз
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1002061316](https://www.livelib.ru/book/1002061316)

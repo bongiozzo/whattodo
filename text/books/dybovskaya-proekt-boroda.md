@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1017962035"
 livelib_review: "https://www.livelib.ru/review/6372058"
 ---
 
-**Татьяна Дыбовская** — [LiveLib](https://www.livelib.ru/book/1017962035) — прочитано
+Автор: Татьяна Дыбовская
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1017962035](https://www.livelib.ru/book/1017962035)
 
 ## Рецензия
 

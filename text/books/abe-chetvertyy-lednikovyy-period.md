@@ -9,7 +9,11 @@ livelib_book: "https://www.livelib.ru/book/1001616054"
 livelib_review: "https://www.livelib.ru/review/6413194"
 ---
 
-**Кобо Абэ** — [LiveLib](https://www.livelib.ru/book/1001616054) — прочитано
+Автор: Кобо Абэ
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001616054](https://www.livelib.ru/book/1001616054)
 
 ## Рецензия
 

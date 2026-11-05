@@ -10,4 +10,8 @@ livelib_editions:
   - "https://www.livelib.ru/book/1002882947"
 ---
 
-**Черстин Лундберг Хан** — [LiveLib](https://www.livelib.ru/book/1002896159) — прочитано
+Автор: Черстин Лундберг Хан
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002896159](https://www.livelib.ru/book/1002896159)

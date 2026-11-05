@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1007131690"
 ---
 
-**Алексей Поляринов** — [LiveLib](https://www.livelib.ru/book/1007131690) — хочу прочитать
+Автор: Алексей Поляринов
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1007131690](https://www.livelib.ru/book/1007131690)

@@ -11,7 +11,11 @@ livelib_book: "https://www.livelib.ru/book/1000898799"
 livelib_review: "https://www.livelib.ru/review/3879424"
 ---
 
-**Михай Чиксентмихайи** — [LiveLib](https://www.livelib.ru/book/1000898799) — прочитано
+Автор: Михай Чиксентмихайи
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1000898799](https://www.livelib.ru/book/1000898799)
 
 ## Рецензия
 

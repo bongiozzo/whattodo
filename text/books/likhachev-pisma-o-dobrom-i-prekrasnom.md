@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1002792477"
 ---
 
-**Дмитрий Сергеевич Лихачёв** — [LiveLib](https://www.livelib.ru/book/1002792477) — прочитано
+Автор: Дмитрий Сергеевич Лихачёв
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002792477](https://www.livelib.ru/book/1002792477)

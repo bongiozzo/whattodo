@@ -10,4 +10,8 @@ livelib_editions:
   - "https://www.livelib.ru/book/1002977071"
 ---
 
-**Джек Лондон** — [LiveLib](https://www.livelib.ru/book/1001477191) — прочитано
+Автор: Джек Лондон
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1001477191](https://www.livelib.ru/book/1001477191)

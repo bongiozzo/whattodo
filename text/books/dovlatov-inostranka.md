@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1002751775"
 ---
 
-**Сергей Довлатов** — [LiveLib](https://www.livelib.ru/book/1002751775) — прочитано
+Автор: Сергей Довлатов
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002751775](https://www.livelib.ru/book/1002751775)

@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1002974000"
 ---
 
-**Захар Прилепин** — [LiveLib](https://www.livelib.ru/book/1002974000) — прочитано
+Автор: Захар Прилепин
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002974000](https://www.livelib.ru/book/1002974000)

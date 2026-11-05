@@ -7,7 +7,11 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1001108276"
 ---
 
-**Ирвин Ялом** — [LiveLib](https://www.livelib.ru/book/1001108276) — хочу прочитать
+Автор: Ирвин Ялом
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1001108276](https://www.livelib.ru/book/1001108276)
 
 ## Цитаты
 

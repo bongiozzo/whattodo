@@ -7,4 +7,8 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1001079319"
 ---
 
-**Олег Волков** — [LiveLib](https://www.livelib.ru/book/1001079319) — недочитано
+Автор: Олег Волков
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1001079319](https://www.livelib.ru/book/1001079319)

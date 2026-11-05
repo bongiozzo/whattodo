@@ -11,7 +11,11 @@ livelib_book: "https://www.livelib.ru/book/1008738226"
 livelib_review: "https://www.livelib.ru/review/3682591"
 ---
 
-**П. Фролов** — [LiveLib](https://www.livelib.ru/book/1008738226) — прочитано
+Автор: П. Фролов
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1008738226](https://www.livelib.ru/book/1008738226)
 
 ## Рецензия
 

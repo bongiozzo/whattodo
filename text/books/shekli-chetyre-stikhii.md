@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1002136361"
 ---
 
-**Роберт Шекли** — [LiveLib](https://www.livelib.ru/book/1002136361) — хочу прочитать
+Автор: Роберт Шекли
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1002136361](https://www.livelib.ru/book/1002136361)

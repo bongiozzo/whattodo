@@ -7,4 +7,8 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1000268976"
 ---
 
-**Сергей Лукьяненко** — [LiveLib](https://www.livelib.ru/book/1000268976) — недочитано
+Автор: Сергей Лукьяненко
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1000268976](https://www.livelib.ru/book/1000268976)

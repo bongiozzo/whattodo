@@ -7,7 +7,11 @@ status: unread
 livelib_book: "https://www.livelib.ru/book/1000328886"
 ---
 
-**Андрей Тарковский** — [LiveLib](https://www.livelib.ru/book/1000328886) — недочитано
+Автор: Андрей Тарковский
+
+Полка: Недочитанные
+
+Ссылка: [https://www.livelib.ru/book/1000328886](https://www.livelib.ru/book/1000328886)
 
 ## Цитаты
 

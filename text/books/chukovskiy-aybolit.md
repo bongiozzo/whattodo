@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1004209255"
 ---
 
-**Корней Чуковский** — [LiveLib](https://www.livelib.ru/book/1004209255) — прочитано
+Автор: Корней Чуковский
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1004209255](https://www.livelib.ru/book/1004209255)

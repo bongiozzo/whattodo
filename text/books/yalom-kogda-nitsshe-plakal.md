@@ -8,4 +8,8 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1002847586"
 ---
 
-**Ирвин Ялом** — [LiveLib](https://www.livelib.ru/book/1002847586) — прочитано
+Автор: Ирвин Ялом
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1002847586](https://www.livelib.ru/book/1002847586)

@@ -8,7 +8,11 @@ status: read
 livelib_book: "https://www.livelib.ru/book/1005497029"
 ---
 
-**Евгений Водолазкин** — [LiveLib](https://www.livelib.ru/book/1005497029) — прочитано
+Автор: Евгений Водолазкин
+
+Полка: Прочтённые
+
+Ссылка: [https://www.livelib.ru/book/1005497029](https://www.livelib.ru/book/1005497029)
 
 ## Цитаты
 

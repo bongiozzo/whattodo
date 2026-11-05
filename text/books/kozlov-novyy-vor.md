@@ -7,4 +7,8 @@ status: wish
 livelib_book: "https://www.livelib.ru/book/1005490723"
 ---
 
-**Юрий Козлов** — [LiveLib](https://www.livelib.ru/book/1005490723) — хочу прочитать
+Автор: Юрий Козлов
+
+Полка: Хочу прочитать
+
+Ссылка: [https://www.livelib.ru/book/1005490723](https://www.livelib.ru/book/1005490723)
