@@ -400,7 +400,7 @@ search:
 - [Михаил Зыгарь — Вся кремлевская рать. Краткая история современной России](books/zygar-vsya-kremlevskaya-rat.md)
 ///
 
-/// details | Недочитанные (70)
+/// details | Недочитанные (71)
 - [Александр Аузан — Экономика всего. Как институты определяют нашу жизнь](books/auzan-ekonomika-vsego-kak-instituty-opredelyayut-nashu-zhizn.md)
 - [Уолтер Айзексон — Стив Джобс](books/ayzekson-stiv-dzhobs.md)
 - [Павел Басинский — Горький: страсти по Максиму](books/basinskiy-gorkiy-strasti-po-maksimu.md)
@@ -455,6 +455,7 @@ search:
 - [Т.Л. Сухотина-Толстая — Воспоминания](books/sukhotinatolstaya-vospominaniya.md)
 - [Андрей Тарковский — Мартиролог](books/tarkovskiy-martirolog.md)
 - [Экхарт Толле — Сила Настоящего. Руководство к духовному пробуждению](books/tolle-sila-nastoyashchego.md)
+- [Лев Толстой — Анна Каренина](books/tolstoy-anna-karenina.md)
 - [Лев Толстой — Детство](books/tolstoy-detstvo.md)
 - [Лев Толстой — Хаджи-Мурат](books/tolstoy-khadzhimurat.md)
 - [Лев Толстой, Михаил Орлов — Лев Толстой о величии души человеческой. Путь Огня](books/tolstoy-lev-tolstoy-o-velichii-dushi-chelovecheskoy.md)
