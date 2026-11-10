@@ -99,7 +99,7 @@ search:
 - [Евгений Александрович Жуков — Бросающий камушки](books/zhukov-brosayushchiy-kamushki.md)
 ///
 
-/// details | Прочтённые (298)
+/// details | Прочтённые (299)
 - [Кобо Абэ — Четвертый ледниковый период](books/abe-chetvertyy-lednikovyy-period.md)
 - [Наринэ Абгарян — Манюня пишет фантастичЫскЫй роман](books/abgaryan-manyunya-pishet-fantastichyskyy-roman.md)
 - [Фрэнк Уильям Абигнейл, Стэн Реддинг — Поймай меня, если сможешь. Реальная история самого неуловимого мошенника за всю историю преступлений](books/abigneyl-poymay-menya-esli-smozhesh.md)
@@ -294,6 +294,7 @@ search:
 - [Захар Прилепин — Всё, что должно разрешиться. Хроника почти бесконечной войны: 2013-2021](books/prilepin-vse-chto-dolzhno-razreshitsya.md)
 - [Александр Прохоров — Русская модель управления](books/prokhorov-russkaya-model-upravleniya.md)
 - [Александр Пушкин — Капитанская дочка (повести)](books/pushkin-kapitanskaya-dochka.md)
+- [Александр Пушкин — Песнь о вещем Олеге](books/pushkin-pesn-o-veshchem-olege.md)
 - [М. И. Пыляев — Старое житье](books/pylyaev-staroe-zhite.md)
 - [Михаил Пыляев — Замечательные чудаки и оригиналы](books/pylyaev-zamechatelnye-chudaki-i-originaly.md)
 - [Марио Пьюзо — Крестный отец](books/pyuzo-krestnyy-otets.md)
