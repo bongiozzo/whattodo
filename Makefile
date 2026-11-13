@@ -37,6 +37,7 @@ INGEST_EXTRA_ARGS ?=
 GRAMMAR_DIFF_SCRIPT ?= $(TEXT_FORGE_DIR)/scripts/grammar-diff.py
 BOOKS_CHANGED_SCRIPT ?= $(TEXT_FORGE_DIR)/scripts/books-changed.py
 JOB_SCRIPT ?= $(TEXT_FORGE_DIR)/scripts/job.py
+PI_RUN_SCRIPT ?= $(TEXT_FORGE_DIR)/scripts/pi-run.py
 CHANGELOG_SINCE ?=
 CHANGELOG_RUNNER ?= pi
 GRAMMAR_SINCE ?=
@@ -50,6 +51,7 @@ ifeq (changelog,$(firstword $(MAKECMDGOALS)))
   CHANGELOG_ARG := $(wordlist 2,$(words $(MAKECMDGOALS)),$(MAKECMDGOALS))
   ifneq ($(CHANGELOG_ARG),)
     $(eval $(CHANGELOG_ARG):;@:)
+    $(eval .PHONY: $(CHANGELOG_ARG))
     CHANGELOG_SINCE := $(CHANGELOG_ARG)
   endif
 endif
@@ -57,6 +59,7 @@ ifeq (grammar,$(firstword $(MAKECMDGOALS)))
   GRAMMAR_ARG := $(wordlist 2,$(words $(MAKECMDGOALS)),$(MAKECMDGOALS))
   ifneq ($(GRAMMAR_ARG),)
     $(eval $(GRAMMAR_ARG):;@:)
+    $(eval .PHONY: $(GRAMMAR_ARG))
     ifeq ($(wildcard $(GRAMMAR_ARG)),)
       GRAMMAR_SINCE := $(GRAMMAR_ARG)
     else
@@ -81,8 +84,8 @@ endef
 # is generic mechanics and lives in text-forge's scripts/job.py.
 define run_job
 case "$(1)" in \
-  stub) echo "STUB: $(2) ($$(wc -l < $(2)) lines)";; \
-  pi) pi --no-approve -p "$$(cat $(2))";; \
+  stub) echo "stub: model not called (job $(2))";; \
+  pi) env -u VIRTUAL_ENV uv run --project "$(TEXT_FORGE_DIR)" python "$(PI_RUN_SCRIPT)" "$(2)";; \
   *) echo "Error: unknown runner '$(1)' (expected: pi|stub)"; exit 1;; \
 esac
 endef
@@ -233,7 +236,7 @@ summary: ## Prepare summary source (then run summarize prompt)
 		--index-output build/heading_index.json \
 		> build/summary_source.md
 	@echo "✓ Source prepared: build/summary_source.md + build/heading_index.json"
-	@echo "→ Run: env -u VIRTUAL_ENV uv run python $(JOB_SCRIPT) --prompt summarize --input build/summary_source.md --out build/summary-job.md"
+	@echo "→ Run: env -u VIRTUAL_ENV uv run --project $(TEXT_FORGE_DIR) python $(JOB_SCRIPT) --prompt summarize --input build/summary_source.md --out build/summary-job.md"
 
 changelog: ## Russian changelog post since a ref | vars: CHANGELOG_SINCE=<ref> or make changelog <ref> | CHANGELOG_RUNNER=pi|stub
 	@if [ -z "$(CHANGELOG_SINCE)" ]; then \
@@ -242,19 +245,19 @@ changelog: ## Russian changelog post since a ref | vars: CHANGELOG_SINCE=<ref> o
 	fi
 	@$(call RESOLVE_SINCE_REF,$(CHANGELOG_SINCE)); \
 	DIFF=$$(git diff "$$BASE"..HEAD -- ':(glob)text/*.md' ':(exclude,glob)text/books/**' ':(exclude,glob)text/p3-references.md'); \
-	if [ -z "$$DIFF" ]; then echo "No changes in text/*.md since $(CHANGELOG_SINCE)"; exit 0; fi; \
+	if [ -z "$$DIFF" ]; then echo "no changes in text/*.md since $(CHANGELOG_SINCE)"; exit 0; fi; \
 	mkdir -p build; \
 	printf '%s\n' "$$DIFF" > build/changelog.diff; \
-	env -u VIRTUAL_ENV uv run python "$(BOOKS_CHANGED_SCRIPT)" --root "$(CURDIR)" --since "$$BASE" \
+	env -u VIRTUAL_ENV uv run --project "$(TEXT_FORGE_DIR)" python "$(BOOKS_CHANGED_SCRIPT)" --root "$(CURDIR)" --since "$$BASE" \
 		--md build/changelog-books.md || true; \
-	env -u VIRTUAL_ENV uv run python "$(JOB_SCRIPT)" --prompt changelog \
+	env -u VIRTUAL_ENV uv run --project "$(TEXT_FORGE_DIR)" python "$(JOB_SCRIPT)" --prompt changelog \
 	  --section "Diff (text/*.md, $(CHANGELOG_SINCE)..HEAD)=build/changelog.diff" \
 	  --section "Books (frontmatter: автор, название, полка)=build/changelog-books.md" \
 	  --out build/changelog-job.md; \
-	echo "==> Running changelog post (since $(CHANGELOG_SINCE)) via $(CHANGELOG_RUNNER)..."; \
+	echo "==> changelog: since $(CHANGELOG_SINCE) via $(CHANGELOG_RUNNER)"; \
 	$(call run_job,$(CHANGELOG_RUNNER),build/changelog-job.md)
 
-grammar: ## Проверка авторского текста: без аргументов — рабочее дерево, <sha> — с коммита включительно, <file.md> — файл целиком | vars: GRAMMAR_RUNNER=pi|stub
+grammar: ## Grammar check: no argument — working tree, <sha> — since that commit, <file.md> — whole file | vars: GRAMMAR_RUNNER=pi|stub
 	@mkdir -p build
 	@if [ ! -f "$(GRAMMAR_DIFF_SCRIPT)" ]; then \
 		echo "Error: grammar-diff script not found: $(GRAMMAR_DIFF_SCRIPT)"; \
@@ -263,33 +266,35 @@ grammar: ## Проверка авторского текста: без аргу�
 	fi; \
 	DIFF_ARGS=""; \
 	if [ -n "$(GRAMMAR_FILE)" ]; then \
-		echo "==> Grammar check: файл $(GRAMMAR_FILE) целиком"; \
+		echo "==> grammar: whole file $(GRAMMAR_FILE)"; \
 		DIFF_ARGS="--only $(GRAMMAR_FILE)"; \
 	elif [ -n "$(GRAMMAR_SINCE)" ]; then \
 		BASE=$$(git rev-parse --verify --quiet "$(GRAMMAR_SINCE)^{commit}"); \
-		if [ -z "$$BASE" ]; then echo "Error: не ref и не коммит: $(GRAMMAR_SINCE)"; exit 1; fi; \
+		if [ -z "$$BASE" ]; then echo "Error: not a ref or commit: $(GRAMMAR_SINCE)"; exit 1; fi; \
 		if ! git rev-parse --verify --quiet "$$BASE^" >/dev/null; then \
-			echo "Error: у $(GRAMMAR_SINCE) нет родителя — это корневой коммит. Используйте make grammar <file.md>."; \
+			echo "Error: $(GRAMMAR_SINCE) has no parent — it is the root commit. Use: make grammar <file.md>."; \
 			exit 1; \
 		fi; \
-		echo "==> Grammar check: с коммита $(GRAMMAR_SINCE) ($(GRAMMAR_ARG)), включая его"; \
+		echo "==> grammar: since $(GRAMMAR_SINCE), inclusive"; \
 		DIFF_ARGS="--since $$BASE^"; \
 	else \
-		echo "==> Grammar check: рабочее дерево"; \
+		echo "==> grammar: working tree vs HEAD"; \
 	fi; \
 	set +e; \
-	env -u VIRTUAL_ENV uv run python "$(GRAMMAR_DIFF_SCRIPT)" --root "$(CURDIR)" \
+	env -u VIRTUAL_ENV uv run --project "$(TEXT_FORGE_DIR)" python "$(GRAMMAR_DIFF_SCRIPT)" --root "$(CURDIR)" \
 		$$DIFF_ARGS --scope "$(GRAMMAR_SCOPE)" --typo \
 		--md build/grammar-input.md --json build/grammar-input.json; \
 	RC=$$?; set -e; \
 	if [ "$$RC" -eq 2 ]; then exit 0; fi; \
 	if [ "$$RC" -ne 0 ]; then echo "Error: grammar-diff failed (exit $$RC)"; exit 1; fi; \
-	env -u VIRTUAL_ENV uv run python "$(JOB_SCRIPT)" --prompt grammar \
+	env -u VIRTUAL_ENV uv run --project "$(TEXT_FORGE_DIR)" python "$(JOB_SCRIPT)" --prompt grammar \
 	  --input build/grammar-input.md \
-	  --footer 'Проверь добавленные строки выше и запиши отчёт в build/grammar-report.md (создай каталог, если нужно). Каждая находка — с адресом `файл:строка` из входа.' \
+	  --footer 'Проверь добавленные строки выше и запиши отчёт в build/grammar-report.md (создай каталог, если нужно). Каждая находка — с адресом `файл:строка` из входа. В ответ напиши 3–5 строк свободным текстом без markdown-разметки: что проверено, сколько находок, где отчёт. Терминал не рендерит разметку.' \
 	  --out build/grammar-job.md; \
 	$(call run_job,$(GRAMMAR_RUNNER),build/grammar-job.md); \
-	if [ -f build/grammar-report.md ]; then echo "Report: $(CURDIR)/build/grammar-report.md"; fi
+	if [ "$(GRAMMAR_RUNNER)" = "pi" ] && [ -f build/grammar-report.md ]; then \
+		echo "report: build/grammar-report.md (written by this run)"; \
+	fi
 
 ##@ Publishing
 
