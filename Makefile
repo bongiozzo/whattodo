@@ -31,12 +31,21 @@ LIMIT ?=
 FULL ?= no
 INGEST_EXTRA_ARGS ?=
 
-OPENCODE ?= opencode
+# Prompt jobs (grammar, changelog) run through pi — the harness used everywhere.
+# Each target takes <TARGET>_RUNNER=pi|stub; `stub` builds the job file without
+# calling a model, so the recipe itself stays testable.
+GRAMMAR_DIFF_SCRIPT ?= $(TEXT_FORGE_DIR)/scripts/grammar-diff.py
+BOOKS_CHANGED_SCRIPT ?= $(TEXT_FORGE_DIR)/scripts/books-changed.py
+JOB_SCRIPT ?= $(TEXT_FORGE_DIR)/scripts/job.py
 CHANGELOG_SINCE ?=
+CHANGELOG_RUNNER ?= pi
 GRAMMAR_SINCE ?=
+GRAMMAR_FILE ?=
+GRAMMAR_SCOPE ?= wtd
+GRAMMAR_RUNNER ?= pi
 
-# Allow `make changelog <ref>` / `make grammar <ref>` as a shortcut for CHANGELOG_SINCE=/GRAMMAR_SINCE=
-# (an explicit VAR=value on the command line still takes precedence).
+# `make grammar <arg>`: an existing path is a file, anything else is a ref.
+# An explicit VAR=value on the command line still takes precedence.
 ifeq (changelog,$(firstword $(MAKECMDGOALS)))
   CHANGELOG_ARG := $(wordlist 2,$(words $(MAKECMDGOALS)),$(MAKECMDGOALS))
   ifneq ($(CHANGELOG_ARG),)
@@ -48,7 +57,11 @@ ifeq (grammar,$(firstword $(MAKECMDGOALS)))
   GRAMMAR_ARG := $(wordlist 2,$(words $(MAKECMDGOALS)),$(MAKECMDGOALS))
   ifneq ($(GRAMMAR_ARG),)
     $(eval $(GRAMMAR_ARG):;@:)
-    GRAMMAR_SINCE := $(GRAMMAR_ARG)
+    ifeq ($(wildcard $(GRAMMAR_ARG)),)
+      GRAMMAR_SINCE := $(GRAMMAR_ARG)
+    else
+      GRAMMAR_FILE := $(GRAMMAR_ARG)
+    endif
   endif
 endif
 
@@ -61,6 +74,17 @@ else \
 	if [ -z "$$BASE" ]; then echo "No commits found after $(1)"; exit 1; fi; \
 	BASE="$$BASE^"; \
 fi
+endef
+
+# Run a prepared job file (prompt + input) through the configured runner.
+# Choosing the runner is harness policy, so it stays here; building the job file
+# is generic mechanics and lives in text-forge's scripts/job.py.
+define run_job
+case "$(1)" in \
+  stub) echo "STUB: $(2) ($$(wc -l < $(2)) lines)";; \
+  pi) pi --no-approve -p "$$(cat $(2))";; \
+  *) echo "Error: unknown runner '$(1)' (expected: pi|stub)"; exit 1;; \
+esac
 endef
 
 define ensure_shared_goals_env
@@ -209,37 +233,63 @@ summary: ## Prepare summary source (then run summarize prompt)
 		--index-output build/heading_index.json \
 		> build/summary_source.md
 	@echo "✓ Source prepared: build/summary_source.md + build/heading_index.json"
-	@echo "→ Run summarize prompt to generate text/p3-summary.md"
+	@echo "→ Run: env -u VIRTUAL_ENV uv run python $(JOB_SCRIPT) --prompt summarize --input build/summary_source.md --out build/summary-job.md"
 
-changelog: ## Russian changelog post since a ref | vars: CHANGELOG_SINCE=<ref> or make changelog <ref>
+changelog: ## Russian changelog post since a ref | vars: CHANGELOG_SINCE=<ref> or make changelog <ref> | CHANGELOG_RUNNER=pi|stub
 	@if [ -z "$(CHANGELOG_SINCE)" ]; then \
 		echo "Error: set CHANGELOG_SINCE=<tag|commit|date> or run: make changelog <ref>"; \
 		exit 1; \
 	fi
 	@$(call RESOLVE_SINCE_REF,$(CHANGELOG_SINCE)); \
-	DIFF=$$(git diff "$$BASE"..HEAD -- 'text/*.md'); \
+	DIFF=$$(git diff "$$BASE"..HEAD -- ':(glob)text/*.md' ':(exclude,glob)text/books/**' ':(exclude,glob)text/p3-references.md'); \
 	if [ -z "$$DIFF" ]; then echo "No changes in text/*.md since $(CHANGELOG_SINCE)"; exit 0; fi; \
 	mkdir -p build; \
-	echo "$$DIFF" > build/changelog.diff; \
-	echo "==> Running opencode changelog prompt (since $(CHANGELOG_SINCE))..."; \
-	$(OPENCODE) run \
-		"Follow the attached changelog.prompt.md instructions and generate the Telegram post from the attached diff (build/changelog.diff)." \
-		-f .github/prompts/changelog.prompt.md -f build/changelog.diff
+	printf '%s\n' "$$DIFF" > build/changelog.diff; \
+	env -u VIRTUAL_ENV uv run python "$(BOOKS_CHANGED_SCRIPT)" --root "$(CURDIR)" --since "$$BASE" \
+		--md build/changelog-books.md || true; \
+	env -u VIRTUAL_ENV uv run python "$(JOB_SCRIPT)" --prompt changelog \
+	  --section "Diff (text/*.md, $(CHANGELOG_SINCE)..HEAD)=build/changelog.diff" \
+	  --section "Books (frontmatter: автор, название, полка)=build/changelog-books.md" \
+	  --out build/changelog-job.md; \
+	echo "==> Running changelog post (since $(CHANGELOG_SINCE)) via $(CHANGELOG_RUNNER)..."; \
+	$(call run_job,$(CHANGELOG_RUNNER),build/changelog-job.md)
 
-grammar: ## Grammar check for text/*.md (default: uncommitted diff) | vars: GRAMMAR_SINCE=<ref> or make grammar <ref>
-	@if [ -n "$(GRAMMAR_SINCE)" ]; then \
-		$(call RESOLVE_SINCE_REF,$(GRAMMAR_SINCE)); \
-		DIFF=$$(git diff "$$BASE"..HEAD -- 'text/*.md' | grep '^+' | grep -v '^+++' | sed 's/^+//'); \
-	else \
-		DIFF=$$(git diff HEAD -- 'text/*.md' | grep '^+' | grep -v '^+++' | sed 's/^+//'); \
+grammar: ## Проверка авторского текста: без аргументов — рабочее дерево, <sha> — с коммита включительно, <file.md> — файл целиком | vars: GRAMMAR_RUNNER=pi|stub
+	@mkdir -p build
+	@if [ ! -f "$(GRAMMAR_DIFF_SCRIPT)" ]; then \
+		echo "Error: grammar-diff script not found: $(GRAMMAR_DIFF_SCRIPT)"; \
+		echo "Run: make install"; \
+		exit 1; \
 	fi; \
-	if [ -z "$$DIFF" ]; then echo "No added lines to check."; exit 0; fi; \
-	mkdir -p build; \
-	echo "$$DIFF" > build/grammar_diff.txt; \
-	echo "==> Running opencode grammar check..."; \
-	$(OPENCODE) run \
-		"Follow the attached grammar.prompt.md instructions and review the added lines in the attached diff (build/grammar_diff.txt)." \
-		-f .github/prompts/grammar.prompt.md -f build/grammar_diff.txt
+	DIFF_ARGS=""; \
+	if [ -n "$(GRAMMAR_FILE)" ]; then \
+		echo "==> Grammar check: файл $(GRAMMAR_FILE) целиком"; \
+		DIFF_ARGS="--only $(GRAMMAR_FILE)"; \
+	elif [ -n "$(GRAMMAR_SINCE)" ]; then \
+		BASE=$$(git rev-parse --verify --quiet "$(GRAMMAR_SINCE)^{commit}"); \
+		if [ -z "$$BASE" ]; then echo "Error: не ref и не коммит: $(GRAMMAR_SINCE)"; exit 1; fi; \
+		if ! git rev-parse --verify --quiet "$$BASE^" >/dev/null; then \
+			echo "Error: у $(GRAMMAR_SINCE) нет родителя — это корневой коммит. Используйте make grammar <file.md>."; \
+			exit 1; \
+		fi; \
+		echo "==> Grammar check: с коммита $(GRAMMAR_SINCE) ($(GRAMMAR_ARG)), включая его"; \
+		DIFF_ARGS="--since $$BASE^"; \
+	else \
+		echo "==> Grammar check: рабочее дерево"; \
+	fi; \
+	set +e; \
+	env -u VIRTUAL_ENV uv run python "$(GRAMMAR_DIFF_SCRIPT)" --root "$(CURDIR)" \
+		$$DIFF_ARGS --scope "$(GRAMMAR_SCOPE)" --typo \
+		--md build/grammar-input.md --json build/grammar-input.json; \
+	RC=$$?; set -e; \
+	if [ "$$RC" -eq 2 ]; then exit 0; fi; \
+	if [ "$$RC" -ne 0 ]; then echo "Error: grammar-diff failed (exit $$RC)"; exit 1; fi; \
+	env -u VIRTUAL_ENV uv run python "$(JOB_SCRIPT)" --prompt grammar \
+	  --input build/grammar-input.md \
+	  --footer 'Проверь добавленные строки выше и запиши отчёт в build/grammar-report.md (создай каталог, если нужно). Каждая находка — с адресом `файл:строка` из входа.' \
+	  --out build/grammar-job.md; \
+	$(call run_job,$(GRAMMAR_RUNNER),build/grammar-job.md); \
+	if [ -f build/grammar-report.md ]; then echo "Report: $(CURDIR)/build/grammar-report.md"; fi
 
 ##@ Publishing
 
@@ -300,6 +350,17 @@ compass-update: ## Compass.md -> Shared Goals status/update | uses .env: SHARED_
 	fi
 
 publish: ## Interactive publish: optional commit, tag, push
+	@printf 'Проверить грамматику рабочего дерева перед публикацией? [y/N] '; \
+	read -r DO_GRAMMAR; \
+	case "$$DO_GRAMMAR" in \
+		y|Y|yes|YES) \
+			echo "==> Grammar check (рабочее дерево)..."; \
+			$(MAKE) --no-print-directory grammar || exit 1; \
+			echo; \
+			echo "Отчёт: $(CURDIR)/build/grammar-report.md"; \
+			echo "Публикация остановлена: исправь находки и запусти make publish снова."; \
+			exit 1;; \
+	esac
 	@TAG_CREATED="no"; \
 	NEW_TAG=""; \
 	BRANCH=$$(git rev-parse --abbrev-ref HEAD); \
