@@ -6,7 +6,7 @@
 #
 # Running `make` with no target shows this help (see `help` target below).
 
-.PHONY: all epub site serve clean help install publish obsidian ingest compass-update changelog grammar books
+.PHONY: all epub site serve clean help install publish obsidian ingest compass-update grammar books
 .DEFAULT_GOAL := help
 
 TEXT_FORGE_DIR ?= ../text-forge
@@ -31,15 +31,12 @@ LIMIT ?=
 FULL ?= no
 INGEST_EXTRA_ARGS ?=
 
-# Prompt jobs (grammar, changelog) run through pi — the harness used everywhere.
+# Prompt jobs (grammar) run through pi — the harness used everywhere.
 # Each target takes <TARGET>_RUNNER=pi|stub; `stub` builds the job file without
 # calling a model, so the recipe itself stays testable.
 GRAMMAR_DIFF_SCRIPT ?= $(TEXT_FORGE_DIR)/scripts/grammar-diff.py
-BOOKS_CHANGED_SCRIPT ?= $(TEXT_FORGE_DIR)/scripts/books-changed.py
 JOB_SCRIPT ?= $(TEXT_FORGE_DIR)/scripts/job.py
 PI_RUN_SCRIPT ?= $(TEXT_FORGE_DIR)/scripts/pi-run.py
-CHANGELOG_SINCE ?=
-CHANGELOG_RUNNER ?= pi
 GRAMMAR_SINCE ?=
 GRAMMAR_FILE ?=
 GRAMMAR_SCOPE ?= wtd
@@ -47,14 +44,6 @@ GRAMMAR_RUNNER ?= pi
 
 # `make grammar <arg>`: an existing path is a file, anything else is a ref.
 # An explicit VAR=value on the command line still takes precedence.
-ifeq (changelog,$(firstword $(MAKECMDGOALS)))
-  CHANGELOG_ARG := $(wordlist 2,$(words $(MAKECMDGOALS)),$(MAKECMDGOALS))
-  ifneq ($(CHANGELOG_ARG),)
-    $(eval $(CHANGELOG_ARG):;@:)
-    $(eval .PHONY: $(CHANGELOG_ARG))
-    CHANGELOG_SINCE := $(CHANGELOG_ARG)
-  endif
-endif
 ifeq (grammar,$(firstword $(MAKECMDGOALS)))
   GRAMMAR_ARG := $(wordlist 2,$(words $(MAKECMDGOALS)),$(MAKECMDGOALS))
   ifneq ($(GRAMMAR_ARG),)
@@ -68,16 +57,6 @@ ifeq (grammar,$(firstword $(MAKECMDGOALS)))
   endif
 endif
 
-# Resolve a tag/commit/date (YYYY-MM-DD) to a base ref for diffing since it.
-define RESOLVE_SINCE_REF
-if git rev-parse --verify --quiet "$(1)^{commit}" >/dev/null 2>&1; then \
-	BASE="$(1)"; \
-else \
-	BASE=$$(git log --oneline --after="$(1)" --reverse -- 'text/*.md' | head -n1 | cut -d' ' -f1); \
-	if [ -z "$$BASE" ]; then echo "No commits found after $(1)"; exit 1; fi; \
-	BASE="$$BASE^"; \
-fi
-endef
 
 # Run a prepared job file (prompt + input) through the configured runner.
 # Choosing the runner is harness policy, so it stays here; building the job file
@@ -237,25 +216,6 @@ summary: ## Prepare summary source (then run summarize prompt)
 		> build/summary_source.md
 	@echo "✓ Source prepared: build/summary_source.md + build/heading_index.json"
 	@echo "→ Run: env -u VIRTUAL_ENV uv run --project $(TEXT_FORGE_DIR) python $(JOB_SCRIPT) --prompt summarize --input build/summary_source.md --out build/summary-job.md"
-
-changelog: ## Russian changelog post since a ref | vars: CHANGELOG_SINCE=<ref> or make changelog <ref> | CHANGELOG_RUNNER=pi|stub
-	@if [ -z "$(CHANGELOG_SINCE)" ]; then \
-		echo "Error: set CHANGELOG_SINCE=<tag|commit|date> or run: make changelog <ref>"; \
-		exit 1; \
-	fi
-	@$(call RESOLVE_SINCE_REF,$(CHANGELOG_SINCE)); \
-	DIFF=$$(git diff "$$BASE"..HEAD -- ':(glob)text/*.md' ':(exclude,glob)text/books/**' ':(exclude,glob)text/p3-references.md'); \
-	if [ -z "$$DIFF" ]; then echo "no changes in text/*.md since $(CHANGELOG_SINCE)"; exit 0; fi; \
-	mkdir -p build; \
-	printf '%s\n' "$$DIFF" > build/changelog.diff; \
-	env -u VIRTUAL_ENV uv run --project "$(TEXT_FORGE_DIR)" python "$(BOOKS_CHANGED_SCRIPT)" --root "$(CURDIR)" --since "$$BASE" \
-		--md build/changelog-books.md || true; \
-	env -u VIRTUAL_ENV uv run --project "$(TEXT_FORGE_DIR)" python "$(JOB_SCRIPT)" --prompt changelog \
-	  --section "Diff (text/*.md, $(CHANGELOG_SINCE)..HEAD)=build/changelog.diff" \
-	  --section "Books (frontmatter: автор, название, полка)=build/changelog-books.md" \
-	  --out build/changelog-job.md; \
-	echo "==> changelog: since $(CHANGELOG_SINCE) via $(CHANGELOG_RUNNER)"; \
-	$(call run_job,$(CHANGELOG_RUNNER),build/changelog-job.md)
 
 grammar: ## Grammar check: no argument — working tree, <sha> — since that commit, <file.md> — whole file | vars: GRAMMAR_RUNNER=pi|stub
 	@mkdir -p build
