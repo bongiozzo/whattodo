@@ -330,6 +330,9 @@ publish: ## Interactive publish: optional commit, tag, push
 	NEW_TAG=""; \
 	BRANCH=$$(git rev-parse --abbrev-ref HEAD); \
 	if ! git diff --quiet --ignore-submodules=all || ! git diff --cached --quiet --ignore-submodules=all; then \
+		echo "Last 5 commits — for the message style:"; \
+		git log -5 --pretty='  %h  %ad  %s' --date=short; \
+		echo; \
 		echo "Working tree is dirty:"; \
 		git status --short --ignore-submodules=all; \
 		echo "Enter commit message (type 'no' to abort publish):"; \
