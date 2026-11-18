@@ -315,15 +315,16 @@ compass-update: ## Compass.md -> Shared Goals status/update | uses .env: SHARED_
 	fi
 
 publish: ## Interactive publish: optional commit, tag, push
-	@printf 'Проверить грамматику рабочего дерева перед публикацией? [y/N] '; \
+	@printf 'Check grammar of the working tree before publishing? [y/N] '; \
 	read -r DO_GRAMMAR; \
+	echo; \
 	case "$$DO_GRAMMAR" in \
 		y|Y|yes|YES) \
-			echo "==> Grammar check (рабочее дерево)..."; \
+			echo "==> grammar: working tree..."; \
 			$(MAKE) --no-print-directory grammar || exit 1; \
 			echo; \
-			echo "Отчёт: $(CURDIR)/build/grammar-report.md"; \
-			echo "Публикация остановлена: исправь находки и запусти make publish снова."; \
+			echo "report: build/grammar-report.md"; \
+			echo "publish stopped: fix the findings and run make publish again."; \
 			exit 1;; \
 	esac
 	@TAG_CREATED="no"; \
