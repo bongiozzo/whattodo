@@ -35,6 +35,7 @@ INGEST_EXTRA_ARGS ?=
 # Each target takes <TARGET>_RUNNER=pi|stub; `stub` builds the job file without
 # calling a model, so the recipe itself stays testable.
 GRAMMAR_DIFF_SCRIPT ?= $(TEXT_FORGE_DIR)/scripts/grammar-diff.py
+REPORT_CHECK_SCRIPT ?= $(TEXT_FORGE_DIR)/scripts/check-report-addresses.py
 JOB_SCRIPT ?= $(TEXT_FORGE_DIR)/scripts/job.py
 PI_RUN_SCRIPT ?= $(TEXT_FORGE_DIR)/scripts/pi-run.py
 GRAMMAR_SINCE ?=
@@ -254,6 +255,11 @@ grammar: ## Grammar check: no argument — working tree, <sha> — since that co
 	$(call run_job,$(GRAMMAR_RUNNER),build/grammar-job.md); \
 	if [ "$(GRAMMAR_RUNNER)" = "pi" ] && [ -f build/grammar-report.md ]; then \
 		echo "report: build/grammar-report.md (written by this run)"; \
+		env -u VIRTUAL_ENV uv run --project "$(TEXT_FORGE_DIR)" python "$(REPORT_CHECK_SCRIPT)" \
+		  build/grammar-report.md "$(CURDIR)" || { \
+			echo "Error: report addresses do not resolve — fix the report (or the text) and rerun"; \
+			exit 1; \
+		}; \
 	fi
 
 ##@ Publishing
