@@ -250,6 +250,9 @@ OBSIDIAN_VAULT_PATH="/Users/example/Library/Mobile Documents/iCloud~md~obsidian/
 
 # optional: fetch or generate Logos on an always-on Hermes host
 COMPASS_LOGOS_REMOTE=hermes@host
+# path to daily-compass-context.json on that host, relative to the remote $HOME
+# (default: .hermes/skills/shared-goals/shared-goals/state/daily-compass-context.json)
+#COMPASS_LOGOS_REMOTE_PATH=my-hermes/my-skills/shared-goals/shared-goals/state/daily-compass-context.json
 ```
 
 После этого можно обновить приватный `Compass.md` из платформы:
@@ -258,9 +261,11 @@ COMPASS_LOGOS_REMOTE=hermes@host
 make compass-update
 ```
 
-Команда вызывает коннектор из `shared-goals/skill`, обновляет Shared Goals-секцию в `Compass.md`, а отмеченные выполненными пункты может предложить записать как коммиты. Создание коммитов остаётся интерактивным и требует подтверждения пользователя.
+Команда вызывает коннектор из `shared-goals/skill`. Сгенерированные секции `Compass.md` — ровно две: `## Logos` и `## Shared Goals`; они перезаписываются из платформы. Весь остальной контент заметки (преамбула, `## Quick Tasks` и любые пользовательские секции) сохраняется дословно при каждом обновлении; при первой генерации файла создаётся пустая `## Quick Tasks`.
 
-`make compass-update` берёт `## Logos` из уже созданного `daily-compass-context.json`. Для удалённого Hermes-хоста настройте passwordless SSH и укажите `COMPASS_LOGOS_REMOTE=hermes@host`; команда скопирует JSON-контекст и отрендерит Logos локально.
+Отмеченные `[x]` пункты коннектор предложит записать как коммиты (интерактивно, с подтверждением). Новая строка, вставленная вручную под целью в `## Shared Goals` без отмеченных выполненных пунктов, будет предложена к добавлению в next steps цели (planning-коммит с пустым `done`); при отказе строка переезжает в `## Quick Tasks` и не теряется.
+
+`make compass-update` берёт `## Logos` из уже созданного `daily-compass-context.json`. Для удалённого Hermes-хоста настройте passwordless SSH и укажите `COMPASS_LOGOS_REMOTE=hermes@host`; команда скопирует JSON-контекст и отрендерит Logos локально. Если контекст на хосте лежит не в `~/.hermes/skills/...`, задайте относительный путь в `COMPASS_LOGOS_REMOTE_PATH`.
 
 На этом всё!
 

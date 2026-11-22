@@ -15,7 +15,9 @@ COMPASS_SCRIPTS ?= $(SHARED_GOALS_SKILL_DIR)/shared-goals/scripts
 SHARED_GOALS_ENV_FILE ?= $(CURDIR)/.env
 COMPASS_BUILD_DIR ?= build
 COMPASS_LOGOS_REMOTE ?=
-COMPASS_LOGOS_CONTEXT_PATH ?= $(HOME)/.hermes/skills/shared-goals/shared-goals/state/daily-compass-context.json
+COMPASS_LOGOS_CONTEXT_REL ?= .hermes/skills/shared-goals/shared-goals/state/daily-compass-context.json
+COMPASS_LOGOS_REMOTE_PATH ?= $(COMPASS_LOGOS_CONTEXT_REL)
+COMPASS_LOGOS_CONTEXT_PATH ?= $(HOME)/$(COMPASS_LOGOS_CONTEXT_REL)
 HINDSIGHT_WRAPPER ?= $(TEXT_FORGE_DIR)/scripts/hindsight-wtd-ingest-wrapper.py
 HINDSIGHT_API_URL ?= http://localhost:8889
 HINDSIGHT_BANK ?= hermes
@@ -294,7 +296,7 @@ ingest: ## WTD -> Hindsight: delta after last ingest | vars: AFTER=<ref> / SINCE
 	echo "==> Hindsight $$MODE"; \
 	env -u VIRTUAL_ENV uv run python "$(HINDSIGHT_WRAPPER)" $$ARGS $(INGEST_EXTRA_ARGS)
 
-compass-update: ## Compass.md -> Shared Goals status/update | uses .env: SHARED_GOALS_API_BASE_URL, SHARED_GOALS_AGENT_KEY_ID, OBSIDIAN_VAULT_PATH
+compass-update: ## Compass.md -> Shared Goals status/update | uses .env: SHARED_GOALS_API_BASE_URL, SHARED_GOALS_AGENT_KEY_ID, OBSIDIAN_VAULT_PATH, COMPASS_LOGOS_REMOTE, COMPASS_LOGOS_REMOTE_PATH
 	@if [ ! -f "$(COMPASS_SCRIPTS)/compass-update.py" ]; then \
 		echo "Error: Shared Goals skill script not found: $(COMPASS_SCRIPTS)/compass-update.py"; \
 		echo "Run: make install"; \
@@ -305,10 +307,11 @@ compass-update: ## Compass.md -> Shared Goals status/update | uses .env: SHARED_
 	mkdir -p "$(COMPASS_BUILD_DIR)"; \
 	COMPASS_MD="$${OBSIDIAN_VAULT_PATH:-$(HOME)}/Compass.md"; \
 	LOGOS_REMOTE="$${COMPASS_LOGOS_REMOTE:-$(COMPASS_LOGOS_REMOTE)}"; \
+	LOGOS_REMOTE_PATH="$${COMPASS_LOGOS_REMOTE_PATH:-$(COMPASS_LOGOS_REMOTE_PATH)}"; \
 	LOGOS_ARGS=""; \
 	if [ -n "$$LOGOS_REMOTE" ]; then \
-		if ssh "$$LOGOS_REMOTE" 'test -f "$${HOME}/.hermes/skills/shared-goals/shared-goals/state/daily-compass-context.json"'; then \
-			ssh "$$LOGOS_REMOTE" 'cat "$${HOME}/.hermes/skills/shared-goals/shared-goals/state/daily-compass-context.json"' > "$(COMPASS_BUILD_DIR)/daily-compass-context.json"; \
+		if ssh "$$LOGOS_REMOTE" 'test -f "$${HOME}/'"$$LOGOS_REMOTE_PATH"'"'; then \
+			ssh "$$LOGOS_REMOTE" 'cat "$${HOME}/'"$$LOGOS_REMOTE_PATH"'"' > "$(COMPASS_BUILD_DIR)/daily-compass-context.json"; \
 			LOGOS_ARGS="--logos-context $(COMPASS_BUILD_DIR)/daily-compass-context.json"; \
 		fi; \
 	elif [ -f "$(COMPASS_LOGOS_CONTEXT_PATH)" ]; then \
