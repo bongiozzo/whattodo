@@ -48,10 +48,6 @@ search:
 - О поведенческих зависимостях: [Не оторваться! Почему наш мозг любит всё новое и так ли это хорошо в эпоху интернета](books/alter-ne-otorvatsya.md)
 - Про экономику всего, но что дальше?: [Экономика всего. Институты и общество: жизнь по правилам и без](books/auzan-ekonomika-vsego-instituty-i-obshchestvo-zhizn-po-pravilam-i-bez.md)
 
-/// details | Читаю (1)
-- [Евгений Водолазкин — Последнее дело майора Чистова](books/vodolazkin-poslednee-delo-mayora-chistova.md)
-///
-
 /// details | Хочу прочитать (44)
 - [Наринэ Абгарян — Люди, которые всегда со мной](books/abgaryan-lyudi-kotorye-vsegda-so-mnoy.md)
 - [Алесь Адамович, Даниил Гранин — Блокадная книга](books/adamovich-blokadnaya-kniga.md)
@@ -99,7 +95,7 @@ search:
 - [Евгений Александрович Жуков — Бросающий камушки](books/zhukov-brosayushchiy-kamushki.md)
 ///
 
-/// details | Прочтённые (299)
+/// details | Прочтённые (301)
 - [Кобо Абэ — Четвертый ледниковый период](books/abe-chetvertyy-lednikovyy-period.md)
 - [Наринэ Абгарян — Манюня пишет фантастичЫскЫй роман](books/abgaryan-manyunya-pishet-fantastichyskyy-roman.md)
 - [Фрэнк Уильям Абигнейл, Стэн Реддинг — Поймай меня, если сможешь. Реальная история самого неуловимого мошенника за всю историю преступлений](books/abigneyl-poymay-menya-esli-smozhesh.md)
@@ -209,8 +205,8 @@ search:
 - [Евгений Гришковец — Узелки](books/grishkovets-uzelki.md)
 - [Евгений Гришковец — Водка как нечто большее](books/grishkovets-vodka-kak-nechto-bolshee.md)
 - [Илья Ильф, Евгений Петров — Двенадцать стульев. Золотой теленок](books/ilf-dvenadtsat-stulev.md)
-- [Илья Ильф, Евгений Петров — Золотой теленок](books/ilf-zolotoy-telenok.md)
-- [Фазиль Искандер — Сандро из Чегема](books/iskander-sandro-iz-chegema.md)
+- [Илья Ильф, Евгений Петров, Валерия Николаевна Шевчук — Золотой теленок](books/ilf-zolotoy-telenok.md)
+- [Фазиль Искандер, Искандер — Сандро из Чегема](books/iskander-sandro-iz-chegema.md)
 - [Алексей Иванов — Географ глобус пропил](books/ivanov-geograf-globus-propil.md)
 - [Н.М. Карамзин — Бедная Лиза](books/karamzin-bednaya-liza.md)
 - [Дейл Карнеги — Искусство завоевывать друзей и оказывать влияние на людей, эффективно общаться и расти как личность](books/karnegi-iskusstvo-zavoevyvat-druzey-i-okazyvat-vliyanie-na-lyudey-effektivno-obshchatsya-i-rasti-kak-lichnost.md)
@@ -371,6 +367,7 @@ search:
 - [Евгений Водолазкин, Саша Гусов — Краткая история цивилизации в фотографиях Саши Гусова и текстах Евгения Водолазкина](books/vodolazkin-kratkaya-istoriya-tsivilizatsii-v-fotografiyakh-sashi-gusova-i-tekstakh-evgeniya-vodolazkina.md)
 - [Евгений Водолазкин — Лавр](books/vodolazkin-lavr.md)
 - [Евгений Водолазкин — Оправдание Острова](books/vodolazkin-opravdanie-ostrova.md)
+- [Евгений Водолазкин — Последнее дело майора Чистова](books/vodolazkin-poslednee-delo-mayora-chistova.md)
 - [Евгений Водолазкин — Соловьев и Ларионов](books/vodolazkin-solovev-i-larionov.md)
 - [Евгений Водолазкин — Совсем другое время](books/vodolazkin-sovsem-drugoe-vremya.md)
 - [Александр Волков — Огненный бог Марранов](books/volkov-ognennyy-bog-marranov.md)
@@ -394,6 +391,7 @@ search:
 - [Шиманн Йорн, Вейрс Отто, Рэнд Лариса Арарипе — The Samarsky Yard. Самарский двор](books/yorn-the-samarsky-yard.md)
 - [Александр Юрьев — Стратегическая психология глобализации. Психология человеческого капитала](books/yurev-strategicheskaya-psikhologiya-globalizatsii.md)
 - [Сергей Юрский — Игра в жизнь](books/yurskiy-igra-v-zhizn.md)
+- [Андрей Зализняк — Из заметок о любительской лингвистике](books/zaliznyak-iz-zametok-o-lyubitelskoy-lingvistike.md)
 - [Д. А. Засосов, В. И. Пызин — Повседневная жизнь Петербурга на рубеже XIX - XX веков. Записки очевидцев](books/zasosov-povsednevnaya-zhizn-peterburga-na-rubezhe-xix-xx-vekov.md)
 - [Роджер Желязны — Девять принцев Амбера](books/zhelyazny-devyat-printsev-ambera.md)
 - [Михаил Зощенко — Перед восходом солнца](books/zoshchenko-pered-voskhodom-solntsa.md)

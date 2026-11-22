@@ -17,7 +17,7 @@ livelib_review: "https://www.livelib.ru/review/5065204"
 
 Ссылка: [https://www.livelib.ru/book/1009919548](https://www.livelib.ru/book/1009919548)
 
-## Рецензия
+## Перечитывание Булгакова вместе с Григорьевым {#review}
 
 Многое, о чём пишет Григорий Григорьев, объединяется понятием Ветер Радости. Поэтому и повествования романа пропущены через восприятие нашего мира в радости от Ветра (определение лучше прочитать у автора самому, чтобы не спойлерить). Также как и на него, на меня в своё время мощнейшим образом повлиял роман "Мастер и Маргарита". [https://www.livelib.ru/review/4002646-master-i-margarita-mihail-bulgakov-boulgakov-mikhail](https://www.livelib.ru/review/4002646-master-i-margarita-mihail-bulgakov-boulgakov-mikhail)
 

@@ -17,7 +17,7 @@ livelib_review: "https://www.livelib.ru/review/2998678"
 
 Ссылка: [https://www.livelib.ru/book/1002095486](https://www.livelib.ru/book/1002095486)
 
-## Рецензия
+## Рецензия {#review}
 
 Книга широко известная и резонансная, что либо написать новое по впечатлениям, пожалуй, непросто.
 

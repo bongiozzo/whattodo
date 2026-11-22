@@ -17,7 +17,7 @@ livelib_review: "https://www.livelib.ru/review/5073775"
 
 Ссылка: [https://www.livelib.ru/book/1007442097](https://www.livelib.ru/book/1007442097)
 
-## Рецензия
+## Про поиск Веры {#review}
 
 Говорят, что прочитать хорошую книгу бывает так же тяжело, как её написать.
 

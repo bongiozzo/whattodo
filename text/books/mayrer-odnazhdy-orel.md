@@ -15,7 +15,7 @@ livelib_review: "https://www.livelib.ru/review/5368711"
 
 Ссылка: [https://www.livelib.ru/book/1000462964](https://www.livelib.ru/book/1000462964)
 
-## Рецензия
+## Рецензия {#review}
 
 Если интересно взглянуть на войны XX века глазами американских офицеров – читать обязательно.
 

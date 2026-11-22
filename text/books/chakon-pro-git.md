@@ -15,7 +15,7 @@ livelib_review: "https://www.livelib.ru/review/5457061"
 
 Ссылка: [https://www.livelib.ru/book/1001502890](https://www.livelib.ru/book/1001502890)
 
-## Рецензия
+## Рецензия {#review}
 
 Книга доступна в [открытом исходнике](https://www.livelib.ru/go?url=https%3A%2F%2Fgit-scm.com%2Fbook%2Fru%2Fv2), что полностью соответствует концепции Open Source.
 

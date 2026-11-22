@@ -17,6 +17,6 @@ livelib_review: "https://www.livelib.ru/review/6390790"
 
 Ссылка: [https://www.livelib.ru/book/1008288064](https://www.livelib.ru/book/1008288064)
 
-## Рецензия
+## Про Счастье и Цифру {#review}
 
 Отличный старт и понятные метрики  для осмысления жизни

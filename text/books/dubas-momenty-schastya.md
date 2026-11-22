@@ -16,7 +16,7 @@ livelib_review: "https://www.livelib.ru/review/3575245"
 
 Ссылка: [https://www.livelib.ru/book/1003047920](https://www.livelib.ru/book/1003047920)
 
-## Рецензия
+## Много счастья без занудства {#review}
 
 Странно, что рецензия только одна
 

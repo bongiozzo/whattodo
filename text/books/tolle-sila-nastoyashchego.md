@@ -17,6 +17,6 @@ livelib_review: "https://www.livelib.ru/review/6390949"
 
 Ссылка: [https://www.livelib.ru/book/1001530607](https://www.livelib.ru/book/1001530607)
 
-## Рецензия
+## Важность и красота момента {#review}
 
 Книгу не дочитал, но главную идею ценить момент и жить настоящим горячо поддерживаю :-)

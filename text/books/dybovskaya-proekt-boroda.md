@@ -15,7 +15,7 @@ livelib_review: "https://www.livelib.ru/review/6372058"
 
 Ссылка: [https://www.livelib.ru/book/1017962035](https://www.livelib.ru/book/1017962035)
 
-## Рецензия
+## Рецензия {#review}
 
 Было забавно читать после серии книг Басинского о Толстом 
 

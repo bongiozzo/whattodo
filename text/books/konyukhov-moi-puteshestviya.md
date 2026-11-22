@@ -15,7 +15,7 @@ livelib_review: "https://www.livelib.ru/review/3060793"
 
 Ссылка: [https://www.livelib.ru/book/1001111195](https://www.livelib.ru/book/1001111195)
 
-## Рецензия
+## Рецензия {#review}
 
 Текст читается легко.
 

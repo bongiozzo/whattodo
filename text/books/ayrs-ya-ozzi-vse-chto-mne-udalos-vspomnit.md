@@ -15,7 +15,7 @@ livelib_review: "https://www.livelib.ru/review/3752326"
 
 Ссылка: [https://www.livelib.ru/book/1002797200](https://www.livelib.ru/book/1002797200)
 
-## Рецензия
+## Рецензия {#review}
 
 Оззи клёвый. Подтверждает даже жена, которая не являлась поклонником его музыки.
 

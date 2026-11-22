@@ -15,7 +15,7 @@ livelib_review: "https://www.livelib.ru/review/6413194"
 
 Ссылка: [https://www.livelib.ru/book/1001616054](https://www.livelib.ru/book/1001616054)
 
-## Рецензия
+## ИИ как зеркало и вопросы, от которых не отмахнуться {#review}
 
 Познакомился с интересным и начитанным человеком.
 

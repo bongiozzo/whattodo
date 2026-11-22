@@ -15,7 +15,7 @@ livelib_review: "https://www.livelib.ru/review/3035584"
 
 Ссылка: [https://www.livelib.ru/book/1007575387](https://www.livelib.ru/book/1007575387)
 
-## Рецензия
+## Рецензия {#review}
 
 Благодаря рассказу выявил любопытные факты о Тесле и Эдисоне в Википедии.
 

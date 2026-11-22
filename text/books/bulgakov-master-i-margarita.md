@@ -24,7 +24,7 @@ livelib_review: "https://www.livelib.ru/review/4002646"
 
 Ссылка: [https://www.livelib.ru/book/1000736563](https://www.livelib.ru/book/1000736563)
 
-## Рецензия
+## Книга, запустившая размышления о Боге {#review}
 
 Великим книгам оценки ставить и рецензии на них писать – странно.
 

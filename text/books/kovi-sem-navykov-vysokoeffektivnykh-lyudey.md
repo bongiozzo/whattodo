@@ -17,7 +17,7 @@ livelib_review: "https://www.livelib.ru/review/3792199"
 
 Ссылка: [https://www.livelib.ru/book/1003055575](https://www.livelib.ru/book/1003055575)
 
-## Рецензия
+## База целеполагания и личностного роста {#review}
 
 Я как-то договорился с собой о простом правиле в оценке книг и фильмов.
 

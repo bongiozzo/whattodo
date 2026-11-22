@@ -17,7 +17,7 @@ livelib_review: "https://www.livelib.ru/review/4639619"
 
 Ссылка: [https://www.livelib.ru/book/1001008859](https://www.livelib.ru/book/1001008859)
 
-## Рецензия
+## Практическая инструкция к изменению мира {#review}
 
 5 баллов. Была бы возможность поставить больше - поставил бы.
 

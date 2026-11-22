@@ -17,7 +17,7 @@ livelib_review: "https://www.livelib.ru/review/6390922"
 
 Ссылка: [https://www.livelib.ru/book/1003089869](https://www.livelib.ru/book/1003089869)
 
-## Рецензия
+## Бытовые истории и мысли о православии {#review}
 
 Книга побудила доехать и посетить монастырь и  «Богом зданные» пещеры.
 

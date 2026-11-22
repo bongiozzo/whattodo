@@ -17,7 +17,7 @@ livelib_review: "https://www.livelib.ru/review/4165063"
 
 Ссылка: [https://www.livelib.ru/book/1001128870](https://www.livelib.ru/book/1001128870)
 
-## Рецензия
+## Про человеческий капитал {#review}
 
 Пятерку ставлю книгам, которые как либо меняют мои привычки или взгляды.
 

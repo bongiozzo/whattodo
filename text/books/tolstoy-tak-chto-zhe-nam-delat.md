@@ -15,7 +15,7 @@ livelib_review: "https://www.livelib.ru/review/5240326"
 
 Ссылка: [https://www.livelib.ru/book/1010848910](https://www.livelib.ru/book/1010848910)
 
-## Рецензия
+## Рецензия {#review}
 
 Взялся изучить этот труд во время прочтения книги Павла Басинского «Лев Толстой. Свободный человек».
 

@@ -17,7 +17,7 @@ livelib_review: "https://www.livelib.ru/review/4403090"
 
 Ссылка: [https://www.livelib.ru/book/1007537842](https://www.livelib.ru/book/1007537842)
 
-## Рецензия
+## Сохранить себя... {#review}
 
 Удивительные пересечения  собственных мыслей и поступков с событиями и мыслями из Чагина.
 

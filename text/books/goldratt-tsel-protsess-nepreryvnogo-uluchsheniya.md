@@ -17,7 +17,7 @@ livelib_review: "https://www.livelib.ru/review/3908812"
 
 Ссылка: [https://www.livelib.ru/book/1002805092](https://www.livelib.ru/book/1002805092)
 
-## Рецензия
+## Фокусировка и цифра в управлении {#review}
 
 Книгу прочел, кажется, лет 15 назад.
 

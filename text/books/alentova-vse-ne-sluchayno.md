@@ -15,7 +15,7 @@ livelib_review: "https://www.livelib.ru/review/5168533"
 
 Ссылка: [https://www.livelib.ru/book/1007056054](https://www.livelib.ru/book/1007056054)
 
-## Рецензия
+## Рецензия {#review}
 
 5 баллов – мега полезная аудиокнига для понимания нюансов человеческого общения!
 

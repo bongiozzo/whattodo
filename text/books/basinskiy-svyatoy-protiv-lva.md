@@ -15,7 +15,7 @@ livelib_review: "https://www.livelib.ru/review/5304733"
 
 Ссылка: [https://www.livelib.ru/book/1007434216](https://www.livelib.ru/book/1007434216)
 
-## Рецензия
+## Рецензия {#review}
 
 История этой вражды меня интересовала больше, чем что либо в биографии Льва Толстого.
 

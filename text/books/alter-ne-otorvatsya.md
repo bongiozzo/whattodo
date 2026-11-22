@@ -17,7 +17,7 @@ livelib_review: "https://www.livelib.ru/review/3938821"
 
 Ссылка: [https://www.livelib.ru/book/1002986342](https://www.livelib.ru/book/1002986342)
 
-## Рецензия
+## О поведенческих зависимостях {#review}
 
 Великолепный подбор фактов и исследований по современным зависимостям.
 

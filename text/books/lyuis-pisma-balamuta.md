@@ -20,7 +20,7 @@ livelib_review: "https://www.livelib.ru/review/5738980"
 
 Ссылка: [https://www.livelib.ru/book/1001290747](https://www.livelib.ru/book/1001290747)
 
-## Рецензия
+## Гениальный формат рассуждений о важном {#review}
 
 Однозначно 5 звезд.
 

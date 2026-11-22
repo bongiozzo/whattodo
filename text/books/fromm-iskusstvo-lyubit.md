@@ -17,7 +17,7 @@ livelib_review: "https://www.livelib.ru/review/2985526"
 
 Ссылка: [https://www.livelib.ru/book/1002524734](https://www.livelib.ru/book/1002524734)
 
-## Рецензия
+## Анализ чувства Любви {#review}
 
 Книгу читал давно. Но сразу по прочтении записал её в список очень важных книг.
 

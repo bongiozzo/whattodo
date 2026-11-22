@@ -17,7 +17,7 @@ livelib_review: "https://www.livelib.ru/review/3535819"
 
 Ссылка: [https://www.livelib.ru/book/1000820821](https://www.livelib.ru/book/1000820821)
 
-## Рецензия
+## О нарко-зависимостях и их причинах {#review}
 
 Практически каждый описываемый опыт был подтвержден и испытан самостоятельно.
 

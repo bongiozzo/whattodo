@@ -15,7 +15,7 @@ livelib_review: "https://www.livelib.ru/review/5726422"
 
 Ссылка: [https://www.livelib.ru/book/1002745327](https://www.livelib.ru/book/1002745327)
 
-## Рецензия
+## Рецензия {#review}
 
 Произведение замечательно, прежде всего, своей краткостью.
 

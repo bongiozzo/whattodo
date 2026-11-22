@@ -15,7 +15,7 @@ livelib_review: "https://www.livelib.ru/review/5304760"
 
 Ссылка: [https://www.livelib.ru/book/1010116129](https://www.livelib.ru/book/1010116129)
 
-## Рецензия
+## Рецензия {#review}
 
 Прочитал эту книгу первой в серии Павла Басинского о Льве Толстом.
 
