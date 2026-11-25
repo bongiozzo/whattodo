@@ -15,6 +15,8 @@ livelib_book: "https://www.livelib.ru/book/1000897281"
 
 ## Цитаты
 
-> У любви нет возраста, нет предела, нет смерти. ^quote_1
+### 1 ^quote_1
+
+> У любви нет возраста, нет предела, нет смерти.
 
 — [LiveLib](https://www.livelib.ru/quote/844817)

@@ -15,6 +15,8 @@ livelib_book: "https://www.livelib.ru/book/1000031047"
 
 ## Цитаты
 
-> Притом, чем безнадёжнее цель, тем глубже эмоции. ^quote_1
+### 1 ^quote_1
+
+> Притом, чем безнадёжнее цель, тем глубже эмоции.
 
 — [LiveLib](https://www.livelib.ru/quote/42395907)

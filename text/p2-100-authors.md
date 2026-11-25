@@ -66,9 +66,15 @@ description: Представление соавторов в начале пр�
 
 *[ENTP «Полемист» (Debater)](https://www.16personalities.com/entp-personality)*
 
+## Алексей Белов {#AlekseyBelov}
+
+[Музыка, инженерия, паруса и лодки.](https://t.me/engineersburrow)
+
+*[INFJ «Заступник» (Advocate)](https://www.16personalities.com/ru/lichnost-infj)*
+
 ## Александр Бердников {#BerdnikovSamara}
 
-Любит Волгу — Волгист.
+[Любит Волгу — Волгист.](p2-155-photo.md#vodoplav)
 
 *[INTP «Логик» (Logician)](https://www.16personalities.com/profiles/409e88988a1f4)*
 
@@ -123,6 +129,10 @@ Not flashy, not political — just _competent_.
 
 *[ESTP-A «Предприниматель» (Entrepreneur)](https://www.16personalities.com/profiles/1078fc2db6aea)*
 
+## Роман Любомиров {#Lyubomirov}
+
+
+
 ## Александр Петросян {#AlexanderPetrosyan}
 
 [Фотограф из Санкт-Петербурга](https://t.me/petrosphotos).
@@ -135,8 +145,7 @@ Not flashy, not political — just _competent_.
 
 ## Сергей Поляков {#bongiozzo}
 
-[Душнила](index.md#introduction), автор большей части этого текста.
-Себя идентифицирует как Муж, Отец, Программист, Предприниматель, Фотограф в [Евангельской системе координат](p2-110-system.md#rational_definition_of_christ).
+[Душнила](index.md#introduction), себя [идентифицирует](p2-110-system.md#family_priorities) как Муж, Отец, [Программист](p2-185-programming.md), Предприниматель, [Фотограф](p2-155-photo.md) в [Евангельской системе координат](p2-180-sharedgoals.md#evangelical_frame_of_reference).
 
 *[INTJ «Стратег» (Architect)](https://www.16personalities.com/profiles/588b2e7c12189)*
 

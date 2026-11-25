@@ -5,6 +5,8 @@ published: 22.10.2023
 description: Наш Текст — это сборка смыслов, взятых из книг и успешно применяемых на практике.
 search:
   exclude: true
+hindsight:
+  exclude: true
 ---
 
 # Книги как фундамент
@@ -48,8 +50,12 @@ search:
 - О поведенческих зависимостях: [Не оторваться! Почему наш мозг любит всё новое и так ли это хорошо в эпоху интернета](books/alter-ne-otorvatsya.md)
 - Про экономику всего, но что дальше?: [Экономика всего. Институты и общество: жизнь по правилам и без](books/auzan-ekonomika-vsego-instituty-i-obshchestvo-zhizn-po-pravilam-i-bez.md)
 
-/// details | Хочу прочитать (44)
+/// details | Читаю (1)
 - [Наринэ Абгарян — Люди, которые всегда со мной](books/abgaryan-lyudi-kotorye-vsegda-so-mnoy.md)
+///
+
+/// details | Хочу прочитать (44)
+- [Наринэ Абгарян — Симон](books/abgaryan-simon.md)
 - [Алесь Адамович, Даниил Гранин — Блокадная книга](books/adamovich-blokadnaya-kniga.md)
 - [Василий Аксёнов — Московская сага. В 3 книгах. Книга 1. Поколение зимы](books/aksenov-moskovskaya-saga.md)
 - [Аристотель — Политика](books/aristotel-politika.md)

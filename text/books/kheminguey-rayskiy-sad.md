@@ -15,6 +15,8 @@ livelib_book: "https://www.livelib.ru/book/1000417324"
 
 ## Цитаты
 
-> Умные люди чрезвычайно редко бывают счастливы. ^quote_1
+### 1 ^quote_1
+
+> Умные люди чрезвычайно редко бывают счастливы.
 
 — [LiveLib](https://www.livelib.ru/quote/174575)

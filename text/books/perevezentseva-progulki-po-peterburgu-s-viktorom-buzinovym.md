@@ -16,6 +16,8 @@ livelib_book: "https://www.livelib.ru/book/1000977005"
 
 ## Цитаты
 
-> Основной девиз масонства – «memento mori». ^quote_1
+### 1 ^quote_1
+
+> Основной девиз масонства – «memento mori».
 
 — [LiveLib](https://www.livelib.ru/quote/47358155)

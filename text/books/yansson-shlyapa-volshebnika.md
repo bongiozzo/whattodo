@@ -15,6 +15,8 @@ livelib_book: "https://www.livelib.ru/book/1000333925"
 
 ## Цитаты
 
-> “Всяк должен иногда остаться наедине с собой” ^quote_1
+### 1 ^quote_1
+
+> “Всяк должен иногда остаться наедине с собой”
 
 — [LiveLib](https://www.livelib.ru/quote/853304)

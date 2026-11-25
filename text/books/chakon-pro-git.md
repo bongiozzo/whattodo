@@ -47,15 +47,19 @@ livelib_review: "https://www.livelib.ru/review/5457061"
 
 ## Цитаты
 
+### 1 ^quote_1
+
 > Do not rebase commits that exist outside your repository and that people may have based work on.
 >
 >
 >
 > If you follow that guideline, you’ll be fine.
 >
-> If you don’t, people will hate you, and you’ll be scorned by friends and family. ^quote_1
+> If you don’t, people will hate you, and you’ll be scorned by friends and family.
 
 — [LiveLib](https://www.livelib.ru/quote/48505159)
+
+### 2 ^quote_2
 
 > One point of view on this is that your repository’s commit history is a record of what actually happened.
 >
@@ -81,6 +85,6 @@ livelib_review: "https://www.livelib.ru/review/5457061"
 >
 >
 >
-> When you’re working on a project, you may need a record of all your missteps and dead-end paths, but when it’s time to show your work to the world, you may want to tell a more coherent story of how to get from A to B. ^quote_2
+> When you’re working on a project, you may need a record of all your missteps and dead-end paths, but when it’s time to show your work to the world, you may want to tell a more coherent story of how to get from A to B.
 
 — [LiveLib](https://www.livelib.ru/quote/48505165)

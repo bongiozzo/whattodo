@@ -33,30 +33,44 @@ livelib_review: "https://www.livelib.ru/review/3780112"
 
 ## Цитаты
 
-> I stayed sober for two years based solely on that moment. God had shown me a sliver of what life could be. He had saved me that day, and for all days, no matter what. He had turned me into a seeker, not only of sobriety, and truth, but also of him. He had opened a window, and closed it, as if to say, “Now go earn this.” ^quote_1
+### 1 ^quote_1
+
+> I stayed sober for two years based solely on that moment. God had shown me a sliver of what life could be. He had saved me that day, and for all days, no matter what. He had turned me into a seeker, not only of sobriety, and truth, but also of him. He had opened a window, and closed it, as if to say, “Now go earn this.”
 
 — [LiveLib](https://www.livelib.ru/quote/46439779)
 
-> Бог везде, вам просто нужно прочистить свой канал связи, иначе вы Его не заметите. ^quote_2
+### 2 ^quote_2
+
+> Бог везде, вам просто нужно прочистить свой канал связи, иначе вы Его не заметите.
 
 — [LiveLib](https://www.livelib.ru/quote/46635772)
 
-> Наверное, нужно, чтобы все ваши мечты сбылись, для того чтобы понять, что это были неправильные мечты. ^quote_3
+### 3 ^quote_3
+
+> Наверное, нужно, чтобы все ваши мечты сбылись, для того чтобы понять, что это были неправильные мечты.
 
 — [LiveLib](https://www.livelib.ru/quote/46455808)
 
-> Однажды меня спросили, был ли я когда-нибудь счастлив, и я чуть не свернул шею этому ублюдку. ^quote_4
+### 4 ^quote_4
+
+> Однажды меня спросили, был ли я когда-нибудь счастлив, и я чуть не свернул шею этому ублюдку.
 
 — [LiveLib](https://www.livelib.ru/quote/47044333)
 
-> Все, что я мог контролировать, – это первая рюмка. ^quote_5
+### 5 ^quote_5
+
+> Все, что я мог контролировать, – это первая рюмка.
 
 — [LiveLib](https://www.livelib.ru/quote/46818298)
 
-> "Боже, ты можешь делать со мной всё, что захочешь, только, пожалуйста, - сделай меня знаменитым". ^quote_6
+### 6 ^quote_6
+
+> "Боже, ты можешь делать со мной всё, что захочешь, только, пожалуйста, - сделай меня знаменитым".
 
 — [LiveLib](https://www.livelib.ru/quote/46683988)
 
-> At one point I bought yet another new car, the excitement of which lasted about five days. I moved regularly, too—the thrill of a new house with an even better view lasted a bit longer than the Porsche or the Bentley, but not by much. ^quote_7
+### 7 ^quote_7
+
+> At one point I bought yet another new car, the excitement of which lasted about five days. I moved regularly, too—the thrill of a new house with an even better view lasted a bit longer than the Porsche or the Bentley, but not by much.
 
 — [LiveLib](https://www.livelib.ru/quote/47121569)
