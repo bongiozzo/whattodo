@@ -392,7 +392,7 @@ Debian до сих пор работает на домашних сервера�
 
 https://web.archive.org/web/20141226052840/http://webzavod.com/news/28.07.2014/280/
 
-![type:video](https://www.youtube.com/embed/dIBzLK1Zp60 "What is SoDA?”)
+![type:video](https://www.youtube.com/embed/dIBzLK1Zp60 "What is SoDA?")
 
 ## Отойти от IT {#exit_from_it}
 
@@ -417,6 +417,7 @@ https://web.archive.org/web/20141226052840/http://webzavod.com/news/28.07.2014/2
 
 Один такой проект даже оформил в виде [open source](p2-170-opensource.md#education) репозитория — [Cassis](https://github.com/bongiozzo/Cassis).
 Было желание научиться трём совершенно разным подходам в 3D-моделировании: [Blender](https://github.com/blender), [FreeCAD](https://github.com/freecad/freecad) и [build123d](https://github.com/gumyr/build123d).
+
 [Build123d](https://github.com/gumyr/build123d) позволяет объединить 3D-моделирование с любимым Программированием.
 
 [Друг Алексей Белов](p2-100-authors.md#AlekseyBelov) — Инженер от Бога — постоянно придумывает и создаёт всякие хитрые штуки, которые «причиняют» радость окружающим!

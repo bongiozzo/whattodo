@@ -1,11 +1,11 @@
 [project]
 name = "whattodo"
-version = "0.1.0"
+version = "0.52.14"
 description = "Что мне делать? :-) Текст в концепции «Общие Цели»"
 readme = "README.md"
 requires-python = ">=3.11"
 
 dependencies = [
     # text-forge plugin from PyPI
-    "sg-text-forge>=0.2.1",
+    "sg-text-forge>=0.7.6",
 ]
