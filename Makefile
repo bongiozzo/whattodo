@@ -345,7 +345,7 @@ publish: ## Interactive publish: optional commit, tag, push
 		echo; \
 		echo "Working tree is dirty:"; \
 		git status --short --ignore-submodules=all; \
-		echo "Enter commit message (type 'no' to abort publish):"; \
+		echo "Enter commit message draft (type 'no' to abort publish):"; \
 		read -r COMMIT_MSG; \
 		if [ "$$COMMIT_MSG" = "no" ] || [ "$$COMMIT_MSG" = "NO" ] || [ "$$COMMIT_MSG" = "No" ]; then \
 			echo "Publish aborted."; \
@@ -356,7 +356,7 @@ publish: ## Interactive publish: optional commit, tag, push
 			exit 1; \
 		fi; \
 		git add -A; \
-		git commit -m "$$COMMIT_MSG"; \
+		git commit -e -m "$$COMMIT_MSG" || exit 1; \
 	fi; \
 	echo "Create and push a version tag? [y/N]"; \
 	read -r DO_TAG; \
