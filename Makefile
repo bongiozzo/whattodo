@@ -384,6 +384,9 @@ publish: ## Interactive publish: optional commit, tag, push
 				echo "Error: tag $$NEW_TAG already exists"; \
 				exit 1; \
 			fi; \
+			sed -i.bak -E "s/^version = \"[^\"]*\"/version = \"$${NEW_TAG#v}\"/" pyproject.toml && rm -f pyproject.toml.bak; \
+			git add pyproject.toml; \
+			git diff --cached --quiet || git commit -q -m "chore: version $${NEW_TAG#v}" -- pyproject.toml; \
 			git tag -a "$$NEW_TAG" -m "Release $$NEW_TAG"; \
 			TAG_CREATED="yes"; \
 			;; \
