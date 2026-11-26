@@ -64,7 +64,7 @@ description: Представление соавторов в начале пр�
 
 ИТ-шник с более чем 35 летним стажем, эксперт в области автоматизации корпоративных процессов, один из идеологов платформы Docsvision, MBA, PhD по Психологии, независимый исследователь проблематики Счастья, автор проекта «Геймификация жизни» и модели ПЭРЛ (прогрессия этапов развития личности), руководитель любительского хора, лабух, дважды дедушка (пока).
 
-*[ENTP «Полемист» (Debater)](https://www.16personalities.com/entp-personality)*
+*[ENTP «Полемист» (Debater)](https://www.16personalities.com/ru/lichnost-entp)*
 
 ## Алексей Белов {#AlekseyBelov}
 
@@ -82,7 +82,7 @@ description: Представление соавторов в начале пр�
 
 Православный соловецкий экскурсовод.
 
-*[ENTJ «Командир» (Commander)](https://www.16personalities.com/entj-personality)*
+*[ENTJ «Командир» (Commander)](https://www.16personalities.com/ru/lichnost-entj)*
 
 ## Евгений Картавченко {#ewgeniyk}
 
@@ -131,7 +131,13 @@ Not flashy, not political — just _competent_.
 
 ## Роман Любомиров {#Lyubomirov}
 
+Коренной Петербуржец.
+Позитивный продюсер.
+Трудолюбивый сибарит.
+Компанейский мизантроп.
+Апологет пацифизма.
 
+*[ENFP-A «Активист» (Campaigner)](https://www.16personalities.com/profiles/961275744aa94)*
 
 ## Александр Петросян {#AlexanderPetrosyan}
 
@@ -184,7 +190,7 @@ Not flashy, not political — just _competent_.
 Отец двоих детей, счастливый муж.
 Свободное время: social dance, походы, путешествия, теннис, пинг-понг, футбол, прогулки по городу, театр, ролики, бег, велосипед.
 
-*[ENFJ «Протагонист» (Protagonist)](https://www.16personalities.com/enfj-personality)*
+*[ENFJ «Протагонист» (Protagonist)](https://www.16personalities.com/ru/lichnost-enfj)*
 
 ## Павел Фролов {#pavelfrolov}
 
