@@ -605,7 +605,19 @@ Hermes мгновенно [становится лидером](p2-180-sharedgoa
 
 Не понимаю, зачем нужны платные онлайн-курсы обучения, когда есть [агент](p2-180-sharedgoals.md#agent_guardrails) с [навыками](p2-160-routine.md#agent_skills)?
 
+В наборе базовых [навыков](p2-160-routine.md#agent_skills) агента [Hermes](p2-180-sharedgoals.md#agent_guardrails) есть замечательный skill — /learn.
+На вход он принимает URL сайта или документ.
+А на выходе — новый навык.
+Он помогает освоить предмет и учитывает то, что ты уже знаешь!
+
+```
+/learn https://text.sharedgoals.ru.
+...создан навык /sharedgoals-text.
+/sharedgoals-text Дай инструкцию Как писать Текст по аналогии?
+```
+
 Подготовка уроков по разным темам стала наиболее востребованным навыком.
+
 Собрал для сына [генератор уроков](https://github.com/shared-goals/skill/blob/main/lesson-maker/SKILL.md), но в результате пользуюсь сам!
 :-)
 
