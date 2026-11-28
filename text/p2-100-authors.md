@@ -70,13 +70,13 @@ description: Представление соавторов в начале пр�
 
 [Музыка, инженерия, паруса и лодки.](https://t.me/engineersburrow)
 
-*[INFJ «Заступник» (Advocate)](https://www.16personalities.com/profiles/7885785bddb85)*
+*[INFJ-T «Заступник» (Advocate)](https://www.16personalities.com/profiles/7885785bddb85)*
 
 ## Александр Бердников {#BerdnikovSamara}
 
 [Любит Волгу — Волгист.](p2-155-photo.md#vodoplav)
 
-*[INTP «Логик» (Logician)](https://www.16personalities.com/profiles/409e88988a1f4)*
+*[INTP-A «Логик» (Logician)](https://www.16personalities.com/profiles/409e88988a1f4)*
 
 ## Евгения Васич {#capysv}
 
@@ -137,7 +137,7 @@ Not flashy, not political — just _competent_.
 Компанейский мизантроп.
 Апологет пацифизма.
 
-*[ENFP-A «Активист» (Campaigner)](https://www.16personalities.com/profiles/961275744aa94)*
+*[ENFP-A «Активист» (Campaigner)](https://www.16personalities.com/ru/lichnost-enfp)*
 
 ## Александр Петросян {#AlexanderPetrosyan}
 
@@ -147,20 +147,20 @@ Not flashy, not political — just _competent_.
 
 ## Людмила Полякова {#liu_la}
 
-*[INFP «Посредник» (Mediator)](https://www.16personalities.com/profiles/4a8ab05d8df23)*
+*[INFP-T «Посредник» (Mediator)](https://www.16personalities.com/profiles/4a8ab05d8df23)*
 
 ## Сергей Поляков {#bongiozzo}
 
 [Душнила](index.md#introduction), себя [идентифицирует](p2-110-system.md#family_priorities) как Муж, Отец, [Программист](p2-185-programming.md), Предприниматель, [Фотограф](p2-155-photo.md) в [Евангельской системе координат](p2-180-sharedgoals.md#evangelical_frame_of_reference).
 
-*[INTJ «Стратег» (Architect)](https://www.16personalities.com/profiles/588b2e7c12189)*
+*[INTJ-A «Стратег» (Architect)](https://www.16personalities.com/profiles/588b2e7c12189)*
 
 ## Сергей (Сергеевич) Поляков {#zpss}
 
 Немного о себе — отец, разработчик и, по всей видимости, почти «топ менеджер».
 Человек, имеющий большое количество разных корочек престижных вузов РФ, но при этом постоянно испытывающий «синдром самозванца».
 
-*[ENTP «Полемист» (Debater)](https://www.16personalities.com/profiles/d66aeb0678e0d)*
+*[ENTP-A «Полемист» (Debater)](https://www.16personalities.com/profiles/d66aeb0678e0d)*
 
 ## Савва Сахиб {#savvasahib}
 
@@ -173,7 +173,7 @@ Not flashy, not political — just _competent_.
 
 Руководитель отдела.
 
-*[ENTJ «Командир» (Commander)](https://www.16personalities.com/profiles/entj-a/m/5ow1aqnet)*
+*[ENTJ-A «Командир» (Commander)](https://www.16personalities.com/profiles/entj-a/m/5ow1aqnet)*
 
 ## Денис Струков {#Denis_Strukov}
 
