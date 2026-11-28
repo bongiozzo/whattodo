@@ -70,7 +70,7 @@ description: Представление соавторов в начале пр�
 
 [Музыка, инженерия, паруса и лодки.](https://t.me/engineersburrow)
 
-*[INFJ «Заступник» (Advocate)](https://www.16personalities.com/ru/lichnost-infj)*
+*[INFJ «Заступник» (Advocate)](https://www.16personalities.com/profiles/7885785bddb85)*
 
 ## Александр Бердников {#BerdnikovSamara}
 
